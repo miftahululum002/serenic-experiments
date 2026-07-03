@@ -1,8 +1,8 @@
-from redis import Redis
+from config import redis_conn
+from constant import EKLAIM_BATCH_AGENT
 from rq import Queue
 
-redis_conn = Redis(host="localhost", port=6379)
-queue_name = "eklaim_batch_agent_prod"
+queue_name = EKLAIM_BATCH_AGENT
 queue = Queue(queue_name, connection=redis_conn)
 
 print(f"Queue: {queue_name}")

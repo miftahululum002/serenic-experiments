@@ -1,6 +1,4 @@
-from redis import Redis
-
-redis_conn = Redis(host="localhost", port=6379)
+from config import redis_conn
 keys = redis_conn.keys("rq:queue:*")
 print(f"Total rq:queue:* keys: {len(keys)}")
 for k in sorted(keys):

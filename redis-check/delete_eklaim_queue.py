@@ -1,12 +1,11 @@
 import zlib
-from redis import Redis
+from config import redis_conn
+from constant import EKLAIM_BATCH_AGENT, TARGET_ORG
 from rq import Queue
 
-TARGET_ORG = "d2a967c2-f848-46b9-8d02-bd94680d6bf3"
 DRY_RUN = False  # Set True to only list without deleting
 
-redis_conn = Redis(host="localhost", port=6379)
-queue_name = "eklaim_batch_agent_prod"
+queue_name = EKLAIM_BATCH_AGENT
 queue = Queue(queue_name, connection=redis_conn)
 
 print(f"Target org ID: {TARGET_ORG}")

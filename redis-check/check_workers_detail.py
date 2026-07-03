@@ -1,7 +1,5 @@
-from redis import Redis
+from config import redis_conn
 from rq import Queue
-
-redis_conn = Redis(host="localhost", port=6379)
 
 # Cek workers set
 print("=== rq:workers set ===")

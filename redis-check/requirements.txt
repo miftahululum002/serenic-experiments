@@ -1,0 +1,5 @@
+redis
+rq
+python-dotenv
+# Install serenic_mlkit secara terpisah:
+#   source .env && pip install "serenic_mlkit @ git+https://${GITHUB_TOKEN}@github.com/Serenic-AI/serenic_mlkit.git"

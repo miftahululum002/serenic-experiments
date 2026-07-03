@@ -1,7 +1,5 @@
-from redis import Redis
-
-TARGET_ORG = "d2a967c2-f848-46b9-8d02-bd94680d6bf3"
-redis_conn = Redis(host="localhost", port=6379)
+from config import redis_conn
+from constant import TARGET_ORG
 
 # Brute force scan ALL rq:job: keys for target org
 print("=== Scan ALL rq:job:* untuk d2a967c2... ===\n")
