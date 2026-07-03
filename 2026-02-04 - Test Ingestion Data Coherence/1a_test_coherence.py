@@ -1,6 +1,7 @@
 import json
 from sqlalchemy import create_engine, text
 from collections import defaultdict
+import sys
 
 # ===== Configuration =====
 # CONFIG_FILE_PATH = "/home/aldo_serenic_ai/_experiments/2026-02-04 - Test Ingestion Data Coherence/config.env"
@@ -587,6 +588,23 @@ def check_single_encounter(update: dict, engine, verbose: bool = True) -> dict:
     return result
 
 
+log_file = open("coherence_check_output.log", "w", encoding="utf-8")
+
+# SIMPAN method asli (bukan object stdout)
+_original_write = sys.stdout.write
+_original_flush = sys.stdout.flush
+
+
+def tee_write(message):
+    _original_write(message)
+    log_file.write(message)
+
+
+def tee_flush():
+    _original_flush()
+    log_file.flush()
+
+
 def main():
     # Load JSON data
     with open(JSON_FILE_PATH, "r") as f:
@@ -648,4 +666,10 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    sys.stdout.write = tee_write
+    sys.stdout.flush = tee_flush
+
+    try:
+        main()
+    finally:
+        log_file.close()
