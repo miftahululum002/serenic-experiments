@@ -1,0 +1,23 @@
+services:
+  redis:
+    image: redis:alpine
+    container_name: redis-session
+    restart: unless-stopped
+
+  app:
+    image: php-login-app
+    build: .
+    environment:
+      SERVICE_NAME: app
+    depends_on:
+      - redis
+
+  lb:
+    image: nginx:alpine
+    container_name: nginx-lb
+    ports:
+      - "8000:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - app
