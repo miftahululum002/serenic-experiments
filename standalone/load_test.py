@@ -42,9 +42,9 @@ BASE_URL = "https://api.serenic.ai/codex/standalone/v2"
 POST_URL = f"{BASE_URL}/coding"
 GET_URL_TEMPLATE = f"{BASE_URL}/coding/jobs/{{job_id}}"
 
-DEFAULT_POLL_INTERVAL = 2  # seconds
-DEFAULT_MAX_POLL_TIME = 1200  # 10 minutes max wait per job
-DEFAULT_TIMEOUT = 30  # HTTP timeout in seconds
+DEFAULT_POLL_INTERVAL = int(os.environ.get("POLL_INTERVAL", 2))
+DEFAULT_MAX_POLL_TIME = int(os.environ.get("MAX_POLL_TIME", 600))
+DEFAULT_TIMEOUT = int(os.environ.get("HTTP_TIMEOUT", 30))
 
 
 @dataclass
