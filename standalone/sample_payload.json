@@ -1,0 +1,17 @@
+{
+    "diagnosis_texts": [
+        "Kanker esofagus",
+        "Anemia pada penyakit kronis",
+        "Diabetes mellitus tipe 2"
+    ],
+    "procedure_texts": [
+        "Kolonoskopi dengan biopsi"
+    ],
+    "gender": "Laki-laki",
+    "birth_date": "1970-05-12T00:00:00Z",
+    "admission_type": "inpatient",
+    "admission_dttm": "2026-02-20T08:00:00Z",
+    "discharge_dttm": "2026-02-27T10:00:00Z",
+    "bpjs_class": 2,
+    "birth_weight": 2000
+}

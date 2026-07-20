@@ -1,0 +1,10 @@
+__pycache__
+.venv
+.DS_Store
+.env
+load_test_results/*
+!load_test_results/.gitkeep
+logs/*
+!logs/.gitkeep
+reports/*
+!reports/.gitkeep

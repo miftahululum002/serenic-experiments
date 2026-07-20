@@ -1,0 +1,2 @@
+https://api.serenic.ai/codex/standalone/v2/coding -> POST
+https://api.serenic.ai/codex/standalone/v2/coding/jobs/:job_id -> GET
