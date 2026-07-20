@@ -4,6 +4,8 @@ __pycache__
 .env
 load_test_results/*
 !load_test_results/.gitkeep
+analyze_load_results/*
+!analyze_load_results/.gitkeep
 logs/*
 !logs/.gitkeep
 reports/*
