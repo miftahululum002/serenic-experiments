@@ -1,95 +1,90 @@
-import zlib
 from config import redis_conn
-from constant import EKLAIM_BATCH_AGENT, TARGET_ORG
+from constant import EKLAIM_BATCH_AGENT
+from utils.utility import get_org_id
 from rq import Queue
 
-queue_name = EKLAIM_BATCH_AGENT
-queue = Queue(queue_name, connection=redis_conn)
 
-# 1. Cek semua job di semua registry
-print("=== Mencari job d2a967c2... di SEMUA registry ===\n")
-
-total_found = 0
-
-def check_job(job, source):
-    global total_found
+def check_job(job, org_id: str, source: str, counter: dict) -> bool:
     if not job:
         return False
     match = False
     try:
         kw = job.kwargs
-        if kw.get("managing_organization_id") == TARGET_ORG:
+        if kw.get("managing_organization_id") == org_id:
             match = True
     except Exception:
         raw = redis_conn.hget(f"rq:job:{job.id}", "data")
-        if raw and TARGET_ORG.encode() in raw:
+        if raw and org_id.encode() in raw:
             match = True
     if match:
-        total_found += 1
-        enc = getattr(job, 'kwargs', {}).get('encounter_id', '?') if not isinstance(getattr(job, 'kwargs', {}), Exception) else '?'
+        counter["total"] += 1
+        enc = "?"
+        try:
+            enc = job.kwargs.get("encounter_id", "?")
+        except Exception:
+            pass
         print(f"  [{source}] {job.id}  enc={enc}")
     return match
 
-# Pending queue
-print("--- Pending Queue ---")
-for job in queue.jobs:
-    check_job(job, "pending")
 
-# Started
-print("\n--- Started Registry ---")
-for jid in queue.started_job_registry.get_job_ids():
-    job = queue.fetch_job(jid)
-    check_job(job, "started")
+def find_all_eklaim_org(org_id: str):
+    queue_name = EKLAIM_BATCH_AGENT
+    queue = Queue(queue_name, connection=redis_conn)
 
-# Failed
-print("\n--- Failed Registry ---")
-for jid in queue.failed_job_registry.get_job_ids():
-    job = queue.fetch_job(jid)
-    check_job(job, "failed")
+    print(f"=== Mencari job {org_id[:8]}... di SEMUA registry ===\n")
+    counter = {"total": 0}
 
-# Finished
-print("\n--- Finished Registry ---")
-for jid in queue.finished_job_registry.get_job_ids():
-    job = queue.fetch_job(jid)
-    check_job(job, "finished")
+    print("--- Pending Queue ---")
+    for job in queue.jobs:
+        check_job(job, org_id, "pending", counter)
 
-# Deferred
-print("\n--- Deferred Registry ---")
-for jid in queue.deferred_job_registry.get_job_ids():
-    job = queue.fetch_job(jid)
-    check_job(job, "deferred")
+    print("\n--- Started Registry ---")
+    for jid in queue.started_job_registry.get_job_ids():
+        check_job(queue.fetch_job(jid), org_id, "started", counter)
 
-# Scheduled
-print("\n--- Scheduled Registry ---")
-for jid in queue.scheduled_job_registry.get_job_ids():
-    job = queue.fetch_job(jid)
-    check_job(job, "scheduled")
+    print("\n--- Failed Registry ---")
+    for jid in queue.failed_job_registry.get_job_ids():
+        check_job(queue.fetch_job(jid), org_id, "failed", counter)
 
-# 2. Cek worker current_job
-print("\n--- Worker current_job ---")
-for k in redis_conn.keys("rq:worker:*"):
-    cj = redis_conn.hget(k, "current_job_id")
-    if cj:
-        job = queue.fetch_job(cj.decode())
-        if job:
-            check_job(job, f"worker:{k.decode()[-12:]}")
+    print("\n--- Finished Registry ---")
+    for jid in queue.finished_job_registry.get_job_ids():
+        check_job(queue.fetch_job(jid), org_id, "finished", counter)
 
-# 3. Scan semua rq:job: keys (brute force)
-print("\n--- Brute force scan rq:job:* ---")
-all_job_keys = redis_conn.keys("rq:job:*")
-scanned = 0
-for jk in all_job_keys:
-    raw = redis_conn.hget(jk, "data")
-    if raw and TARGET_ORG.encode() in raw:
-        jid = jk.decode().replace("rq:job:", "")
-        job = queue.fetch_job(jid)
-        if job:
-            check_job(job, "brute_scan")
-        else:
-            total_found += 1
-            print(f"  [brute_scan] {jid}  (undecodable but org ID found in raw)")
-    scanned += 1
-    if scanned % 500 == 0:
-        print(f"    ... scanned {scanned}/{len(all_job_keys)}")
+    print("\n--- Deferred Registry ---")
+    for jid in queue.deferred_job_registry.get_job_ids():
+        check_job(queue.fetch_job(jid), org_id, "deferred", counter)
 
-print(f"\n=== TOTAL ditemukan: {total_found} ===")
+    print("\n--- Scheduled Registry ---")
+    for jid in queue.scheduled_job_registry.get_job_ids():
+        check_job(queue.fetch_job(jid), org_id, "scheduled", counter)
+
+    print("\n--- Worker current_job ---")
+    for k in redis_conn.keys("rq:worker:*"):
+        cj = redis_conn.hget(k, "current_job_id")
+        if cj:
+            job = queue.fetch_job(cj.decode())
+            if job:
+                check_job(job, org_id, f"worker:{k.decode()[-12:]}", counter)
+
+    print("\n--- Brute force scan rq:job:* ---")
+    all_job_keys = redis_conn.keys("rq:job:*")
+    scanned = 0
+    for jk in all_job_keys:
+        raw = redis_conn.hget(jk, "data")
+        if raw and org_id.encode() in raw:
+            jid = jk.decode().replace("rq:job:", "")
+            job = queue.fetch_job(jid)
+            if job:
+                check_job(job, org_id, "brute_scan", counter)
+            else:
+                counter["total"] += 1
+                print(f"  [brute_scan] {jid}  (undecodable but org ID found in raw)")
+        scanned += 1
+        if scanned % 500 == 0:
+            print(f"    ... scanned {scanned}/{len(all_job_keys)}")
+
+    print(f"\n=== TOTAL ditemukan: {counter['total']} ===")
+
+
+if __name__ == "__main__":
+    find_all_eklaim_org(get_org_id())
