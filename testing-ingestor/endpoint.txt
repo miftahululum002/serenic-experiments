@@ -1,0 +1,5 @@
+https://api.staging.serenic.ai/integrations/v2/health_check
+https://api.staging.serenic.ai/integrations/v2/prerequisites
+https://api.staging.serenic.ai/integrations/v2/encounters/new
+https://api.staging.serenic.ai/integrations/v2/encounters/update
+https://api.staging.serenic.ai/integrations/v2/encounters/completed

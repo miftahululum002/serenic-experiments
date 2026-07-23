@@ -1,0 +1,97 @@
+[
+    {
+        "norec": "ebaa40c6-69ae-4b81-ac5d-9bb6b3f86400",
+        "noregistrasi": "ee99b404-944d-a7f8-0507-00e2e06b319e",
+        "norm": "01297196",
+        "sep_data": {
+            "nosep": "0301R0010526V007214",
+            "kelasBPJS": 3,
+            "sep_diagnosis_code": "E11",
+            "sep_diagnosis_text": "Type 2 diabetes mellitus"
+        },
+        "tglregistrasi": "2026-05-07T11:57:05Z",
+        "admissionType": "ranap",
+        "dpjp_id": "b9f293f1-d8b8-7c4f-0f99-032fe6edc7b6",
+        "location_id": "c43b728f-c775-986c-e2c8-241ed13840ab",
+        "patientInfo": {
+            "dateOfBirth": "2013-07-24",
+            "gender": "perempuan"
+        }
+    },
+    {
+        "norec": "c54ac942-b2b0-466f-a2f9-4d18782edb5c",
+        "noregistrasi": "94159ebc-e50c-52b4-b1b8-3eaff1824d7a",
+        "norm": "01305131",
+        "sep_data": {
+            "nosep": "0301R0010626V009204",
+            "kelasBPJS": 3,
+            "sep_diagnosis_code": "A17.0",
+            "sep_diagnosis_text": "Tuberculous meningitis"
+        },
+        "tglregistrasi": "2026-06-09T02:36:36Z",
+        "admissionType": "ranap",
+        "dpjp_id": "91d96ae5-e21b-4ff2-ccbb-84682463605a",
+        "location_id": "3e9bbf38-22bb-45b6-e473-1430744ea782",
+        "patientInfo": {
+            "dateOfBirth": "2025-10-27",
+            "gender": "perempuan"
+        }
+    },
+    {
+        "norec": "9bcc0c07-440e-49f0-971e-a698a40dfacb",
+        "noregistrasi": "170c0b9e-f693-de28-8dab-8e09b223e25f",
+        "norm": "01308695",
+        "sep_data": {
+            "nosep": "0301R0010726V006750",
+            "kelasBPJS": 1,
+            "sep_diagnosis_code": "I63",
+            "sep_diagnosis_text": "Cerebral infarction"
+        },
+        "tglregistrasi": "2026-07-06T22:26:08Z",
+        "admissionType": "ranap",
+        "dpjp_id": "2e751320-964f-7f0d-4484-045b5144994f",
+        "location_id": "d61db568-bfe4-4149-b27f-2d4a3b41a81c",
+        "patientInfo": {
+            "dateOfBirth": "1950-01-07",
+            "gender": "perempuan"
+        }
+    },
+    {
+        "norec": "34d77019-f19d-437a-9b92-56c8802b2cc5",
+        "noregistrasi": "2d5121ec-ba0d-9fff-8a0b-3769a2b68105",
+        "norm": "01308707",
+        "sep_data": {
+            "nosep": "0301R0010726V006766",
+            "kelasBPJS": 2,
+            "sep_diagnosis_code": "Z34.8",
+            "sep_diagnosis_text": "Supervision of other normal pregnancy"
+        },
+        "tglregistrasi": "2026-07-07T01:55:48Z",
+        "admissionType": "ranap",
+        "dpjp_id": "8380e767-31b2-db4d-79a3-8f2e91e78503",
+        "location_id": "2225cb93-917a-3681-0198-4eaedeeba61d",
+        "patientInfo": {
+            "dateOfBirth": "1999-03-08",
+            "gender": "perempuan"
+        }
+    },
+    {
+        "norec": "b139b96c-f159-40a4-811a-ef9520936462",
+        "noregistrasi": "34003f44-2ac9-074e-e9ca-e7c025459654",
+        "norm": "01192352",
+        "sep_data": {
+            "nosep": "0301R0010726V006772",
+            "kelasBPJS": 3,
+            "sep_diagnosis_code": "J18.0",
+            "sep_diagnosis_text": "Bronchopneumonia, unspecified"
+        },
+        "tglregistrasi": "2026-07-07T04:25:01Z",
+        "admissionType": "ranap",
+        "dpjp_id": "b9f293f1-d8b8-7c4f-0f99-032fe6edc7b6",
+        "location_id": "c3a94d82-4cc2-add8-baa0-fed2f356d1a7",
+        "patientInfo": {
+            "dateOfBirth": "2022-03-30",
+            "gender": "laki-laki"
+        }
+    }
+]
