@@ -1,0 +1,98 @@
+{
+    "timestamp": "2026-06-18T01:35:02Z",
+    "lokasi": [
+        {
+            "id": "loc_002",
+            "organizational_team_id": "02",
+            "name": "Rawat Inap"
+        }
+    ],
+    "praktisi": [
+        {
+            "id": "223",
+            "name": "dr. Danis Woro Kuncoro Adi, Sp.An",
+            "profession": "Dokter"
+        },
+        {
+            "id": "30B",
+            "name": "dr. Dita Karini Ratnaningsih, Sp.Rad, M.Sc",
+            "profession": "Dokter"
+        },
+        {
+            "id": "222",
+            "name": "dr. Qonita Imma Irfani, Sp.MK",
+            "profession": "Dokter"
+        },
+        {
+            "id": "01DK",
+            "name": "dr. TRI WIDODO, Sp.PD-KGH, FINASIM",
+            "profession": "Dokter"
+        },
+        {
+            "id": "28B",
+            "name": "dr. ANANTIA SARI UTAMI, Sp.Rad, M.Sc",
+            "profession": "Dokter"
+        },
+        {
+            "id": "154",
+            "name": "dr. ANGGUN ESTI WARDANI, Sp.Rad(K)",
+            "profession": "Dokter"
+        },
+        {
+            "id": "175",
+            "name": "dr. Bramadi Nugroho, Sp.Rad, R.I.(K)",
+            "profession": "Dokter"
+        },
+        {
+            "id": "MB01",
+            "name": "dr. HESTY LUSINTA, Sp.MK",
+            "profession": "Dokter"
+        },
+        {
+            "id": "91A",
+            "name": "dr. POLIKARPUS MOSAD MALILUAN",
+            "profession": "Dokter"
+        },
+        {
+            "id": "155",
+            "name": "dr. HASTOMO AGUNG WIBOWO, Sp.OT.Subsp.OBS(K)",
+            "profession": "Dokter"
+        },
+        {
+            "id": "04A",
+            "name": "dr. Taufik Hidayat, Sp.PD, Subsp. G.E.H. (K), FINASIM",
+            "profession": "Dokter"
+        },
+        {
+            "id": "244",
+            "name": "dr. Aisyah Dewi Setyaningrum, Sp.B",
+            "profession": "Dokter"
+        },
+        {
+            "id": "126K",
+            "name": "dr. Prahesta Adi Wibowo, Sp.OT (K) Spine",
+            "profession": "Dokter"
+        },
+        {
+            "id": "169",
+            "name": "dr. Febricilla Citra Pratiwi, M.Sc, Sp.A",
+            "profession": "Dokter"
+        },
+        {
+            "id": "212",
+            "name": "dr. Taufik Nur Yahya, Sp. BTKV",
+            "profession": "Dokter"
+        },
+        {
+            "id": "178",
+            "name": "dr. SUDARYANTO, Sp.OT",
+            "profession": "Dokter"
+        }
+    ],
+    "tim_organisasi": [
+        {
+            "id": "02",
+            "name": "KLINIK BEDAH UMUM"
+        }
+    ]
+}
