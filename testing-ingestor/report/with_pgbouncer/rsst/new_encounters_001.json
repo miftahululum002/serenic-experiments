@@ -88,5 +88,95 @@
             "gender": "perempuan",
             "name": ""
         }
+    },
+    {
+        "norec": "475339",
+        "noregistrasi": "475339",
+        "norm": "1208355",
+        "sep_data": {
+            "nosep": "1123R0020626V015019",
+            "kelasBPJS": 2
+        },
+        "tglregistrasi": "2026-06-24T02:32:39Z",
+        "admissionType": "ranap",
+        "dpjp_id": "178",
+        "location_id": "loc_002",
+        "patientInfo": {
+            "dateOfBirth": "2021-06-25",
+            "gender": "laki-laki",
+            "name": "ABYAS DWI ESHAAL MAUZA"
+        }
+    },
+    {
+        "norec": "475526",
+        "noregistrasi": "475526",
+        "norm": "866575",
+        "sep_data": {
+            "nosep": "1123R0020626V016999",
+            "kelasBPJS": 3
+        },
+        "tglregistrasi": "2026-06-26T07:57:00Z",
+        "admissionType": "ranap",
+        "dpjp_id": "212",
+        "location_id": "loc_002",
+        "patientInfo": {
+            "dateOfBirth": "1957-08-02",
+            "gender": "laki-laki",
+            "name": ""
+        }
+    },
+    {
+        "norec": "475823",
+        "noregistrasi": "475823",
+        "norm": "1207610",
+        "sep_data": {
+            "nosep": "1123R0020626V019153",
+            "kelasBPJS": 3
+        },
+        "tglregistrasi": "2026-06-30T09:00:30Z",
+        "admissionType": "ranap",
+        "dpjp_id": "212",
+        "location_id": "loc_002",
+        "patientInfo": {
+            "dateOfBirth": "1970-07-15",
+            "gender": "perempuan",
+            "name": ""
+        }
+    },
+    {
+        "norec": "474861",
+        "noregistrasi": "474861",
+        "norm": "1189262",
+        "sep_data": {
+            "nosep": "1123R0020626V010830",
+            "kelasBPJS": 2
+        },
+        "tglregistrasi": "2026-06-17T10:09:00Z",
+        "admissionType": "ranap",
+        "dpjp_id": "126K",
+        "location_id": "loc_002",
+        "patientInfo": {
+            "dateOfBirth": "2010-11-30",
+            "gender": "laki-laki",
+            "name": "ANTONIUS RAFA BAGUS KURNIAWAN, AN"
+        }
+    },
+    {
+        "norec": "474248",
+        "noregistrasi": "474248",
+        "norm": "1215207",
+        "sep_data": {
+            "nosep": "1123R0020626V005951",
+            "kelasBPJS": 1
+        },
+        "tglregistrasi": "2026-06-09T04:09:00Z",
+        "admissionType": "ranap",
+        "dpjp_id": "169",
+        "location_id": "loc_002",
+        "patientInfo": {
+            "dateOfBirth": "2011-01-20",
+            "gender": "laki-laki",
+            "name": "IHSAN KHALIL KHAIRY, AN"
+        }
     }
 ]
