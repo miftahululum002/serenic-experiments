@@ -1,0 +1,382 @@
+[
+  {
+    "norec": "32e4d3f5-9853-471d-86e3-bcf2d4bad241",
+    "noregistrasi": "6dee62b6-8cbd-bd4e-6b41-cbb791b53b98",
+    "norm": "01257386",
+    "sep_data": {
+      "nosep": "0301R0010726V000001",
+      "kelasBPJS": 3,
+      "sep_diagnosis_code": "G82",
+      "sep_diagnosis_text": "Paraplegia and tetraplegia"
+    },
+    "tglregistrasi": "2026-07-01T00:19:06Z",
+    "admissionType": "ranap",
+    "dpjp_id": "2e751320-964f-7f0d-4484-045b5144994f",
+    "location_id": "af2d6096-0f22-e846-7a4c-913ecdef5f67",
+    "patientInfo": {
+      "dateOfBirth": "1972-04-25",
+      "gender": "laki-laki"
+    }
+  },
+  {
+    "norec": "953c0339-3c7f-4a1a-8a2a-8054e375456c",
+    "noregistrasi": "aea9c42e-368b-8d34-f0df-a841e15d00a3",
+    "norm": "01307955",
+    "sep_data": {
+      "nosep": "0301R0010726V000003",
+      "kelasBPJS": 3,
+      "sep_diagnosis_code": "L98.4",
+      "sep_diagnosis_text": "Chronic ulcer of skin, not elsewhere classified"
+    },
+    "tglregistrasi": "2026-07-01T02:58:17Z",
+    "admissionType": "ranap",
+    "dpjp_id": "c12a7588-2aad-bac1-30cc-b641cdd2edf8",
+    "location_id": "60815e78-3667-4fb7-6444-ec62affe8c38",
+    "patientInfo": {
+      "dateOfBirth": "2026-04-05",
+      "gender": "laki-laki"
+    }
+  },
+  {
+    "norec": "23f713f7-af8e-467e-a1a3-d6bd30590427",
+    "noregistrasi": "6eeacbe6-c9f7-5f06-756f-0111188a2b57",
+    "norm": "00943841",
+    "sep_data": {
+      "nosep": "0301R0010726V000005",
+      "kelasBPJS": 3,
+      "sep_diagnosis_code": "R40.2",
+      "sep_diagnosis_text": "Coma, unspecified"
+    },
+    "tglregistrasi": "2026-07-01T03:23:44Z",
+    "admissionType": "ranap",
+    "dpjp_id": "c0bc7449-91ae-ab16-fd32-86fb7f414dc2",
+    "location_id": "c3a94d82-4cc2-add8-baa0-fed2f356d1a7",
+    "patientInfo": {
+      "dateOfBirth": "2015-09-21",
+      "gender": "laki-laki"
+    }
+  },
+  {
+    "norec": "4fa5c5f7-7b1d-4aa7-be30-fbb76eced433",
+    "noregistrasi": "d3f1c89c-caad-4b35-730b-6c1b3e562bde",
+    "norm": "01307959",
+    "sep_data": {
+      "nosep": "0301R0010726V000013",
+      "kelasBPJS": 3,
+      "sep_diagnosis_code": "I10",
+      "sep_diagnosis_text": "Essential (primary) hypertension"
+    },
+    "tglregistrasi": "2026-07-01T06:32:28Z",
+    "admissionType": "ranap",
+    "dpjp_id": "c0bc7449-91ae-ab16-fd32-86fb7f414dc2",
+    "location_id": "89eb5ea7-3e5b-9980-68a0-15f1ea73e639",
+    "patientInfo": {
+      "dateOfBirth": "2019-03-26",
+      "gender": "perempuan"
+    }
+  },
+  {
+    "norec": "1bffe28e-c409-42dc-94e4-b25c4c4421d6",
+    "noregistrasi": "ee5184cd-d3d9-16cd-760d-c7f263d4c00d",
+    "norm": "01307960",
+    "sep_data": {
+      "nosep": "0301R0010726V000017",
+      "kelasBPJS": 3,
+      "sep_diagnosis_code": "E87.1",
+      "sep_diagnosis_text": "Hypo-osmolality and hyponatraemia"
+    },
+    "tglregistrasi": "2026-07-01T06:46:10Z",
+    "admissionType": "ranap",
+    "dpjp_id": "c12a7588-2aad-bac1-30cc-b641cdd2edf8",
+    "location_id": "23d0036b-5308-56a4-24d8-8b65edd844a7",
+    "patientInfo": {
+      "dateOfBirth": "2013-04-30",
+      "gender": "perempuan"
+    }
+  },
+  {
+    "norec": "c1ca0bb5-9bab-4ed5-bbaa-765df25e4932",
+    "noregistrasi": "a237a85a-75c5-760d-1099-c5fd6d42451e",
+    "norm": "01307797",
+    "sep_data": {
+      "nosep": "0301R0010626V033548",
+      "kelasBPJS": 3,
+      "sep_diagnosis_code": "R50.9",
+      "sep_diagnosis_text": "Fever, unspecified"
+    },
+    "tglregistrasi": "2026-06-30T07:46:26Z",
+    "admissionType": "ranap",
+    "dpjp_id": "b6d54894-7db1-342d-8a69-26ff2a0ba348",
+    "location_id": "3fb7442a-96ae-b04b-428d-e2d82004bc70",
+    "patientInfo": {
+      "dateOfBirth": "2005-12-26",
+      "gender": "laki-laki"
+    }
+  },
+  {
+    "norec": "e2045306-3853-4825-83e4-0e98853c8046",
+    "noregistrasi": "12f1658f-2752-0a88-270d-a74eb8af0534",
+    "norm": "01305495",
+    "sep_data": {
+      "nosep": "0301R0010626V015352",
+      "kelasBPJS": 11,
+      "sep_diagnosis_code": "I20.0",
+      "sep_diagnosis_text": "Unstable angina"
+    },
+    "tglregistrasi": "2026-06-11T16:50:23Z",
+    "admissionType": "ranap",
+    "dpjp_id": "0f9fc71f-ccbf-92a6-39e0-1c1bc9d7ab24",
+    "location_id": "dc3f2f07-2c37-40d2-5894-6e2fa1d6814b",
+    "patientInfo": {
+      "dateOfBirth": "2023-04-18",
+      "gender": "laki-laki"
+    }
+  },
+  {
+    "norec": "46cd4403-940d-425d-b987-95a90d9b9454",
+    "noregistrasi": "b9b058dd-8a2e-11fd-a33f-a3b3e28ad67b",
+    "norm": "01069904",
+    "sep_data": {
+      "nosep": "0301R0010626V030218",
+      "kelasBPJS": 3,
+      "sep_diagnosis_code": "O60",
+      "sep_diagnosis_text": "Preterm labour and delivery"
+    },
+    "tglregistrasi": "2026-06-26T01:25:43Z",
+    "admissionType": "ranap",
+    "dpjp_id": "b0f679a6-7152-d154-c21a-ad4512067e13",
+    "location_id": "7034032d-031a-3f00-5161-095a87bf3a08",
+    "patientInfo": {
+      "dateOfBirth": "1990-11-03",
+      "gender": "perempuan"
+    }
+  },
+  {
+    "norec": "6ba70aad-50aa-482d-ae29-6bc196b196c7",
+    "noregistrasi": "d5f2f0c5-bc37-10dc-140a-4ae6679dc417",
+    "norm": "01305918",
+    "sep_data": {
+      "nosep": "0301R0010626V017159",
+      "kelasBPJS": 3,
+      "sep_diagnosis_code": "S09.8",
+      "sep_diagnosis_text": "Other specified injuries of head"
+    },
+    "tglregistrasi": "2026-06-16T03:12:39Z",
+    "admissionType": "ranap",
+    "dpjp_id": "faa15944-40ff-3b95-c6b7-023ba029a122",
+    "location_id": "de656108-95c9-288a-1b5e-ae1b45901cb5",
+    "patientInfo": {
+      "dateOfBirth": "1973-02-24",
+      "gender": "laki-laki"
+    }
+  },
+  {
+    "norec": "99fa43cc-f8a0-4baa-a2ba-6168a4fb6cec",
+    "noregistrasi": "e889d7a1-4045-5483-a374-b5fa67d999b7",
+    "norm": "01010145",
+    "sep_data": {
+      "nosep": "0301R0010726V001360",
+      "kelasBPJS": 1,
+      "sep_diagnosis_code": "E11",
+      "sep_diagnosis_text": "Type 2 diabetes mellitus"
+    },
+    "tglregistrasi": "2026-07-02T00:31:45Z",
+    "admissionType": "ranap",
+    "dpjp_id": "0e8df25a-fe76-3340-7946-e51b00e45609",
+    "location_id": "3fb7442a-96ae-b04b-428d-e2d82004bc70",
+    "patientInfo": {
+      "dateOfBirth": "1952-11-22",
+      "gender": "perempuan"
+    }
+  },
+  {
+    "norec": "6deaec60-0ee4-45ac-bddd-b5fd014ad346",
+    "noregistrasi": "01d9a326-ba49-3358-4476-b5c74f8f1871",
+    "norm": "01295508",
+    "sep_data": {
+      "nosep": "0301R0010626V019039",
+      "kelasBPJS": 3,
+      "sep_diagnosis_code": "C92.0",
+      "sep_diagnosis_text": "Acute myeloblastic leukaemia [AML]"
+    },
+    "tglregistrasi": "2026-06-14T13:46:23Z",
+    "admissionType": "ranap",
+    "dpjp_id": "1440595c-c520-8ff7-b75a-65302ddb9496",
+    "location_id": "fa2029e2-d306-1879-5a37-c4fbf95b1467",
+    "patientInfo": {
+      "dateOfBirth": "2000-10-20",
+      "gender": "perempuan"
+    }
+  },
+  {
+    "norec": "579f8381-b105-4a17-809a-5e93b722dee3",
+    "noregistrasi": "b2a8259c-b88e-47db-e5e6-3b52cd79a67c",
+    "norm": "01307786",
+    "sep_data": {
+      "nosep": "0301R0010626V032522",
+      "kelasBPJS": 3,
+      "sep_diagnosis_code": "S09.8",
+      "sep_diagnosis_text": "Other specified injuries of head"
+    },
+    "tglregistrasi": "2026-06-30T03:23:46Z",
+    "admissionType": "ranap",
+    "dpjp_id": "27def2be-f579-5f4c-7ea0-976b55c0f817",
+    "location_id": "a8023c49-73a6-2be6-7166-e3b290dc5395",
+    "patientInfo": {
+      "dateOfBirth": "2011-10-01",
+      "gender": "laki-laki"
+    }
+  },
+  {
+    "norec": "b7d7a9eb-f3fa-4090-af4f-55baf4a49a7c",
+    "noregistrasi": "5c1ad6d1-f605-b070-5a7b-1f2e32b121fe",
+    "norm": "01303270",
+    "sep_data": {
+      "nosep": "0301R0010526V023089",
+      "kelasBPJS": 2,
+      "sep_diagnosis_code": "G82",
+      "sep_diagnosis_text": "Paraplegia and tetraplegia"
+    },
+    "tglregistrasi": "2026-05-21T11:33:37Z",
+    "admissionType": "ranap",
+    "dpjp_id": "d41975e9-72c5-471f-7456-da18404d15bf",
+    "location_id": "da39ef45-e949-23f7-c1af-fa0caadd0cf4",
+    "patientInfo": {
+      "dateOfBirth": "2018-02-18",
+      "gender": "perempuan"
+    }
+  },
+  {
+    "norec": "fdccfb95-ca16-4366-9a0a-bf195b377732",
+    "noregistrasi": "bbf3da3d-b871-dcff-4f53-8486c57cf690",
+    "norm": "01307782",
+    "sep_data": {
+      "nosep": "0301R0010626V033748",
+      "kelasBPJS": 3,
+      "sep_diagnosis_code": "N13.2",
+      "sep_diagnosis_text": "Hydronephrosis with renal and ureteral calculous obstruction"
+    },
+    "tglregistrasi": "2026-06-30T01:07:25Z",
+    "admissionType": "ranap",
+    "dpjp_id": "09bf9cf8-51e5-4f2b-6465-df5551f65216",
+    "location_id": "68b67e16-315c-267b-08b9-1baccf1f60d8",
+    "patientInfo": {
+      "dateOfBirth": "1985-07-08",
+      "gender": "perempuan"
+    }
+  },
+  {
+    "norec": "b5ad66fd-f49a-49c5-b98a-c00408b7ee71",
+    "noregistrasi": "621e7d29-428a-4781-fd41-65eef1d0b936",
+    "norm": "01306216",
+    "sep_data": {
+      "nosep": "0301R0010626V030672",
+      "kelasBPJS": 1,
+      "sep_diagnosis_code": "S09.8",
+      "sep_diagnosis_text": "Other specified injuries of head"
+    },
+    "tglregistrasi": "2026-06-28T00:54:57Z",
+    "admissionType": "ranap",
+    "dpjp_id": "d41975e9-72c5-471f-7456-da18404d15bf",
+    "location_id": "3fb7442a-96ae-b04b-428d-e2d82004bc70",
+    "patientInfo": {
+      "dateOfBirth": "2015-10-20",
+      "gender": "perempuan"
+    }
+  },
+  {
+    "norec": "8d61d055-701b-4fd3-a67b-81780b3b7c4c",
+    "noregistrasi": "7c52a75d-8030-8fec-2e27-6458b29b70b1",
+    "norm": "01307505",
+    "sep_data": {
+      "nosep": "0301R0010626V032441",
+      "kelasBPJS": 9,
+      "sep_diagnosis_code": "S09.8",
+      "sep_diagnosis_text": "Other specified injuries of head"
+    },
+    "tglregistrasi": "2026-06-28T02:44:02Z",
+    "admissionType": "ranap",
+    "dpjp_id": "d41975e9-72c5-471f-7456-da18404d15bf",
+    "location_id": "73598662-5d2a-e848-92f9-40e7c3d2eef9",
+    "patientInfo": {
+      "dateOfBirth": "2025-09-10",
+      "gender": "perempuan"
+    }
+  },
+  {
+    "norec": "559ec0e1-414a-4fe4-aacc-610c191a4f34",
+    "noregistrasi": "eab5a76a-7e48-46b9-8bf5-9272a6d4840d",
+    "norm": "01091272",
+    "sep_data": {
+      "nosep": "0301R0010726V003013",
+      "kelasBPJS": 1,
+      "sep_diagnosis_code": "K35",
+      "sep_diagnosis_text": "Acute appendicitis"
+    },
+    "tglregistrasi": "2026-07-03T00:39:22Z",
+    "admissionType": "ranap",
+    "dpjp_id": "c12a7588-2aad-bac1-30cc-b641cdd2edf8",
+    "location_id": "ce642375-202e-ed5a-c935-72747272c2ca",
+    "patientInfo": {
+      "dateOfBirth": "2010-06-15",
+      "gender": "laki-laki"
+    }
+  },
+  {
+    "norec": "8b27bfc9-e512-4384-b08a-c77b91a68782",
+    "noregistrasi": "7fc5c71c-0e9b-5824-d39f-0ddfd0d84e37",
+    "norm": "01300723",
+    "sep_data": {
+      "nosep": "0301R0010626V032761",
+      "kelasBPJS": 3,
+      "sep_diagnosis_code": "Z51.1",
+      "sep_diagnosis_text": "Chemotherapy session for neoplasm"
+    },
+    "tglregistrasi": "2026-06-30T08:05:08Z",
+    "admissionType": "ranap",
+    "dpjp_id": "5119af4f-61cb-f21d-e109-180c8d9b701c",
+    "location_id": "6e68005c-8d4b-c858-863b-2c36c368073c",
+    "patientInfo": {
+      "dateOfBirth": "2013-03-06",
+      "gender": "perempuan"
+    }
+  },
+  {
+    "norec": "3f29e8ff-fb48-43a0-9f7c-90359bcd634a",
+    "noregistrasi": "117384da-3c7e-ca3e-e898-bb6346c60759",
+    "norm": "01308394",
+    "sep_data": {
+      "nosep": "0301R0010726V004479",
+      "kelasBPJS": 3,
+      "sep_diagnosis_code": "R10",
+      "sep_diagnosis_text": "Abdominal and pelvic pain"
+    },
+    "tglregistrasi": "2026-07-04T01:54:42Z",
+    "admissionType": "ranap",
+    "dpjp_id": "00c276b8-365e-4efd-f9f3-ff72c8546809",
+    "location_id": "de656108-95c9-288a-1b5e-ae1b45901cb5",
+    "patientInfo": {
+      "dateOfBirth": "1987-06-05",
+      "gender": "laki-laki"
+    }
+  },
+  {
+    "norec": "ce1dcfce-c488-4eca-a935-2cf683d26c2f",
+    "noregistrasi": "744748ca-20d4-dfe2-c9eb-9bb2481a44eb",
+    "norm": "01300532",
+    "sep_data": {
+      "nosep": "0301R0010626V030709",
+      "kelasBPJS": 3,
+      "sep_diagnosis_code": "K74.6",
+      "sep_diagnosis_text": "Other and unspecified cirrhosis of liver"
+    },
+    "tglregistrasi": "2026-06-28T00:35:00Z",
+    "admissionType": "ranap",
+    "dpjp_id": "5e357b2a-c3ab-73be-f3a5-0c91569cfd19",
+    "location_id": "081c51b5-3403-a604-907b-cbb701179f54",
+    "patientInfo": {
+      "dateOfBirth": "1966-05-18",
+      "gender": "perempuan"
+    }
+  }
+]
