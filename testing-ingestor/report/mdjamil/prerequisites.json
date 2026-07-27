@@ -1,0 +1,47 @@
+{
+    "praktisi": [
+        {
+            "id": "133683a6-04a3-d7e4-12c8-5f92db8cfccc",
+            "name": "dr. YA, Sp. PD",
+            "profession": "Dokter"
+        },
+        {
+            "id": "5f817dde-d33e-edfa-e9d4-d10056d0df1e",
+            "name": "dr. DI, Sp, THT-KL (K), FICS",
+            "profession": "Dokter"
+        },
+        {
+            "id": "4a619923-6e8b-37c1-1061-3b465a915a1d",
+            "name": "dr. DIK, Sp, THT-KL (K), FICS",
+            "profession": "Dokter"
+        },
+        {
+            "id": "00c276b8-365e-4efd-f9f3-ff72c8546809",
+            "name": "dr. DIS, Sp, THT-KL (K), FICS",
+            "profession": "Dokter"
+        }
+    ],
+    "lokasi": [
+        {
+            "id": "568c7599-fda9-0e35-ad3c-c6ed96bd17c5",
+            "organizational_team_id": "hfjfkfkl02",
+            "name": "Lokasi 1"
+        },
+        {
+            "id": "f685f0ec-e57e-a268-e157-b3716c89a8dd",
+            "organizational_team_id": "hfjfkfkl02",
+            "name": "Lokasi 3"
+        },
+        {
+            "id": "e09f6ca5-8edb-a480-40e3-19382057b99f",
+            "organizational_team_id": "hfjfkfkl02",
+            "name": "Lokasi 2"
+        }
+    ],
+    "tim_organisasi": [
+        {
+            "id": "hfjfkfkl02",
+            "name": "KLINIK BEDAH UMUM"
+        }
+    ]
+}
