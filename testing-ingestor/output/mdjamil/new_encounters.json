@@ -1,0 +1,211 @@
+[
+    {
+        "norec": "f5f84059-5a8c-4850-a2f8-41c239376c57",
+        "noregistrasi": "5938ea8b-2f39-b98c-93af-3e23e965948c",
+        "norm": "01301742",
+        "sep_data": {
+            "nosep": "0301R0010726V011823",
+            "kelasBPJS": 3,
+            "sep_diagnosis_code": "K92.1",
+            "sep_diagnosis_text": "Melaena"
+        },
+        "tglregistrasi": "2026-07-09T23:38:01Z",
+        "admissionType": "ranap",
+        "dpjp_id": "133683a6-04a3-d7e4-12c8-5f92db8cfccc",
+        "location_id": "568c7599-fda9-0e35-ad3c-c6ed96bd17c5",
+        "patientInfo": {
+            "dateOfBirth": "1959-07-12",
+            "gender": "perempuan"
+        }
+    },
+    {
+        "norec": "9558201a-4a47-4403-b30f-981ed38ae85c",
+        "noregistrasi": "060adaef-77a6-e273-4025-b6537d4ee4d1",
+        "norm": "01233140",
+        "sep_data": {
+            "nosep": "0301R0010726V011831",
+            "kelasBPJS": 2,
+            "sep_diagnosis_code": "C11.9",
+            "sep_diagnosis_text": "Malignant neoplasm: Nasopharynx, unspecified"
+        },
+        "tglregistrasi": "2026-07-10T00:47:51Z",
+        "admissionType": "ranap",
+        "dpjp_id": "5f817dde-d33e-edfa-e9d4-d10056d0df1e",
+        "location_id": "ff44a226-b270-5552-4f91-10e3d95588d2",
+        "patientInfo": {
+            "dateOfBirth": "1986-09-14",
+            "gender": "laki-laki"
+        }
+    },
+    {
+        "norec": "5e7e6a57-f2a2-412a-be1f-efae960d0919",
+        "noregistrasi": "21e7a396-7561-ec9a-c9c9-c556a863163c",
+        "norm": "01309233",
+        "sep_data": {
+            "nosep": "0301R0010726V011834",
+            "kelasBPJS": 1,
+            "sep_diagnosis_code": "R40.2",
+            "sep_diagnosis_text": "Coma, unspecified"
+        },
+        "tglregistrasi": "2026-07-10T02:22:30Z",
+        "admissionType": "ranap",
+        "dpjp_id": "133683a6-04a3-d7e4-12c8-5f92db8cfccc",
+        "location_id": "e09f6ca5-8edb-a480-40e3-19382057b99f",
+        "patientInfo": {
+            "dateOfBirth": "1962-12-04",
+            "gender": "perempuan"
+        }
+    },
+    {
+        "norec": "ee81cc6f-d0d3-4a5e-9f2f-aec3fed039e9",
+        "noregistrasi": "94cf34df-5e31-1e85-4bc9-3246a23c3d32",
+        "norm": "01309307",
+        "sep_data": {
+            "nosep": "0301R0010726V013327",
+            "kelasBPJS": 3,
+            "sep_diagnosis_code": "K62.5",
+            "sep_diagnosis_text": "Haemorrhage of anus and rectum"
+        },
+        "tglregistrasi": "2026-07-10T16:41:30Z",
+        "admissionType": "ranap",
+        "dpjp_id": "00c276b8-365e-4efd-f9f3-ff72c8546809",
+        "location_id": "32d74ba6-47b6-69e6-a8eb-9728d3c3917d",
+        "patientInfo": {
+            "dateOfBirth": "1984-05-21",
+            "gender": "perempuan"
+        }
+    },
+    {
+        "norec": "7d2a0c54-614d-4aa3-858e-b58bbdc8e456",
+        "noregistrasi": "70126411-6661-214a-e748-429d75400a25",
+        "norm": "01300761",
+        "sep_data": {
+            "nosep": "0301R0010726V013324",
+            "kelasBPJS": 3,
+            "sep_diagnosis_code": "Z51.1",
+            "sep_diagnosis_text": "Chemotherapy session for neoplasm"
+        },
+        "tglregistrasi": "2026-07-10T16:19:03Z",
+        "admissionType": "ranap",
+        "dpjp_id": "4a619923-6e8b-37c1-1061-3b465a915a1d",
+        "location_id": "f685f0ec-e57e-a268-e157-b3716c89a8dd",
+        "patientInfo": {
+            "dateOfBirth": "2007-05-17",
+            "gender": "perempuan"
+        }
+    },
+    {
+        "norec": "dacd941d-c211-451d-b7c4-8e87ac4225df",
+        "noregistrasi": "207c5a11-0c71-1cae-d20a-9c58b1bbc2a9",
+        "norm": "01309386",
+        "sep_data": {
+            "nosep": "0301R0010726V013340",
+            "kelasBPJS": 3,
+            "sep_diagnosis_code": "N13.6",
+            "sep_diagnosis_text": "Pyonephrosis"
+        },
+        "tglregistrasi": "2026-07-10T20:08:16Z",
+        "admissionType": "ranap",
+        "dpjp_id": "00c276b8-365e-4efd-f9f3-ff72c8546809",
+        "location_id": "e09f6ca5-8edb-a480-40e3-19382057b99f",
+        "patientInfo": {
+            "dateOfBirth": "1972-08-16",
+            "gender": "perempuan"
+        }
+    },
+    {
+        "norec": "09c3eb4c-c5b3-454b-83b6-90fa216b5753",
+        "noregistrasi": "37f59636-cbb1-5c48-6d62-103decc6eb34",
+        "norm": "01270988",
+        "sep_data": {
+            "nosep": "0301R0010726V011838",
+            "kelasBPJS": 3,
+            "sep_diagnosis_code": "J18.0",
+            "sep_diagnosis_text": "Bronchopneumonia, unspecified"
+        },
+        "tglregistrasi": "2026-07-10T03:14:13Z",
+        "admissionType": "ranap",
+        "dpjp_id": "00c276b8-365e-4efd-f9f3-ff72c8546809",
+        "location_id": "e09f6ca5-8edb-a480-40e3-19382057b99f",
+        "patientInfo": {
+            "dateOfBirth": "2025-06-20",
+            "gender": "perempuan"
+        }
+    },
+    {
+        "norec": "68521cab-bf13-4082-b160-89f7e32de676",
+        "noregistrasi": "7ca91b76-12ec-b5c5-d685-c0f61ce35605",
+        "norm": "01306070",
+        "sep_data": {
+            "nosep": "0301R0010726V013206",
+            "kelasBPJS": 3,
+            "sep_diagnosis_code": "K62.1",
+            "sep_diagnosis_text": "Rectal polyp"
+        },
+        "tglregistrasi": "2026-07-10T11:37:29Z",
+        "admissionType": "ranap",
+        "dpjp_id": "00c276b8-365e-4efd-f9f3-ff72c8546809",
+        "location_id": "e09f6ca5-8edb-a480-40e3-19382057b99f",
+        "patientInfo": {
+            "dateOfBirth": "1986-06-15",
+            "gender": "perempuan"
+        }
+    },
+    {
+        "norec": "6d0a1ad3-f966-46ca-8bb4-31080609c1b7",
+        "noregistrasi": "7e18bd35-cdad-fbcc-3929-8eef8880a2fa",
+        "norm": "01299265",
+        "sep_data": {
+            "nosep": "0301R0010726V013294",
+            "kelasBPJS": 1,
+            "sep_diagnosis_code": "K40",
+            "sep_diagnosis_text": "Inguinal hernia"
+        },
+        "tglregistrasi": "2026-07-10T13:50:23Z",
+        "admissionType": "ranap",
+        "dpjp_id": "00c276b8-365e-4efd-f9f3-ff72c8546809",
+        "location_id": "e09f6ca5-8edb-a480-40e3-19382057b99f",
+        "patientInfo": {
+            "dateOfBirth": "1983-07-24",
+            "gender": "laki-laki"
+        }
+    },
+    {
+        "norec": "2da083a0-6666-46b1-8a14-148299eb422a",
+        "noregistrasi": "fb59a3ad-6f00-7b95-74c0-41fab220de7b",
+        "norm": "01296795",
+        "sep_data": {
+            "nosep": "0301R0010726V013315",
+            "kelasBPJS": 2,
+            "sep_diagnosis_code": "D64.9",
+            "sep_diagnosis_text": "Anaemia, unspecified"
+        },
+        "tglregistrasi": "2026-07-10T15:25:53Z",
+        "admissionType": "ranap",
+        "dpjp_id": "00c276b8-365e-4efd-f9f3-ff72c8546809",
+        "location_id": "e09f6ca5-8edb-a480-40e3-19382057b99f",
+        "patientInfo": {
+            "dateOfBirth": "1974-10-13",
+            "gender": "perempuan"
+        }
+    },
+    {
+        "norec": "ab7feb4a-f424-43f7-be8f-a545f5c54d1c",
+        "noregistrasi": "e607b038-3f2c-23dd-ccb1-412725f16f0a",
+        "norm": "01301590",
+        "sep_data": {
+            "nosep": "0301R0010726V012849",
+            "kelasBPJS": 1,
+            "sep_diagnosis_code": "C34.9",
+            "sep_diagnosis_text": "Malignant neoplasm: Bronchus or lung, unspecified"
+        },
+        "tglregistrasi": "2026-07-10T09:48:48Z",
+        "admissionType": "ranap",
+        "dpjp_id": "00c276b8-365e-4efd-f9f3-ff72c8546809",
+        "location_id": "e09f6ca5-8edb-a480-40e3-19382057b99f",
+        "patientInfo": {
+            "dateOfBirth": "1958-10-30",
+            "gender": "laki-laki"
+        }
+    }
+]
