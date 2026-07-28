@@ -16,4 +16,8 @@ testing-data/*
 !testing-data/.gitkeep
 verify_check/*
 !verify_check/.gitkeep
+analysis/*
+!analysis/.gitkeep
+coba/*
+!coba/.gitkeep
 final_payload

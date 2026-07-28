@@ -8,7 +8,7 @@ from utils.api_request import post
 from utils.helper import get_timestamp
 from utils.logger import get_logger
 
-log = get_logger("hit_update_encounters_chunked")
+log = get_logger("hit_update_encounter_chunked")
 
 BATCH_SIZE = 5
 BASE_DIR = Path(__file__).parent
