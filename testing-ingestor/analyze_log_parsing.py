@@ -202,7 +202,7 @@ def analyze(log_file=None, payload_file=None):
     p(f"{'=' * 90}")
 
     # Write markdown report
-    report_dir = Path("report") / "analysis"
+    report_dir = Path("analysis")
     report_dir.mkdir(parents=True, exist_ok=True)
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     md_path = report_dir / f"parsing_analysis_{timestamp}.md"
@@ -289,7 +289,7 @@ def analyze(log_file=None, payload_file=None):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Analyze container log and payload for parsing latency")
-    parser.add_argument("--file", type=str, default=None, help="Path to container.log")
+    parser.add_argument("--file", type=str, default=None, help="Path to file.log")
     parser.add_argument("--payload", type=str, default=None, help="Path to payload JSON file")
     args = parser.parse_args()
 
