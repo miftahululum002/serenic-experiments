@@ -69,8 +69,28 @@
             "profession": "Dokter"
         },
         {
+            "id": "01BK",
+            "name": "dr. Tauf(K), FINASIM",
+            "profession": "Dokter"
+        },
+        {
+            "id": "114",
+            "name": "dr. Taufdgdf, FINASIM",
+            "profession": "Dokter"
+        },
+        {
             "id": "244",
             "name": "dr. Aisyah Dewi Setyaningrum, Sp.B",
+            "profession": "Dokter"
+        },
+        {
+            "id": "100A",
+            "name": "dr. Aietyaningrum, Sp.B",
+            "profession": "Dokter"
+        },
+        {
+            "id": "86",
+            "name": "dr. Aietya jfjningrum, Sp.B",
             "profession": "Dokter"
         },
         {
@@ -79,8 +99,18 @@
             "profession": "Dokter"
         },
         {
+            "id": "97B",
+            "name": "dr. Pr Wib, Sp.OT (K) Spine",
+            "profession": "Dokter"
+        },
+        {
             "id": "169",
             "name": "dr. Febricilla Citra Pratiwi, M.Sc, Sp.A",
+            "profession": "Dokter"
+        },
+        {
+            "id": "148K",
+            "name": "dr. Fj Pratiwi, M.Sc, Sp.A",
             "profession": "Dokter"
         },
         {
@@ -89,8 +119,33 @@
             "profession": "Dokter"
         },
         {
+            "id": "73BK",
+            "name": "dr. Tahk Yahya, Sp. BTKV",
+            "profession": "Dokter"
+        },
+        {
+            "id": "15C",
+            "name": "dr. Tahk hh Yahya, Sp. BTKV",
+            "profession": "Dokter"
+        },
+        {
+            "id": "14C",
+            "name": "dr. TahfghjYahya, Sp. BTKV",
+            "profession": "Dokter"
+        },
+        {
             "id": "178",
             "name": "dr. SUDARYANTO, Sp.OT",
+            "profession": "Dokter"
+        },
+        {
+            "id": "06B",
+            "name": "dr. Praktisi 06B, Sp.OT",
+            "profession": "Dokter"
+        },
+        {
+            "id": "226",
+            "name": "dr. SUDdhdhARYANTO, Sp.OT",
             "profession": "Dokter"
         }
     ],
