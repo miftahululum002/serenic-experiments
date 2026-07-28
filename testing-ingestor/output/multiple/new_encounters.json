@@ -1,0 +1,218 @@
+[
+    {
+        "norec": "474880",
+        "noregistrasi": "474880",
+        "norm": "1215768",
+        "sep_data": {
+            "nosep": "1123R0020626V010875",
+            "kelasBPJS": 2
+        },
+        "tglregistrasi": "2026-06-17T14:18:00Z",
+        "admissionType": "ranap",
+        "dpjp_id": "04A",
+        "location_id": "loc_002",
+        "patientInfo": {
+            "dateOfBirth": "1972-10-20",
+            "gender": "laki-laki",
+            "name": "SUROSO BIN BINGAN HARTO, BP"
+        }
+    },
+    {
+        "norec": "474684",
+        "noregistrasi": "474684",
+        "norm": "703839",
+        "sep_data": {
+            "nosep": "1123R0020626V009589",
+            "kelasBPJS": 3
+        },
+        "tglregistrasi": "2026-06-15T08:25:47Z",
+        "admissionType": "ranap",
+        "dpjp_id": "155",
+        "location_id": "loc_002",
+        "patientInfo": {
+            "dateOfBirth": "1968-01-25",
+            "gender": "perempuan",
+            "name": "LEGIYANTI BINTI MULYO REJO, NY"
+        }
+    },
+    {
+        "norec": "474892",
+        "noregistrasi": "474892",
+        "norm": "1214048",
+        "sep_data": {
+            "nosep": "1123R0020626V011565",
+            "kelasBPJS": 2
+        },
+        "tglregistrasi": "2026-06-18T05:33:51Z",
+        "admissionType": "ranap",
+        "dpjp_id": "01BK",
+        "location_id": "loc_002",
+        "patientInfo": {
+            "dateOfBirth": "1995-11-06",
+            "gender": "perempuan",
+            "name": "NOVITA ANGGRAINI nn"
+        }
+    },
+    {
+        "norec": "470546",
+        "noregistrasi": "470546",
+        "norm": "1211747",
+        "sep_data": {
+            "nosep": "1123R0020426V011698",
+            "kelasBPJS": 2
+        },
+        "tglregistrasi": "2026-04-19T15:01:00Z",
+        "admissionType": "ranap",
+        "dpjp_id": "114",
+        "location_id": "loc_002",
+        "patientInfo": {
+            "dateOfBirth": "1956-02-09",
+            "gender": "perempuan",
+            "name": ""
+        }
+    },
+    {
+        "norec": "477582",
+        "noregistrasi": "477582",
+        "norm": "1046022",
+        "sep_data": {
+            "nosep": "1123R0020726V015253",
+            "kelasBPJS": 2
+        },
+        "tglregistrasi": "2026-07-23T07:37:48Z",
+        "admissionType": "ranap",
+        "dpjp_id": "100A",
+        "location_id": "loc_002",
+        "patientInfo": {
+            "dateOfBirth": "1962-09-12",
+            "gender": "laki-laki",
+            "name": ""
+        }
+    },
+    {
+        "norec": "475257",
+        "noregistrasi": "475257",
+        "norm": "1214228",
+        "sep_data": {
+            "nosep": "1123R0020626V014103",
+            "kelasBPJS": 1
+        },
+        "tglregistrasi": "2026-06-22T20:46:00Z",
+        "admissionType": "ranap",
+        "dpjp_id": "86",
+        "location_id": "loc_002",
+        "patientInfo": {
+            "dateOfBirth": "1963-08-08",
+            "gender": "laki-laki",
+            "name": "AGUS SUKARNO, BP"
+        }
+    },
+    {
+        "norec": "474664",
+        "noregistrasi": "474664",
+        "norm": "1215575",
+        "sep_data": {
+            "nosep": "1123R0020626V009301",
+            "kelasBPJS": 3
+        },
+        "tglregistrasi": "2026-06-15T01:53:00Z",
+        "admissionType": "ranap",
+        "dpjp_id": "97B",
+        "location_id": "loc_002",
+        "patientInfo": {
+            "dateOfBirth": "2021-12-22",
+            "gender": "laki-laki",
+            "name": "DIMAS ALFARIZKY"
+        }
+    },
+    {
+        "norec": "475306",
+        "noregistrasi": "475306",
+        "norm": "846975",
+        "sep_data": {
+            "nosep": "1123R0020626V014685",
+            "kelasBPJS": 2
+        },
+        "tglregistrasi": "2026-06-23T06:16:00Z",
+        "admissionType": "ranap",
+        "dpjp_id": "148K",
+        "location_id": "loc_002",
+        "patientInfo": {
+            "dateOfBirth": "1987-07-19",
+            "gender": "laki-laki",
+            "name": ""
+        }
+    },
+    {
+        "norec": "475461",
+        "noregistrasi": "475461",
+        "norm": "857317",
+        "sep_data": {
+            "nosep": "1123R0020626V016282",
+            "kelasBPJS": 3
+        },
+        "tglregistrasi": "2026-06-25T05:06:00Z",
+        "admissionType": "ranap",
+        "dpjp_id": "67BK",
+        "location_id": "loc_002",
+        "patientInfo": {
+            "dateOfBirth": "1965-05-29",
+            "gender": "perempuan",
+            "name": ""
+        }
+    },
+    {
+        "norec": "475237",
+        "noregistrasi": "475237",
+        "norm": "1205843",
+        "sep_data": {
+            "nosep": "1123R0020626V014480",
+            "kelasBPJS": 3
+        },
+        "tglregistrasi": "2026-06-22T07:35:00Z",
+        "admissionType": "ranap",
+        "dpjp_id": "172",
+        "location_id": "loc_002",
+        "patientInfo": {
+            "dateOfBirth": "1963-01-01",
+            "gender": "laki-laki",
+            "name": ""
+        }
+    },
+    {
+        "norec": "476948",
+        "noregistrasi": "476948",
+        "norm": "1217729",
+        "sep_data": {
+            "nosep": "1123R0020726V009190",
+            "kelasBPJS": 3
+        },
+        "tglregistrasi": "2026-07-14T16:57:00Z",
+        "admissionType": "ranap",
+        "dpjp_id": "73BK",
+        "location_id": "loc_002",
+        "patientInfo": {
+            "dateOfBirth": "2016-07-15",
+            "gender": "laki-laki",
+            "name": ""
+        }
+    },
+    {
+        "norec": "475526",
+        "noregistrasi": "475526",
+        "norm": "866575",
+        "sep_data": {
+            "nosep": "1123R0020626V016999",
+            "kelasBPJS": 3
+        },
+        "tglregistrasi": "2026-06-26T07:57:00Z",
+        "admissionType": "ranap",
+        "dpjp_id": "212",
+        "location_id": "loc_002",
+        "patientInfo": {
+            "dateOfBirth": "1957-08-02",
+            "gender": "laki-laki",
+            "name": ""
+        }
+    }
+]

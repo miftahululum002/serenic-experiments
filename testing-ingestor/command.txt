@@ -1,0 +1,4 @@
+docker compose -f docker-compose.codex.yml up -d
+docker compose -f docker-compose.codex.yml up -d --scale codex-test-emr-integration-data-parsing-worker_DEV=2
+
+docker logs -t playground-codex-test-emr-integration-data-parsing-worker_DEV-1 > container.log 2>&1
