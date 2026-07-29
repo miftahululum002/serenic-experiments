@@ -1,0 +1,2824 @@
+[
+            {
+                "norec": "477896",
+                "noregistrasi": "477896",
+                "created_at": "2026-07-28T03:34:46.000Z",
+                "updated_at": "2026-07-28T03:55:17.956Z",
+                "data_source_processing_enums": {
+                    "billing": "full_overwrite"
+                },
+                "sources": {
+                    "asesmen_awal": [
+                        {
+                            "keluhan": [
+                                {
+                                    "id": "keluhan_ri_477896_194922",
+                                    "category": "complaint",
+                                    "text": "Autoanamnesa: Pasien rujukan dari RSU PKU Jatinom dengan hamil 23 minggu dengan PE, G3P1A1Ah0 HPHT 11/2/2026 HPL 18/11/2026 hamil 23 minggu 3 hari Keluhan saat ini tidak ada, Riwayat tensi tinggi sejak kehamilan ke-2, bab dan bak lancar, Protein Uri +/-, Riwayat persalinan anak 1, Spontan UK 32 minggu BBL 600 gram,Laki-laki meninggal, anak ke-2 Spontan UK 20 minggu Laki-lakui meninggal, Riwayat KB -, Rencana pemasangan cerclage cervik, Riwayat alergi -, HT +, DM-",
+                                    "effective_datetime": "2026-07-28T03:34:46Z",
+                                    "performer_id": {
+                                        "id": "14B",
+                                        "name": "dr. MOCHAMMAD MUNIR, Sp.OG (K)",
+                                        "profession": "Dokter"
+                                    }
+                                }
+                            ],
+                            "riwayat_penyakit_dahulu": [],
+                            "riwayat_penyakit_sekarang": [
+                                {
+                                    "id": "rps_477896_710769",
+                                    "category": "hospital-course",
+                                    "text": "Tidak ada",
+                                    "effective_datetime": "2026-07-28T09:26:22Z",
+                                    "performer_id": {
+                                        "id": "14B",
+                                        "name": "dr. MOCHAMMAD MUNIR, Sp.OG (K)",
+                                        "profession": "Dokter"
+                                    }
+                                }
+                            ],
+                            "riwayat_penyakit_keluarga": [],
+                            "riwayat_penggunaan_obat": [],
+                            "pemeriksaan_fisik": [
+                                {
+                                    "id": "pf_vs_td_477896_2670029",
+                                    "category": "exam",
+                                    "concept": {
+                                        "text": "Tekanan Darah"
+                                    },
+                                    "value_type": "ratio",
+                                    "value": "150/90",
+                                    "value_unit": "mmHg",
+                                    "body_site": [],
+                                    "effective_datetime": "2026-07-28T09:26:22Z"
+                                },
+                                {
+                                    "id": "pf_vs_nadi_477896_2670029",
+                                    "category": "exam",
+                                    "concept": {
+                                        "text": "Nadi"
+                                    },
+                                    "value_type": "integer",
+                                    "value": 83,
+                                    "body_site": [],
+                                    "effective_datetime": "2026-07-28T09:26:22Z"
+                                },
+                                {
+                                    "id": "pf_vs_rr_477896_2670029",
+                                    "category": "exam",
+                                    "concept": {
+                                        "text": "Frekuensi Napas"
+                                    },
+                                    "value_type": "integer",
+                                    "value": 18,
+                                    "body_site": [],
+                                    "effective_datetime": "2026-07-28T09:26:22Z"
+                                },
+                                {
+                                    "id": "pf_vs_suhu_477896_2670029",
+                                    "category": "exam",
+                                    "concept": {
+                                        "text": "Suhu"
+                                    },
+                                    "value_type": "float",
+                                    "value": 36.5,
+                                    "body_site": [],
+                                    "effective_datetime": "2026-07-28T09:26:22Z"
+                                },
+                                {
+                                    "id": "pf_vs_spo2_477896_2670029",
+                                    "category": "exam",
+                                    "concept": {
+                                        "text": "SpO2"
+                                    },
+                                    "value_type": "integer",
+                                    "value": 98,
+                                    "body_site": [],
+                                    "effective_datetime": "2026-07-28T09:26:22Z"
+                                },
+                                {
+                                    "id": "pf_477896_695740_1",
+                                    "category": "exam",
+                                    "concept": {
+                                        "code": "10199-8",
+                                        "system": "http://loinc.org",
+                                        "text": "Physical findings of Head Narrative"
+                                    },
+                                    "value_type": "string",
+                                    "value": "Tidak ada pemeriksaan",
+                                    "body_site": [
+                                        {
+                                            "text": "Kepala"
+                                        }
+                                    ],
+                                    "effective_datetime": "2026-07-28T09:26:06Z"
+                                },
+                                {
+                                    "id": "pf_477896_695740_2",
+                                    "category": "exam",
+                                    "concept": {
+                                        "code": "10197-2",
+                                        "system": "http://loinc.org",
+                                        "text": "Physical findings of Eye Narrative"
+                                    },
+                                    "value_type": "string",
+                                    "value": "Tidak ada pemeriksaan",
+                                    "body_site": [
+                                        {
+                                            "text": "Mata"
+                                        }
+                                    ],
+                                    "effective_datetime": "2026-07-28T09:26:06Z"
+                                },
+                                {
+                                    "id": "pf_477896_695740_3",
+                                    "category": "exam",
+                                    "concept": {
+                                        "code": "10195-6",
+                                        "system": "http://loinc.org",
+                                        "text": "Physical findings of Ear Narrative"
+                                    },
+                                    "value_type": "string",
+                                    "value": "Tidak ada pemeriksaan",
+                                    "body_site": [
+                                        {
+                                            "text": "Telinga"
+                                        }
+                                    ],
+                                    "effective_datetime": "2026-07-28T09:26:06Z"
+                                },
+                                {
+                                    "id": "pf_477896_695740_4",
+                                    "category": "exam",
+                                    "concept": {
+                                        "code": "10203-8",
+                                        "system": "http://loinc.org",
+                                        "text": "Physical findings of Nose Narrative"
+                                    },
+                                    "value_type": "string",
+                                    "value": "Tidak ada pemeriksaan",
+                                    "body_site": [
+                                        {
+                                            "text": "Hidung"
+                                        }
+                                    ],
+                                    "effective_datetime": "2026-07-28T09:26:06Z"
+                                },
+                                {
+                                    "id": "pf_477896_695740_5",
+                                    "category": "exam",
+                                    "concept": {
+                                        "code": "32436-8",
+                                        "system": "http://loinc.org",
+                                        "text": "Physical findings of Hair"
+                                    },
+                                    "value_type": "string",
+                                    "value": "Tidak ada pemeriksaan",
+                                    "body_site": [
+                                        {
+                                            "text": "Rambut"
+                                        }
+                                    ],
+                                    "effective_datetime": "2026-07-28T09:26:06Z"
+                                },
+                                {
+                                    "id": "pf_477896_695740_6",
+                                    "category": "exam",
+                                    "concept": {
+                                        "code": "32446-7",
+                                        "system": "http://loinc.org",
+                                        "text": "Physical findings of Lip"
+                                    },
+                                    "value_type": "string",
+                                    "value": "Tidak ada pemeriksaan",
+                                    "body_site": [
+                                        {
+                                            "text": "Bibir"
+                                        }
+                                    ],
+                                    "effective_datetime": "2026-07-28T09:26:06Z"
+                                },
+                                {
+                                    "id": "pf_477896_695740_7",
+                                    "category": "exam",
+                                    "concept": {
+                                        "code": "85910-8",
+                                        "system": "http://loinc.org",
+                                        "text": "Physical findings of Teeth and Gum Narrative"
+                                    },
+                                    "value_type": "string",
+                                    "value": "Tidak ada pemeriksaan",
+                                    "body_site": [
+                                        {
+                                            "text": "Gigi geligi"
+                                        }
+                                    ],
+                                    "effective_datetime": "2026-07-28T09:26:06Z"
+                                },
+                                {
+                                    "id": "pf_477896_695740_8",
+                                    "category": "exam",
+                                    "concept": {
+                                        "code": "32483-0",
+                                        "system": "http://loinc.org",
+                                        "text": "Physical findings of Tongue"
+                                    },
+                                    "value_type": "string",
+                                    "value": "Tidak ada pemeriksaan",
+                                    "body_site": [
+                                        {
+                                            "text": "Lidah"
+                                        }
+                                    ],
+                                    "effective_datetime": "2026-07-28T09:26:06Z"
+                                },
+                                {
+                                    "id": "pf_477896_695740_9",
+                                    "category": "exam",
+                                    "concept": {
+                                        "code": "10201-2",
+                                        "system": "http://loinc.org",
+                                        "text": "Physical findings of Mouth and Throat and Teeth Narrative"
+                                    },
+                                    "value_type": "string",
+                                    "value": "Tidak ada pemeriksaan",
+                                    "body_site": [
+                                        {
+                                            "text": "Langit-langit"
+                                        }
+                                    ],
+                                    "effective_datetime": "2026-07-28T09:26:06Z"
+                                },
+                                {
+                                    "id": "pf_477896_695740_10",
+                                    "category": "exam",
+                                    "concept": {
+                                        "code": "11411-6",
+                                        "system": "http://loinc.org",
+                                        "text": "Physical findings of Neck Narrative"
+                                    },
+                                    "value_type": "string",
+                                    "value": "Tidak ada pemeriksaan",
+                                    "body_site": [
+                                        {
+                                            "text": "Leher"
+                                        }
+                                    ],
+                                    "effective_datetime": "2026-07-28T09:26:06Z"
+                                },
+                                {
+                                    "id": "pf_477896_695740_11",
+                                    "category": "exam",
+                                    "concept": {
+                                        "code": "56867-5",
+                                        "system": "http://loinc.org",
+                                        "text": "Physical findings of Throat Narrative"
+                                    },
+                                    "value_type": "string",
+                                    "value": "Tidak ada pemeriksaan",
+                                    "body_site": [
+                                        {
+                                            "text": "Tenggorokan"
+                                        }
+                                    ],
+                                    "effective_datetime": "2026-07-28T09:26:06Z"
+                                },
+                                {
+                                    "id": "pf_477896_695740_12",
+                                    "category": "exam",
+                                    "concept": {
+                                        "code": "10201-2",
+                                        "system": "http://loinc.org",
+                                        "text": "Physical findings of Mouth and Throat and Teeth Narrative"
+                                    },
+                                    "value_type": "string",
+                                    "value": "Tidak ada pemeriksaan",
+                                    "body_site": [
+                                        {
+                                            "text": "Tonsil"
+                                        }
+                                    ],
+                                    "effective_datetime": "2026-07-28T09:26:06Z"
+                                },
+                                {
+                                    "id": "pf_477896_695740_13",
+                                    "category": "exam",
+                                    "concept": {
+                                        "code": "10206-1",
+                                        "system": "http://loinc.org",
+                                        "text": "Physical findings of Skin Narrative"
+                                    },
+                                    "value_type": "string",
+                                    "value": "Tidak ada pemeriksaan",
+                                    "body_site": [
+                                        {
+                                            "text": "Kulit"
+                                        }
+                                    ],
+                                    "effective_datetime": "2026-07-28T09:26:06Z"
+                                },
+                                {
+                                    "id": "pf_477896_695740_14",
+                                    "category": "exam",
+                                    "concept": {
+                                        "code": "10196-4",
+                                        "system": "http://loinc.org",
+                                        "text": "Physical findings of Extremities Narrative"
+                                    },
+                                    "value_type": "string",
+                                    "value": "Tidak ada pemeriksaan",
+                                    "body_site": [
+                                        {
+                                            "text": "Ekstremitas"
+                                        }
+                                    ],
+                                    "effective_datetime": "2026-07-28T09:26:06Z"
+                                },
+                                {
+                                    "id": "pf_477896_695740_15",
+                                    "category": "exam",
+                                    "concept": {
+                                        "code": "11391-0",
+                                        "system": "http://loinc.org",
+                                        "text": "Physical findings of Chest Narrative"
+                                    },
+                                    "value_type": "string",
+                                    "value": "Tidak ada pemeriksaan",
+                                    "body_site": [
+                                        {
+                                            "text": "Dada"
+                                        }
+                                    ],
+                                    "effective_datetime": "2026-07-28T09:26:06Z"
+                                },
+                                {
+                                    "id": "pf_477896_695740_16",
+                                    "category": "exam",
+                                    "concept": {
+                                        "code": "10193-1",
+                                        "system": "http://loinc.org",
+                                        "text": "Physical findings of Breasts Narrative"
+                                    },
+                                    "value_type": "string",
+                                    "value": "Tidak ada pemeriksaan",
+                                    "body_site": [
+                                        {
+                                            "text": "Payudara"
+                                        }
+                                    ],
+                                    "effective_datetime": "2026-07-28T09:26:06Z"
+                                },
+                                {
+                                    "id": "pf_477896_695740_17",
+                                    "category": "exam",
+                                    "concept": {
+                                        "code": "10192-3",
+                                        "system": "http://loinc.org",
+                                        "text": "Physical findings of Back Narrative"
+                                    },
+                                    "value_type": "string",
+                                    "value": "Tidak ada pemeriksaan",
+                                    "body_site": [
+                                        {
+                                            "text": "Punggung"
+                                        }
+                                    ],
+                                    "effective_datetime": "2026-07-28T09:26:06Z"
+                                },
+                                {
+                                    "id": "pf_477896_695740_18",
+                                    "category": "exam",
+                                    "concept": {
+                                        "code": "10200-4",
+                                        "system": "http://loinc.org",
+                                        "text": "Physical findings of Heart Narrative"
+                                    },
+                                    "value_type": "string",
+                                    "value": "Tidak ada pemeriksaan",
+                                    "body_site": [
+                                        {
+                                            "text": "Jantung"
+                                        }
+                                    ],
+                                    "effective_datetime": "2026-07-28T09:26:06Z"
+                                },
+                                {
+                                    "id": "pf_477896_695740_19",
+                                    "category": "exam",
+                                    "concept": {
+                                        "code": "32449-1",
+                                        "system": "http://loinc.org",
+                                        "text": "Physical findings of Lung"
+                                    },
+                                    "value_type": "string",
+                                    "value": "Tidak ada pemeriksaan",
+                                    "body_site": [
+                                        {
+                                            "text": "Paru-paru"
+                                        }
+                                    ],
+                                    "effective_datetime": "2026-07-28T09:26:06Z"
+                                },
+                                {
+                                    "id": "pf_477896_695740_20",
+                                    "category": "exam",
+                                    "concept": {
+                                        "code": "10191-5",
+                                        "system": "http://loinc.org",
+                                        "text": "Physical findings of Abdomen Narrative"
+                                    },
+                                    "value_type": "string",
+                                    "value": "Tidak ada pemeriksaan",
+                                    "body_site": [
+                                        {
+                                            "text": "Perut"
+                                        }
+                                    ],
+                                    "effective_datetime": "2026-07-28T09:26:06Z"
+                                },
+                                {
+                                    "id": "pf_477896_695740_21",
+                                    "category": "exam",
+                                    "concept": {
+                                        "code": "11400-9",
+                                        "system": "http://loinc.org",
+                                        "text": "Physical findings of Genitalia Narrative"
+                                    },
+                                    "value_type": "string",
+                                    "value": "Tidak ada pemeriksaan",
+                                    "body_site": [
+                                        {
+                                            "text": "Genital"
+                                        }
+                                    ],
+                                    "effective_datetime": "2026-07-28T09:26:06Z"
+                                },
+                                {
+                                    "id": "pf_477896_695740_22",
+                                    "category": "exam",
+                                    "concept": {
+                                        "code": "11388-6",
+                                        "system": "http://loinc.org",
+                                        "text": "Physical findings of Buttocks Narrative"
+                                    },
+                                    "value_type": "string",
+                                    "value": "Tidak ada pemeriksaan",
+                                    "body_site": [
+                                        {
+                                            "text": "Anus Dubur"
+                                        }
+                                    ],
+                                    "effective_datetime": "2026-07-28T09:26:06Z"
+                                },
+                                {
+                                    "id": "pf_477896_695740_23",
+                                    "category": "exam",
+                                    "concept": {
+                                        "code": "11386-0",
+                                        "system": "http://loinc.org",
+                                        "text": "Physical findings of Upper Arm Narrative"
+                                    },
+                                    "value_type": "string",
+                                    "value": "Tidak ada pemeriksaan",
+                                    "body_site": [
+                                        {
+                                            "text": "Lengan Atas"
+                                        }
+                                    ],
+                                    "effective_datetime": "2026-07-28T09:26:06Z"
+                                },
+                                {
+                                    "id": "pf_477896_695740_24",
+                                    "category": "exam",
+                                    "concept": {
+                                        "code": "11398-5",
+                                        "system": "http://loinc.org",
+                                        "text": "Physical findings of Forearm Narrative"
+                                    },
+                                    "value_type": "string",
+                                    "value": "Tidak ada pemeriksaan",
+                                    "body_site": [
+                                        {
+                                            "text": "Lengan Bawah"
+                                        }
+                                    ],
+                                    "effective_datetime": "2026-07-28T09:26:06Z"
+                                },
+                                {
+                                    "id": "pf_477896_695740_25",
+                                    "category": "exam",
+                                    "concept": {
+                                        "code": "11404-1",
+                                        "system": "http://loinc.org",
+                                        "text": "Physical findings of Hand Narrative"
+                                    },
+                                    "value_type": "string",
+                                    "value": "Tidak ada pemeriksaan",
+                                    "body_site": [
+                                        {
+                                            "text": "Jari Tangan"
+                                        }
+                                    ],
+                                    "effective_datetime": "2026-07-28T09:26:06Z"
+                                },
+                                {
+                                    "id": "pf_477896_695740_26",
+                                    "category": "exam",
+                                    "concept": {
+                                        "code": "32456-6",
+                                        "system": "http://loinc.org",
+                                        "text": "Physical findings of Nail"
+                                    },
+                                    "value_type": "string",
+                                    "value": "Tidak ada pemeriksaan",
+                                    "body_site": [
+                                        {
+                                            "text": "Kuku Tangan"
+                                        }
+                                    ],
+                                    "effective_datetime": "2026-07-28T09:26:06Z"
+                                },
+                                {
+                                    "id": "pf_477896_695740_27",
+                                    "category": "exam",
+                                    "concept": {
+                                        "code": "11415-7",
+                                        "system": "http://loinc.org",
+                                        "text": "Physical findings of Wrist Narrative"
+                                    },
+                                    "value_type": "string",
+                                    "value": "Tidak ada pemeriksaan",
+                                    "body_site": [
+                                        {
+                                            "text": "Persendian Tangan"
+                                        }
+                                    ],
+                                    "effective_datetime": "2026-07-28T09:26:06Z"
+                                },
+                                {
+                                    "id": "pf_477896_695740_28",
+                                    "category": "exam",
+                                    "concept": {
+                                        "code": "11414-0",
+                                        "system": "http://loinc.org",
+                                        "text": "Physical findings of Thigh Narrative"
+                                    },
+                                    "value_type": "string",
+                                    "value": "Tidak ada pemeriksaan",
+                                    "body_site": [
+                                        {
+                                            "text": "Tungkai Atas"
+                                        }
+                                    ],
+                                    "effective_datetime": "2026-07-28T09:26:06Z"
+                                },
+                                {
+                                    "id": "pf_477896_695740_29",
+                                    "category": "exam",
+                                    "concept": {
+                                        "code": "11389-4",
+                                        "system": "http://loinc.org",
+                                        "text": "Physical findings of Calf Narrative"
+                                    },
+                                    "value_type": "string",
+                                    "value": "Tidak ada pemeriksaan",
+                                    "body_site": [
+                                        {
+                                            "text": "Tungkai Bawah"
+                                        }
+                                    ],
+                                    "effective_datetime": "2026-07-28T09:26:06Z"
+                                },
+                                {
+                                    "id": "pf_477896_695740_30",
+                                    "category": "exam",
+                                    "concept": {
+                                        "code": "11397-7",
+                                        "system": "http://loinc.org",
+                                        "text": "Physical findings of Foot Narrative"
+                                    },
+                                    "value_type": "string",
+                                    "value": "Tidak ada pemeriksaan",
+                                    "body_site": [
+                                        {
+                                            "text": "Jari Kaki"
+                                        }
+                                    ],
+                                    "effective_datetime": "2026-07-28T09:26:06Z"
+                                },
+                                {
+                                    "id": "pf_477896_695740_31",
+                                    "category": "exam",
+                                    "concept": {
+                                        "code": "32456-6",
+                                        "system": "http://loinc.org",
+                                        "text": "Physical findings of Nail"
+                                    },
+                                    "value_type": "string",
+                                    "value": "Tidak ada pemeriksaan",
+                                    "body_site": [
+                                        {
+                                            "text": "Kuku Kaki"
+                                        }
+                                    ],
+                                    "effective_datetime": "2026-07-28T09:26:06Z"
+                                },
+                                {
+                                    "id": "pf_477896_695740_32",
+                                    "category": "exam",
+                                    "concept": {
+                                        "code": "11385-2",
+                                        "system": "http://loinc.org",
+                                        "text": "Physical findings of Ankle Narrative"
+                                    },
+                                    "value_type": "string",
+                                    "value": "Tidak ada pemeriksaan",
+                                    "body_site": [
+                                        {
+                                            "text": "Persendian Kaki"
+                                        }
+                                    ],
+                                    "effective_datetime": "2026-07-28T09:26:06Z"
+                                }
+                            ],
+                            "hasil_lab": [],
+                            "laporan_radiologi": [],
+                            "laporan_lab": [
+                                {
+                                    "id": "lab_report_20260728104847",
+                                    "category": "LAB",
+                                    "concept": {
+                                        "text": "- IG %, - Eosinofil, - Neutrofil, Trombosit, - Lymposit, Hemoglobin, - Basofil, HITUNG JENIS (DIFF) :, HFLC%, - IG #, Eritrosit, - Monosit, DARAH LENGKAP  :, Neutrofil Absolut, NLR, MPV, M C H, M C V, Lekosit, ALC, NRBC#, RDW-CV, Hematokrit, NRBC%, M C H C, Golongan Darah dan Rhesus (PK), RHESUS (PK), Golongan Darah (PK), Rasio Mecanic, INR, PT, APTT Control, APTT, SGOT / AST, SGPT / ALT, Ureum, BUN, Creatinin, Glukosa Darah Sewaktu, Kalium, ELEKTROLIT DARAH (VT), Chlorida, Natrium, Antibodi HIV ( Non VCT ), HBsAg (rapid), Anti HCV (rapid)"
+                                    },
+                                    "result": "- IG % 1.2 %, - Eosinofil 2 %, - Neutrofil 74.3 %, Trombosit 502 10^3 / uL, - Lymposit 16.1 %, Hemoglobin 12.5 g/dL, - Basofil 0.4 %, HITUNG JENIS (DIFF) : , HFLC% 0.1 %, - IG # 0.16 10^3/uL, Eritrosit 4.27 juta/uL, - Monosit 6.9 %, Neutrofil Absolut 9.8 10^3/uL, NLR 4.61 %, MPV 9.1 fL, M C H 29.3 pg, M C V 85.0 \u00b5m\u00b3, Lekosit 13.2 10^3/ul, ALC 2.1 /ul, NRBC# 0.01 10^3/uL, RDW-CV 12.8 %, Hematokrit 36.3 %, NRBC% 0.1 %, M C H C 34.4 g/dL, Golongan Darah dan Rhesus (PK) , RHESUS (PK) , Golongan Darah (PK) , Rasio Mecanic 1.1 , INR 1.1 Detik, PT 12.6 detik, APTT Control 31.24 Detik, APTT 30.2 Detik, SGOT / AST 15 U/L, SGPT / ALT 12 U/L, Ureum 12.84 mg/dL, BUN 6.0 mg/dL, Creatinin 0.63 mg/dL, Glukosa Darah Sewaktu 91 mg/dL, Kalium 4.28 mEq/L, Chlorida 105.2 mEq/L, Natrium 137.1 mEq/L, Antibodi HIV ( Non VCT ) , HBsAg (rapid) , Anti HCV (rapid)",
+                                    "conclusion": "-",
+                                    "performer_id": {
+                                        "id": "56C",
+                                        "name": "dr. WAHID SYAMSUL HADI.M.Sc.,Sp.PK",
+                                        "profession": "Dokter"
+                                    },
+                                    "effective_datetime": "2026-07-28T10:48:25Z",
+                                    "result_interpreter_id": {
+                                        "id": "56C",
+                                        "name": "dr. WAHID SYAMSUL HADI.M.Sc.,Sp.PK",
+                                        "profession": "Dokter"
+                                    }
+                                }
+                            ],
+                            "diagnosis": [
+                                {
+                                    "id": "diag_477896_798816",
+                                    "diagnosis_text": "Inkompeten servix, Preeklampsia, G3P2A0 hamil 23 minggu 3 hari",
+                                    "is_primary": true,
+                                    "clinical_status": "resolved",
+                                    "verification_status": "confirmed"
+                                }
+                            ],
+                            "prosedur": [],
+                            "assessment_text": [
+                                {
+                                    "id": "assessment_ri_477896",
+                                    "category": "assessment",
+                                    "text": "Kondisi membaik dengan tindakan Melanjutkan plan poli\r\n\u2022?  ?Mondok\r\n\u2022?  ?Pro Cerclage \r\n\r\nUsul:\r\n\u2022?  ?Nifedipin 10mg/8jam/Po, dan Jika ada HIS\r\n\u2022?  ?Melanjutkan vitamin kehamilan (dikelola pasien)\r\n\u2022?  ?obs KU/VS/PPV/DJJ. Belum dapat dipulangkan dengan alasan 3.",
+                                    "effective_datetime": "2026-07-28T09:30:48Z",
+                                    "performer_id": "14B"
+                                }
+                            ]
+                        }
+                    ],
+                    "cppt": [
+                        {
+                            "soap": [
+                                {
+                                    "id": "soap_477896_1745885",
+                                    "category": "soap",
+                                    "performer_id": {
+                                        "id": "PR516",
+                                        "name": "PR516",
+                                        "profession": "Lainnya"
+                                    },
+                                    "effective_datetime": "2026-07-28T05:07:03Z",
+                                    "subjective": "Pasien baru dari IRJT rujukan dari RSU PKU Jatinom dengan hamil 23 minggu dengan PE, G3P1A1Ah0 HPHT 11/2/2026 HPL 18/11/2026 hamil 23 minggu 3 hari Keluhan saat ini tidak ada, Riwayat tensi tinggi sejak kehamilan ke-2, bab dan bak lancar, Protein Uri +/-, Riwayat persalinan anak 1, Spontan UK 32 minggu BBL 600 gram,Laki-laki meninggal, anak ke-2 Spontan UK 20 minggu Laki-lakui meninggal, Riwayat KB -, Rencana pemasangan cerclage cervik, Riwayat alergi -, HT +, DM-",
+                                    "objective": "KU : baik, CM, conjunctiva merah muda, palpasi abdomen : janin tunggal, TFU setinggi pusat, His -, DJJ 158 x/mnt, ppv -, hasil lab : Hb : 12,5, gol darah o+, GDS 91 mg/dL, anti HIV -, anti HCV -, anti HbsAg -, USG: Janin tunggal, letak lintang, DJJ (+), TBJ: 562 gram, plasenta dikiri atas, AK cukup",
+                                    "assessment": "Inkompetensi serviks, Pre Eklamsia, G3P2A0 hamil 23 minggu 3 hari, ibu obesitas",
+                                    "plan": "kolaborasi DPJP\r\nkolaborasi Sp.An",
+                                    "text": null
+                                }
+                            ],
+                            "observasi": [
+                                {
+                                    "id": "obs_td_477896_1745885_2669193",
+                                    "category": "vital-signs",
+                                    "concept": {
+                                        "text": "Tekanan Darah"
+                                    },
+                                    "value_type": "ratio",
+                                    "value": "158/89",
+                                    "effective_datetime": "2026-07-28T04:19:24Z",
+                                    "value_unit": "mmHg"
+                                },
+                                {
+                                    "id": "obs_nadi_477896_1745885_2669193",
+                                    "category": "vital-signs",
+                                    "concept": {
+                                        "text": "Nadi"
+                                    },
+                                    "value_type": "integer",
+                                    "value": 97,
+                                    "effective_datetime": "2026-07-28T04:19:24Z"
+                                },
+                                {
+                                    "id": "obs_rr_477896_1745885_2669193",
+                                    "category": "vital-signs",
+                                    "concept": {
+                                        "text": "Frekuensi Napas"
+                                    },
+                                    "value_type": "integer",
+                                    "value": 18,
+                                    "effective_datetime": "2026-07-28T04:19:24Z"
+                                },
+                                {
+                                    "id": "obs_suhu_477896_1745885_2669193",
+                                    "category": "vital-signs",
+                                    "concept": {
+                                        "text": "Suhu"
+                                    },
+                                    "value_type": "float",
+                                    "value": 36.5,
+                                    "effective_datetime": "2026-07-28T04:19:24Z"
+                                },
+                                {
+                                    "id": "obs_spo2_477896_1745885_2669193",
+                                    "category": "vital-signs",
+                                    "concept": {
+                                        "text": "SpO2"
+                                    },
+                                    "value_type": "integer",
+                                    "value": 100,
+                                    "effective_datetime": "2026-07-28T04:19:24Z"
+                                }
+                            ]
+                        },
+                        {
+                            "soap": [
+                                {
+                                    "id": "soap_477896_1746506",
+                                    "category": "soap",
+                                    "performer_id": {
+                                        "id": "14B",
+                                        "name": "14B",
+                                        "profession": "Lainnya"
+                                    },
+                                    "effective_datetime": "2026-07-28T09:32:49Z",
+                                    "subjective": "Pasien mondok rencana operasi. Keluhan saat ini kenceng-kenceng (-), rembes ketuban (-), flek-flek dari jalan lahir (-), gerak janin aktif (+). Keluhan lain pusing (-), mual (-), muntah (-), sesak nafas (-), batuk (-), pilek (-), nafsu makan (+), BAB dan BAK tidak ada keluhan.",
+                                    "objective": "O: KU baik sadar\r\nTD 150/90 mmHg\r\nN 86 kpm\r\nR 16 kpm\r\nS 36,3\r\nSpO2 98% RA\r\n\r\nBB awal 96 kg\r\nBB saat ini 99 kg\r\nKBB 3 kg\r\nTB 155 cm\r\nIMT 40.4 kg/m2 (Obesitas grade III)\r\n\r\nMata: konjungtiva anemis (-), sklera ikterik (-)\r\nThorax simetris (+), Cor S1S2 reguler, bising (-), Pulmo SD vesikuler (+/+), rhonki (-/-)\r\nAbdomen: supel, teraba janin tunggal, TFU 2 jari diatas umbilicus, DJJ 156 kpm, HIS (-)\r\nPD/Inspekulo: V/U tenang, dinding vagina licin, serviks agak lunak ditengah, Eff 30%, dilatasi 0 cm, AK (-), SLTD (-)\r\nExtremitas: akral hangat, CRT < 2 detuk",
+                                    "assessment": "Diagnosa sekunder: Inkompeten servix, Preeklampsia, G3P2A0 hamil 23 minggu 3 hari.",
+                                    "plan": null,
+                                    "text": null
+                                }
+                            ],
+                            "observasi": [
+                                {
+                                    "id": "obs_td_477896_1746506_2669193",
+                                    "category": "vital-signs",
+                                    "concept": {
+                                        "text": "Tekanan Darah"
+                                    },
+                                    "value_type": "ratio",
+                                    "value": "158/89",
+                                    "effective_datetime": "2026-07-28T04:19:24Z",
+                                    "value_unit": "mmHg"
+                                },
+                                {
+                                    "id": "obs_nadi_477896_1746506_2669193",
+                                    "category": "vital-signs",
+                                    "concept": {
+                                        "text": "Nadi"
+                                    },
+                                    "value_type": "integer",
+                                    "value": 97,
+                                    "effective_datetime": "2026-07-28T04:19:24Z"
+                                },
+                                {
+                                    "id": "obs_rr_477896_1746506_2669193",
+                                    "category": "vital-signs",
+                                    "concept": {
+                                        "text": "Frekuensi Napas"
+                                    },
+                                    "value_type": "integer",
+                                    "value": 18,
+                                    "effective_datetime": "2026-07-28T04:19:24Z"
+                                },
+                                {
+                                    "id": "obs_suhu_477896_1746506_2669193",
+                                    "category": "vital-signs",
+                                    "concept": {
+                                        "text": "Suhu"
+                                    },
+                                    "value_type": "float",
+                                    "value": 36.5,
+                                    "effective_datetime": "2026-07-28T04:19:24Z"
+                                },
+                                {
+                                    "id": "obs_spo2_477896_1746506_2669193",
+                                    "category": "vital-signs",
+                                    "concept": {
+                                        "text": "SpO2"
+                                    },
+                                    "value_type": "integer",
+                                    "value": 100,
+                                    "effective_datetime": "2026-07-28T04:19:24Z"
+                                }
+                            ],
+                            "diagnosis": [
+                                {
+                                    "id": "diag_477896_1746506_798829",
+                                    "diagnosis_text": "Inkompeten servix, Preeklampsia, G3P2A0 hamil 23 minggu 3 hari",
+                                    "is_primary": false,
+                                    "clinical_status": "resolved",
+                                    "verification_status": "confirmed"
+                                }
+                            ]
+                        },
+                        {
+                            "soap": [
+                                {
+                                    "id": "soap_477896_1746610",
+                                    "category": "soap",
+                                    "performer_id": {
+                                        "id": "PR409",
+                                        "name": "PR409",
+                                        "profession": "Lainnya"
+                                    },
+                                    "effective_datetime": "2026-07-28T10:43:17Z",
+                                    "subjective": "ibu  hamil 23 minggu dengan PE, G3P1A1Ah0 HPHT 11/2/2026 HPL 18/11/2026 hamil 23 minggu 3 hari Keluhan saat ini tidak ada, Riwayat tensi tinggi sejak kehamilan ke-2, bab dan bak lancar, Protein Uri +/-, Riwayat persalinan anak 1, Spontan UK 32 minggu BBL 600 gram,Laki-laki meninggal, anak ke-2 Spontan UK 20 minggu Laki-lakui meninggal, Riwayat KB -, Rencana pemasangan cerclage cervik, Riwayat alergi -, HT +, DM-",
+                                    "objective": "KU : baik, CM, conjunctiva merah muda, palpasi abdomen : janin tunggal, TFU setinggi pusat, His -, DJJ 156 x/mnt, ppv -, hasil lab : Hb : 12,5, gol darah o+, GDS 91 mg/dL, anti HIV -, anti HCV -, anti HbsAg -, USG: Janin tunggal, letak lintang, DJJ (+), TBJ: 562 gram, plasenta dikiri atas, AK cukup,usg +",
+                                    "assessment": "Inkompetensi serviks, Pre Eklamsia, G3P2A0 hamil 23 minggu 3 hari, ibu obesitas",
+                                    "plan": "kolaborasi DPJP\r\nkolaborasi Sp.An",
+                                    "text": null
+                                }
+                            ],
+                            "observasi": [
+                                {
+                                    "id": "obs_td_477896_1746610_2670205",
+                                    "category": "vital-signs",
+                                    "concept": {
+                                        "text": "Tekanan Darah"
+                                    },
+                                    "value_type": "ratio",
+                                    "value": "152/102",
+                                    "effective_datetime": "2026-07-28T10:46:50Z",
+                                    "value_unit": "mmHg"
+                                },
+                                {
+                                    "id": "obs_nadi_477896_1746610_2670205",
+                                    "category": "vital-signs",
+                                    "concept": {
+                                        "text": "Nadi"
+                                    },
+                                    "value_type": "integer",
+                                    "value": 103,
+                                    "effective_datetime": "2026-07-28T10:46:50Z"
+                                },
+                                {
+                                    "id": "obs_rr_477896_1746610_2670205",
+                                    "category": "vital-signs",
+                                    "concept": {
+                                        "text": "Frekuensi Napas"
+                                    },
+                                    "value_type": "integer",
+                                    "value": 18,
+                                    "effective_datetime": "2026-07-28T10:46:50Z"
+                                },
+                                {
+                                    "id": "obs_suhu_477896_1746610_2670205",
+                                    "category": "vital-signs",
+                                    "concept": {
+                                        "text": "Suhu"
+                                    },
+                                    "value_type": "float",
+                                    "value": 36.6,
+                                    "effective_datetime": "2026-07-28T10:46:50Z"
+                                },
+                                {
+                                    "id": "obs_spo2_477896_1746610_2670205",
+                                    "category": "vital-signs",
+                                    "concept": {
+                                        "text": "SpO2"
+                                    },
+                                    "value_type": "integer",
+                                    "value": 99,
+                                    "effective_datetime": "2026-07-28T10:46:50Z"
+                                }
+                            ]
+                        },
+                        {
+                            "soap": [
+                                {
+                                    "id": "soap_477896_1747051",
+                                    "category": "soap",
+                                    "performer_id": {
+                                        "id": "PR614",
+                                        "name": "PR614",
+                                        "profession": "Lainnya"
+                                    },
+                                    "effective_datetime": "2026-07-28T16:14:04Z",
+                                    "subjective": "pasien mengatakan akan dilakukan pemasangan cerclage cervik\r\ntidak ada nyeri dan mual muntah.\r\nada HT, obat rutin Nifedipine 3x10mg.\r\nTidak ada kencang-kencang dan flek",
+                                    "objective": "KU : Baik, CM, Conjunctiva merah muda, Sklera putih.\r\nPalpasi abdomen: TFU setinggi pusat, His tidak ada, DJJ 150 x/mnt, TBJ 562 gram, PPV tidak ada\r\nTerpasang infus RL 20tpm\r\nIC sudah, daftar IBS sudah, konsul anestesi sudah\r\nHb 12.5 AL 13.2 GDS 91 HBsAg Negatif, Antibodi HIV Non Reaktif, Anti HCV Negatif",
+                                    "assessment": "Inkompetensi serviks, Pre Eklamsia, G3P2A0 (AH 0)hamil 23 minggu 3 hari, ibu obesitas",
+                                    "plan": "1. Memberitahukan hasil pemeriksaan\r\n2. Kolaborasi DPJP\r\n3. Kolaborasi Sp.An",
+                                    "text": null
+                                }
+                            ],
+                            "observasi": [
+                                {
+                                    "id": "obs_td_477896_1747051_2670988",
+                                    "category": "vital-signs",
+                                    "concept": {
+                                        "text": "Tekanan Darah"
+                                    },
+                                    "value_type": "ratio",
+                                    "value": "120/76",
+                                    "effective_datetime": "2026-07-28T16:23:00Z",
+                                    "value_unit": "mmHg"
+                                },
+                                {
+                                    "id": "obs_nadi_477896_1747051_2670988",
+                                    "category": "vital-signs",
+                                    "concept": {
+                                        "text": "Nadi"
+                                    },
+                                    "value_type": "integer",
+                                    "value": 82,
+                                    "effective_datetime": "2026-07-28T16:23:00Z"
+                                },
+                                {
+                                    "id": "obs_rr_477896_1747051_2670988",
+                                    "category": "vital-signs",
+                                    "concept": {
+                                        "text": "Frekuensi Napas"
+                                    },
+                                    "value_type": "integer",
+                                    "value": 18,
+                                    "effective_datetime": "2026-07-28T16:23:00Z"
+                                },
+                                {
+                                    "id": "obs_suhu_477896_1747051_2670988",
+                                    "category": "vital-signs",
+                                    "concept": {
+                                        "text": "Suhu"
+                                    },
+                                    "value_type": "float",
+                                    "value": 36.7,
+                                    "effective_datetime": "2026-07-28T16:23:00Z"
+                                },
+                                {
+                                    "id": "obs_spo2_477896_1747051_2670988",
+                                    "category": "vital-signs",
+                                    "concept": {
+                                        "text": "SpO2"
+                                    },
+                                    "value_type": "integer",
+                                    "value": 99,
+                                    "effective_datetime": "2026-07-28T16:23:00Z"
+                                }
+                            ]
+                        },
+                        {
+                            "soap": [
+                                {
+                                    "id": "soap_477896_1747531",
+                                    "category": "soap",
+                                    "performer_id": {
+                                        "id": "14B",
+                                        "name": "14B",
+                                        "profession": "Lainnya"
+                                    },
+                                    "effective_datetime": "2026-07-29T01:43:06Z",
+                                    "subjective": "kenceng-kenceng (-), rembes ketuban (-), flek-flek dari jalan lahir (-), gerak janin aktif (+)\r\nPasien sudah puasa",
+                                    "objective": "TD 120/76 mmHg \r\nN 86 kpm \r\nR 16 kpm \r\nS 36,3 SpO2 98% RA\r\nAbdomen: supel, teraba janin tunggal, TFU 2 jari diatas umbilicus, DJJ 150 kpm, HIS (-) \r\nPD/Inspekulo: tdp",
+                                    "assessment": "Diagnosa sekunder: Inkompeten servix, Preeklampsia, G3P2A0 hamil 23 minggu 4 hari.",
+                                    "plan": null,
+                                    "text": null
+                                }
+                            ],
+                            "observasi": [
+                                {
+                                    "id": "obs_td_477896_1747531_2671681",
+                                    "category": "vital-signs",
+                                    "concept": {
+                                        "text": "Tekanan Darah"
+                                    },
+                                    "value_type": "ratio",
+                                    "value": "120/76",
+                                    "effective_datetime": "2026-07-29T01:46:19Z",
+                                    "value_unit": "mmHg"
+                                },
+                                {
+                                    "id": "obs_nadi_477896_1747531_2671681",
+                                    "category": "vital-signs",
+                                    "concept": {
+                                        "text": "Nadi"
+                                    },
+                                    "value_type": "integer",
+                                    "value": 78,
+                                    "effective_datetime": "2026-07-29T01:46:19Z"
+                                },
+                                {
+                                    "id": "obs_rr_477896_1747531_2671681",
+                                    "category": "vital-signs",
+                                    "concept": {
+                                        "text": "Frekuensi Napas"
+                                    },
+                                    "value_type": "integer",
+                                    "value": 18,
+                                    "effective_datetime": "2026-07-29T01:46:19Z"
+                                },
+                                {
+                                    "id": "obs_suhu_477896_1747531_2671681",
+                                    "category": "vital-signs",
+                                    "concept": {
+                                        "text": "Suhu"
+                                    },
+                                    "value_type": "float",
+                                    "value": 36.5,
+                                    "effective_datetime": "2026-07-29T01:46:19Z"
+                                },
+                                {
+                                    "id": "obs_spo2_477896_1747531_2671681",
+                                    "category": "vital-signs",
+                                    "concept": {
+                                        "text": "SpO2"
+                                    },
+                                    "value_type": "integer",
+                                    "value": 100,
+                                    "effective_datetime": "2026-07-29T01:46:19Z"
+                                }
+                            ],
+                            "diagnosis": [
+                                {
+                                    "id": "diag_477896_1747531_799252",
+                                    "diagnosis_text": "Inkompeten servix, Preeklampsia, G3P2A0 hamil 23 minggu 4 hari",
+                                    "is_primary": false,
+                                    "clinical_status": "resolved",
+                                    "verification_status": "confirmed"
+                                }
+                            ]
+                        },
+                        {
+                            "soap": [
+                                {
+                                    "id": "soap_477896_1747537",
+                                    "category": "soap",
+                                    "performer_id": {
+                                        "id": "PR516",
+                                        "name": "PR516",
+                                        "profession": "Lainnya"
+                                    },
+                                    "effective_datetime": "2026-07-29T01:44:27Z",
+                                    "subjective": "pasien mengatakan akan dilakukan pemasangan cerclage cervik, tidak ada nyeri dan mual muntah.Tidak ada kencang-kencang dan flek, sudah puasa mulai jam 00.00",
+                                    "objective": "KU : Baik, CM, Conjunctiva merah muda, Sklera putih. His tidak ada, DJJ 158 x/mnt, TBJ 562 gram, PPV tidak ada\r\nTerpasang infus RL 20tpm\r\nIC sudah, daftar IBS sudah, konsul anestesi sudah\r\nHb 12.5 AL 13.2 GDS 91 HBsAg Negatif, Antibodi HIV Non Reaktif, Anti HCV Negatif",
+                                    "assessment": "Inkompetensi serviks, Pre Eklamsia, G3P2A0 (AH 0)hamil 23 minggu 4 hari, ibu obesitas",
+                                    "plan": "1. Memberitahukan hasil pemeriksaan\r\n2. Kolaborasi DPJP\r\n3. Kolaborasi Sp.An",
+                                    "text": null
+                                }
+                            ],
+                            "observasi": [
+                                {
+                                    "id": "obs_td_477896_1747537_2671675",
+                                    "category": "vital-signs",
+                                    "concept": {
+                                        "text": "Tekanan Darah"
+                                    },
+                                    "value_type": "ratio",
+                                    "value": "120/76",
+                                    "effective_datetime": "2026-07-29T01:45:40Z",
+                                    "value_unit": "mmHg"
+                                },
+                                {
+                                    "id": "obs_nadi_477896_1747537_2671675",
+                                    "category": "vital-signs",
+                                    "concept": {
+                                        "text": "Nadi"
+                                    },
+                                    "value_type": "integer",
+                                    "value": 78,
+                                    "effective_datetime": "2026-07-29T01:45:40Z"
+                                },
+                                {
+                                    "id": "obs_rr_477896_1747537_2671675",
+                                    "category": "vital-signs",
+                                    "concept": {
+                                        "text": "Frekuensi Napas"
+                                    },
+                                    "value_type": "integer",
+                                    "value": 18,
+                                    "effective_datetime": "2026-07-29T01:45:40Z"
+                                },
+                                {
+                                    "id": "obs_suhu_477896_1747537_2671675",
+                                    "category": "vital-signs",
+                                    "concept": {
+                                        "text": "Suhu"
+                                    },
+                                    "value_type": "float",
+                                    "value": 36.5,
+                                    "effective_datetime": "2026-07-29T01:45:40Z"
+                                },
+                                {
+                                    "id": "obs_spo2_477896_1747537_2671675",
+                                    "category": "vital-signs",
+                                    "concept": {
+                                        "text": "SpO2"
+                                    },
+                                    "value_type": "integer",
+                                    "value": 100,
+                                    "effective_datetime": "2026-07-29T01:45:40Z"
+                                }
+                            ]
+                        },
+                        {
+                            "soap": [
+                                {
+                                    "id": "soap_477896_1747897",
+                                    "category": "soap",
+                                    "performer_id": {
+                                        "id": "PR516",
+                                        "name": "PR516",
+                                        "profession": "Lainnya"
+                                    },
+                                    "effective_datetime": "2026-07-29T03:46:08Z",
+                                    "subjective": "pasien post pemasangan cerclage, masih lemes, kaki belum bisa digerakkan",
+                                    "objective": "KU : Baik, CM, Conjunctiva merah muda, Sklera putih. His tidak ada, DJJ 154 x/mnt, TBJ 562 gram, PPV tidak ada\r\nTerpasang infus RL 20tpm\r\nHb 12.5 AL 13.2 GDS 91 HBsAg Negatif, Antibodi HIV Non Reaktif, Anti HCV Negatif",
+                                    "assessment": "post pemasangan cerclase ai Inkompetensi serviks, Pre Eklamsia, G3P2A0 (AH 0)hamil 23 minggu 4 hari, ibu obesitas hari 0",
+                                    "plan": "1. Memberitahukan hasil pemeriksaan\r\n2. Kolaborasi DPJP",
+                                    "text": null
+                                }
+                            ],
+                            "observasi": [
+                                {
+                                    "id": "obs_td_477896_1747897_2672355",
+                                    "category": "vital-signs",
+                                    "concept": {
+                                        "text": "Tekanan Darah"
+                                    },
+                                    "value_type": "ratio",
+                                    "value": "132/80",
+                                    "effective_datetime": "2026-07-29T03:47:44Z",
+                                    "value_unit": "mmHg"
+                                },
+                                {
+                                    "id": "obs_nadi_477896_1747897_2672355",
+                                    "category": "vital-signs",
+                                    "concept": {
+                                        "text": "Nadi"
+                                    },
+                                    "value_type": "integer",
+                                    "value": 80,
+                                    "effective_datetime": "2026-07-29T03:47:44Z"
+                                },
+                                {
+                                    "id": "obs_rr_477896_1747897_2672355",
+                                    "category": "vital-signs",
+                                    "concept": {
+                                        "text": "Frekuensi Napas"
+                                    },
+                                    "value_type": "integer",
+                                    "value": 18,
+                                    "effective_datetime": "2026-07-29T03:47:44Z"
+                                },
+                                {
+                                    "id": "obs_suhu_477896_1747897_2672355",
+                                    "category": "vital-signs",
+                                    "concept": {
+                                        "text": "Suhu"
+                                    },
+                                    "value_type": "float",
+                                    "value": 36.5,
+                                    "effective_datetime": "2026-07-29T03:47:44Z"
+                                },
+                                {
+                                    "id": "obs_spo2_477896_1747897_2672355",
+                                    "category": "vital-signs",
+                                    "concept": {
+                                        "text": "SpO2"
+                                    },
+                                    "value_type": "integer",
+                                    "value": 100,
+                                    "effective_datetime": "2026-07-29T03:47:44Z"
+                                }
+                            ]
+                        }
+                    ],
+                    "penunjang_lab": [
+                        {
+                            "pemesanan": [
+                                {
+                                    "id": "PK1583939",
+                                    "category": "laboratory-test",
+                                    "concept": {
+                                        "text": "- IG %, - Eosinofil, - Neutrofil, Trombosit, - Lymposit, Hemoglobin, - Basofil, HITUNG JENIS (DIFF) :, HFLC%, - IG #, Eritrosit, - Monosit, DARAH LENGKAP  :, Neutrofil Absolut, NLR, MPV, M C H, M C V, Lekosit, ALC, NRBC#, RDW-CV, Hematokrit, NRBC%, M C H C, Golongan Darah dan Rhesus (PK), RHESUS (PK), Golongan Darah (PK), Rasio Mecanic, INR, PT, APTT Control, APTT, SGOT / AST, SGPT / ALT, Ureum, BUN, Creatinin, Glukosa Darah Sewaktu, Kalium, ELEKTROLIT DARAH (VT), Chlorida, Natrium, Antibodi HIV ( Non VCT ), HBsAg (rapid), Anti HCV (rapid)"
+                                    },
+                                    "status": "active",
+                                    "authored_datetime": "2026-07-28T09:58:13Z"
+                                }
+                            ],
+                            "hasil_lab": [
+                                {
+                                    "id": "lab_14949701",
+                                    "category": "laboratory",
+                                    "concept": {
+                                        "text": "- IG %"
+                                    },
+                                    "value_type": "float",
+                                    "value": 1.2,
+                                    "effective_datetime": "2026-07-28T10:48:24Z",
+                                    "service_request_id": "PK1583939",
+                                    "value_unit": "%",
+                                    "interpretation": "normal"
+                                },
+                                {
+                                    "id": "lab_14949702",
+                                    "category": "laboratory",
+                                    "concept": {
+                                        "text": "- Eosinofil"
+                                    },
+                                    "value_type": "integer",
+                                    "value": 2,
+                                    "effective_datetime": "2026-07-28T10:48:24Z",
+                                    "service_request_id": "PK1583939",
+                                    "value_unit": "%",
+                                    "interpretation": "normal"
+                                },
+                                {
+                                    "id": "lab_14949703",
+                                    "category": "laboratory",
+                                    "concept": {
+                                        "text": "- Neutrofil"
+                                    },
+                                    "value_type": "float",
+                                    "value": 74.3,
+                                    "effective_datetime": "2026-07-28T10:48:24Z",
+                                    "service_request_id": "PK1583939",
+                                    "value_unit": "%",
+                                    "interpretation": "high"
+                                },
+                                {
+                                    "id": "lab_14949704",
+                                    "category": "laboratory",
+                                    "concept": {
+                                        "text": "Trombosit"
+                                    },
+                                    "value_type": "integer",
+                                    "value": 502,
+                                    "effective_datetime": "2026-07-28T10:48:24Z",
+                                    "service_request_id": "PK1583939",
+                                    "value_unit": "10^3 / uL",
+                                    "interpretation": "high"
+                                },
+                                {
+                                    "id": "lab_14949705",
+                                    "category": "laboratory",
+                                    "concept": {
+                                        "text": "- Lymposit"
+                                    },
+                                    "value_type": "float",
+                                    "value": 16.1,
+                                    "effective_datetime": "2026-07-28T10:48:24Z",
+                                    "service_request_id": "PK1583939",
+                                    "value_unit": "%",
+                                    "interpretation": "low"
+                                },
+                                {
+                                    "id": "lab_14949706",
+                                    "category": "laboratory",
+                                    "concept": {
+                                        "text": "Hemoglobin"
+                                    },
+                                    "value_type": "float",
+                                    "value": 12.5,
+                                    "effective_datetime": "2026-07-28T10:48:24Z",
+                                    "service_request_id": "PK1583939",
+                                    "value_unit": "g/dL",
+                                    "interpretation": "normal"
+                                },
+                                {
+                                    "id": "lab_14949707",
+                                    "category": "laboratory",
+                                    "concept": {
+                                        "text": "- Basofil"
+                                    },
+                                    "value_type": "float",
+                                    "value": 0.4,
+                                    "effective_datetime": "2026-07-28T10:48:24Z",
+                                    "service_request_id": "PK1583939",
+                                    "value_unit": "%",
+                                    "interpretation": "normal"
+                                },
+                                {
+                                    "id": "lab_14949709",
+                                    "category": "laboratory",
+                                    "concept": {
+                                        "text": "HFLC%"
+                                    },
+                                    "value_type": "float",
+                                    "value": 0.1,
+                                    "effective_datetime": "2026-07-28T10:48:24Z",
+                                    "service_request_id": "PK1583939",
+                                    "value_unit": "%",
+                                    "interpretation": "normal"
+                                },
+                                {
+                                    "id": "lab_14949710",
+                                    "category": "laboratory",
+                                    "concept": {
+                                        "text": "- IG #"
+                                    },
+                                    "value_type": "float",
+                                    "value": 0.16,
+                                    "effective_datetime": "2026-07-28T10:48:24Z",
+                                    "service_request_id": "PK1583939",
+                                    "value_unit": "10^3/uL",
+                                    "interpretation": "normal"
+                                },
+                                {
+                                    "id": "lab_14949711",
+                                    "category": "laboratory",
+                                    "concept": {
+                                        "text": "Eritrosit"
+                                    },
+                                    "value_type": "float",
+                                    "value": 4.27,
+                                    "effective_datetime": "2026-07-28T10:48:24Z",
+                                    "service_request_id": "PK1583939",
+                                    "value_unit": "juta/uL",
+                                    "interpretation": "normal"
+                                },
+                                {
+                                    "id": "lab_14949712",
+                                    "category": "laboratory",
+                                    "concept": {
+                                        "text": "- Monosit"
+                                    },
+                                    "value_type": "float",
+                                    "value": 6.9,
+                                    "effective_datetime": "2026-07-28T10:48:24Z",
+                                    "service_request_id": "PK1583939",
+                                    "value_unit": "%",
+                                    "interpretation": "normal"
+                                },
+                                {
+                                    "id": "lab_14949714",
+                                    "category": "laboratory",
+                                    "concept": {
+                                        "text": "Neutrofil Absolut"
+                                    },
+                                    "value_type": "float",
+                                    "value": 9.8,
+                                    "effective_datetime": "2026-07-28T10:48:24Z",
+                                    "service_request_id": "PK1583939",
+                                    "value_unit": "10^3/uL",
+                                    "interpretation": "normal"
+                                },
+                                {
+                                    "id": "lab_14949715",
+                                    "category": "laboratory",
+                                    "concept": {
+                                        "text": "NLR"
+                                    },
+                                    "value_type": "float",
+                                    "value": 4.61,
+                                    "effective_datetime": "2026-07-28T10:48:24Z",
+                                    "service_request_id": "PK1583939",
+                                    "value_unit": "%",
+                                    "interpretation": "high"
+                                },
+                                {
+                                    "id": "lab_14949716",
+                                    "category": "laboratory",
+                                    "concept": {
+                                        "text": "MPV"
+                                    },
+                                    "value_type": "float",
+                                    "value": 9.1,
+                                    "effective_datetime": "2026-07-28T10:48:24Z",
+                                    "service_request_id": "PK1583939",
+                                    "value_unit": "fL",
+                                    "interpretation": "normal"
+                                },
+                                {
+                                    "id": "lab_14949717",
+                                    "category": "laboratory",
+                                    "concept": {
+                                        "text": "M C H"
+                                    },
+                                    "value_type": "float",
+                                    "value": 29.3,
+                                    "effective_datetime": "2026-07-28T10:48:24Z",
+                                    "service_request_id": "PK1583939",
+                                    "value_unit": "pg",
+                                    "interpretation": "normal"
+                                },
+                                {
+                                    "id": "lab_14949718",
+                                    "category": "laboratory",
+                                    "concept": {
+                                        "text": "M C V"
+                                    },
+                                    "value_type": "float",
+                                    "value": 85,
+                                    "effective_datetime": "2026-07-28T10:48:24Z",
+                                    "service_request_id": "PK1583939",
+                                    "value_unit": "\u00b5m\u00b3",
+                                    "interpretation": "normal"
+                                },
+                                {
+                                    "id": "lab_14949719",
+                                    "category": "laboratory",
+                                    "concept": {
+                                        "text": "Lekosit"
+                                    },
+                                    "value_type": "float",
+                                    "value": 13.2,
+                                    "effective_datetime": "2026-07-28T10:48:24Z",
+                                    "service_request_id": "PK1583939",
+                                    "value_unit": "10^3/ul",
+                                    "interpretation": "high"
+                                },
+                                {
+                                    "id": "lab_14949720",
+                                    "category": "laboratory",
+                                    "concept": {
+                                        "text": "ALC"
+                                    },
+                                    "value_type": "float",
+                                    "value": 2.1,
+                                    "effective_datetime": "2026-07-28T10:48:24Z",
+                                    "service_request_id": "PK1583939",
+                                    "value_unit": "/ul",
+                                    "interpretation": "normal"
+                                },
+                                {
+                                    "id": "lab_14949721",
+                                    "category": "laboratory",
+                                    "concept": {
+                                        "text": "NRBC#"
+                                    },
+                                    "value_type": "float",
+                                    "value": 0.01,
+                                    "effective_datetime": "2026-07-28T10:48:24Z",
+                                    "service_request_id": "PK1583939",
+                                    "value_unit": "10^3/uL",
+                                    "interpretation": "normal"
+                                },
+                                {
+                                    "id": "lab_14949722",
+                                    "category": "laboratory",
+                                    "concept": {
+                                        "text": "RDW-CV"
+                                    },
+                                    "value_type": "float",
+                                    "value": 12.8,
+                                    "effective_datetime": "2026-07-28T10:48:24Z",
+                                    "service_request_id": "PK1583939",
+                                    "value_unit": "%",
+                                    "interpretation": "normal"
+                                },
+                                {
+                                    "id": "lab_14949723",
+                                    "category": "laboratory",
+                                    "concept": {
+                                        "text": "Hematokrit"
+                                    },
+                                    "value_type": "float",
+                                    "value": 36.3,
+                                    "effective_datetime": "2026-07-28T10:48:24Z",
+                                    "service_request_id": "PK1583939",
+                                    "value_unit": "%",
+                                    "interpretation": "low"
+                                },
+                                {
+                                    "id": "lab_14949724",
+                                    "category": "laboratory",
+                                    "concept": {
+                                        "text": "NRBC%"
+                                    },
+                                    "value_type": "float",
+                                    "value": 0.1,
+                                    "effective_datetime": "2026-07-28T10:48:24Z",
+                                    "service_request_id": "PK1583939",
+                                    "value_unit": "%",
+                                    "interpretation": "normal"
+                                },
+                                {
+                                    "id": "lab_14949725",
+                                    "category": "laboratory",
+                                    "concept": {
+                                        "text": "M C H C"
+                                    },
+                                    "value_type": "float",
+                                    "value": 34.4,
+                                    "effective_datetime": "2026-07-28T10:48:24Z",
+                                    "service_request_id": "PK1583939",
+                                    "value_unit": "g/dL",
+                                    "interpretation": "normal"
+                                },
+                                {
+                                    "id": "lab_14949729",
+                                    "category": "laboratory",
+                                    "concept": {
+                                        "text": "Rasio Mecanic"
+                                    },
+                                    "value_type": "float",
+                                    "value": 1.1,
+                                    "effective_datetime": "2026-07-28T10:48:25Z",
+                                    "service_request_id": "PK1583939",
+                                    "interpretation": "normal"
+                                },
+                                {
+                                    "id": "lab_14949730",
+                                    "category": "laboratory",
+                                    "concept": {
+                                        "text": "INR"
+                                    },
+                                    "value_type": "float",
+                                    "value": 1.1,
+                                    "effective_datetime": "2026-07-28T10:48:25Z",
+                                    "service_request_id": "PK1583939",
+                                    "value_unit": "Detik",
+                                    "interpretation": "normal"
+                                },
+                                {
+                                    "id": "lab_14949731",
+                                    "category": "laboratory",
+                                    "concept": {
+                                        "text": "PT"
+                                    },
+                                    "value_type": "float",
+                                    "value": 12.6,
+                                    "effective_datetime": "2026-07-28T10:48:25Z",
+                                    "service_request_id": "PK1583939",
+                                    "value_unit": "detik",
+                                    "interpretation": "normal"
+                                },
+                                {
+                                    "id": "lab_14949732",
+                                    "category": "laboratory",
+                                    "concept": {
+                                        "text": "APTT Control"
+                                    },
+                                    "value_type": "float",
+                                    "value": 31.24,
+                                    "effective_datetime": "2026-07-28T10:48:25Z",
+                                    "service_request_id": "PK1583939",
+                                    "value_unit": "Detik",
+                                    "interpretation": "normal"
+                                },
+                                {
+                                    "id": "lab_14949733",
+                                    "category": "laboratory",
+                                    "concept": {
+                                        "text": "APTT"
+                                    },
+                                    "value_type": "float",
+                                    "value": 30.2,
+                                    "effective_datetime": "2026-07-28T10:48:25Z",
+                                    "service_request_id": "PK1583939",
+                                    "value_unit": "Detik",
+                                    "interpretation": "normal"
+                                },
+                                {
+                                    "id": "lab_14949734",
+                                    "category": "laboratory",
+                                    "concept": {
+                                        "text": "SGOT / AST"
+                                    },
+                                    "value_type": "integer",
+                                    "value": 15,
+                                    "effective_datetime": "2026-07-28T10:48:25Z",
+                                    "service_request_id": "PK1583939",
+                                    "value_unit": "U/L",
+                                    "interpretation": "normal"
+                                },
+                                {
+                                    "id": "lab_14949735",
+                                    "category": "laboratory",
+                                    "concept": {
+                                        "text": "SGPT / ALT"
+                                    },
+                                    "value_type": "integer",
+                                    "value": 12,
+                                    "effective_datetime": "2026-07-28T10:48:25Z",
+                                    "service_request_id": "PK1583939",
+                                    "value_unit": "U/L",
+                                    "interpretation": "normal"
+                                },
+                                {
+                                    "id": "lab_14949736",
+                                    "category": "laboratory",
+                                    "concept": {
+                                        "text": "Ureum"
+                                    },
+                                    "value_type": "float",
+                                    "value": 12.84,
+                                    "effective_datetime": "2026-07-28T10:48:25Z",
+                                    "service_request_id": "PK1583939",
+                                    "value_unit": "mg/dL",
+                                    "interpretation": "low"
+                                },
+                                {
+                                    "id": "lab_14949737",
+                                    "category": "laboratory",
+                                    "concept": {
+                                        "text": "BUN"
+                                    },
+                                    "value_type": "float",
+                                    "value": 6,
+                                    "effective_datetime": "2026-07-28T10:48:25Z",
+                                    "service_request_id": "PK1583939",
+                                    "value_unit": "mg/dL",
+                                    "interpretation": "low"
+                                },
+                                {
+                                    "id": "lab_14949738",
+                                    "category": "laboratory",
+                                    "concept": {
+                                        "text": "Creatinin"
+                                    },
+                                    "value_type": "float",
+                                    "value": 0.63,
+                                    "effective_datetime": "2026-07-28T10:48:25Z",
+                                    "service_request_id": "PK1583939",
+                                    "value_unit": "mg/dL",
+                                    "interpretation": "normal"
+                                },
+                                {
+                                    "id": "lab_14949739",
+                                    "category": "laboratory",
+                                    "concept": {
+                                        "text": "Glukosa Darah Sewaktu"
+                                    },
+                                    "value_type": "integer",
+                                    "value": 91,
+                                    "effective_datetime": "2026-07-28T10:48:25Z",
+                                    "service_request_id": "PK1583939",
+                                    "value_unit": "mg/dL",
+                                    "interpretation": "normal"
+                                },
+                                {
+                                    "id": "lab_14949740",
+                                    "category": "laboratory",
+                                    "concept": {
+                                        "text": "Kalium"
+                                    },
+                                    "value_type": "float",
+                                    "value": 4.28,
+                                    "effective_datetime": "2026-07-28T10:48:25Z",
+                                    "service_request_id": "PK1583939",
+                                    "value_unit": "mEq/L",
+                                    "interpretation": "normal"
+                                },
+                                {
+                                    "id": "lab_14949742",
+                                    "category": "laboratory",
+                                    "concept": {
+                                        "text": "Chlorida"
+                                    },
+                                    "value_type": "float",
+                                    "value": 105.2,
+                                    "effective_datetime": "2026-07-28T10:48:25Z",
+                                    "service_request_id": "PK1583939",
+                                    "value_unit": "mEq/L",
+                                    "interpretation": "normal"
+                                },
+                                {
+                                    "id": "lab_14949743",
+                                    "category": "laboratory",
+                                    "concept": {
+                                        "text": "Natrium"
+                                    },
+                                    "value_type": "float",
+                                    "value": 137.1,
+                                    "effective_datetime": "2026-07-28T10:48:25Z",
+                                    "service_request_id": "PK1583939",
+                                    "value_unit": "mEq/L",
+                                    "interpretation": "normal"
+                                }
+                            ]
+                        }
+                    ],
+                    "laporan_operasi": [
+                        {
+                            "laporan_operasi": [
+                                {
+                                    "id": "15044",
+                                    "category": "OPERATION",
+                                    "concept": {
+                                        "text": "Serklase Serviks"
+                                    },
+                                    "effective_datetime": "2026-07-28T09:36:04Z",
+                                    "result": "- Prosedur operasi rutin\r\n- Dalam stadium narkose, pasien diposisikan litotomi\r\n- Dilakukan tindakan aseptik dan antiseptik dengan povidon iodin 10%\r\n- Medan operasi dipersempit dengan linen steril, dimasukan sims anterior dan posterior\r\n- Cervix di klem menggunakan klem ovari diarah jam 12 dan 6\r\n- Cervix posterior kesan lengket dengan fornix posterior\r\n- Cervix anterior kesan pendek ukuran 3.26cm\r\n- Dilakukan penjahitan dengan teknik McDonals pada titik arah jam 6, 9, 12, 3 menggunakan benang mersilen\r\n- Dilakukan simpul arah jam 6\r\n- Kontrol perdarahan (-)\r\n- Klem ovari dilepas \r\n- Sims anterior dan posterior dilepas\r\n- Operasi selesai",
+                                    "conclusion": "Cefadroxil 500mg/8jam/po\r\nAsam mefenamat 500mg/8jam/po\r\nPremaston 2 x 5mg\r\nMelanjutkan OAH : nifedepin 10mg/8jam/po\r\nMelanjutkan vitamin kehamilan\r\nObs KU/VS/TTV/HIS\r\n",
+                                    "performer_id": {
+                                        "id": "14B",
+                                        "name": "dr. MOCHAMMAD MUNIR, Sp.OG (K)",
+                                        "profession": "Dokter"
+                                    }
+                                }
+                            ],
+                            "pemesanan": [
+                                {
+                                    "id": "68474",
+                                    "category": "surgical-procedure",
+                                    "concept": {
+                                        "text": "Serklase Serviks"
+                                    },
+                                    "status": "active",
+                                    "body_site": [
+                                        {
+                                            "text": "Tidak tampak massa pada cervix. perdarahan (-), erosi servix (-)"
+                                        }
+                                    ],
+                                    "authored_datetime": "2026-07-28T09:36:04Z",
+                                    "occurrence_datetime": "2026-07-29T09:00:17Z"
+                                }
+                            ],
+                            "diagnosis_pra_bedah": [
+                                {
+                                    "id": "68474",
+                                    "diagnosis_text": " Inkompeten servix, Preeklampsia, G3P2A0 hamil 23 minggu 4 hari",
+                                    "is_primary": true,
+                                    "clinical_status": "active"
+                                }
+                            ],
+                            "diagnosis_pasca_bedah": [
+                                {
+                                    "id": "15044",
+                                    "diagnosis_text": "Post cerclage ai Inkompeten servix, Preeklampsia, G3P2A0 hamil 23 minggu 4 hari",
+                                    "is_primary": true,
+                                    "clinical_status": "resolved"
+                                }
+                            ],
+                            "prosedur_operasi": [
+                                {
+                                    "id": "15044",
+                                    "procedure_text": "Serklase Serviks",
+                                    "concept": {
+                                        "text": "Serklase Serviks"
+                                    },
+                                    "status": "completed",
+                                    "category": "surgical",
+                                    "body_site": [
+                                        {
+                                            "text": "Tidak tampak massa pada cervix. perdarahan (-), erosi servix (-)"
+                                        }
+                                    ],
+                                    "performer_id": "14B",
+                                    "performed_datetime": "2026-07-29T09:00:17Z",
+                                    "finished_datetime": "2026-07-29T10:00:17Z"
+                                }
+                            ]
+                        }
+                    ],
+                    "billing": [
+                        {
+                            "id": "477896",
+                            "product_name": "CEFAZOLIN 1 G",
+                            "product_group": "Obat RS",
+                            "total_net_price": 22274,
+                            "billable_period_start": "2026-07-28 11:18:26",
+                            "product_group_code": "K01",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "NACL 0.9% 100 ML",
+                            "product_group": "Obat RS",
+                            "total_net_price": 7552,
+                            "billable_period_start": "2026-07-28 11:33:12",
+                            "product_group_code": "K01",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "CATHY NO 20",
+                            "product_group": "Alat Kesehatan",
+                            "total_net_price": 7997,
+                            "billable_period_start": "2026-07-28 11:33:12",
+                            "product_group_code": "K02",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "CATHY NO 22",
+                            "product_group": "Alat Kesehatan",
+                            "total_net_price": 7996,
+                            "billable_period_start": "2026-07-28 11:33:12",
+                            "product_group_code": "K02",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "TRANFUSI SET TERUMO",
+                            "product_group": "Alat Kesehatan",
+                            "total_net_price": 6400,
+                            "billable_period_start": "2026-07-28 11:33:12",
+                            "product_group_code": "K02",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "FOLY CATETER NO 16",
+                            "product_group": "Alat Kesehatan",
+                            "total_net_price": 12403,
+                            "billable_period_start": "2026-07-28 11:33:12",
+                            "product_group_code": "K02",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "URINE BAG AXIMED DRAINAGE",
+                            "product_group": "Alat Kesehatan",
+                            "total_net_price": 5376,
+                            "billable_period_start": "2026-07-28 11:33:12",
+                            "product_group_code": "K02",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "RINGER LAKTAT",
+                            "product_group": "Obat RS",
+                            "total_net_price": 20480,
+                            "billable_period_start": "2026-07-28 11:33:12",
+                            "product_group_code": "K01",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "STERA SPUIT DISPOSIBLE 3 CC",
+                            "product_group": "Alat Kesehatan",
+                            "total_net_price": 3453,
+                            "billable_period_start": "2026-07-28 11:33:12",
+                            "product_group_code": "K02",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "STERA SPUIT DISPOSIBLE 5 CC",
+                            "product_group": "Alat Kesehatan",
+                            "total_net_price": 3837,
+                            "billable_period_start": "2026-07-28 11:33:12",
+                            "product_group_code": "K02",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "STERA SPUIT DISPOSIBLE 10 CC",
+                            "product_group": "Alat Kesehatan",
+                            "total_net_price": 1664,
+                            "billable_period_start": "2026-07-28 11:33:12",
+                            "product_group_code": "K02",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "AQUAPRO INJEKSI25 ML OTSU AQUABIDES 25 CC",
+                            "product_group": "Obat RS",
+                            "total_net_price": 2875,
+                            "billable_period_start": "2026-07-28 11:33:12",
+                            "product_group_code": "K01",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "CATHEJELL 12,5",
+                            "product_group": "Alat Kesehatan",
+                            "total_net_price": 29439,
+                            "billable_period_start": "2026-07-28 11:33:12",
+                            "product_group_code": "K02",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "HANDSCOND NO.6,5",
+                            "product_group": "Alat Kesehatan",
+                            "total_net_price": 6593,
+                            "billable_period_start": "2026-07-28 11:33:12",
+                            "product_group_code": "K02",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "HANDSCOND NO.07",
+                            "product_group": "Alat Kesehatan",
+                            "total_net_price": 13186,
+                            "billable_period_start": "2026-07-29 10:41:24",
+                            "product_group_code": "K02",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "RINGER LAKTAT",
+                            "product_group": "Obat RS",
+                            "total_net_price": 10240,
+                            "billable_period_start": "2026-07-29 10:41:49",
+                            "product_group_code": "K01",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "RINGER LAKTAT",
+                            "product_group": "Obat RS",
+                            "total_net_price": 10240,
+                            "billable_period_start": "2026-07-29 10:41:49",
+                            "product_group_code": "K01",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "CEFADROXIL 500 MG",
+                            "product_group": "Obat RS",
+                            "total_net_price": 794,
+                            "billable_period_start": "2026-07-29 10:55:04",
+                            "product_group_code": "K01",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "CEFADROXIL 500 MG",
+                            "product_group": "Obat RS",
+                            "total_net_price": 794,
+                            "billable_period_start": "2026-07-29 10:55:04",
+                            "product_group_code": "K01",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "ASAM MEFENAMAT 500 MG",
+                            "product_group": "Obat RS",
+                            "total_net_price": 192,
+                            "billable_period_start": "2026-07-29 10:55:04",
+                            "product_group_code": "K01",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "ASAM MEFENAMAT 500 MG",
+                            "product_group": "Obat RS",
+                            "total_net_price": 192,
+                            "billable_period_start": "2026-07-29 10:55:04",
+                            "product_group_code": "K01",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "ASAM MEFENAMAT 500 MG",
+                            "product_group": "Obat RS",
+                            "total_net_price": 192,
+                            "billable_period_start": "2026-07-29 10:55:04",
+                            "product_group_code": "K01",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "PREMASTON / ALLILESTRENOL TAB 5 MG",
+                            "product_group": "Obat RS",
+                            "total_net_price": 3978,
+                            "billable_period_start": "2026-07-29 10:55:04",
+                            "product_group_code": "K01",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "PREMASTON / ALLILESTRENOL TAB 5 MG",
+                            "product_group": "Obat RS",
+                            "total_net_price": 3978,
+                            "billable_period_start": "2026-07-29 10:55:04",
+                            "product_group_code": "K01",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "Serklase serviks",
+                            "product_group": "TINDAKAN MEDIK OPERASI",
+                            "total_net_price": 7560000,
+                            "billable_period_start": "2026-07-29 09:33:02",
+                            "product_group_code": "107",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "Anestesi Serklase serviks",
+                            "product_group": "ANESTESI TINDAKAN OPERASI",
+                            "total_net_price": 840000,
+                            "billable_period_start": "2026-07-29 09:33:21",
+                            "product_group_code": "108",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "Penggunaan O2 per liter",
+                            "product_group": "PENGGUNAAN OKSIGEN",
+                            "total_net_price": 14400,
+                            "billable_period_start": "2026-07-29 09:33:33",
+                            "product_group_code": "19",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "UNDERPAED HEALER UK 60X90 CM",
+                            "product_group": "Alat Kesehatan",
+                            "total_net_price": 3800,
+                            "billable_period_start": "2026-07-29 10:18:58",
+                            "product_group_code": "K02",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "SILKAM 2 TAPER (S191)",
+                            "product_group": "Alat Kesehatan",
+                            "total_net_price": 64177,
+                            "billable_period_start": "2026-07-29 10:18:58",
+                            "product_group_code": "K02",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "PROLENE 1  40 MM TAPER (L59)",
+                            "product_group": "Alat Kesehatan",
+                            "total_net_price": 115986,
+                            "billable_period_start": "2026-07-29 10:18:58",
+                            "product_group_code": "K02",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "PARACETAMOL INFUS 100 ML / SANMOL",
+                            "product_group": "Obat RS",
+                            "total_net_price": 10881,
+                            "billable_period_start": "2026-07-29 10:18:58",
+                            "product_group_code": "K01",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "FENTANIL 0,05 MG/ML",
+                            "product_group": "Obat RS",
+                            "total_net_price": 76800,
+                            "billable_period_start": "2026-07-29 10:18:58",
+                            "product_group_code": "K01",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "ASAM TRANEXAMAT 500 MG INJEKSI",
+                            "product_group": "Obat RS",
+                            "total_net_price": 5872,
+                            "billable_period_start": "2026-07-29 10:18:58",
+                            "product_group_code": "K01",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "DEXAMETHASONE 5 MG/1ML",
+                            "product_group": "Obat RS",
+                            "total_net_price": 3182,
+                            "billable_period_start": "2026-07-29 10:18:58",
+                            "product_group_code": "K01",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "KETOROLAC 30 MG",
+                            "product_group": "Obat RS",
+                            "total_net_price": 1280,
+                            "billable_period_start": "2026-07-29 10:18:58",
+                            "product_group_code": "K01",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "LIDOCAIN HCL 2ML",
+                            "product_group": "Obat RS",
+                            "total_net_price": 2560,
+                            "billable_period_start": "2026-07-29 10:18:58",
+                            "product_group_code": "K01",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "ONDANSETRON INJ 4MG",
+                            "product_group": "Obat RS",
+                            "total_net_price": 1536,
+                            "billable_period_start": "2026-07-29 10:18:58",
+                            "product_group_code": "K01",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "RECOFOL/SAFOL/PROPOFOL",
+                            "product_group": "Obat RS",
+                            "total_net_price": 15616,
+                            "billable_period_start": "2026-07-29 10:18:58",
+                            "product_group_code": "K01",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "3WAY EKOR ESKAMET",
+                            "product_group": "Alat Kesehatan",
+                            "total_net_price": 6452,
+                            "billable_period_start": "2026-07-29 10:18:58",
+                            "product_group_code": "K02",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "CANUL OXSIGEN ( CANUL O2 )",
+                            "product_group": "Alat Kesehatan",
+                            "total_net_price": 5120,
+                            "billable_period_start": "2026-07-29 10:18:58",
+                            "product_group_code": "K02",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "CANUL SUCTION NO.12",
+                            "product_group": "Alat Kesehatan",
+                            "total_net_price": 5650,
+                            "billable_period_start": "2026-07-29 10:18:58",
+                            "product_group_code": "K02",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "SKINTACT FOAM 35X41 MM",
+                            "product_group": "Alat Kesehatan",
+                            "total_net_price": 1627,
+                            "billable_period_start": "2026-07-29 10:18:58",
+                            "product_group_code": "K02",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "GUDEL NO 02/80",
+                            "product_group": "Alat Kesehatan",
+                            "total_net_price": 16820,
+                            "billable_period_start": "2026-07-29 10:18:58",
+                            "product_group_code": "K02",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "SOFT SEAL LARYNGEAL MASK NO. 3",
+                            "product_group": "Alat Kesehatan",
+                            "total_net_price": 146304,
+                            "billable_period_start": "2026-07-29 10:18:58",
+                            "product_group_code": "K02",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "Akomodasi Kelas III Melati I",
+                            "product_group": "AKOMODASI",
+                            "total_net_price": 165000,
+                            "billable_period_start": "2026-07-28 11:11:06",
+                            "product_group_code": "02",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "Parsial Care / Intermediate Care Kelas III",
+                            "product_group": "JASA KEPERAWATAN                                  ",
+                            "total_net_price": 60000,
+                            "billable_period_start": "2026-07-28 11:11:15",
+                            "product_group_code": "66",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "Doppler",
+                            "product_group": "TINDAKAN MEDIK RAWAT INAP",
+                            "total_net_price": 120000,
+                            "billable_period_start": "2026-07-28 11:11:25",
+                            "product_group_code": "136",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "Pengambilan Darah Vena",
+                            "product_group": "TINDAKAN MEDIK RAWAT INAP",
+                            "total_net_price": 40000,
+                            "billable_period_start": "2026-07-28 11:11:29",
+                            "product_group_code": "136",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "Pasang Infus",
+                            "product_group": "TINDAKAN MEDIK RAWAT INAP",
+                            "total_net_price": 40000,
+                            "billable_period_start": "2026-07-28 11:11:32",
+                            "product_group_code": "136",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "Pasang dan atau Lepas DC",
+                            "product_group": "TINDAKAN MEDIK RAWAT INAP",
+                            "total_net_price": 55000,
+                            "billable_period_start": "2026-07-28 11:13:19",
+                            "product_group_code": "136",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "Akomodasi Kelas III Melati I",
+                            "product_group": "AKOMODASI",
+                            "total_net_price": 165000,
+                            "billable_period_start": "2026-07-29 08:46:04",
+                            "product_group_code": "02",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "Injeksi Intravena Melalui Selang Infus",
+                            "product_group": "TINDAKAN MEDIK RAWAT INAP",
+                            "total_net_price": 120000,
+                            "billable_period_start": "2026-07-29 08:46:13",
+                            "product_group_code": "136",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "Total Care / Maksimal Care Kelas III",
+                            "product_group": "JASA KEPERAWATAN                                  ",
+                            "total_net_price": 65000,
+                            "billable_period_start": "2026-07-29 08:46:26",
+                            "product_group_code": "66",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "Pemasangan Saturasi",
+                            "product_group": "TINDAKAN MEDIK RAWAT INAP",
+                            "total_net_price": 40000,
+                            "billable_period_start": "2026-07-29 08:46:33",
+                            "product_group_code": "136",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "Penggunaan O2 per liter",
+                            "product_group": "PENGGUNAAN OKSIGEN",
+                            "total_net_price": 96000,
+                            "billable_period_start": "2026-07-29 08:46:40",
+                            "product_group_code": "19",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "Visite Dokter Spesialis Konsultan Ruang Kelas III",
+                            "product_group": "VISITE DOKTER                                     ",
+                            "total_net_price": 120000,
+                            "billable_period_start": "2026-07-29 08:46:44",
+                            "product_group_code": "63",
+                            "currency": "IDR"
+                        },
+                        {
+                            "id": "477896",
+                            "product_name": "USG Kebidanan",
+                            "product_group": "PEM. DIAG. ELEKTROMEDIK (USG) RAWAT INAP",
+                            "total_net_price": 325000,
+                            "billable_period_start": "2026-07-28 15:18:07",
+                            "product_group_code": "33",
+                            "currency": "IDR"
+                        }
+                    ],
+                    "diagnosis_aktif": [
+                        {
+                            "id": "diag_799252",
+                            "diagnosis_text": "Inkompeten servix, Preeklampsia, G3P2A0 hamil 23 minggu 4 hari",
+                            "is_primary": true,
+                            "recorder_id": {
+                                "id": "14B",
+                                "name": "dr. MOCHAMMAD MUNIR, Sp.OG (K)",
+                                "profession": "Dokter"
+                            },
+                            "recorded_datetime": "2026-07-29T08:46:19Z"
+                        }
+                    ],
+                    "diagnosis_awal": [
+                        {
+                            "id": "diag_477896_798816",
+                            "diagnosis_text": "Inkompeten servix, Preeklampsia, G3P2A0 hamil 23 minggu 3 hari",
+                            "is_primary": true,
+                            "recorded_datetime": "2026-07-28T09:28:07Z"
+                        }
+                    ],
+                    "obat": [
+                        {
+                            "obat": [
+                                {
+                                    "id": "MED-ABCAUB20",
+                                    "medication_name": "CATHY NO 20",
+                                    "medication_form": "alkes"
+                                },
+                                {
+                                    "id": "MED-ABCAUB22",
+                                    "medication_name": "CATHY NO 22",
+                                    "medication_form": "alkes"
+                                },
+                                {
+                                    "id": "MED-AQUAJA00",
+                                    "medication_name": "AQUAPRO INJEKSI25 ML OTSU AQUABIDES 25 CC",
+                                    "medication_form": "alkes"
+                                },
+                                {
+                                    "id": "MED-ASMETT50",
+                                    "medication_name": "ASAM MEFENAMAT 500 MG",
+                                    "medication_form": "Tablet"
+                                },
+                                {
+                                    "id": "MED-CATHJL12.5",
+                                    "medication_name": "CATHEJELL 12,5",
+                                    "medication_form": "alkes"
+                                },
+                                {
+                                    "id": "MED-CEFATT50",
+                                    "medication_name": "CEFADROXIL 500 MG",
+                                    "medication_form": "Kapsul"
+                                },
+                                {
+                                    "id": "MED-CEFZBC01",
+                                    "medication_name": "CEFAZOLIN 1 G",
+                                    "medication_form": "Injeksi"
+                                },
+                                {
+                                    "id": "MED-FACAUB016",
+                                    "medication_name": "FOLY CATETER NO 16",
+                                    "medication_form": "alkes"
+                                },
+                                {
+                                    "id": "MED-HANCUB07",
+                                    "medication_name": "HANDSCOND NO.07",
+                                    "medication_form": "alkes"
+                                },
+                                {
+                                    "id": "MED-HANCUB65",
+                                    "medication_name": "HANDSCOND NO.6,5",
+                                    "medication_form": "alkes"
+                                },
+                                {
+                                    "id": "MED-INRLRB00",
+                                    "medication_name": "RINGER LAKTAT",
+                                    "medication_form": "Infus"
+                                },
+                                {
+                                    "id": "MED-NACLJV10",
+                                    "medication_name": "NACL 0.9% 100 ML",
+                                    "medication_form": "Infus"
+                                },
+                                {
+                                    "id": "MED-ONURUB02",
+                                    "medication_name": "URINE BAG AXIMED DRAINAGE",
+                                    "medication_form": "alkes"
+                                },
+                                {
+                                    "id": "MED-PREMTB05",
+                                    "medication_name": "PREMASTON / ALLILESTRENOL TAB 5 MG",
+                                    "medication_form": "tablet"
+                                },
+                                {
+                                    "id": "MED-STSDUB03",
+                                    "medication_name": "STERA SPUIT DISPOSIBLE 3 CC",
+                                    "medication_form": "alkes"
+                                },
+                                {
+                                    "id": "MED-STSDUB05",
+                                    "medication_name": "STERA SPUIT DISPOSIBLE 5 CC",
+                                    "medication_form": "alkes"
+                                },
+                                {
+                                    "id": "MED-STSDUB10",
+                                    "medication_name": "STERA SPUIT DISPOSIBLE 10 CC",
+                                    "medication_form": "alkes"
+                                },
+                                {
+                                    "id": "MED-TRFUUB00",
+                                    "medication_name": "TRANFUSI SET TERUMO",
+                                    "medication_form": "alkes"
+                                },
+                                {
+                                    "id": "MED-UNDERSB60",
+                                    "medication_name": "UNDERPAED HEALER UK 60X90 CM",
+                                    "medication_form": "alkes"
+                                },
+                                {
+                                    "id": "MED-SILK02TP",
+                                    "medication_name": "SILKAM 2 TAPER (S191)",
+                                    "medication_form": "alkes"
+                                },
+                                {
+                                    "id": "MED-PRLEUS01",
+                                    "medication_name": "PROLENE 1  40 MM TAPER (L59)",
+                                    "medication_form": "alkes"
+                                },
+                                {
+                                    "id": "MED-PCTIRB10",
+                                    "medication_name": "PARACETAMOL INFUS 100 ML / SANMOL",
+                                    "medication_form": "Infus"
+                                },
+                                {
+                                    "id": "MED-FENTNA05",
+                                    "medication_name": "FENTANIL 0,05 MG/ML",
+                                    "medication_form": "Injeksi"
+                                },
+                                {
+                                    "id": "MED-ASTRJA50",
+                                    "medication_name": "ASAM TRANEXAMAT 500 MG INJEKSI",
+                                    "medication_form": "Injeksi"
+                                },
+                                {
+                                    "id": "MED-DEXAJA05",
+                                    "medication_name": "DEXAMETHASONE 5 MG/1ML",
+                                    "medication_form": "Injeksi"
+                                },
+                                {
+                                    "id": "MED-KETOJA00",
+                                    "medication_name": "KETOROLAC 30 MG",
+                                    "medication_form": "Injeksi"
+                                },
+                                {
+                                    "id": "MED-LIHCJA02",
+                                    "medication_name": "LIDOCAIN HCL 2ML",
+                                    "medication_form": "Injeksi"
+                                },
+                                {
+                                    "id": "MED-ANDAJA04",
+                                    "medication_name": "ONDANSETRON INJ 4MG",
+                                    "medication_form": "Injeksi"
+                                },
+                                {
+                                    "id": "MED-RECOJA00",
+                                    "medication_name": "RECOFOL/SAFOL/PROPOFOL",
+                                    "medication_form": "Injeksi"
+                                },
+                                {
+                                    "id": "MED-3WEEUB00",
+                                    "medication_name": "3WAY EKOR ESKAMET",
+                                    "medication_form": "alkes"
+                                },
+                                {
+                                    "id": "MED-CAOXUB00",
+                                    "medication_name": "CANUL OXSIGEN ( CANUL O2 )",
+                                    "medication_form": "alkes"
+                                },
+                                {
+                                    "id": "MED-CANUUB12",
+                                    "medication_name": "CANUL SUCTION NO.12",
+                                    "medication_form": "alkes"
+                                },
+                                {
+                                    "id": "MED-SKINRB35",
+                                    "medication_name": "SKINTACT FOAM 35X41 MM",
+                                    "medication_form": "alkes"
+                                },
+                                {
+                                    "id": "MED-GUEDUP02",
+                                    "medication_name": "GUDEL NO 02/80",
+                                    "medication_form": "alkes"
+                                },
+                                {
+                                    "id": "MED-SLARUB03",
+                                    "medication_name": "SOFT SEAL LARYNGEAL MASK NO. 3",
+                                    "medication_form": "alkes"
+                                }
+                            ],
+                            "resep_obat": [
+                                {
+                                    "id": "5734178",
+                                    "medication_id": "MED-ABCAUB20",
+                                    "status": "active",
+                                    "authored_datetime": "2026-07-28T11:33:10Z"
+                                },
+                                {
+                                    "id": "5734179",
+                                    "medication_id": "MED-ABCAUB22",
+                                    "status": "active",
+                                    "authored_datetime": "2026-07-28T11:33:10Z"
+                                },
+                                {
+                                    "id": "5734188",
+                                    "medication_id": "MED-AQUAJA00",
+                                    "status": "active",
+                                    "authored_datetime": "2026-07-28T11:33:10Z"
+                                },
+                                {
+                                    "id": "5740614",
+                                    "medication_id": "MED-ASMETT50",
+                                    "status": "active",
+                                    "authored_datetime": "2026-07-29T10:40:54Z"
+                                },
+                                {
+                                    "id": "5734189",
+                                    "medication_id": "MED-CATHJL12.5",
+                                    "status": "active",
+                                    "authored_datetime": "2026-07-28T11:33:10Z"
+                                },
+                                {
+                                    "id": "5740612",
+                                    "medication_id": "MED-CEFATT50",
+                                    "status": "active",
+                                    "authored_datetime": "2026-07-29T10:40:54Z"
+                                },
+                                {
+                                    "id": "5734111",
+                                    "medication_id": "MED-CEFZBC01",
+                                    "status": "active",
+                                    "authored_datetime": "2026-07-28T11:14:08Z"
+                                },
+                                {
+                                    "id": "5734181",
+                                    "medication_id": "MED-FACAUB016",
+                                    "status": "active",
+                                    "authored_datetime": "2026-07-28T11:33:10Z"
+                                },
+                                {
+                                    "id": "5740623",
+                                    "medication_id": "MED-HANCUB07",
+                                    "status": "active",
+                                    "authored_datetime": "2026-07-29T10:41:13Z"
+                                },
+                                {
+                                    "id": "5734253",
+                                    "medication_id": "MED-HANCUB65",
+                                    "status": "active",
+                                    "authored_datetime": "2026-07-28T11:33:10Z"
+                                },
+                                {
+                                    "id": "5734183",
+                                    "medication_id": "MED-INRLRB00",
+                                    "status": "active",
+                                    "authored_datetime": "2026-07-28T11:33:10Z"
+                                },
+                                {
+                                    "id": "5734177",
+                                    "medication_id": "MED-NACLJV10",
+                                    "status": "active",
+                                    "authored_datetime": "2026-07-28T11:33:10Z"
+                                },
+                                {
+                                    "id": "5734182",
+                                    "medication_id": "MED-ONURUB02",
+                                    "status": "active",
+                                    "authored_datetime": "2026-07-28T11:33:10Z"
+                                },
+                                {
+                                    "id": "5740617",
+                                    "medication_id": "MED-PREMTB05",
+                                    "status": "active",
+                                    "authored_datetime": "2026-07-29T10:40:54Z"
+                                },
+                                {
+                                    "id": "5734185",
+                                    "medication_id": "MED-STSDUB03",
+                                    "status": "active",
+                                    "authored_datetime": "2026-07-28T11:33:10Z"
+                                },
+                                {
+                                    "id": "5734186",
+                                    "medication_id": "MED-STSDUB05",
+                                    "status": "active",
+                                    "authored_datetime": "2026-07-28T11:33:10Z"
+                                },
+                                {
+                                    "id": "5734187",
+                                    "medication_id": "MED-STSDUB10",
+                                    "status": "active",
+                                    "authored_datetime": "2026-07-28T11:33:10Z"
+                                },
+                                {
+                                    "id": "5734180",
+                                    "medication_id": "MED-TRFUUB00",
+                                    "status": "active",
+                                    "authored_datetime": "2026-07-28T11:33:10Z"
+                                }
+                            ],
+                            "pengeluaran_obat": [
+                                {
+                                    "id": "30470237",
+                                    "medication_id": "MED-3WEEUB00",
+                                    "status": "completed",
+                                    "handed_over_datetime": "2026-07-29T10:18:58Z"
+                                },
+                                {
+                                    "id": "30459353",
+                                    "medication_id": "MED-ABCAUB20",
+                                    "status": "completed",
+                                    "handed_over_datetime": "2026-07-28T11:33:12Z"
+                                },
+                                {
+                                    "id": "30459354",
+                                    "medication_id": "MED-ABCAUB22",
+                                    "status": "completed",
+                                    "handed_over_datetime": "2026-07-28T11:33:12Z"
+                                },
+                                {
+                                    "id": "30470234",
+                                    "medication_id": "MED-ANDAJA04",
+                                    "status": "completed",
+                                    "handed_over_datetime": "2026-07-29T10:18:58Z"
+                                },
+                                {
+                                    "id": "30459362",
+                                    "medication_id": "MED-AQUAJA00",
+                                    "status": "completed",
+                                    "handed_over_datetime": "2026-07-28T11:33:12Z"
+                                },
+                                {
+                                    "id": "30470961",
+                                    "medication_id": "MED-ASMETT50",
+                                    "status": "completed",
+                                    "handed_over_datetime": "2026-07-29T10:55:04Z"
+                                },
+                                {
+                                    "id": "30470229",
+                                    "medication_id": "MED-ASTRJA50",
+                                    "status": "completed",
+                                    "handed_over_datetime": "2026-07-29T10:18:58Z"
+                                },
+                                {
+                                    "id": "30470241",
+                                    "medication_id": "MED-CANUUB12",
+                                    "status": "completed",
+                                    "handed_over_datetime": "2026-07-29T10:18:58Z"
+                                },
+                                {
+                                    "id": "30470239",
+                                    "medication_id": "MED-CAOXUB00",
+                                    "status": "completed",
+                                    "handed_over_datetime": "2026-07-29T10:18:58Z"
+                                },
+                                {
+                                    "id": "30459363",
+                                    "medication_id": "MED-CATHJL12.5",
+                                    "status": "completed",
+                                    "handed_over_datetime": "2026-07-28T11:33:12Z"
+                                },
+                                {
+                                    "id": "30470959",
+                                    "medication_id": "MED-CEFATT50",
+                                    "status": "completed",
+                                    "handed_over_datetime": "2026-07-29T10:55:04Z"
+                                },
+                                {
+                                    "id": "30459103",
+                                    "medication_id": "MED-CEFZBC01",
+                                    "status": "completed",
+                                    "handed_over_datetime": "2026-07-28T11:18:26Z"
+                                },
+                                {
+                                    "id": "30470230",
+                                    "medication_id": "MED-DEXAJA05",
+                                    "status": "completed",
+                                    "handed_over_datetime": "2026-07-29T10:18:58Z"
+                                },
+                                {
+                                    "id": "30459356",
+                                    "medication_id": "MED-FACAUB016",
+                                    "status": "completed",
+                                    "handed_over_datetime": "2026-07-28T11:33:12Z"
+                                },
+                                {
+                                    "id": "30470228",
+                                    "medication_id": "MED-FENTNA05",
+                                    "status": "completed",
+                                    "handed_over_datetime": "2026-07-29T10:18:58Z"
+                                },
+                                {
+                                    "id": "30470248",
+                                    "medication_id": "MED-GUEDUP02",
+                                    "status": "completed",
+                                    "handed_over_datetime": "2026-07-29T10:18:58Z"
+                                },
+                                {
+                                    "id": "30470750",
+                                    "medication_id": "MED-HANCUB07",
+                                    "status": "completed",
+                                    "handed_over_datetime": "2026-07-29T10:41:24Z"
+                                },
+                                {
+                                    "id": "30459364",
+                                    "medication_id": "MED-HANCUB65",
+                                    "status": "completed",
+                                    "handed_over_datetime": "2026-07-28T11:33:12Z"
+                                },
+                                {
+                                    "id": "30459358",
+                                    "medication_id": "MED-INRLRB00",
+                                    "status": "completed",
+                                    "handed_over_datetime": "2026-07-28T11:33:12Z"
+                                },
+                                {
+                                    "id": "30470231",
+                                    "medication_id": "MED-KETOJA00",
+                                    "status": "completed",
+                                    "handed_over_datetime": "2026-07-29T10:18:58Z"
+                                },
+                                {
+                                    "id": "30470232",
+                                    "medication_id": "MED-LIHCJA02",
+                                    "status": "completed",
+                                    "handed_over_datetime": "2026-07-29T10:18:58Z"
+                                },
+                                {
+                                    "id": "30459352",
+                                    "medication_id": "MED-NACLJV10",
+                                    "status": "completed",
+                                    "handed_over_datetime": "2026-07-28T11:33:12Z"
+                                },
+                                {
+                                    "id": "30459357",
+                                    "medication_id": "MED-ONURUB02",
+                                    "status": "completed",
+                                    "handed_over_datetime": "2026-07-28T11:33:12Z"
+                                },
+                                {
+                                    "id": "30470227",
+                                    "medication_id": "MED-PCTIRB10",
+                                    "status": "completed",
+                                    "handed_over_datetime": "2026-07-29T10:18:58Z"
+                                },
+                                {
+                                    "id": "30470964",
+                                    "medication_id": "MED-PREMTB05",
+                                    "status": "completed",
+                                    "handed_over_datetime": "2026-07-29T10:55:04Z"
+                                },
+                                {
+                                    "id": "30470226",
+                                    "medication_id": "MED-PRLEUS01",
+                                    "status": "completed",
+                                    "handed_over_datetime": "2026-07-29T10:18:58Z"
+                                },
+                                {
+                                    "id": "30470235",
+                                    "medication_id": "MED-RECOJA00",
+                                    "status": "completed",
+                                    "handed_over_datetime": "2026-07-29T10:18:58Z"
+                                },
+                                {
+                                    "id": "30470224",
+                                    "medication_id": "MED-SILK02TP",
+                                    "status": "completed",
+                                    "handed_over_datetime": "2026-07-29T10:18:58Z"
+                                },
+                                {
+                                    "id": "30470246",
+                                    "medication_id": "MED-SKINRB35",
+                                    "status": "completed",
+                                    "handed_over_datetime": "2026-07-29T10:18:58Z"
+                                },
+                                {
+                                    "id": "30470250",
+                                    "medication_id": "MED-SLARUB03",
+                                    "status": "completed",
+                                    "handed_over_datetime": "2026-07-29T10:18:58Z"
+                                },
+                                {
+                                    "id": "30459359",
+                                    "medication_id": "MED-STSDUB03",
+                                    "status": "completed",
+                                    "handed_over_datetime": "2026-07-28T11:33:12Z"
+                                },
+                                {
+                                    "id": "30459360",
+                                    "medication_id": "MED-STSDUB05",
+                                    "status": "completed",
+                                    "handed_over_datetime": "2026-07-28T11:33:12Z"
+                                },
+                                {
+                                    "id": "30459361",
+                                    "medication_id": "MED-STSDUB10",
+                                    "status": "completed",
+                                    "handed_over_datetime": "2026-07-28T11:33:12Z"
+                                },
+                                {
+                                    "id": "30459355",
+                                    "medication_id": "MED-TRFUUB00",
+                                    "status": "completed",
+                                    "handed_over_datetime": "2026-07-28T11:33:12Z"
+                                },
+                                {
+                                    "id": "30470223",
+                                    "medication_id": "MED-UNDERSB60",
+                                    "status": "completed",
+                                    "handed_over_datetime": "2026-07-29T10:18:58Z"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]

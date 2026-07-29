@@ -19,10 +19,10 @@ def analyze_log(filepath):
         return {}
 
     start_pattern = re.compile(
-        r"^(\S+)\s+INFO:.*Processing encounter update:\s+(\S+)\s+\|\s+Org:\s+(\S+)"
+        r"^(\S+)\s+INFO:.*Processing encounter update:\s+(\S+)\s+\|\s*Org:\s+(\S+)"
     )
     end_pattern = re.compile(
-        r"^(\S+)\s+INFO:.*Completed processing encounter update:\s+(\S+)\s+\|\s+Org:\s+(\S+)"
+        r"^(\S+)\s+INFO:.*Completed processing encounter update:\s+(\S+)\s+\|\s*Org:\s+(\S+)"
     )
 
     starts = {}

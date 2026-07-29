@@ -1,0 +1,18 @@
+[{
+    "norec": "477896",
+    "noregistrasi": "477896",
+    "norm": "1170233",
+    "sep_data": {
+        "nosep": "1123R0020726V017703",
+        "kelasBPJS": 3
+    },
+    "tglregistrasi": "2026-07-28T03:34:46Z",
+    "admissionType": "ranap",
+    "dpjp_id": "14B",
+    "location_id": "loc_002",
+    "patientInfo": {
+        "dateOfBirth": "1989-05-31",
+        "gender": "perempuan",
+        "name": ""
+    }
+}]
