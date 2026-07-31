@@ -1,0 +1,182 @@
+[
+    {
+        "norec": "473608",
+        "noregistrasi": "473608",
+        "norm": "1200542",
+        "sep_data": {
+            "nosep": "1123R0020526V017690",
+            "kelasBPJS": 3
+        },
+        "tglregistrasi": "2026-05-31T11:41:00Z",
+        "admissionType": "ranap",
+        "dpjp_id": "91A",
+        "location_id": "loc_002",
+        "patientInfo": {
+            "dateOfBirth": "1961-12-06",
+            "gender": "laki-laki",
+            "name": "HARTONO MUSRINI, BP"
+        }
+    },
+    {
+        "norec": "474684",
+        "noregistrasi": "474684",
+        "norm": "703839",
+        "sep_data": {
+            "nosep": "1123R0020626V009589",
+            "kelasBPJS": 3
+        },
+        "tglregistrasi": "2026-06-15T08:25:47Z",
+        "admissionType": "ranap",
+        "dpjp_id": "155",
+        "location_id": "loc_002",
+        "patientInfo": {
+            "dateOfBirth": "1968-01-25",
+            "gender": "perempuan",
+            "name": "LEGIYANTI BINTI MULYO REJO, NY"
+        }
+    },
+    {
+        "norec": "474880",
+        "noregistrasi": "474880",
+        "norm": "1215768",
+        "sep_data": {
+            "nosep": "1123R0020626V010875",
+            "kelasBPJS": 2
+        },
+        "tglregistrasi": "2026-06-17T14:18:00Z",
+        "admissionType": "ranap",
+        "dpjp_id": "04A",
+        "location_id": "loc_002",
+        "patientInfo": {
+            "dateOfBirth": "1972-10-20",
+            "gender": "laki-laki",
+            "name": "SUROSO BIN BINGAN HARTO, BP"
+        }
+    },
+    {
+        "norec": "476333",
+        "noregistrasi": "476333",
+        "norm": "1216205",
+        "sep_data": {
+            "nosep": "1123R0020726V004345",
+            "kelasBPJS": 3
+        },
+        "tglregistrasi": "2026-07-07T07:33:59Z",
+        "admissionType": "ranap",
+        "dpjp_id": "244",
+        "location_id": "loc_002",
+        "patientInfo": {
+            "dateOfBirth": "1965-12-31",
+            "gender": "perempuan",
+            "name": "SABINEM SETYO DARSONO NY"
+        }
+    },
+    {
+        "norec": "473715",
+        "noregistrasi": "473715",
+        "norm": "1081406",
+        "sep_data": {
+            "nosep": "1123R0020626V001158",
+            "kelasBPJS": 3
+        },
+        "tglregistrasi": "2026-06-01T23:07:00Z",
+        "admissionType": "ranap",
+        "dpjp_id": "223",
+        "location_id": "loc_002",
+        "patientInfo": {
+            "dateOfBirth": "1960-11-20",
+            "gender": "perempuan",
+            "name": ""
+        }
+    },
+    {
+        "norec": "475339",
+        "noregistrasi": "475339",
+        "norm": "1208355",
+        "sep_data": {
+            "nosep": "1123R0020626V015019",
+            "kelasBPJS": 2
+        },
+        "tglregistrasi": "2026-06-24T02:32:39Z",
+        "admissionType": "ranap",
+        "dpjp_id": "178",
+        "location_id": "loc_002",
+        "patientInfo": {
+            "dateOfBirth": "2021-06-25",
+            "gender": "laki-laki",
+            "name": "ABYAS DWI ESHAAL MAUZA"
+        }
+    },
+    {
+        "norec": "475526",
+        "noregistrasi": "475526",
+        "norm": "866575",
+        "sep_data": {
+            "nosep": "1123R0020626V016999",
+            "kelasBPJS": 3
+        },
+        "tglregistrasi": "2026-06-26T07:57:00Z",
+        "admissionType": "ranap",
+        "dpjp_id": "212",
+        "location_id": "loc_002",
+        "patientInfo": {
+            "dateOfBirth": "1957-08-02",
+            "gender": "laki-laki",
+            "name": ""
+        }
+    },
+    {
+        "norec": "475823",
+        "noregistrasi": "475823",
+        "norm": "1207610",
+        "sep_data": {
+            "nosep": "1123R0020626V019153",
+            "kelasBPJS": 3
+        },
+        "tglregistrasi": "2026-06-30T09:00:30Z",
+        "admissionType": "ranap",
+        "dpjp_id": "212",
+        "location_id": "loc_002",
+        "patientInfo": {
+            "dateOfBirth": "1970-07-15",
+            "gender": "perempuan",
+            "name": ""
+        }
+    },
+    {
+        "norec": "474861",
+        "noregistrasi": "474861",
+        "norm": "1189262",
+        "sep_data": {
+            "nosep": "1123R0020626V010830",
+            "kelasBPJS": 2
+        },
+        "tglregistrasi": "2026-06-17T10:09:00Z",
+        "admissionType": "ranap",
+        "dpjp_id": "126K",
+        "location_id": "loc_002",
+        "patientInfo": {
+            "dateOfBirth": "2010-11-30",
+            "gender": "laki-laki",
+            "name": "ANTONIUS RAFA BAGUS KURNIAWAN, AN"
+        }
+    },
+    {
+        "norec": "474248",
+        "noregistrasi": "474248",
+        "norm": "1215207",
+        "sep_data": {
+            "nosep": "1123R0020626V005951",
+            "kelasBPJS": 1
+        },
+        "tglregistrasi": "2026-06-09T04:09:00Z",
+        "admissionType": "ranap",
+        "dpjp_id": "169",
+        "location_id": "loc_002",
+        "patientInfo": {
+            "dateOfBirth": "2011-01-20",
+            "gender": "laki-laki",
+            "name": "IHSAN KHALIL KHAIRY, AN"
+        }
+    }
+]
