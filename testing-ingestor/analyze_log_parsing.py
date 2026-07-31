@@ -1,5 +1,6 @@
 import argparse
 import json
+import math
 import re
 from pathlib import Path
 from datetime import datetime
@@ -98,6 +99,13 @@ def format_size(bytes_val):
         return f"{bytes_val:.0f} B"
 
 
+def percentile(sorted_values, p):
+    if not sorted_values:
+        return None
+    index = min(len(sorted_values) - 1, math.ceil(len(sorted_values) * p / 100) - 1)
+    return sorted_values[index]
+
+
 def analyze(log_file=None, payload_file=None):
     log_results = {}
     payload_results = {}
@@ -194,8 +202,19 @@ def analyze(log_file=None, payload_file=None):
         p(f"    Incomplete        : {log_count - completed}")
         if durations:
             avg_s = sum(durations) / len(durations)
+            sorted_durations = sorted(durations)
+            std_s = (sum((d - avg_s) ** 2 for d in durations) / len(durations)) ** 0.5
+            p50 = percentile(sorted_durations, 50)
+            p90 = percentile(sorted_durations, 90)
+            p95 = percentile(sorted_durations, 95)
+            p99 = percentile(sorted_durations, 99)
             p(f"    Total duration    : {total_duration:.1f}s ({total_duration/60:.2f} min)")
             p(f"    Average           : {avg_s:.1f}s ({avg_s/60:.2f} min)")
+            p(f"    Std dev           : {std_s:.1f}s ({std_s/60:.2f} min)")
+            p(f"    Median (p50)      : {p50:.1f}s ({p50/60:.2f} min)")
+            p(f"    p90               : {p90:.1f}s ({p90/60:.2f} min)")
+            p(f"    p95               : {p95:.1f}s ({p95/60:.2f} min)")
+            p(f"    p99               : {p99:.1f}s ({p99/60:.2f} min)")
             p(f"    Min               : {min(durations):.1f}s ({min(durations)/60:.2f} min)")
             p(f"    Max               : {max(durations):.1f}s ({max(durations)/60:.2f} min)")
 
@@ -274,9 +293,20 @@ def analyze(log_file=None, payload_file=None):
         ])
         if durations:
             avg_s = sum(durations) / len(durations)
+            sorted_durations = sorted(durations)
+            std_s = (sum((d - avg_s) ** 2 for d in durations) / len(durations)) ** 0.5
+            p50 = percentile(sorted_durations, 50)
+            p90 = percentile(sorted_durations, 90)
+            p95 = percentile(sorted_durations, 95)
+            p99 = percentile(sorted_durations, 99)
             md_lines.extend([
                 f"| Total duration | {total_duration:.1f}s ({total_duration/60:.2f} min) |",
                 f"| Average | {avg_s:.1f}s ({avg_s/60:.2f} min) |",
+                f"| Std dev | {std_s:.1f}s ({std_s/60:.2f} min) |",
+                f"| Median (p50) | {p50:.1f}s ({p50/60:.2f} min) |",
+                f"| p90 | {p90:.1f}s ({p90/60:.2f} min) |",
+                f"| p95 | {p95:.1f}s ({p95/60:.2f} min) |",
+                f"| p99 | {p99:.1f}s ({p99/60:.2f} min) |",
                 f"| Min | {min(durations):.1f}s ({min(durations)/60:.2f} min) |",
                 f"| Max | {max(durations):.1f}s ({max(durations)/60:.2f} min) |",
             ])
