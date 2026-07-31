@@ -4,7 +4,7 @@ from utils.utility import get_org_id
 import sys
 
 
-DRY_RUN = False
+DRY_RUN = True
 
 
 def find_jobs_by_org(queue_name: str, org_id: str) -> list[str]:
@@ -14,9 +14,10 @@ def find_jobs_by_org(queue_name: str, org_id: str) -> list[str]:
 
     results = []
     for jid in job_ids:
+        jid = jid.decode()
         desc = redis_conn.hget(f"rq:job:{jid}", "description")
         if desc and org_id.encode() in desc:
-            results.append(jid.decode())
+            results.append(jid)
 
     return results
 

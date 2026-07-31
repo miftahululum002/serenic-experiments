@@ -5,3 +5,5 @@
 !.env.example
 __pycache__
 data/organization.csv
+results/*
+!results/.gitkeep

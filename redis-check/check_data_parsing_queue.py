@@ -1,6 +1,6 @@
 from config import redis_conn
-from constant import DATA_PARSING_AGENT
-from utils.utility import get_org_id
+from constant import DATA_PARSING_AGENT, FILENAME
+from utils.utility import get_org_id, write_csv, get_now, get_timestamp_file
 from utils.logger import get_logger
 import re
 
@@ -50,5 +50,10 @@ def print_jobs(jobs: list[dict], queue_name: str, org_id: str):
 
 if __name__ == "__main__":
     org_id = get_org_id()
+    now = get_now()
     jobs = find_jobs_by_org(DATA_PARSING_AGENT, org_id)
     print_jobs(jobs, DATA_PARSING_AGENT, org_id)
+    dirpath = f"results/{org_id}/{now.strftime('%Y%m%d')}"
+    filename = f"{dirpath}/{FILENAME.data_parsing}_{get_timestamp_file()}.csv"
+    write_csv(filename, jobs, ["id", "start_timestamp", "created_at"])
+    logger.info(f"Disimpan ke {filename}")
