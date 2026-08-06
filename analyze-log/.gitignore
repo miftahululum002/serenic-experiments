@@ -1,0 +1,12 @@
+.venv
+.DS_Store
+__pycache__
+.env
+output/*
+!output/.gitkeep
+scale_6gb/*
+!scale_6gb/.gitkeep
+production/*
+!production/.gitkeep
+not_scale/*
+!not_scale/.gitkeep
