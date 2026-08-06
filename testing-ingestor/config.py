@@ -6,6 +6,7 @@ load_dotenv()
 API_KEY = os.getenv("API_KEY")
 ORGANIZATION_ID = os.getenv("ORGANIZATION_ID")
 API_HOST = os.getenv("API_HOST")
+API_VERSION = os.getenv("API_VERSION")
 
 DB_HOST = os.getenv("DB_HOST")
 DB_PORT = os.getenv("DB_PORT")

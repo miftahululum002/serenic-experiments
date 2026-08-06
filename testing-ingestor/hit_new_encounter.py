@@ -2,10 +2,9 @@ import argparse
 import json
 from pathlib import Path
 
-from config import API_HOST
-from utils.api_request import post
-from utils.helper import get_timestamp
 from utils.logger import get_logger
+from utils.api_interface import api_new_encounter
+
 
 log = get_logger("hit_new_encounter")
 
@@ -22,26 +21,14 @@ def hit_new_encounter(filepath: str):
         new_encounters = data.get("request_data", {}).get("newEncounters", [])
 
     log.info("Found %d new encounters", len(new_encounters))
-
-    url = f"{API_HOST}/integrations/v2/encounters/new"
-    payload = {
-        "timestamp": get_timestamp(),
-        "newEncounters": new_encounters,
-    }
-
-    log.info("Posting new encounter to %s", url)
-    response = post(url, payload=payload)
-
-    if response.status_code == 200:
-        log.info("New encounter posted successfully")
-    else:
-        log.warning("New encounter failed with status %s", response.status_code)
-
+    response = api_new_encounter(new_encounters)
     return response
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--file", type=str, required=True, help="Path to new encounters JSON file")
+    parser.add_argument(
+        "--file", type=str, required=True, help="Path to new encounters JSON file"
+    )
     args = parser.parse_args()
     hit_new_encounter(args.file)

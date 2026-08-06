@@ -3,10 +3,9 @@ import json
 import time
 from pathlib import Path
 
-from config import API_HOST
-from utils.api_request import post
-from utils.helper import get_timestamp
 from utils.logger import get_logger
+from utils.api_interface import api_update_encounter
+
 
 log = get_logger("hit_update_encounter_chunked")
 
@@ -24,22 +23,7 @@ def load_updates_from_chunk(filepath: Path):
 
 
 def send_batch(updates: list):
-    url = f"{API_HOST}/integrations/v2/encounters/update"
-    now = get_timestamp()
-    payload = {
-        "start_timestamp": now,
-        "end_timestamp": now,
-        "updates": updates,
-    }
-
-    log.info("Posting %d updates to %s", len(updates), url)
-    response = post(url, payload=payload)
-
-    if response.status_code == 200:
-        log.info("Success")
-    else:
-        log.warning("Failed with status %s", response.status_code)
-
+    response = api_update_encounter(updates)
     return response
 
 
@@ -47,7 +31,7 @@ def process_chunk(filepath: Path, delay: float = 0):
     updates = load_updates_from_chunk(filepath)
     log.info("Loaded %d updates from %s", len(updates), filepath.name)
 
-    batches = [updates[i:i + BATCH_SIZE] for i in range(0, len(updates), BATCH_SIZE)]
+    batches = [updates[i : i + BATCH_SIZE] for i in range(0, len(updates), BATCH_SIZE)]
 
     for idx, batch in enumerate(batches, 1):
         log.info("Sending batch %d/%d", idx, len(batches))
@@ -68,7 +52,9 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--file", type=str, help="Specific chunk file to process")
     parser.add_argument("--all", action="store_true", help="Process all chunk files")
-    parser.add_argument("--delay", type=float, default=0, help="Delay between batches (seconds)")
+    parser.add_argument(
+        "--delay", type=float, default=0, help="Delay between batches (seconds)"
+    )
     args = parser.parse_args()
 
     if args.file:

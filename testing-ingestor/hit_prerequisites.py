@@ -2,10 +2,9 @@ import argparse
 import json
 from pathlib import Path
 
-from config import API_HOST
-from utils.api_request import post
-from utils.helper import get_timestamp
 from utils.logger import get_logger
+from utils.api_interface import api_prerequisites
+
 
 log = get_logger("hit_prerequisites")
 
@@ -19,17 +18,7 @@ def hit_prerequisites(filepath: str | None = None):
     with open(fp) as f:
         payload = json.load(f)
 
-    url = f"{API_HOST}/integrations/v2/prerequisites"
-    payload["timestamp"] = get_timestamp()
-
-    log.info("Posting prerequisites to %s", url)
-    response = post(url, payload=payload)
-
-    if response.status_code == 200:
-        log.info("Prerequisites posted successfully")
-    else:
-        log.warning("Prerequisites failed with status %s", response.status_code)
-
+    response = api_prerequisites(payload)
     return response
 
 
