@@ -1,0 +1,11 @@
+__pycache__
+.env
+.venv
+.DS_Store
+data/*
+!data/.gitkeep
+!data/update_encounters.json
+response/*
+!response/.gitkeep
+payload/*
+!payload/.gitkeep

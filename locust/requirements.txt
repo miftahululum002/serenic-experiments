@@ -1,0 +1,4 @@
+locust
+redis
+rq
+python-dotenv

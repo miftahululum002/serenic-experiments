@@ -1,0 +1,11 @@
+id,name,api_key,api_url,version,is_active
+32ab03d5-3c0c-4fbd-96ed-63ca054203fd,RS Fatmawati,TdswQAdNyurayZI4LGQlkt7fDkUp1Dyz,https://api.serenic.ai,1,1
+d2a967c2-f848-46b9-8d02-bd94680d6bf3,RS M Djamil,ZOm5mu9OBO8nutssgBSLk9y2aGnua8pI,https://34.101.100.117/prod,2,1
+12dd43d5-82f4-4fc5-a982-ee87d665f0dc,RSAB Harapan Kita,ecqDJBuQgQa1OWxLxJCPYS6W1cDRkfnc,https://api.serenic.ai,2,1
+48c40835-4925-4590-9f11-ef34adcea650,RSP Ario Wirawan,nsBegV8z7CAz6V36Nw6mOkvwkUk3kct3,https://api.serenic.ai,2,1
+ff99adb7-69ec-402d-93b7-f9936ebdd3e1,RSWS Demo,X9HNUG9c57Tcrx4UrU0svIyHJkehJdB1,https://api.serenic.ai,2,1
+3d14940b-ff50-4524-9b3f-c98be7a3c993,RSP Goenawan Partowidigdo,zeyDPzkYedhY7zZqYup3kjU4FhiZMbFF,https://api.serenic.ai,2,1
+5ff59a83-0e41-4bfc-8ee1-e5a95716fc24,RS Juanda Kuningan,bAQXmwLwZMpExRBFZvAfqQDlfwIF0xqe,https://api.serenic.ai,2,1
+38c789cc-2564-4f39-88ee-1f855b44d99c,RS Soeradji Tirtonegoro,BS7hirJ1azTzQFmq3EwszwGmbky4B2wZ,https://api.serenic.ai,2,1
+a46bfd82-c594-486a-b835-224f937081df,RS Juanda Kuningan Sandbox,1bBgt0dKYEO9KpFfkpRaHQo163C3O2df,https://api.sandbox.serenic.ai,2,1
+57440b16-136e-49ef-8c7c-f5b9b7267de7,Testing Internal Security,zYoIxhGosFnOmLTJJMHkeSFFuUXHmYqx,https://api.serenic.ai,2,1
