@@ -2,6 +2,7 @@ import copy
 import csv
 import itertools
 import json
+import os
 import random
 from pathlib import Path
 
@@ -16,8 +17,10 @@ DATA_DIR = BASE_DIR / "data"
 # Update encounter memakai norec/noregistrasi sebagai id yang harus sudah ada
 # di database. Daftar norec yang dipakai diambil dari data/norec_pool.csv
 # (sumber kebenaran); payload-nya diambil dari update_encounters_chunks/ (map
-# norec -> payload update). Pool diputar bergantian supaya tiap request memakai
-# data beda & selalu membuat job baru (hindari dedup server).
+# norec -> payload update). Setiap request mengirim UPDATES_PER_REQUEST norec
+# (default 6) yang diputar dari pool supaya memakai data beda & selalu membuat
+# job parsing baru (hindari dedup server).
+UPDATES_PER_REQUEST = int(os.getenv("UPDATES_PER_REQUEST", "6"))
 
 _PAYLOAD_MAP = {}
 _CHUNKS_DIR = DATA_DIR / "update_encounters_chunks"
@@ -57,11 +60,14 @@ _ENDPOINT = f"{_BASE_URL}/encounters/update"
 def _fresh() -> list:
     if _POOL_CYCLE is None:
         raise RuntimeError("update_encounters_chunks kosong / tidak ditemukan")
-    norec = next(_POOL_CYCLE)
-    item = copy.deepcopy(_PAYLOAD_MAP[norec])
-    item["norec"] = norec
-    item["noregistrasi"] = item.get("noregistrasi") or norec
-    return [item]
+    items = []
+    for _ in range(UPDATES_PER_REQUEST):
+        norec = next(_POOL_CYCLE)
+        item = copy.deepcopy(_PAYLOAD_MAP[norec])
+        item["norec"] = norec
+        item["noregistrasi"] = item.get("noregistrasi") or norec
+        items.append(item)
+    return items
 
 
 class UpdateEncounterUser(HttpUser):

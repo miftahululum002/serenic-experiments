@@ -48,7 +48,7 @@ def sample(conn, queue_name: str) -> dict:
     return {
         "ts": datetime.now(timezone.utc).isoformat(),
         "queue": queue_name,
-        "pending": len(queue.jobs),
+        "pending": queue.count,
         "started": queue.started_job_registry.count,
         "failed": queue.failed_job_registry.count,
         "finished": queue.finished_job_registry.count,
@@ -68,6 +68,9 @@ def main():
                         help="Sample berturut-turut backlog naik utk anggap jenuh")
     parser.add_argument("--min-saturated-samples", type=int, default=4,
                         help="Jumlah sample minimal periode jenuh utk estimasi kapasitas")
+    parser.add_argument("--stop-on-saturated", action="store_true",
+                        help="Keluar (exit code 3) begitu jenuh terdeteksi "
+                             "& kapasitas terestimasi (utk auto-stop test)")
     parser.add_argument(
         "--output",
         default=f"results/capacity_monitor_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv",
@@ -97,6 +100,7 @@ def main():
     saturated = False
     saturated_rates = []
     saturated_since = None
+    capacity = None
 
     def status_label() -> str:
         return "JENUH" if saturated else "OK"
@@ -115,7 +119,7 @@ def main():
         writer.writeheader()
 
         def write_sample():
-            nonlocal prev, growth_run, saturated, saturated_since
+            nonlocal prev, growth_run, saturated, saturated_since, capacity
 
             row = sample(conn, args.queue)
 
@@ -172,16 +176,20 @@ def main():
         signal.signal(signal.SIGINT, lambda *_: sys.exit(0))
 
         count = 0
+        saturated_reached = False
         while True:
             write_sample()
             count += 1
+            if args.stop_on_saturated and capacity is not None:
+                saturated_reached = True
+                break
             if args.samples and count >= args.samples:
                 break
             time.sleep(args.interval)
 
     print(f"\nDone. Hasil: {args.output}")
-    if saturated_rates and len(saturated_rates) >= args.min_saturated_samples:
-        cap = fmean(saturated_rates)
+    if capacity is not None:
+        cap = capacity
         print(f"Kapasitas server (data parsing): {cap:.2f} job/detik "
               f"= {cap*3600:.0f} job/jam = {cap*86400:.0f} job/hari")
         print(f"(jenuh sejak {saturated_since}, estimasi dari "
@@ -189,6 +197,10 @@ def main():
     else:
         print("Tidak terdeteksi jenuh selama periode ini — server belum "
               "mencapai batas kapasitas.")
+
+    if args.stop_on_saturated and saturated_reached:
+        print("[AUTO-STOP] Saturasi terdeteksi, keluar.")
+        sys.exit(3)
 
 
 if __name__ == "__main__":

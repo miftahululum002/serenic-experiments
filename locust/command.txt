@@ -1,0 +1,3 @@
+nohup env USERS=200 RUN_TIME=20m SPAWN_RATE=10 INTERVAL=5 \
+  ./run_capacity_test.sh > logs/capacity_test.log 2>&1 &
+echo $! > logs/capacity_test.pid
