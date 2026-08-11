@@ -19,11 +19,14 @@ import argparse
 import csv
 import os
 from collections import defaultdict
-from datetime import datetime
+from datetime import datetime, timezone
 
 
 def parse_ts(value: str) -> datetime:
-    return datetime.fromisoformat(value.replace("Z", "+00:00"))
+    v = value.strip()
+    if v.isdigit():
+        return datetime.fromtimestamp(float(v), tz=timezone.utc)
+    return datetime.fromisoformat(v.replace("Z", "+00:00"))
 
 
 def read_monitor(path: str) -> list[dict]:
@@ -60,7 +63,10 @@ def read_locust_history(path: str) -> list[dict]:
                 continue
 
             name = row.get("Name", "")
-            if "Name" in names and name != "Total":
+            # Baris agregat bisa bernama "Total" (locust lama) atau
+            # "Aggregated"/"" (locust baru). Baris non-agregat (per endpoint)
+            # selalu memiliki Nama endpoint -> lewati.
+            if "Name" in names and name not in ("", "Total", "Aggregated"):
                 continue
 
             def fval(*keys) -> float:
