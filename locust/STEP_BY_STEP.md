@@ -31,6 +31,20 @@ Isi minimal:
 - `ORGANIZATION_ID` — harus ada di `organization.csv`
 - `REDIS_HOST` / `REDIS_PORT` / `REDIS_USER` / `REDIS_PASSWORD` — untuk monitor queue
 
+### 0.3 Payload update encounter (sudah disiapkan)
+
+Update encounter memakai `norec`/`noregistrasi` yang **harus sudah ada di
+database**. Data sudah disiapkan:
+
+- `data/norec_pool.csv` — daftar 50 norec (sumber kebenaran; ubah isinya untuk
+  mengganti data tes)
+- `data/update_encounters_chunks/` — payload lengkap per norec, dipecah jadi
+  chunk <3MB (sudah difilter hanya untuk norec yang ada di pool)
+
+Locustfile memutar pool norec bergantian per request, jadi tiap request memakai
+payload + id yang konsisten dan selalu menciptakan job parsing baru (hindari
+dedup server).
+
 Verifikasi koneksi Redis + queue:
 
 ```bash

@@ -69,9 +69,12 @@ Ramp-up dianjurkan bertahap (mis. `-u 10` → `-u 50` → `-u 100` → `-u 200`,
 step per 10–15 menit) supaya titik jenuh terlihat jelas. Alternatif: jalankan
 tanpa `--run-time` lalu buka UI di `http://localhost:8089` dan atur beban interaktif.
 
-Opsional `UNIQUE_NOREC=1` untuk mengacak `norec/noregistrasi` per request
-(default statis apa adanya — perhatian: `norec` duplikat bisa didedup server
-sehingga tidak membuat job baru).
+Update encounter butuh `norec` yang **sudah ada di database**. Daftar norec
+dipakai dari `data/norec_pool.csv` (sumber kebenaran, 50 norec); payload lengkap
+per norec di `data/update_encounters_chunks/` (dipecah <3MB supaya bisa
+di-commit). Locustfile memfilter payload hanya untuk norec yang ada di pool dan
+memutarnya per request sehingga tiap request memakai data beda dan selalu
+membuat job baru.
 
 ## 3. Analisis
 

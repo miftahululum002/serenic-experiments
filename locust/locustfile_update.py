@@ -1,7 +1,8 @@
 import copy
+import csv
+import itertools
 import json
-import os
-import uuid
+import random
 from pathlib import Path
 
 from locust import HttpUser, task, between
@@ -12,10 +13,37 @@ from utils.utility import get_datetime_now
 BASE_DIR = Path(__file__).parent
 DATA_DIR = BASE_DIR / "data"
 
-# Update encounter memakai norec/noregistrasi sebagai id. Default acak supaya
-# setiap request dianggap data baru dan selalu menciptakan job parsing baru
-# (hindari dedup server yang membuat job tidak masuk queue).
-UNIQUE_NOREC = os.getenv("UNIQUE_NOREC", "1") == "1"
+# Update encounter memakai norec/noregistrasi sebagai id yang harus sudah ada
+# di database. Daftar norec yang dipakai diambil dari data/norec_pool.csv
+# (sumber kebenaran); payload-nya diambil dari update_encounters_chunks/ (map
+# norec -> payload update). Pool diputar bergantian supaya tiap request memakai
+# data beda & selalu membuat job baru (hindari dedup server).
+
+_PAYLOAD_MAP = {}
+_CHUNKS_DIR = DATA_DIR / "update_encounters_chunks"
+if _CHUNKS_DIR.exists():
+    for fp in sorted(_CHUNKS_DIR.glob("part_*.json")):
+        with open(fp) as f:
+            _PAYLOAD_MAP.update(json.load(f))
+elif (DATA_DIR / "update_encounters.json").exists():
+    with open(DATA_DIR / "update_encounters.json") as f:
+        _PAYLOAD_MAP = json.load(f)
+
+# Filter hanya norec yang ada di pool CSV (sumber kebenaran)
+_POOL_FILE = DATA_DIR / "norec_pool.csv"
+if _POOL_FILE.exists():
+    pool_keys = {
+        row["norec"].strip()
+        for row in csv.DictReader(open(_POOL_FILE))
+        if row.get("norec") and row["norec"].strip()
+    }
+    _PAYLOAD_MAP = {k: v for k, v in _PAYLOAD_MAP.items() if k in pool_keys}
+
+_POOL_CYCLE = None
+if _PAYLOAD_MAP:
+    keys = list(_PAYLOAD_MAP.keys())
+    random.shuffle(keys)
+    _POOL_CYCLE = itertools.cycle(keys)
 
 HEADERS = {
     "apiKey": API_KEY,
@@ -25,18 +53,15 @@ HEADERS = {
 _BASE_URL = f"/integrations/v{API_VERSION}"
 _ENDPOINT = f"{_BASE_URL}/encounters/update"
 
-with open(DATA_DIR / "update_encounters.json") as f:
-    UPDATE_ENCOUNTERS = json.load(f)
 
-
-def _fresh(items: list) -> list:
-    data = copy.deepcopy(items)
-    if UNIQUE_NOREC:
-        for item in data:
-            item["norec"] = uuid.uuid4().hex
-            if "noregistrasi" in item:
-                item["noregistrasi"] = f"LT{uuid.uuid4().hex[:8].upper()}"
-    return data
+def _fresh() -> list:
+    if _POOL_CYCLE is None:
+        raise RuntimeError("update_encounters_chunks kosong / tidak ditemukan")
+    norec = next(_POOL_CYCLE)
+    item = copy.deepcopy(_PAYLOAD_MAP[norec])
+    item["norec"] = norec
+    item["noregistrasi"] = item.get("noregistrasi") or norec
+    return [item]
 
 
 class UpdateEncounterUser(HttpUser):
@@ -49,6 +74,6 @@ class UpdateEncounterUser(HttpUser):
             "start_timestamp": get_datetime_now(),
             "end_timestamp": get_datetime_now(),
             "force_ingest_completed": "true",
-            "updates": _fresh(UPDATE_ENCOUNTERS),
+            "updates": _fresh(),
         }
         self.client.post(_ENDPOINT, json=payload, headers=HEADERS)

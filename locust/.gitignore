@@ -4,7 +4,9 @@ __pycache__
 .DS_Store
 data/*
 !data/.gitkeep
-!data/update_encounters.json
+!data/norec_pool.csv
+!data/update_encounters_chunks/
+!data/update_encounters_chunks/*
 response/*
 !response/.gitkeep
 payload/*
