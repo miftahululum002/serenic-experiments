@@ -1,0 +1,12 @@
+Count,Message,Traceback,Nodes
+376,"In order to use a with-block for requests, you must also pass catch_response=True","  File ""/home/miftahululum002_serenic_ai/serenic-experiments/locust/.venv/lib/python3.10/site-packages/locust/user/task.py"", line 363, in run
+    self.execute_next_task()
+  File ""/home/miftahululum002_serenic_ai/serenic-experiments/locust/.venv/lib/python3.10/site-packages/locust/user/task.py"", line 396, in execute_next_task
+    self.execute_task(self._task_queue.popleft())
+  File ""/home/miftahululum002_serenic_ai/serenic-experiments/locust/.venv/lib/python3.10/site-packages/locust/user/task.py"", line 513, in execute_task
+    task(self.user)
+  File ""/home/miftahululum002_serenic_ai/serenic-experiments/locust/locustfile_update.py"", line 53, in update_encounters
+    with self.client.post(_ENDPOINT, json=payload, headers=HEADERS) as resp:
+  File ""/home/miftahululum002_serenic_ai/serenic-experiments/locust/.venv/lib/python3.10/site-packages/locust/clients.py"", line 396, in __enter__
+    raise LocustError(""In order to use a with-block for requests, you must also pass catch_response=True"")
+",local

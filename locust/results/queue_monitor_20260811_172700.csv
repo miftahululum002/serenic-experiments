@@ -1,0 +1,15 @@
+ts,queue,pending,started,failed,finished,workers_busy,workers_idle,rate_jobs_per_sec,trend,status
+2026-08-11T17:27:00.845074+00:00,integration_data_parsing_agent_prod,2029,4,40,86,17,37,0.0,-,OK
+2026-08-11T17:27:05.905340+00:00,integration_data_parsing_agent_prod,2029,4,40,86,18,36,0.0,FLAT,OK
+2026-08-11T17:27:10.974148+00:00,integration_data_parsing_agent_prod,2030,4,40,85,19,35,-0.19728504216375922,NAIK,OK
+2026-08-11T17:27:16.014518+00:00,integration_data_parsing_agent_prod,2032,4,40,85,14,40,0.0,NAIK,OK
+2026-08-11T17:27:21.052652+00:00,integration_data_parsing_agent_prod,2032,4,40,86,13,41,0.1984861855599712,FLAT,OK
+2026-08-11T17:27:26.099865+00:00,integration_data_parsing_agent_prod,2030,3,40,87,16,38,0.19812914572854365,TURUN,OK
+2026-08-11T17:27:31.137405+00:00,integration_data_parsing_agent_prod,2031,4,40,85,13,41,-0.39701917999658565,NAIK,OK
+2026-08-11T17:27:36.174827+00:00,integration_data_parsing_agent_prod,2035,4,40,85,14,40,0.0,NAIK,OK
+2026-08-11T17:27:41.214222+00:00,integration_data_parsing_agent_prod,2035,4,40,86,13,41,0.19843651866940376,FLAT,OK
+2026-08-11T17:27:46.256366+00:00,integration_data_parsing_agent_prod,2035,4,40,88,15,39,0.3966566603413151,FLAT,OK
+2026-08-11T17:27:51.300928+00:00,integration_data_parsing_agent_prod,2036,4,40,86,13,41,-0.3964665316830282,NAIK,JENUH
+2026-08-11T17:27:56.336372+00:00,integration_data_parsing_agent_prod,2037,4,40,86,14,40,0.0,NAIK,JENUH
+2026-08-11T17:28:01.373627+00:00,integration_data_parsing_agent_prod,2039,4,40,85,14,40,-0.19852082136004628,NAIK,JENUH
+2026-08-11T17:28:06.413107+00:00,integration_data_parsing_agent_prod,2041,4,40,85,13,41,0.0,NAIK,JENUH

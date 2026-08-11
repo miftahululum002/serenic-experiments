@@ -1,0 +1,19 @@
+==============================================================================
+Hasil Analisis Kapasitas Server Data Parsing (Backlog + RPS + Latency)
+==============================================================================
+backlog_start=2029
+backlog_end=2041
+backlog_max=2041
+jobs_processed=-12
+throughput_jobs_per_sec=0.00
+saturated_at=2026-08-11 17:27:51.300928+00:00
+peak_rps=0.20
+peak_rps_at=2026-08-11 17:27:48+00:00
+latency_at_peak_ms_avg=29503.6
+latency_at_peak_ms_p95=35000.0
+latency_at_peak_ms_p99=35000.0
+rps_at_saturation=0.10
+latency_at_saturation_ms_avg=32737.5
+latency_at_saturation_ms_p95=42000.0
+latency_at_saturation_ms_p99=42000.0
+users_at_saturation=180
