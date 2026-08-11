@@ -9,3 +9,5 @@ response/*
 !response/.gitkeep
 payload/*
 !payload/.gitkeep
+results/*
+!results/.gitkeep
