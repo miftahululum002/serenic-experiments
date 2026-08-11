@@ -48,7 +48,7 @@ class UpdateEncounterUser(HttpUser):
         payload = {
             "start_timestamp": get_datetime_now(),
             "end_timestamp": get_datetime_now(),
+            "force_ingest_completed": "true",
             "updates": _fresh(UPDATE_ENCOUNTERS),
         }
-        with self.client.post(_ENDPOINT, json=payload, headers=HEADERS) as resp:
-            pass
+        self.client.post(_ENDPOINT, json=payload, headers=HEADERS)
