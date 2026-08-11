@@ -11,3 +11,5 @@ payload/*
 !payload/.gitkeep
 results/*
 !results/.gitkeep
+logs/*
+!logs/.gitkeep

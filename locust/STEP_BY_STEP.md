@@ -102,6 +102,123 @@ Selama test berjalan, amati Terminal 1:
 
 ---
 
+## 2b. Mode nohup (anti putus SSH / internet down)
+
+`nohup` + `&` membuat proses lanjut berjalan di background walau koneksi
+SSH/terminal terputus. Kalau internet sempat down, proses tidak mati —
+locust akan gagal mengirim saat offline lalu lanjut lagi saat online.
+
+```bash
+cd /Users/miftahululum002/projects/serenic/experiments/locust
+source .venv/bin/activate
+mkdir -p logs
+
+# Monitor di background (coba `nohup: ignoring input` adalah normal)
+nohup python monitor_queue_capacity.py \
+  --interval 5 --output results/queue_monitor_capacity.csv \
+  > logs/monitor_capacity.log 2>&1 &
+echo $! > logs/monitor_capacity.pid
+
+# Beban locust di background
+nohup locust -f locustfile_update.py \
+  -u 200 --spawn-rate 10 --run-time 20m \
+  --csv results/locust --csv-full-history --headless \
+  > logs/locust_capacity.log 2>&1 &
+echo $! > logs/locust_capacity.pid
+```
+
+Pantau progress kapan saja (dari terminal mana pun, tanpa mengganggu proses):
+
+```bash
+# monitor queue (live: pending/rate/status JENUH/CAP)
+tail -f logs/monitor_capacity.log
+
+# status beban locust (RPS, latency)
+tail -f logs/locust_capacity.log
+```
+
+Tunggu selesai: locust selesai sendiri setelah `--run-time` (20m), atau cek:
+
+```bash
+ps -p $(cat logs/locust_capacity.pid) && echo "masih jalan" || echo "locust selesai"
+```
+
+Setelah selesai, stop monitor lalu lanjut analisis (bagian 3):
+
+```bash
+kill $(cat logs/monitor_capacity.pid) 2>/dev/null || true
+```
+
+Periksa hasilnya (bagian 3) memakai `results/queue_monitor_capacity.csv` dan
+`results/locust_stats_history.csv`.
+
+> Alternatif lebih tangguh: `tmux` (perlu install). `tmux new -s cap`,
+> jalankan perintah biasa, lalu `Ctrl+b d` untuk detach — proses tetap hidup
+> dan bisa di-`tmux attach -t cap` lagi kapan pun.
+
+---
+
+## 2c. Jalankan di VM pakai nohup (satu perintah, semuanya)
+
+`run_capacity_test.sh` menjalankan monitor + locust + analisis sekaligus.
+Bungkus dengan `nohup` agar semua berjalan di background dan tetap hidup
+meski koneksi SSH/terminal ke VM terputus.
+
+Persiapan sekali di VM:
+
+```bash
+# salin project ke VM (dari lokal), lalu di dalam VM:
+cd /path/ke/locust
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+cp .env.example .env
+# isi ORGANIZATION_ID, REDIS_* dst sesuai environment VM
+```
+
+Jalankan (sekali perintah, di VM):
+
+```bash
+cd /path/ke/locust
+source .venv/bin/activate
+mkdir -p logs results
+
+nohup env USERS=200 RUN_TIME=20m SPAWN_RATE=10 INTERVAL=5 \
+  ./run_capacity_test.sh > logs/capacity_test.log 2>&1 &
+echo $! > logs/capacity_test.pid
+```
+
+Catatan:
+- `USERS`, `RUN_TIME`, `SPAWN_RATE`, `INTERVAL` opsional — sesuaikan skalanya.
+- Script sudah `cd` ke direktori sendiri dan mengaktifkan venv, jadi path
+  absolut tidak wajib.
+- Selesai sendiri setelah `RUN_TIME`; log akhir berisi ringkasan kapasitas.
+
+Pantau (kapan pun, tanpa mengganggu proses):
+
+```bash
+# progress live (log monitor + locust + analisis semua masuk ke sini)
+tail -f logs/capacity_test.log
+
+# apakah masih berjalan?
+ps -p $(cat logs/capacity_test.pid) && echo "MASIH JALAN" || echo "SELESAI"
+```
+
+Setelah selesai, hasilnya (nama pakai timestamp, cek isi `results/`):
+
+```bash
+ls -t results/ | head
+# monitor : results/queue_monitor_<timestamp>.csv
+# locust  : results/locust_<timestamp>_stats_history.csv
+# analisis: results/kapasitas_<timestamp>.txt
+cat results/kapasitas_*.txt
+```
+
+> Catatan: jika kamu menutup sesi SSH, proses tetap jalan karena `nohup`.
+> Untuk mematikan manual (mis. beban terlalu besar): `kill $(cat logs/capacity_test.pid)`.
+
+---
+
 ## 3. Analisis hasil (setelah locust selesai)
 
 Dari Terminal 2 (atau terminal baru):
