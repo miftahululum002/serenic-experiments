@@ -8,6 +8,8 @@
 #   USERS=200 RUN_TIME=20m SPAWN_RATE=10 INTERVAL=5 OUTPUT_DIR=results
 #   STOP_ON_SATURATED=1 (default) 0 utk selalu jalan sampai RUN_TIME habis
 #   WINDOW=3 MIN_SATURATED_SAMPLES=4
+#   MIN_RUN_SEC=60: locust minimal berjalan N detik sebelum auto-stop
+#     membunuhnya, supaya CSV stats locust sempat terisi (butuh >= 5s).
 set -euo pipefail
 
 cd "$(dirname "$0")"
@@ -20,6 +22,7 @@ OUTPUT_DIR="${OUTPUT_DIR:-results}"
 STOP_ON_SATURATED="${STOP_ON_SATURATED:-1}"
 WINDOW="${WINDOW:-3}"
 MIN_SATURATED_SAMPLES="${MIN_SATURATED_SAMPLES:-4}"
+MIN_RUN_SEC="${MIN_RUN_SEC:-60}"
 STAMP="$(date +%Y%m%d_%H%M%S)"
 MONITOR_CSV="$OUTPUT_DIR/queue_monitor_${STAMP}.csv"
 LOCUST_PREFIX="$OUTPUT_DIR/locust_${STAMP}"
@@ -55,6 +58,7 @@ locust -f locustfile_update.py \
   --csv "$LOCUST_PREFIX" --csv-full-history \
   --headless &
 LOCUST_PID=$!
+LOCUST_START=$(date +%s)
 
 # Tunggu salah satu selesai: locust (RUN_TIME habis) atau monitor (jenuh)
 while kill -0 "$LOCUST_PID" 2>/dev/null && kill -0 "$MONITOR_PID" 2>/dev/null; do
@@ -71,6 +75,12 @@ if kill -0 "$LOCUST_PID" 2>/dev/null; then
     if [ "$MONITOR_EXIT" -eq 3 ]; then
         echo "==> [AUTO-STOP] Jenuh terdeteksi, menghentikan locust..."
         SATURATED=1
+        ELAPSED=$(( $(date +%s) - $LOCUST_START ))
+        if [ "$ELAPSED" -lt "$MIN_RUN_SEC" ]; then
+            echo "    locust baru berjalan ${ELAPSED}s (< MIN_RUN_SEC=$MIN_RUN_SEC)."
+            echo "    Menunggu ${MIN_RUN_SEC}s supaya statistik locust terisi dulu..."
+            sleep $(( MIN_RUN_SEC - ELAPSED ))
+        fi
         kill "$LOCUST_PID" 2>/dev/null || true
         wait "$LOCUST_PID" 2>/dev/null || true
     else

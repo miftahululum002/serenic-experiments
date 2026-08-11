@@ -43,8 +43,12 @@ def read_monitor(path: str) -> list[dict]:
 def read_locust_history(path: str) -> list[dict]:
     """Baca *_stats_history.csv, ambil baris Total per timestamp."""
     groups: dict[datetime, dict] = {}
-    with open(path) as f:
-        reader = csv.DictReader(f)
+    try:
+        fh = open(path)
+    except FileNotFoundError:
+        return []
+    with fh:
+        reader = csv.DictReader(fh)
         names = reader.fieldnames or []
         for row in reader:
             ts_raw = row.get("Timestamp")
@@ -111,13 +115,14 @@ def main():
     args = parser.parse_args()
 
     mrows = read_monitor(args.monitor)
-    lrows = read_locust_history(args.locust)
     if not mrows:
         print("Monitor CSV kosong")
         return
+    lrows = read_locust_history(args.locust)
     if not lrows:
-        print("Locust stats_history CSV kosong / format tidak dikenal")
-        return
+        print("WARNING: Locust stats_history CSV kosong / tidak dikenal — "
+              "RPS & latency tidak tersedia. Keluar sebelum locust sempat "
+              "menulis statistik (auto-stop terlalu cepat).")
 
     start, end = mrows[0], mrows[-1]
     duration = (end["ts"] - start["ts"]).total_seconds()
@@ -147,8 +152,8 @@ def main():
     if processed <= 0 and pend[0] > 0:
         processed = pend[0] - pend[-1]
 
-    peak = max(lrows, key=lambda r: r["rps"])
-    at_sat = nearest(lrows, saturated_at) if saturated_at else None
+    peak = max(lrows, key=lambda r: r["rps"]) if lrows else None
+    at_sat = nearest(lrows, saturated_at) if saturated_at and lrows else None
 
     print("=" * 78)
     print("Hasil Analisis Kapasitas Server Data Parsing (Backlog + RPS + Latency)")
@@ -158,6 +163,7 @@ def main():
           f"(puncak {max(pend)})")
     print(f"Job diproses        : {processed} ({duration:.0f} detik)")
 
+    rate = 0.0
     if processed > 0 and duration > 0:
         rate = processed / duration
         print(f"Throughput worker   : {rate:.2f} job/detik "
@@ -170,10 +176,13 @@ def main():
         print("\n[OK] Backlog tidak tumbuh monoton -> belum terdeteksi jenuh")
 
     print("\nRPS & latency (dari locust stats_history):")
-    print(f"  {'Peak RPS (seluruh test)':<34}: RPS={peak['rps']:7.2f} "
-          f"@ {peak['ts']} | latency avg={peak['avg']:7.1f} "
-          f"p95={peak['p95']:7.1f} p99={peak['p99']:7.1f} ms")
-    print(f"  {fmt_point('Saat jenuh', at_sat)}")
+    if peak is None:
+        print("  (tidak ada data locust)")
+    else:
+        print(f"  {'Peak RPS (seluruh test)':<34}: RPS={peak['rps']:7.2f} "
+              f"@ {peak['ts']} | latency avg={peak['avg']:7.1f} "
+              f"p95={peak['p95']:7.1f} p99={peak['p99']:7.1f} ms")
+        print(f"  {fmt_point('Saat jenuh', at_sat)}")
 
     lines = [
         "=" * 78,
@@ -183,13 +192,13 @@ def main():
         f"backlog_end={end['pending']}",
         f"backlog_max={max(pend)}",
         f"jobs_processed={processed}",
-        f"throughput_jobs_per_sec={rate if processed > 0 and duration > 0 else 0:.2f}",
+        f"throughput_jobs_per_sec={rate:.2f}",
         f"saturated_at={saturated_at}",
-        f"peak_rps={peak['rps']:.2f}",
-        f"peak_rps_at={peak['ts']}",
-        f"latency_at_peak_ms_avg={peak['avg']:.1f}",
-        f"latency_at_peak_ms_p95={peak['p95']:.1f}",
-        f"latency_at_peak_ms_p99={peak['p99']:.1f}",
+        f"peak_rps={peak['rps']:.2f}" if peak else "peak_rps=",
+        f"peak_rps_at={peak['ts']}" if peak else "peak_rps_at=",
+        f"latency_at_peak_ms_avg={peak['avg']:.1f}" if peak else "latency_at_peak_ms_avg=",
+        f"latency_at_peak_ms_p95={peak['p95']:.1f}" if peak else "latency_at_peak_ms_p95=",
+        f"latency_at_peak_ms_p99={peak['p99']:.1f}" if peak else "latency_at_peak_ms_p99=",
         f"rps_at_saturation={at_sat['rps']:.2f}" if at_sat else "rps_at_saturation=",
         f"latency_at_saturation_ms_avg={at_sat['avg']:.1f}" if at_sat else "latency_at_saturation_ms_avg=",
         f"latency_at_saturation_ms_p95={at_sat['p95']:.1f}" if at_sat else "latency_at_saturation_ms_p95=",
