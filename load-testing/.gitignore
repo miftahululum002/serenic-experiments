@@ -1,0 +1,13 @@
+.venv/
+.env
+.env.dev
+.env.prod
+results/*
+!results/.gitkeep
+payload/*
+!payload/.gitkeep
+response/*
+!response/.gitkeep
+__pycache__/
+*.pyc
+docker-compose*.yml
