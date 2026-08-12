@@ -1,0 +1,10 @@
+httpx>=0.27
+redis>=5.0
+python-dotenv>=1.0
+matplotlib>=3.8
+psycopg2-binary>=2.9   # hanya untuk tools/cleanup_encounters.py
+
+# Tidak diimpor harness — harness sengaja membaca Redis mentah supaya tidak
+# perlu meng-unpickle argumen job (yang butuh kode aplikasi). Pasang hanya
+# kalau ingin memverifikasi ulang layout key RQ terhadap versi di server:
+#   rq==2.6.1
