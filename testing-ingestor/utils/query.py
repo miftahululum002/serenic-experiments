@@ -39,6 +39,25 @@ def find_encounter_by_noregistrasi(noregistrasi):
     return row[0] if row else None
 
 
+def find_encounter_by_organization(limit=0):
+    conn = get_connection()
+    cur = conn.cursor()
+    query = """
+        SELECT id, id_in_organization 
+        FROM encounter
+        WHERE managing_organization = %s
+    """
+    params = [ORGANIZATION_ID]
+    if limit > 0:
+        query += " LIMIT %s"
+        params.append(limit)
+    cur.execute(query, tuple(params))
+    rows = cur.fetchall()
+    cur.close()
+    conn.close()
+    return [{"id": row[0], "noregistrasi": row[1]} for row in rows]
+
+
 def count_billing_by_encounter_id(encounter_id):
     conn = get_connection()
     cur = conn.cursor()
@@ -78,10 +97,33 @@ def extract_encounter_ids(noregistrasi_list):
     return [enc["id"] for enc in encounters if enc.get("id")]
 
 
+def extract_encounter_ids_in_organization(limit=0):
+    encounters = find_encounter_by_organization(limit)
+    return [enc["id"] for enc in encounters if enc.get("id")]
+
+
 def delete_encounters_by_noregistrasi(noregistrasi_list):
     encounters = find_encounters_by_noregistrasi_list(noregistrasi_list)
     encounter_ids = [enc["id"] for enc in encounters if enc.get("id")]
 
+    if not encounter_ids:
+        return []
+
+    conn = get_connection()
+    deleted = []
+    # indexIni = 0
+    # for eid in encounter_ids:
+    for idx, eid in enumerate(encounter_ids):
+        log.info(f"{idx+1}/{len(encounter_ids)} [{eid}]")
+        delete_encounter_by_id(conn, eid)
+        deleted.append(eid)
+        # ++indexIni
+    conn.close()
+    return deleted
+
+
+def delete_encounters_by_in_organization(limit=0):
+    encounter_ids = extract_encounter_ids_in_organization(limit)
     if not encounter_ids:
         return []
 
