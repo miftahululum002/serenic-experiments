@@ -63,7 +63,9 @@ def _save_response(url: str, response: requests.Response) -> Path:
 def get(url: str, **kwargs) -> requests.Response:
     final_url = f"{API_HOST}/{url}"
     log.info("GET %s", final_url)
-    response = requests.get(final_url, headers=HEADERS, timeout=30, **kwargs)
+    response = requests.get(
+        final_url, headers=HEADERS, timeout=(30, 300), **kwargs
+    )
     log.info("Status: %s", response.status_code)
     _save_response(url, response)
     return response
@@ -74,7 +76,7 @@ def post(url: str, payload: dict | None = None, **kwargs) -> requests.Response:
     log.info("POST %s", final_url)
     _save_payload(final_url, payload)
     response = requests.post(
-        final_url, headers=HEADERS, json=payload, timeout=30, **kwargs
+        final_url, headers=HEADERS, json=payload, timeout=(30, 300), **kwargs
     )
     log.info("Status: %s", response.status_code)
     _save_response(final_url, response)

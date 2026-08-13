@@ -21,8 +21,16 @@ def hit_new_encounter(filepath: str):
         new_encounters = data.get("request_data", {}).get("newEncounters", [])
 
     log.info("Found %d new encounters", len(new_encounters))
-    response = api_new_encounter(new_encounters)
-    return response
+
+    chunk_size = 30
+    responses = []
+    for i in range(0, len(new_encounters), chunk_size):
+        chunk = new_encounters[i : i + chunk_size]
+        log.info("Hitting chunk %d of %d encounters", i // chunk_size + 1, len(chunk))
+        response = api_new_encounter(chunk)
+        responses.append(response)
+
+    return responses
 
 
 if __name__ == "__main__":
