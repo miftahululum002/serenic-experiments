@@ -8,6 +8,7 @@ from datetime import datetime, timezone
 
 from rq import Queue, Worker
 
+from collect import parse_ts
 from config import REDIS_HOST, REDIS_PORT, get_redis
 
 
@@ -97,11 +98,8 @@ def main():
         jid = jid.decode()
         h = conn.hgetall(f"rq:job:{jid}")
         g = lambda f: (h.get(f.encode()) or b"").decode()  # noqa: E731
-        started = g("started_at")
-        age = None
-        if started:
-            age = (now - datetime.fromisoformat(started).replace(
-                tzinfo=timezone.utc)).total_seconds()
+        started = parse_ts(g("started_at"))
+        age = (now - started).total_seconds() if started else None
         running.append((age, g("origin"), g("description")[:90] or jid))
     running.sort(key=lambda r: (r[0] is None, -(r[0] or 0)))
     if not running:

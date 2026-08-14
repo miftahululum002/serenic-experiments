@@ -19,12 +19,43 @@ def now_utc():
     return datetime.now(timezone.utc)
 
 
+_TS_FORMATS = ("%Y-%m-%dT%H:%M:%S.%f%z", "%Y-%m-%dT%H:%M:%S%z",
+               "%Y-%m-%dT%H:%M:%S.%f", "%Y-%m-%dT%H:%M:%S")
+
+
 def parse_ts(raw):
+    """Baca timestamp RQ menjadi datetime UTC.
+
+    RQ menulis akhiran "Z" (mis. `2026-08-13T22:11:53.626423Z`), sedangkan
+    `datetime.fromisoformat` baru bisa membacanya sejak Python 3.11 — di VM
+    dengan Python lebih lama parsing akan gagal. Karena itu "Z" ditukar lebih
+    dulu, dengan `strptime` sebagai cadangan.
+    """
     if not raw:
         return None
     if isinstance(raw, bytes):
         raw = raw.decode()
-    return datetime.fromisoformat(raw).replace(tzinfo=timezone.utc)
+    raw = raw.strip()
+    if not raw:
+        return None
+    if raw.endswith(("Z", "z")):
+        raw = raw[:-1] + "+00:00"
+
+    dt = None
+    try:
+        dt = datetime.fromisoformat(raw)
+    except ValueError:
+        for fmt in _TS_FORMATS:
+            try:
+                dt = datetime.strptime(raw, fmt)
+                break
+            except ValueError:
+                continue
+    if dt is None:
+        return None
+    # Timestamp tanpa zona waktu selalu UTC di RQ.
+    return dt.replace(tzinfo=timezone.utc) if dt.tzinfo is None \
+        else dt.astimezone(timezone.utc)
 
 
 # --------------------------------------------------------------------------

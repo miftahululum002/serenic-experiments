@@ -20,13 +20,8 @@ from datetime import datetime, timezone
 
 from rq import Queue
 
+from collect import parse_ts  # tahan versi Python & akhiran "Z"
 from config import DATA_PARSING_AGENT, get_redis
-
-
-def parse_ts(raw):
-    if not raw:
-        return None
-    return datetime.fromisoformat(raw.decode()).replace(tzinfo=timezone.utc)
 
 
 def job_times(conn, jid):

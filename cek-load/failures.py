@@ -6,6 +6,7 @@ from datetime import datetime, timezone
 
 from rq import Queue
 
+from collect import parse_ts
 from config import get_redis
 
 
@@ -32,9 +33,8 @@ def main():
             msg = last[-1] if last else "(tanpa exc_info)"
             msg = re.sub(r"0x[0-9a-f]+|\b[0-9a-f]{8}-[0-9a-f-]{27}\b|\d+", "N", msg)
             kinds[msg[:160]] += 1
-            raw = h.get(b"ended_at") or h.get(b"enqueued_at")
-            if raw:
-                ts = datetime.fromisoformat(raw.decode()).replace(tzinfo=timezone.utc)
+            ts = parse_ts(h.get(b"ended_at") or h.get(b"enqueued_at"))
+            if ts:
                 newest = ts if newest is None or ts > newest else newest
                 oldest = ts if oldest is None or ts < oldest else oldest
         if oldest and newest:
