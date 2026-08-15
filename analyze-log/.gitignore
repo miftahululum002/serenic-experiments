@@ -10,3 +10,5 @@ production/*
 !production/.gitkeep
 not_scale/*
 !not_scale/.gitkeep
+log/*
+!log/.gitkeep
