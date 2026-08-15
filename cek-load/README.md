@@ -79,6 +79,53 @@ Ambang batas kesimpulan ada di konstanta paling atas `report.py`
 
 ---
 
+## Kondisi Server Menyeluruh — Semua Queue Sekaligus
+
+`report.py` fokus ke **satu** queue. Untuk melihat **kondisi server** — semua
+queue yang terdaftar, seluruh armada worker, job yang sedang berjalan, CPU/RAM,
+dan Redis dalam satu jendela pengamatan — pakai `report_all.py`:
+
+```bash
+./.venv/bin/python report_all.py                    # 5 menit, semua queue
+./.venv/bin/python report_all.py --minutes 15       # sampling lebih panjang
+./.venv/bin/python report_all.py --all              # ikut tampilkan queue yang kosong total
+./.venv/bin/python report_all.py --queues a,b       # batasi ke queue tertentu
+./.venv/bin/python report_all.py --json data.json   # data mentah untuk diolah lagi
+```
+
+Hasilnya: tabel semua queue di terminal + laporan Markdown di `reports/SERVER_*.md`.
+
+```
+queue                                    status   pending      worker  selesai  job/jam
+eklaim_batch_agent_prod                  MACET        378      0(0/0)        0        0
+integration_data_analysis_agent_prod     MENTOK       256    16(16/0)        8      928
+icd_matcher_agent_prod                   SANTAI         0    12(0/12)        1      116
+```
+
+Arti kolom `status`:
+
+| Status | Arti |
+|---|---|
+| `MACET` | ada job menumpuk, **tidak ada satu pun worker** yang melayani queue itu — job takkan pernah diproses |
+| `MENTOK` | ada backlog dan worker **tidak pernah** idle selama pengamatan — pool kehabisan kapasitas |
+| `SIBUK` | ada backlog tetapi worker sempat idle — masih sanggup mengejar |
+| `JALAN` / `SANTAI` | tidak ada backlog; worker sedang/tidak mengerjakan sesuatu |
+| `DIAM` | queue kosong dan tanpa worker |
+
+Selain per-queue, laporannya juga menandai hal yang tidak kelihatan dari satu
+queue saja: worker yang **berhenti berdetak** (proses hang), entri worker
+**zombi** di `rq:workers` (mati kena OOM-kill/restart tapi masih terdaftar,
+sehingga kapasitas pool terlihat lebih besar dari kenyataan), dan job yang
+sudah berjalan **mendekati batas timeout**-nya.
+
+> Ambang deteksi ada di konstanta paling atas `report_all.py`
+> (`STALE_BUSY_S`, `STALE_IDLE_S`, `STUCK_RATIO`, `LONG_RUN_S`). Worker idle
+> sengaja diberi ambang jauh lebih longgar: RQ membuat worker idle menggantung
+> di `BLPOP` selama `worker_ttl` (420 detik) sebelum berdetak lagi, jadi ambang
+> yang sama dengan worker sibuk akan menuduh worker sehat sebagai hang.
+
+---
+
 ## Menjalankan di VM Server (mengukur CPU & RAM)
 
 Dijalankan dari laptop, script ini hanya bisa membuktikan *pool worker* mentok —
@@ -284,7 +331,8 @@ encounter, maka *job/jam* dari langkah 3 langsung sama dengan *encounter/jam*.
 | `config.py` | Baca `.env`, sediakan koneksi Redis |
 | `collect.py` | **Pengumpul data — satu sumber kebenaran.** Hanya membaca Redis, tidak mencetak & tidak menyimpulkan |
 | `host.py` | Metrik CPU/RAM mesin dari `/proc` (aktif hanya bila dijalankan di VM Linux) |
-| `report.py` | Jalankan semua pemeriksaan → simpulkan → tulis Markdown |
+| `report.py` | Jalankan semua pemeriksaan **satu queue** → simpulkan → tulis Markdown |
+| `report_all.py` | Kondisi server **seluruh queue** sekaligus + armada worker → tulis Markdown |
 | `snapshot.py` | Potret sesaat semua queue + worker |
 | `monitor.py` | Sampling backlog berkala → CSV |
 | `throughput.py` | Ukur throughput, durasi job, waktu tunggu |
