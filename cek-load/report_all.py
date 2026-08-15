@@ -44,6 +44,7 @@ STALE_BUSY_S = 120
 STALE_IDLE_S = 540
 STUCK_RATIO = 0.90          # umur job ≥ sekian × timeout = nyaris/sudah kehabisan waktu
 LONG_RUN_S = 900            # job berjalan lebih lama dari ini layak dilihat manusia
+QUEUE_TICK_SHOW = 6         # queue teraktif yang namanya dicetak tiap tick
 
 # RQ 2.x menyimpan entri started registry sebagai "job_id:execution_id".
 _PARSE_JID = getattr(StartedJobRegistry, "parse_job_id", None)
@@ -809,6 +810,8 @@ def main():
 
     print(f"[3/5] Pengukuran live {args.minutes} menit "
           f"(sampling {args.interval}s, semua queue)…", flush=True)
+    print(f"      Baris kedua tiap tick = {QUEUE_TICK_SHOW} queue teraktif: "
+          f"nama: <pending>p/<busy worker>b/<selesai kumulatif>s", flush=True)
     sampler = host.HostSampler() if host_on else None
 
     def on_tick(t):
@@ -818,11 +821,22 @@ def main():
             mm = cpu.get("mem") or {}
             extra = (f" cpu={cpu['busy']:.0f}%"
                      + (f" ram={mm['used_pct']:.0f}%" if mm else ""))
-        aktif = sum(1 for v in t["queues"].values() if v["pending"] or v["busy"])
+        aktif = [(qn, v) for qn, v in t["queues"].items()
+                 if v["pending"] or v["busy"]]
+        aktif.sort(key=lambda kv: (-kv[1]["pending"], -kv[1]["busy"], kv[0]))
         print(f"      [{t['t']:5.0f}s] pending={t['pending_total']:>7} "
-              f"queue_aktif={aktif:>3} busy={t['fleet'].get('busy', 0):>4} "
+              f"queue_aktif={len(aktif):>3} busy={t['fleet'].get('busy', 0):>4} "
               f"idle={t['fleet'].get('idle', 0):>4} "
               f"selesai={t['completed_total']:>5}{extra}", flush=True)
+        if aktif:
+            # Nama queue-nya ikut dicetak: tanpa ini "queue_aktif=3" tidak
+            # memberi tahu queue mana yang sedang menumpuk.
+            sisa = len(aktif) - QUEUE_TICK_SHOW
+            ringkas = " | ".join(
+                f"{qn}: {v['pending']}p/{v['busy']}b/{v['completed']}s"
+                for qn, v in aktif[:QUEUE_TICK_SHOW])
+            print(f"              {ringkas}"
+                  + (f" | +{sisa} queue lain" if sisa > 0 else ""), flush=True)
 
     live = measure_all(conn, handles, args.minutes, args.interval, on_tick)
 
