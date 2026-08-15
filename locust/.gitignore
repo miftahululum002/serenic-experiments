@@ -15,3 +15,4 @@ results/*
 !results/.gitkeep
 logs/*
 !logs/.gitkeep
+docker-compose.app.prod.yml
