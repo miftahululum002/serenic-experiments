@@ -41,6 +41,8 @@ Isi `.env` yang dipakai:
 | `REDIS_HOST`, `REDIS_PORT` | alamat Redis (lewat port-forward) |
 | `REDIS_USER`, `REDIS_PASSWORD` | kredensial, boleh kosong |
 | `AGENT_QUEUE_DATA_PARSING` | queue yang dianalisis, default `integration_data_parsing_agent_prod` |
+| `HOST_SSH` | *(opsional)* target SSH VM worker — hanya bila CPU/RAM mau dibaca dari laptop |
+| `HOST_SSH_CMD` | *(opsional)* pembungkus SSH khusus, mis. `gcloud compute ssh … --command` |
 
 > Opsional: `pip install serenic_mlkit` bila ingin `payload.py` membaca isi job
 > lebih dalam. Tanpa itu pun `payload.py` tetap jalan (pakai stub generik).
@@ -97,17 +99,47 @@ cp .env.example .env    # set REDIS_HOST/REDIS_PORT sesuai VM
 Cek metrik mesin saja, tanpa menyentuh Redis:
 
 ```bash
-./.venv/bin/python host.py
+./.venv/bin/python host.py                 # potret + sampling CPU/RAM 5 detik
+./.venv/bin/python host.py --seconds 30    # sampling lebih panjang
 ```
 
 `host.py` membaca `/proc` langsung memakai pustaka standar Python — **tidak
-perlu `psutil` atau paket tambahan apa pun**. Kalau dijalankan di luar Linux,
-bagian ini otomatis dilewati (`report.py` tetap jalan, hanya bab CPU/RAM yang
-diganti catatan).
+perlu `psutil` atau paket tambahan apa pun**. Kalau dijalankan di luar Linux
+tanpa `--ssh`, bagian ini otomatis dilewati (`report.py` tetap jalan, hanya bab
+CPU/RAM yang diganti catatan).
 
 **Yang ikut terukur:** CPU terpakai (rata-rata/puncak/p90, dipecah jadi
 user/system/iowait/**steal**), jumlah core yang jenuh >90%, load average per
-core, RAM & swap, PSI (`/proc/pressure`), serta proses paling boros CPU.
+core, PSI (`/proc/pressure`), serta proses paling boros CPU dan RAM.
+
+**RAM diukur sepanjang jendela pengamatan**, bukan sekali di akhir — tiap tick
+sampling ikut membaca `/proc/meminfo`, sehingga laporan menampilkan pemakaian
+rata-rata, **puncak**, sisa (`MemAvailable`) terkecil, serta pertumbuhan swap
+selama observasi. Ini penting karena RAM biasanya memuncak saat beberapa job
+besar kebetulan berjalan bersamaan, lalu turun lagi begitu job selesai — potret
+sesaat gampang melewatkan momen itu. Penilaian "mesin mentok" memakai angka
+**puncak**, bukan rata-rata.
+
+### Kalau terpaksa dijalankan dari laptop
+
+CPU/RAM tetap bisa dibaca dari VM lewat SSH — `/proc` VM diambil dari jauh,
+satu koneksi per sampling (SSH `ControlMaster` dipakai ulang):
+
+```bash
+./.venv/bin/python report.py --minutes 15 --ssh serenic-prod.asia-southeast2-a.serenic-aurio-mvp
+./.venv/bin/python host.py --ssh serenic-prod.asia-southeast2-a.serenic-aurio-mvp
+```
+
+Target bisa juga disimpan permanen di `.env` sebagai `HOST_SSH`. Untuk akses
+yang butuh pembungkus lain (mis. IAP), pakai `HOST_SSH_CMD` / `--ssh-cmd` —
+skrip remote ditambahkan sebagai argumen terakhir:
+
+```bash
+HOST_SSH_CMD="gcloud compute ssh serenic-prod --zone asia-southeast2-a --tunnel-through-iap --command"
+```
+
+> Jalur SSH hanya cadangan; kalau bisa, jalankan langsung di VM. Tiap tick lewat
+> `gcloud` memakan beberapa detik, sedangkan `ssh` biasa hanya puluhan milidetik.
 
 **Efeknya ke kesimpulan** — bab "Yang Belum Bisa Dipastikan" berganti menjadi
 "Kondisi Mesin", dan jawaban utamanya jadi tegas:
@@ -118,9 +150,10 @@ core, RAM & swap, PSI (`/proc/pressure`), serta proses paling boros CPU.
 | < 70% | Mesin **belum** mentok | Tambah worker untuk queue yang menumpuk |
 | 70–85% | Mendekati batas | Tambah worker sedikit demi sedikit sambil dipantau |
 
-RAM ≥ 90% terpakai atau swap aktif juga dihitung sebagai mesin mentok — memori
-biasanya menghambat lebih dulu daripada CPU. Ambangnya ada di konstanta atas
-`host.py` (`CPU_SATURATED`, `CPU_ROOMY`, `MEM_TIGHT_PCT`).
+RAM ≥ 90% terpakai (dilihat dari **puncak** selama observasi) atau swap > 64 MB
+juga dihitung sebagai mesin mentok — memori biasanya menghambat lebih dulu
+daripada CPU. Ambangnya ada di konstanta atas `host.py` (`CPU_SATURATED`,
+`CPU_ROOMY`, `MEM_TIGHT_PCT`).
 
 > Kalau worker berjalan di dalam container, jalankan tetap **di VM host**-nya
 > (bukan `docker exec` ke dalam container) agar yang terbaca CPU/RAM seluruh

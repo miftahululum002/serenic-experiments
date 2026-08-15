@@ -7,6 +7,10 @@ Contoh:
     python report.py                                  # default 6 menit
     python report.py --minutes 10 --output LAPORAN.md
     python report.py --queue ocr_agent_prod --skip-fate
+    python report.py --ssh vm-worker                   # CPU/RAM VM dibaca dari jauh
+
+CPU & RAM ikut terukur otomatis bila dijalankan di VM worker; dari laptop,
+pakai `--ssh <target>` (atau `HOST_SSH` di .env).
 """
 
 import argparse
@@ -15,7 +19,8 @@ from datetime import datetime, timedelta, timezone
 
 import collect
 import host
-from config import DATA_PARSING_AGENT, REDIS_HOST, REDIS_PORT, get_redis
+from config import (DATA_PARSING_AGENT, HOST_SSH, HOST_SSH_CMD, REDIS_HOST,
+                    REDIS_PORT, get_redis)
 from payload import profile as payload_profile
 
 WIB = timezone(timedelta(hours=7))
@@ -138,13 +143,16 @@ def analyze(data) -> dict:
 # --------------------------------------------------------------------------
 
 def render_host(data, a) -> str:
-    """Bab CPU & RAM — hanya terisi bila report.py dijalankan di VM worker."""
+    """Bab CPU & RAM — terisi bila report.py dijalankan di VM worker (atau --ssh)."""
     h = data["host"]
     snap, cpu, hv = h["snapshot"], h["cpu"], a["host_verdict"]
     m, ld = snap["mem"], snap["load"]
+    mem_s = cpu.get("mem") or {}
+    asal = (f"lewat SSH ke `{snap.get('source')}`" if snap.get("remote")
+            else "langsung di VM")
     P = [f"""## 5. Kondisi Mesin (CPU & RAM)
 
-Diukur langsung di VM `{snap.get('hostname')}` selama jendela pengamatan yang
+Diukur {asal} `{snap.get('hostname')}` selama jendela pengamatan yang
 sama — jadi angkanya mewakili beban saat worker benar-benar bekerja.
 """]
 
@@ -158,10 +166,34 @@ sama — jadi angkanya mewakili beban saat worker benar-benar bekerja.
         ["Core jenuh (>90%)", f"maks {cpu['cores_over_90_max']} dari {snap['cores']} core"],
         ["Load average", f"{ld.get('1m')} / {ld.get('5m')} / {ld.get('15m')} "
                          f"(**{num(ld.get('per_core_1m', 0), 2)} per core**)"],
-        ["RAM terpakai", f"**{num(m['used_mb'])} / {num(m['total_mb'])} MB "
-                         f"({num(m['used_pct'], 0)}%)**"],
-        ["Swap terpakai", f"{num(m['swap_used_mb'])} MB dari {num(m['swap_total_mb'])} MB"],
+        ["RAM total mesin", f"{num(m['total_mb'])} MB"],
     ]
+    if mem_s:
+        # RAM disampel tiap tick, bukan sekali di akhir: pemakaian bisa sempat
+        # memuncak lalu turun lagi begitu job selesai.
+        rows += [
+            ["RAM terpakai (rata-rata)",
+             f"**{num(mem_s['used_avg_mb'])} MB "
+             f"({num(mem_s['used_pct_avg'], 0)}%)** dari {num(mem_s['total_mb'])} MB"],
+            ["RAM puncak", f"**{num(mem_s['used_max_mb'])} MB "
+                           f"({num(mem_s['used_pct_max'], 0)}%)** "
+                           f"— terendah {num(mem_s['used_min_mb'])} MB"],
+            ["RAM sisa terkecil", f"{num(mem_s['available_min_mb'])} MB tersedia"],
+            ["Cache/buffer", f"{num(m['cached_mb'] + m.get('buffers_mb', 0))} MB "
+                             f"(bisa dilepas kalau RAM menipis)"],
+            ["Swap terpakai", f"maks {num(mem_s['swap_max_mb'])} MB dari "
+                              f"{num(m['swap_total_mb'])} MB (perubahan "
+                              f"{'+' if mem_s['swap_growth_mb'] >= 0 else '−'}"
+                              f"{num(abs(mem_s['swap_growth_mb']), 1)} MB "
+                              f"selama observasi)"],
+        ]
+    else:
+        rows += [
+            ["RAM terpakai", f"**{num(m['used_mb'])} / {num(m['total_mb'])} MB "
+                             f"({num(m['used_pct'], 0)}%)**"],
+            ["Swap terpakai",
+             f"{num(m['swap_used_mb'])} MB dari {num(m['swap_total_mb'])} MB"],
+        ]
     if snap.get("pressure"):
         rows.append(["PSI avg60 (some)", ", ".join(
             f"{k} {num(v, 1)}%" for k, v in snap["pressure"].items())])
@@ -176,9 +208,17 @@ sama — jadi angkanya mewakili beban saat worker benar-benar bekerja.
     if hv["stealing"]:
         flags.append(f"Steal time {num(cpu['steal_avg'], 1)}% — VM kekurangan jatah CPU "
                      f"dari host fisik (tetangga berisik / kuota kredit habis).")
+    if hv["mem_tight"]:
+        flags.append(f"RAM terpakai {num(hv['mem_used_pct'], 0)}% (≥ "
+                     f"{num(host.MEM_TIGHT_PCT, 0)}%) — memori nyaris habis; "
+                     f"menambah worker justru berisiko kena OOM-kill.")
     if hv["swapping"]:
-        flags.append(f"Swap terpakai {num(m['swap_used_mb'])} MB — RAM kurang, "
-                     f"ini memperlambat semua proses.")
+        flags.append(f"Swap terpakai {num(max(m['swap_used_mb'], mem_s.get('swap_max_mb', 0)))} MB "
+                     f"— RAM kurang, ini memperlambat semua proses.")
+    avail_min = mem_s.get("available_min_mb", m["available_mb"])
+    if m["total_mb"] and avail_min < max(512, m["total_mb"] * 0.1):
+        flags.append(f"Sisa RAM sempat tinggal {num(avail_min)} MB dari "
+                     f"{num(m['total_mb'])} MB — margin tipis untuk lonjakan job besar.")
     if cpu["iowait_avg"] >= 10:
         flags.append(f"iowait {num(cpu['iowait_avg'], 1)}% — banyak waktu terbuang "
                      f"menunggu disk/jaringan, bukan menghitung.")
@@ -191,6 +231,14 @@ sama — jadi angkanya mewakili beban saat worker benar-benar bekerja.
                 for p in h["top"]]
         P.append("\n**Proses paling boros CPU:**\n\n"
                  + table(["CPU", "RSS", "PID", "Proses"], rows,
+                         ["---:", "---:", "---:", "---"]))
+
+    if h.get("mem_top"):
+        total = m["total_mb"] or 1
+        rows = [[num(p["rss_mb"]) + " MB", num(p["rss_mb"] / total * 100, 1) + "%",
+                 p["pid"], p["name"]] for p in h["mem_top"]]
+        P.append("\n**Proses paling boros RAM:**\n\n"
+                 + table(["RSS", "% RAM mesin", "PID", "Proses"], rows,
                          ["---:", "---:", "---:", "---"]))
     return "\n".join(P)
 
@@ -223,9 +271,17 @@ def render(data, a) -> str:
 
     if a["pool_saturated"] and hv:
         cpu = data["host"]["cpu"]
+        hm = data["host"]["snapshot"]["mem"]
+        cm = cpu.get("mem") or {}
+        ram_txt = (f"RAM **{num(cm['used_avg_mb'])} / {num(cm['total_mb'])} MB "
+                   f"({num(cm['used_pct_avg'], 0)}%, puncak "
+                   f"{num(cm['used_pct_max'], 0)}%)**"
+                   if cm else
+                   f"RAM **{num(hm['used_mb'])} / {num(hm['total_mb'])} MB "
+                   f"({num(hm['used_pct'], 0)}%)**")
         detail = (saturated_detail + f" CPU mesin rata-rata "
                   f"**{num(cpu['busy_avg'], 0)}%** dari {data['host']['snapshot']['cores']} "
-                  f"core selama periode yang sama.")
+                  f"core dan {ram_txt} selama periode yang sama.")
         if hv["cpu_bound"] or hv["mem_tight"] or hv["swapping"]:
             verdict = (f"**Pool worker `{target}`: YA, sudah 100% mentok.**\n"
                        f"**Server (mesin): JUGA sudah mentok** — {hv['reason']}\n\n"
@@ -424,16 +480,17 @@ menentukan apakah menambah worker akan menaikkan throughput:
 
 **Cara melengkapinya:** salin folder ini ke VM yang menjalankan worker, lalu
 jalankan `report.py` di sana. Metrik CPU/RAM akan ikut terukur otomatis dan
-bagian ini berganti menjadi kesimpulan yang pasti.
+bagian ini berganti menjadi kesimpulan yang pasti. Kalau tetap ingin dijalankan
+dari laptop, tambahkan `--ssh <target-vm>` supaya `/proc` VM dibaca dari jauh.
 """)
 
     # --- 6. Rekomendasi ---
     P.append("## 6. Rekomendasi\n")
     hv = a["host_verdict"]
     if hv is None:
-        recs = ["**Cek CPU host lebih dulu** — jalankan `report.py` langsung di VM "
-                "worker agar CPU/RAM ikut terukur. Ini menentukan semua langkah "
-                "berikutnya."]
+        recs = ["**Cek CPU/RAM host lebih dulu** — jalankan `report.py` langsung di "
+                "VM worker (atau dari laptop dengan `--ssh <target-vm>`) agar "
+                "CPU/RAM ikut terukur. Ini menentukan semua langkah berikutnya."]
     elif hv["cpu_bound"] or hv["mem_tight"] or hv["swapping"]:
         recs = [f"**Tambah kapasitas mesin** (naikkan ukuran instance atau tambah VM). "
                 f"{hv['reason']} Menggeser/menambah worker di mesin yang sama "
@@ -483,11 +540,14 @@ bagian ini berganti menjadi kesimpulan yang pasti.
                 f"job terdepan > 15 menit.")
     P.append("\n" + "\n".join(f"{i}. {r}" for i, r in enumerate(recs, 1)) + "\n")
 
+    ssh_arg = ""
+    if data.get("host") and data["host"]["snapshot"].get("remote"):
+        ssh_arg = f" --ssh {data['host']['snapshot'].get('source')}"
     P.append(f"""## 7. Cara Reproduksi
 
 ```bash
 cd experiments/cek-load
-./.venv/bin/python report.py --queue {target} --minutes {num(live['span_s'] / 60, 0)}
+./.venv/bin/python report.py --queue {target} --minutes {num(live['span_s'] / 60, 0)}{ssh_arg}
 ```
 
 Langkah manual per bagian ada di [`README.md`](README.md).
@@ -511,8 +571,17 @@ def main():
     p.add_argument("--sample", type=int, default=40, help="jumlah payload job disampel")
     p.add_argument("--no-host", action="store_true",
                    help="jangan ukur CPU/RAM mesin walau tersedia")
+    p.add_argument("--ssh", default=HOST_SSH,
+                   help="baca CPU/RAM dari VM lain lewat SSH (default: HOST_SSH "
+                        "di .env). Tidak perlu bila script dijalankan di VM itu.")
+    p.add_argument("--ssh-cmd", default=HOST_SSH_CMD,
+                   help="pembungkus khusus, mis. 'gcloud compute ssh vm --zone z "
+                        "--command'")
     p.add_argument("--output", default=None)
     args = p.parse_args()
+
+    if not args.no_host and (args.ssh or args.ssh_cmd):
+        host.use_ssh(target=args.ssh or None, command=args.ssh_cmd or None)
 
     out = args.output or (
         f"reports/LAPORAN_{datetime.now().strftime('%Y%m%d_%H%M%S')}.md")
@@ -534,21 +603,29 @@ def main():
         print(f"      dilewati: {type(e).__name__}: {e}")
         pl = {}
 
-    host_on = host.available() and not args.no_host
+    host_on = not args.no_host and host.available()
     if host_on:
-        print(f"      metrik host AKTIF — {host.cpu_count()} core terdeteksi", flush=True)
+        mem0 = host.meminfo()
+        print(f"      metrik host AKTIF ({host.source_label()}) — "
+              f"{host.cpu_count()} core, RAM {mem0.get('total_mb', 0):.0f} MB "
+              f"({mem0.get('used_pct', 0):.0f}% terpakai)", flush=True)
     else:
-        print("      metrik host tidak tersedia (jalankan di VM worker untuk "
-              "mengukur CPU/RAM)", flush=True)
+        print("      metrik host tidak tersedia (jalankan di VM worker, atau "
+              "pakai --ssh <target>, untuk mengukur CPU/RAM)", flush=True)
 
     print(f"[3/6] Pengukuran live {args.minutes} menit "
           f"(sampling {args.interval}s)…", flush=True)
 
-    sampler = host.CpuSampler() if host_on else None
+    sampler = host.HostSampler() if host_on else None
 
     def tick(s):
         cpu = sampler.tick() if sampler else None
-        extra = f" cpu={cpu['busy']:.0f}%" if cpu else ""
+        extra = ""
+        if cpu:
+            mm = cpu.get("mem") or {}
+            extra = (f" cpu={cpu['busy']:.0f}%"
+                     + (f" ram={mm['used_mb']:.0f}MB/{mm['used_pct']:.0f}%"
+                        if mm else ""))
         print(f"      [{s['t']:5.0f}s] pending={s['pending']:>6} "
               f"slot={s['active_slots']} busy={s['busy']} idle={s['idle']} "
               f"selesai={s['completed_total']}{extra}", flush=True)
@@ -560,7 +637,8 @@ def main():
         summ = sampler.summary()
         if summ:
             host_data = {"snapshot": host.snapshot(), "cpu": summ,
-                         "top": host.top_processes(3.0)}
+                         "top": host.top_processes(3.0),
+                         "mem_top": host.top_memory(6)}
 
     print("[4/6] Waktu tunggu antrean…", flush=True)
     waits = collect.queue_waits(conn, args.queue)
@@ -600,9 +678,13 @@ def main():
             f"backlog {a['trend']}, throughput {num(live['throughput_per_h'])} job/jam")
     if a["host_verdict"]:
         hv = a["host_verdict"]
+        cm = host_data["cpu"].get("mem") or {}
+        ram = (f", RAM {num(cm['used_pct_avg'], 0)}% (puncak "
+               f"{num(cm['used_pct_max'], 0)}%, {num(cm['used_avg_mb'])} MB)"
+               if cm else "")
         line += (f", mesin "
                  f"{'MENTOK' if hv['cpu_bound'] or hv['mem_tight'] else 'masih longgar'} "
-                 f"(CPU {num(host_data['cpu']['busy_avg'], 0)}%)")
+                 f"(CPU {num(host_data['cpu']['busy_avg'], 0)}%{ram})")
     print(line)
 
 

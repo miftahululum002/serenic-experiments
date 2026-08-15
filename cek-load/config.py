@@ -16,6 +16,12 @@ AGENT_QUEUE_EKLAIM_BATCH = os.getenv(
     "AGENT_QUEUE_EKLAIM_BATCH", "eklaim_batch_agent_prod"
 )
 
+# Metrik CPU/RAM. Kosong = baca mesin tempat script ini jalan (kasus normal:
+# dijalankan langsung di VM worker). Diisi = baca /proc VM lain lewat SSH,
+# supaya CPU/RAM tetap terukur walau report.py dijalankan dari laptop.
+HOST_SSH = os.getenv("HOST_SSH") or ""
+HOST_SSH_CMD = os.getenv("HOST_SSH_CMD") or ""
+
 
 def get_redis():
     import redis
