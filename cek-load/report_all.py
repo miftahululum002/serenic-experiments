@@ -45,6 +45,7 @@ STALE_IDLE_S = 540
 STUCK_RATIO = 0.90          # umur job ≥ sekian × timeout = nyaris/sudah kehabisan waktu
 LONG_RUN_S = 900            # job berjalan lebih lama dari ini layak dilihat manusia
 QUEUE_TICK_SHOW = 6         # queue teraktif yang namanya dicetak tiap tick
+QUEUE_NAME_W = 30           # lebar maksimal nama queue di baris tick
 
 # RQ 2.x menyimpan entri started registry sebagai "job_id:execution_id".
 _PARSE_JID = getattr(StartedJobRegistry, "parse_job_id", None)
@@ -57,6 +58,29 @@ def _jid(entry) -> str:
 
 def _txt(v) -> str:
     return v.decode() if isinstance(v, bytes) else (v or "")
+
+
+def short_names(names):
+    """Nama pendek untuk baris tick: akhiran yang sama di SEMUA queue dibuang.
+
+    Di deployment ini setiap queue berakhiran `_agent_prod`, jadi mengulangnya
+    13 kali per tick hanya membuat baris melebar tanpa menambah informasi.
+    Mengembalikan (peta nama->pendek, akhiran yang dibuang).
+    """
+    parts = [n.split("_") for n in names if n]
+    if len(parts) < 2:
+        return {n: n for n in names}, ""
+    n = 0
+    while n < min(len(p) for p in parts) - 1 and len({p[-1 - n] for p in parts}) == 1:
+        n += 1
+    if not n:
+        return {n_: n_ for n_ in names}, ""
+    suffix = "_" + "_".join(parts[0][-n:])
+    return {nm: nm[:-len(suffix)] for nm in names}, suffix
+
+
+def _clip(s, w=QUEUE_NAME_W) -> str:
+    return s if len(s) <= w else s[:w - 1] + "…"
 
 
 # --------------------------------------------------------------------------
@@ -810,8 +834,11 @@ def main():
 
     print(f"[3/5] Pengukuran live {args.minutes} menit "
           f"(sampling {args.interval}s, semua queue)…", flush=True)
+    pendek, suffix = short_names(names)
     print(f"      Baris kedua tiap tick = {QUEUE_TICK_SHOW} queue teraktif: "
-          f"nama: <pending>p/<busy worker>b/<selesai kumulatif>s", flush=True)
+          f"nama: <pending>p/<busy worker>b/<selesai kumulatif>s"
+          + (f" (akhiran `{suffix}` dibuang dari nama)" if suffix else ""),
+          flush=True)
     sampler = host.HostSampler() if host_on else None
 
     def on_tick(t):
@@ -833,7 +860,8 @@ def main():
             # memberi tahu queue mana yang sedang menumpuk.
             sisa = len(aktif) - QUEUE_TICK_SHOW
             ringkas = " | ".join(
-                f"{qn}: {v['pending']}p/{v['busy']}b/{v['completed']}s"
+                f"{_clip(pendek.get(qn, qn))}: "
+                f"{v['pending']}p/{v['busy']}b/{v['completed']}s"
                 for qn, v in aktif[:QUEUE_TICK_SHOW])
             print(f"              {ringkas}"
                   + (f" | +{sisa} queue lain" if sisa > 0 else ""), flush=True)

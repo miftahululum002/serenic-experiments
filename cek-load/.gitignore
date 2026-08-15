@@ -6,3 +6,5 @@ results_*.log
 !results/.gitkeep
 reports/*
 !reports/.gitkeep
+logs/*
+!logs/.gitkeep
