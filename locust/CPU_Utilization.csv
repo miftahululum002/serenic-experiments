@@ -1,0 +1,64 @@
+TimeSeries ID,value_utilization_mean resource.project_id=serenic-aurio-mvp resource.zone=asia-southeast2-a resource.instance_id=2068346421968103618 metric.instance_name=serenic-prod
+resource.project_id,serenic-aurio-mvp
+resource.zone,asia-southeast2-a
+resource.instance_id,2068346421968103618
+metric.instance_name,serenic-prod
+Tue Aug 11 2026 23:03:00 GMT+0700 (Western Indonesia Time),0.7803784422964478
+Tue Aug 11 2026 23:04:00 GMT+0700 (Western Indonesia Time),0.8071293521362046
+Tue Aug 11 2026 23:05:00 GMT+0700 (Western Indonesia Time),0.9288544973436123
+Tue Aug 11 2026 23:06:00 GMT+0700 (Western Indonesia Time),0.86907875603841
+Tue Aug 11 2026 23:07:00 GMT+0700 (Western Indonesia Time),0.7565068601009747
+Tue Aug 11 2026 23:08:00 GMT+0700 (Western Indonesia Time),0.8093331046712895
+Tue Aug 11 2026 23:09:00 GMT+0700 (Western Indonesia Time),0.7069268214361121
+Tue Aug 11 2026 23:10:00 GMT+0700 (Western Indonesia Time),0.6380528924288228
+Tue Aug 11 2026 23:11:00 GMT+0700 (Western Indonesia Time),0.5873091395245865
+Tue Aug 11 2026 23:12:00 GMT+0700 (Western Indonesia Time),0.8864475367047513
+Tue Aug 11 2026 23:13:00 GMT+0700 (Western Indonesia Time),0.9406376169218371
+Tue Aug 11 2026 23:14:00 GMT+0700 (Western Indonesia Time),0.8463527800127243
+Tue Aug 11 2026 23:15:00 GMT+0700 (Western Indonesia Time),0.9557034333546957
+Tue Aug 11 2026 23:16:00 GMT+0700 (Western Indonesia Time),0.8708116826368496
+Tue Aug 11 2026 23:17:00 GMT+0700 (Western Indonesia Time),0.9450999112178882
+Tue Aug 11 2026 23:18:00 GMT+0700 (Western Indonesia Time),0.8226739016128704
+Tue Aug 11 2026 23:19:00 GMT+0700 (Western Indonesia Time),0.7904081816008935
+Tue Aug 11 2026 23:20:00 GMT+0700 (Western Indonesia Time),0.8141531962746134
+Tue Aug 11 2026 23:21:00 GMT+0700 (Western Indonesia Time),0.7915443768259138
+Tue Aug 11 2026 23:22:00 GMT+0700 (Western Indonesia Time),0.707249112916179
+Tue Aug 11 2026 23:23:00 GMT+0700 (Western Indonesia Time),0.7089285998217141
+Tue Aug 11 2026 23:24:00 GMT+0700 (Western Indonesia Time),0.7050157979674017
+Tue Aug 11 2026 23:25:00 GMT+0700 (Western Indonesia Time),0.6984858504030853
+Tue Aug 11 2026 23:26:00 GMT+0700 (Western Indonesia Time),0.6029670154675841
+Tue Aug 11 2026 23:27:00 GMT+0700 (Western Indonesia Time),0.8241222076506043
+Tue Aug 11 2026 23:28:00 GMT+0700 (Western Indonesia Time),0.7529123327151561
+Tue Aug 11 2026 23:29:00 GMT+0700 (Western Indonesia Time),0.7844437090524783
+Tue Aug 11 2026 23:30:00 GMT+0700 (Western Indonesia Time),0.9335630084155128
+Tue Aug 11 2026 23:31:00 GMT+0700 (Western Indonesia Time),0.9470039786305279
+Tue Aug 11 2026 23:32:00 GMT+0700 (Western Indonesia Time),0.8840877594426274
+Tue Aug 11 2026 23:33:00 GMT+0700 (Western Indonesia Time),0.9191006544356545
+Tue Aug 11 2026 23:34:00 GMT+0700 (Western Indonesia Time),0.9285881154316787
+Tue Aug 11 2026 23:35:00 GMT+0700 (Western Indonesia Time),0.9329989625141024
+Tue Aug 11 2026 23:36:00 GMT+0700 (Western Indonesia Time),0.9515415244037285
+Tue Aug 11 2026 23:37:00 GMT+0700 (Western Indonesia Time),0.9579637200338765
+Tue Aug 11 2026 23:38:00 GMT+0700 (Western Indonesia Time),0.9555728677582617
+Tue Aug 11 2026 23:39:00 GMT+0700 (Western Indonesia Time),0.9547214739878351
+Tue Aug 11 2026 23:40:00 GMT+0700 (Western Indonesia Time),0.9857691810155909
+Tue Aug 11 2026 23:41:00 GMT+0700 (Western Indonesia Time),0.9762261335117122
+Tue Aug 11 2026 23:42:00 GMT+0700 (Western Indonesia Time),0.9828255695523694
+Tue Aug 11 2026 23:43:00 GMT+0700 (Western Indonesia Time),0.9871164191747084
+Tue Aug 11 2026 23:44:00 GMT+0700 (Western Indonesia Time),0.9751246632852902
+Tue Aug 11 2026 23:45:00 GMT+0700 (Western Indonesia Time),0.9203708562068641
+Tue Aug 11 2026 23:46:00 GMT+0700 (Western Indonesia Time),0.9095130855295186
+Tue Aug 11 2026 23:47:00 GMT+0700 (Western Indonesia Time),0.9534907452917347
+Tue Aug 11 2026 23:48:00 GMT+0700 (Western Indonesia Time),0.9671530240991463
+Tue Aug 11 2026 23:49:00 GMT+0700 (Western Indonesia Time),0.9446816099341958
+Tue Aug 11 2026 23:50:00 GMT+0700 (Western Indonesia Time),0.8982074926684921
+Tue Aug 11 2026 23:51:00 GMT+0700 (Western Indonesia Time),0.7712986731358493
+Tue Aug 11 2026 23:52:00 GMT+0700 (Western Indonesia Time),0.8003739052529757
+Tue Aug 11 2026 23:53:00 GMT+0700 (Western Indonesia Time),0.8426075018554305
+Tue Aug 11 2026 23:54:00 GMT+0700 (Western Indonesia Time),0.8168689972410599
+Tue Aug 11 2026 23:55:00 GMT+0700 (Western Indonesia Time),0.8519519492362936
+Tue Aug 11 2026 23:56:00 GMT+0700 (Western Indonesia Time),0.8292646036250516
+Tue Aug 11 2026 23:57:00 GMT+0700 (Western Indonesia Time),0.8875453056379532
+Tue Aug 11 2026 23:58:00 GMT+0700 (Western Indonesia Time),0.9707415162973727
+Tue Aug 11 2026 23:59:00 GMT+0700 (Western Indonesia Time),0.9852194949596499
+Wed Aug 12 2026 00:00:00 GMT+0700 (Western Indonesia Time),0.9827045276140173
+Wed Aug 12 2026 00:01:00 GMT+0700 (Western Indonesia Time),0.9629526262404396

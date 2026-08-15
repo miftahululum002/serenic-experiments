@@ -1,0 +1,68 @@
+TimeSeries ID,vcpus resource.project_id=serenic-aurio-mvp resource.zone=asia-southeast2-a resource.instance_id=2068346421968103618 metric.instance_name=serenic-prod vcpus_label=CPU Usage (Avg. vCPUs),vcpus resource.project_id=serenic-aurio-mvp resource.zone=asia-southeast2-a resource.instance_id=2068346421968103618 metric.instance_name=serenic-prod vcpus_label=Reserved vCPUs
+resource.project_id,serenic-aurio-mvp,serenic-aurio-mvp
+resource.zone,asia-southeast2-a,asia-southeast2-a
+resource.instance_id,2068346421968103618,2068346421968103618
+metric.instance_name,serenic-prod,serenic-prod
+vcpus_label,CPU Usage (Avg. vCPUs),Reserved vCPUs
+Tue Aug 11 2026 23:02:00 GMT+0700 (Western Indonesia Time),6.055478017342587,8
+Tue Aug 11 2026 23:03:00 GMT+0700 (Western Indonesia Time),6.2430275383715825,8
+Tue Aug 11 2026 23:04:00 GMT+0700 (Western Indonesia Time),6.457034817089637,8
+Tue Aug 11 2026 23:05:00 GMT+0700 (Western Indonesia Time),7.430835978748898,8
+Tue Aug 11 2026 23:06:00 GMT+0700 (Western Indonesia Time),6.95263004830728,8
+Tue Aug 11 2026 23:07:00 GMT+0700 (Western Indonesia Time),6.052054880807797,8
+Tue Aug 11 2026 23:08:00 GMT+0700 (Western Indonesia Time),6.474664837370316,8
+Tue Aug 11 2026 23:09:00 GMT+0700 (Western Indonesia Time),5.655414571488897,8
+Tue Aug 11 2026 23:10:00 GMT+0700 (Western Indonesia Time),5.104423139430582,8
+Tue Aug 11 2026 23:11:00 GMT+0700 (Western Indonesia Time),4.698473116196692,8
+Tue Aug 11 2026 23:12:00 GMT+0700 (Western Indonesia Time),7.09158029363801,8
+Tue Aug 11 2026 23:13:00 GMT+0700 (Western Indonesia Time),7.525100935374697,8
+Tue Aug 11 2026 23:14:00 GMT+0700 (Western Indonesia Time),6.770822240101794,8
+Tue Aug 11 2026 23:15:00 GMT+0700 (Western Indonesia Time),7.645627466837565,8
+Tue Aug 11 2026 23:16:00 GMT+0700 (Western Indonesia Time),6.966493461094797,8
+Tue Aug 11 2026 23:17:00 GMT+0700 (Western Indonesia Time),7.560799289743105,8
+Tue Aug 11 2026 23:18:00 GMT+0700 (Western Indonesia Time),6.581391212902963,8
+Tue Aug 11 2026 23:19:00 GMT+0700 (Western Indonesia Time),6.323265452807148,8
+Tue Aug 11 2026 23:20:00 GMT+0700 (Western Indonesia Time),6.513225570196907,8
+Tue Aug 11 2026 23:21:00 GMT+0700 (Western Indonesia Time),6.332355014607311,8
+Tue Aug 11 2026 23:22:00 GMT+0700 (Western Indonesia Time),5.657992903329432,8
+Tue Aug 11 2026 23:23:00 GMT+0700 (Western Indonesia Time),5.671428798573713,8
+Tue Aug 11 2026 23:24:00 GMT+0700 (Western Indonesia Time),5.640126383739213,8
+Tue Aug 11 2026 23:25:00 GMT+0700 (Western Indonesia Time),5.5878868032246825,8
+Tue Aug 11 2026 23:26:00 GMT+0700 (Western Indonesia Time),4.823736123740673,8
+Tue Aug 11 2026 23:27:00 GMT+0700 (Western Indonesia Time),6.592977661204834,8
+Tue Aug 11 2026 23:28:00 GMT+0700 (Western Indonesia Time),6.023298661721249,8
+Tue Aug 11 2026 23:29:00 GMT+0700 (Western Indonesia Time),6.275549672419826,8
+Tue Aug 11 2026 23:30:00 GMT+0700 (Western Indonesia Time),7.468504067324102,8
+Tue Aug 11 2026 23:31:00 GMT+0700 (Western Indonesia Time),7.576031829044223,8
+Tue Aug 11 2026 23:32:00 GMT+0700 (Western Indonesia Time),7.072702075541019,8
+Tue Aug 11 2026 23:33:00 GMT+0700 (Western Indonesia Time),7.352805235485236,8
+Tue Aug 11 2026 23:34:00 GMT+0700 (Western Indonesia Time),7.42870492345343,8
+Tue Aug 11 2026 23:35:00 GMT+0700 (Western Indonesia Time),7.463991700112819,8
+Tue Aug 11 2026 23:36:00 GMT+0700 (Western Indonesia Time),7.612332195229828,8
+Tue Aug 11 2026 23:37:00 GMT+0700 (Western Indonesia Time),7.663709760271012,8
+Tue Aug 11 2026 23:38:00 GMT+0700 (Western Indonesia Time),7.644582942066093,8
+Tue Aug 11 2026 23:39:00 GMT+0700 (Western Indonesia Time),7.637771791902681,8
+Tue Aug 11 2026 23:40:00 GMT+0700 (Western Indonesia Time),7.886153448124727,8
+Tue Aug 11 2026 23:41:00 GMT+0700 (Western Indonesia Time),7.809809068093697,8
+Tue Aug 11 2026 23:42:00 GMT+0700 (Western Indonesia Time),7.8626045564189555,8
+Tue Aug 11 2026 23:43:00 GMT+0700 (Western Indonesia Time),7.896931353397667,8
+Tue Aug 11 2026 23:44:00 GMT+0700 (Western Indonesia Time),7.800997306282322,8
+Tue Aug 11 2026 23:45:00 GMT+0700 (Western Indonesia Time),7.362966849654913,8
+Tue Aug 11 2026 23:46:00 GMT+0700 (Western Indonesia Time),7.276104684236149,8
+Tue Aug 11 2026 23:47:00 GMT+0700 (Western Indonesia Time),7.627925962333878,8
+Tue Aug 11 2026 23:48:00 GMT+0700 (Western Indonesia Time),7.73722419279317,8
+Tue Aug 11 2026 23:49:00 GMT+0700 (Western Indonesia Time),7.5574528794735665,8
+Tue Aug 11 2026 23:50:00 GMT+0700 (Western Indonesia Time),7.185659941347937,8
+Tue Aug 11 2026 23:51:00 GMT+0700 (Western Indonesia Time),6.170389385086795,8
+Tue Aug 11 2026 23:52:00 GMT+0700 (Western Indonesia Time),6.4029912420238055,8
+Tue Aug 11 2026 23:53:00 GMT+0700 (Western Indonesia Time),6.740860014843444,8
+Tue Aug 11 2026 23:54:00 GMT+0700 (Western Indonesia Time),6.534951977928479,8
+Tue Aug 11 2026 23:55:00 GMT+0700 (Western Indonesia Time),6.815615593890349,8
+Tue Aug 11 2026 23:56:00 GMT+0700 (Western Indonesia Time),6.634116829000413,8
+Tue Aug 11 2026 23:57:00 GMT+0700 (Western Indonesia Time),7.100362445103626,8
+Tue Aug 11 2026 23:58:00 GMT+0700 (Western Indonesia Time),7.765932130378982,8
+Tue Aug 11 2026 23:59:00 GMT+0700 (Western Indonesia Time),7.881755959677199,8
+Wed Aug 12 2026 00:00:00 GMT+0700 (Western Indonesia Time),7.861636220912138,8
+Wed Aug 12 2026 00:01:00 GMT+0700 (Western Indonesia Time),undefined,8
+Wed Aug 12 2026 00:02:00 GMT+0700 (Western Indonesia Time),undefined,8
+Wed Aug 12 2026 00:03:00 GMT+0700 (Western Indonesia Time),undefined,8
