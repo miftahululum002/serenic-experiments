@@ -1,6 +1,14 @@
 import psycopg2
 
-from config import DB_HOST, DB_PORT, DB_NAME, DB_USER, DB_PASSWORD, ORGANIZATION_ID
+from config import (
+    DB_HOST,
+    DB_PORT,
+    DB_NAME,
+    DB_USER,
+    DB_PASSWORD,
+    APP_NAME_DISPLAY,
+    ORGANIZATION_ID,
+)
 from utils.logger import get_logger
 
 log = get_logger("query")
@@ -13,13 +21,14 @@ TABLE = {
 }
 
 
-def get_connection():
+def get_connection(application_name=None):
     return psycopg2.connect(
         host=DB_HOST,
         port=DB_PORT,
         dbname=DB_NAME,
         user=DB_USER,
         password=DB_PASSWORD,
+        application_name=application_name or APP_NAME_DISPLAY,
     )
 
 

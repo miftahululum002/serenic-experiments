@@ -13,6 +13,7 @@ DB_PORT = os.getenv("DB_PORT")
 DB_NAME = os.getenv("DB_NAME")
 DB_USER = os.getenv("DB_USER", "postgres")
 DB_PASSWORD = os.getenv("DB_PASSWORD")
+APP_NAME_DISPLAY = os.getenv("APP_NAME_DISPLAY", "testing-ingestor")
 
 # Filename constants per endpoint
 HEALTH_CHECK = "health_check"
