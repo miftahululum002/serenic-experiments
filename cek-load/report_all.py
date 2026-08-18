@@ -34,7 +34,7 @@ import collect
 import host
 from collect import parse_ts
 from config import HOST_SSH, HOST_SSH_CMD, REDIS_HOST, REDIS_PORT, get_redis
-from report import WIB, dur, num, render_host, table, tanggal
+from report import WIB, dur, log, num, render_host, table, tanggal
 
 # Ambang detak dibedakan busy vs idle: worker sibuk berdetak tiap
 # ~job_monitoring_interval (30 detik), sedangkan worker idle menggantung di BLPOP
@@ -756,7 +756,7 @@ def print_table(headers, rows, widths, aligns):
 
 
 def print_summary(data, a):
-    print(f"\n=== SEMUA QUEUE ({dur(data['span_s'])} observasi) ===")
+    log(f"\n=== SEMUA QUEUE ({dur(data['span_s'])} observasi) ===")
     rows = []
     for q in sorted(data["queues"], key=lambda x: (-x["pending"], -x["throughput_per_h"])):
         if not (q["pending"] or q["workers"] or q["completed"]):
@@ -770,7 +770,7 @@ def print_summary(data, a):
                 rows, [53, 7, 8, 11, 8, 8, 12, 12],
                 ["<", "<", ">", ">", ">", ">", ">", ">"])
     print()
-    print(verdict_line(a).replace("**", ""))
+    log(verdict_line(a).replace("**", ""))
 
 
 # --------------------------------------------------------------------------
@@ -807,7 +807,7 @@ def main():
     conn.ping()
     started_at = collect.now_utc()
 
-    print(f"[1/5] Daftar queue & kondisi Redis…", flush=True)
+    log("[1/5] Daftar queue & kondisi Redis…")
     health = collect.redis_health(conn)
     names = collect.queue_names(conn)
     if args.queues:
@@ -817,28 +817,25 @@ def main():
             raise SystemExit(f"Tidak ada queue yang cocok: {sorted(pilih)}")
     handles = queue_handles(conn, names)
     fl0 = fleet(conn)
-    print(f"      {len(names)} queue, {fl0['total']} worker "
-          f"({', '.join(f'{v} {k}' for k, v in sorted(fl0['states'].items()))})",
-          flush=True)
+    log(f"      {len(names)} queue, {fl0['total']} worker "
+        f"({', '.join(f'{v} {k}' for k, v in sorted(fl0['states'].items()))})")
 
-    print("[2/5] Metrik mesin…", flush=True)
+    log("[2/5] Metrik mesin…")
     host_on = not args.no_host and host.available()
     if host_on:
         mem0 = host.meminfo()
-        print(f"      AKTIF ({host.source_label()}) — {host.cpu_count()} core, "
-              f"RAM {mem0.get('total_mb', 0):.0f} MB "
-              f"({mem0.get('used_pct', 0):.0f}% terpakai)", flush=True)
+        log(f"      AKTIF ({host.source_label()}) — {host.cpu_count()} core, "
+            f"RAM {mem0.get('total_mb', 0):.0f} MB "
+            f"({mem0.get('used_pct', 0):.0f}% terpakai)")
     else:
-        print("      tidak tersedia (jalankan di VM worker, atau pakai --ssh)",
-              flush=True)
+        log("      tidak tersedia (jalankan di VM worker, atau pakai --ssh)")
 
-    print(f"[3/5] Pengukuran live {args.minutes} menit "
-          f"(sampling {args.interval}s, semua queue)…", flush=True)
+    log(f"[3/5] Pengukuran live {args.minutes} menit "
+        f"(sampling {args.interval}s, semua queue)…")
     pendek, suffix = short_names(names)
-    print(f"      Baris kedua tiap tick = {QUEUE_TICK_SHOW} queue teraktif: "
-          f"nama: <pending>p/<busy worker>b/<selesai kumulatif>s"
-          + (f" (akhiran `{suffix}` dibuang dari nama)" if suffix else ""),
-          flush=True)
+    log(f"      Baris kedua tiap tick = {QUEUE_TICK_SHOW} queue teraktif: "
+        f"nama: <pending>p/<busy worker>b/<selesai kumulatif>s"
+        + (f" (akhiran `{suffix}` dibuang dari nama)" if suffix else ""))
     sampler = host.HostSampler() if host_on else None
 
     def on_tick(t):
@@ -851,10 +848,10 @@ def main():
         aktif = [(qn, v) for qn, v in t["queues"].items()
                  if v["pending"] or v["busy"]]
         aktif.sort(key=lambda kv: (-kv[1]["pending"], -kv[1]["busy"], kv[0]))
-        print(f"      [{t['t']:5.0f}s] pending={t['pending_total']:>7} "
-              f"queue_aktif={len(aktif):>3} busy={t['fleet'].get('busy', 0):>4} "
-              f"idle={t['fleet'].get('idle', 0):>4} "
-              f"selesai={t['completed_total']:>5}{extra}", flush=True)
+        log(f"      [{t['t']:5.0f}s] pending={t['pending_total']:>7} "
+            f"queue_aktif={len(aktif):>3} busy={t['fleet'].get('busy', 0):>4} "
+            f"idle={t['fleet'].get('idle', 0):>4} "
+            f"selesai={t['completed_total']:>5}{extra}")
         if aktif:
             # Nama queue-nya ikut dicetak: tanpa ini "queue_aktif=3" tidak
             # memberi tahu queue mana yang sedang menumpuk.
@@ -863,8 +860,8 @@ def main():
                 f"{_clip(pendek.get(qn, qn))}: "
                 f"{v['pending']}p/{v['busy']}b/{v['completed']}s"
                 for qn, v in aktif[:QUEUE_TICK_SHOW])
-            print(f"              {ringkas}"
-                  + (f" | +{sisa} queue lain" if sisa > 0 else ""), flush=True)
+            log(f"              {ringkas}"
+                + (f" | +{sisa} queue lain" if sisa > 0 else ""))
 
     live = measure_all(conn, handles, args.minutes, args.interval, on_tick)
 
@@ -876,14 +873,14 @@ def main():
                          "top": host.top_processes(3.0),
                          "mem_top": host.top_memory(6)}
 
-    print("[4/5] Job yang sedang berjalan…", flush=True)
+    log("[4/5] Job yang sedang berjalan…")
     running = running_jobs(conn, live["fleet"])
     if args.queues:
         # Armada worker tetap dilaporkan utuh (itu kondisi server), tapi daftar
         # job berjalan dibatasi ke queue yang diminta supaya tidak membingungkan.
         running = [r for r in running if r["queue"] in set(names)]
 
-    print("[5/5] Ringkasan kegagalan semua queue…", flush=True)
+    log("[5/5] Ringkasan kegagalan semua queue…")
     failures = collect.failure_summary(conn, names)
 
     data = {
@@ -919,10 +916,10 @@ def main():
                 "failures": data["failures"],
                 "host": (host_data or {}).get("cpu"),
             }, f, indent=2, default=str)
-        print(f"Data mentah: {args.json}")
+        log(f"Data mentah: {args.json}")
 
     print_summary(data, a)
-    print(f"\nLaporan ditulis: {out}")
+    log(f"\nLaporan ditulis: {out}")
 
 
 if __name__ == "__main__":

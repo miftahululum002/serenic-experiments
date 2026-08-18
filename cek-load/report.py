@@ -36,6 +36,23 @@ def tanggal(dt):
     return f"{dt.day} {BULAN[dt.month - 1]} {dt.year}"
 
 
+def log(msg=""):
+    """Cetak baris progres dengan cap waktu WIB di depannya.
+
+    Pengukuran live bisa berjalan berjam-jam, jadi tiap baris progres perlu
+    jam sendiri supaya log lama masih bisa dibaca sebagai lini masa.
+    """
+    if not msg:
+        print(flush=True)
+        return
+    kosong = ""
+    while msg.startswith("\n"):
+        kosong += "\n"
+        msg = msg[1:]
+    print(f"{kosong}[{datetime.now(WIB).strftime('%Y-%m-%d %H:%M:%S')}] {msg}",
+          flush=True)
+
+
 # --------------------------------------------------------------------------
 # Format
 # --------------------------------------------------------------------------
@@ -591,30 +608,30 @@ def main():
     conn.ping()
     started_at = collect.now_utc()
 
-    print(f"[1/6] Kondisi Redis & queue…", flush=True)
+    log("[1/6] Kondisi Redis & queue…")
     health = collect.redis_health(conn)
     queues = collect.queue_stats(conn)
     pools = collect.worker_pools(conn)
 
-    print(f"[2/6] Profil payload job ({args.sample} sampel)…", flush=True)
+    log(f"[2/6] Profil payload job ({args.sample} sampel)…")
     try:
         pl = payload_profile(conn, args.queue, args.sample)
     except Exception as e:
-        print(f"      dilewati: {type(e).__name__}: {e}")
+        log(f"      dilewati: {type(e).__name__}: {e}")
         pl = {}
 
     host_on = not args.no_host and host.available()
     if host_on:
         mem0 = host.meminfo()
-        print(f"      metrik host AKTIF ({host.source_label()}) — "
-              f"{host.cpu_count()} core, RAM {mem0.get('total_mb', 0):.0f} MB "
-              f"({mem0.get('used_pct', 0):.0f}% terpakai)", flush=True)
+        log(f"      metrik host AKTIF ({host.source_label()}) — "
+            f"{host.cpu_count()} core, RAM {mem0.get('total_mb', 0):.0f} MB "
+            f"({mem0.get('used_pct', 0):.0f}% terpakai)")
     else:
-        print("      metrik host tidak tersedia (jalankan di VM worker, atau "
-              "pakai --ssh <target>, untuk mengukur CPU/RAM)", flush=True)
+        log("      metrik host tidak tersedia (jalankan di VM worker, atau "
+            "pakai --ssh <target>, untuk mengukur CPU/RAM)")
 
-    print(f"[3/6] Pengukuran live {args.minutes} menit "
-          f"(sampling {args.interval}s)…", flush=True)
+    log(f"[3/6] Pengukuran live {args.minutes} menit "
+        f"(sampling {args.interval}s)…")
 
     sampler = host.HostSampler() if host_on else None
 
@@ -626,9 +643,9 @@ def main():
             extra = (f" cpu={cpu['busy']:.0f}%"
                      + (f" ram={mm['used_mb']:.0f}MB/{mm['used_pct']:.0f}%"
                         if mm else ""))
-        print(f"      [{s['t']:5.0f}s] pending={s['pending']:>6} "
-              f"slot={s['active_slots']} busy={s['busy']} idle={s['idle']} "
-              f"selesai={s['completed_total']}{extra}", flush=True)
+        log(f"      [{s['t']:5.0f}s] pending={s['pending']:>6} "
+            f"slot={s['active_slots']} busy={s['busy']} idle={s['idle']} "
+            f"selesai={s['completed_total']}{extra}")
 
     live = collect.measure_live(conn, args.queue, args.minutes, args.interval, tick)
 
@@ -640,18 +657,18 @@ def main():
                          "top": host.top_processes(3.0),
                          "mem_top": host.top_memory(6)}
 
-    print("[4/6] Waktu tunggu antrean…", flush=True)
+    log("[4/6] Waktu tunggu antrean…")
     waits = collect.queue_waits(conn, args.queue)
 
     fate = None
     if not args.skip_fate:
-        print(f"[5/6] Nasib job yang keluar antrean ({args.fate_wait:.0f} detik)…",
-              flush=True)
+        log(f"[5/6] Nasib job yang keluar antrean "
+            f"({args.fate_wait:.0f} detik)…")
         fate = collect.dequeue_fate(conn, args.queue, args.fate_wait)
     else:
-        print("[5/6] Nasib job — dilewati.", flush=True)
+        log("[5/6] Nasib job — dilewati.")
 
-    print("[6/6] Ringkasan kegagalan…", flush=True)
+    log("[6/6] Ringkasan kegagalan…")
     failures = collect.failure_summary(conn)
 
     data = {
@@ -673,7 +690,7 @@ def main():
     with open(out, "w") as f:
         f.write(render(data, a))
 
-    print(f"\nLaporan ditulis: {out}")
+    log(f"\nLaporan ditulis: {out}")
     line = (f"Kesimpulan: pool {'MENTOK' if a['pool_saturated'] else 'belum mentok'}, "
             f"backlog {a['trend']}, throughput {num(live['throughput_per_h'])} job/jam")
     if a["host_verdict"]:
@@ -685,7 +702,7 @@ def main():
         line += (f", mesin "
                  f"{'MENTOK' if hv['cpu_bound'] or hv['mem_tight'] else 'masih longgar'} "
                  f"(CPU {num(host_data['cpu']['busy_avg'], 0)}%{ram})")
-    print(line)
+    log(line)
 
 
 if __name__ == "__main__":
