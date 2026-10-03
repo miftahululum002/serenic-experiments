@@ -1,0 +1,13 @@
+{
+    "status": "success",
+    "code": 200,
+    "message": "Login successful.",
+    "data": {
+        "token": "token",
+        "accessToken": "token",
+        "role": "user",
+        "sessionId": "e09fa065-7b78-4b4d-94dc-8aa1fd4b7fa2",
+        "messageDetail": "Welcome, user. Token generated successfully."
+    },
+    "timestamp": "2026-10-03T13:03:16.138Z"
+}
