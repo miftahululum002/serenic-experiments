@@ -12,7 +12,7 @@ cp config/organization.example.csv config/organization.csv
 cp .env.example .env
 ```
 
-Isi `config/organization.csv` dengan kredensial organisasi. Daftar encounter dibaca dari `data/encounter.csv` dengan kolom `encounter_id`.
+Isi `config/organization.csv` dengan kredensial organisasi. File CSV encounter yang digunakan mengikuti contoh [`data/example.csv`](data/example.csv), dengan kolom `encounter_id`.
 Nilai default batch dan delay dibaca dari `.env`:
 
 ```env
@@ -39,7 +39,16 @@ Contoh:
 ```bash
 python3 app.py \
   --orgid="32ab03d5-3c0c-4fbd-96ed-63ca054203fd" \
-  --file="/Users/miftahululum002/projects/serenic/experiments/app-sync/data/encounter.csv"
+  --file="/Users/miftahululum002/projects/serenic/experiments/app-hospital-synchronize/data/example.csv"
+```
+
+Format CSV:
+
+```csv
+encounter_id
+2610030284
+2610030268
+2610030265
 ```
 
 Payload disimpan sebelum request ke `payload/{orgid}/{YYYYMMDD}/`, sedangkan response disimpan ke `response/{orgid}/{YYYYMMDD}/`. Nama file payload dan response sama:
