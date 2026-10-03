@@ -2,8 +2,10 @@
 .env
 config/organization.csv
 config/encounter.csv
-payload/
-response/
+payload/*
+!payload/.gitkeep
+response/*
+!response/.gitkeep
 __pycache__/
 *.py[cod]
 .venv/
