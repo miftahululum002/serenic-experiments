@@ -1,0 +1,10 @@
+.DS_Store
+.env
+config/organization.csv
+config/encounter.csv
+payload/
+response/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
