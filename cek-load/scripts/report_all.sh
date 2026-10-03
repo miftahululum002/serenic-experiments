@@ -11,7 +11,7 @@ LOG="logs/report_all_${STAMP}.log"
 mkdir -p reports logs
 
 nohup ./.venv/bin/python -u report_all.py \
-    --minutes 180 \
+    --minutes 420 \
     --output "$REPORT" \
     "$@" > "$LOG" 2>&1 &
 
