@@ -55,7 +55,11 @@ def parser() -> argparse.ArgumentParser:
 
 def main(argv: list[str] | None = None) -> int:
     args = parser().parse_args(argv)
-    logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(asctime)s %(levelname)s %(message)s",
+        datefmt="%Y-%m-%d %H:%M:%S",
+    )
     try:
         if args.batch <= 0:
             raise ValueError("--batch harus lebih besar dari 0")
@@ -76,8 +80,14 @@ def main(argv: list[str] | None = None) -> int:
         )
         logging.info("Login: %s", org.name)
         tokens = client.login()
+        logging.info("Total encounter yang diproses: %s", len(encounter_ids))
         for index, encounter_id in enumerate(encounter_ids, start=1):
-            logging.info("Sinkronisasi encounterId=%s", encounter_id)
+            logging.info(
+                "%s/%s, encounterId=%s",
+                index,
+                len(encounter_ids),
+                encounter_id,
+            )
             request_payload = {"organizationId": org.id, "encounterId": encounter_id}
             request_uuid = get_uuid()
             timestamp = get_timestamp_file()  # datetime.now().strftime("%Y%m%d%H%M%S")
