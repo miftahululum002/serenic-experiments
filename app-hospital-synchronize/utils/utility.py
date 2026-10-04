@@ -66,6 +66,11 @@ def load_encounter_ids(path: Path) -> list[str]:
     return encounter_ids
 
 
+def normalize_filename(value: str) -> str:
+    """Remove path separators before using a value as part of a filename."""
+    return value.replace("/", "")
+
+
 def save_json(path: Path, value: object) -> None:
     """Create parent directories and save a JSON value to disk."""
     path.parent.mkdir(parents=True, exist_ok=True)

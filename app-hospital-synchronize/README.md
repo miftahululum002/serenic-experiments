@@ -57,6 +57,10 @@ Payload disimpan sebelum request ke `payload/{orgid}/{YYYYMMDD}/`, sedangkan res
 {encounter_id}_{timestamp}_{uuid}.json
 ```
 
+Jika `encounter_id` mengandung `/`, karakter tersebut dihapus pada nama file
+agar tetap disimpan sebagai satu file. Nilai `encounterId` di payload tetap
+menggunakan nilai aslinya.
+
 Contoh:
 
 ```text

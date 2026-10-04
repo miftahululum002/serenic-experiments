@@ -22,6 +22,7 @@ from utils.utility import (
     get_uuid,
     get_timestamp_file,
     get_folder_date,
+    normalize_filename,
 )
 
 
@@ -92,10 +93,11 @@ def main(argv: list[str] | None = None) -> int:
             request_uuid = get_uuid()
             timestamp = get_timestamp_file()  # datetime.now().strftime("%Y%m%d%H%M%S")
             date_folder = get_folder_date()  # datetime.now().strftime("%Y%m%d")
+            filename_encounter_id = normalize_filename(encounter_id)
             filename = (
                 Path(org.id)
                 / date_folder
-                / f"{encounter_id}_{timestamp}_{request_uuid}.json"
+                / f"{filename_encounter_id}_{timestamp}_{request_uuid}.json"
             )
             payload_path = save_payload(filename, request_payload)
             response = client.synchronize(tokens, request_payload)
