@@ -3,12 +3,16 @@ from __future__ import annotations
 import base64
 import binascii
 import json
+import logging
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from typing import Any
-from urllib.parse import urljoin
+from urllib.parse import urlsplit
 
 import requests
+
+
+logger = logging.getLogger(__name__)
 
 
 class ApiError(RuntimeError):
@@ -22,6 +26,8 @@ class Organization:
     email: str
     password: str
     api_url: str
+    sync_endpoint: str
+    rule: str
 
 
 @dataclass
@@ -35,7 +41,12 @@ class TokenSet:
 
 
 def _url(base_url: str, path: str) -> str:
-    return urljoin(base_url.rstrip("/") + "/", path.lstrip("/"))
+    base_url = base_url.rstrip("/")
+    path = "/" + path.lstrip("/")
+    base_path = urlsplit(base_url).path.rstrip("/")
+    if base_path and (path == base_path or path.startswith(base_path + "/")):
+        return base_url + path[len(base_path) :]
+    return base_url + path
 
 
 def _response_details(response: requests.Response) -> str:
@@ -137,8 +148,10 @@ class SyncClient:
             "password": self.organization.password,
             **self.login_extra,
         }
+        url = _url(self.organization.api_url, self.login_path)
+        logger.info("Request login: %s", url)
         response = self.session.post(
-            _url(self.organization.api_url, self.login_path),
+            url,
             json=payload,
             timeout=self.timeout,
             verify=self.verify_tls,
@@ -161,8 +174,10 @@ class SyncClient:
     def refresh(self, tokens: TokenSet) -> TokenSet:
         if not tokens.refresh_token:
             raise ApiError("Refresh token tidak tersedia pada respons login")
+        url = _url(self.organization.api_url, self.refresh_path)
+        logger.info("Request refresh token: %s", url)
         response = self.session.post(
-            _url(self.organization.api_url, self.refresh_path),
+            url,
             json={**self.refresh_payload, self.refresh_payload_key: tokens.refresh_token},
             timeout=self.timeout,
             verify=self.verify_tls,
@@ -186,8 +201,10 @@ class SyncClient:
         if tokens.is_expired():
             tokens = self.refresh(tokens)
         self.current_tokens = tokens
+        url = _url(self.organization.api_url, self.sync_path)
+        logger.info("Request sinkronisasi: %s", url)
         response = self.session.post(
-            _url(self.organization.api_url, self.sync_path),
+            url,
             json=payload,
             headers={"Authorization": f"Bearer {tokens.access_token}"},
             timeout=self.timeout,
@@ -196,8 +213,9 @@ class SyncClient:
         if response.status_code == 401:
             tokens = self.refresh(tokens)
             self.current_tokens = tokens
+            logger.info("Request sinkronisasi ulang: %s", url)
             response = self.session.post(
-                _url(self.organization.api_url, self.sync_path),
+                url,
                 json=payload,
                 headers={"Authorization": f"Bearer {tokens.access_token}"},
                 timeout=self.timeout,

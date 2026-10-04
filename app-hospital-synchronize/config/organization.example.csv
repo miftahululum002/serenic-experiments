@@ -1,2 +1,3 @@
-id,name,email,password,api_url
-32ab03d5-3c0c-4fbd-96ed-63ca054203fd,RSF,email,pass,https://api.serenic.ai
+id,name,email,password,api_url,sync_endpoint,rule
+32ab03d5-3c0c-4fbd-96ed-63ca054203fd,RSF,email,pass,https://api.serenic.ai/app/v1/api,/synchronize/hospital/single,new
+gfhffkk,RSOKE,email,pass,https://emc.api.serenic.ai/app/v1/api,/emc/analysis,legacy

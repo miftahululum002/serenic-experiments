@@ -9,7 +9,6 @@ from pathlib import Path
 from constant import (
     DEFAULT_LOGIN_PATH,
     DEFAULT_REFRESH_PATH,
-    DEFAULT_SYNC_PATH,
     BATCH_DELAY_SECONDS,
     BATCH_SIZE,
 )
@@ -73,7 +72,7 @@ def main(argv: list[str] | None = None) -> int:
         client = SyncClient(
             org,
             login_path=DEFAULT_LOGIN_PATH,
-            sync_path=DEFAULT_SYNC_PATH,
+            sync_path=org.sync_endpoint,
             refresh_path=DEFAULT_REFRESH_PATH,
             token_path="data.accessToken",
             refresh_token_path="data.token",
@@ -89,7 +88,10 @@ def main(argv: list[str] | None = None) -> int:
                 len(encounter_ids),
                 encounter_id,
             )
-            request_payload = {"organizationId": org.id, "encounterId": encounter_id}
+            if org.rule == "legacy":
+                request_payload = {"episodeId": encounter_id}
+            else:
+                request_payload = {"organizationId": org.id, "encounterId": encounter_id}
             request_uuid = get_uuid()
             timestamp = get_timestamp_file()  # datetime.now().strftime("%Y%m%d%H%M%S")
             date_folder = get_folder_date()  # datetime.now().strftime("%Y%m%d")

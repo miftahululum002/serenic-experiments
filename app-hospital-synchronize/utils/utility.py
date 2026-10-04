@@ -10,7 +10,15 @@ from constant import PAYLOAD_DIR, RESPONSE_DIR
 from libraries.api_request import Organization
 
 
-REQUIRED_ORGANIZATION_COLUMNS = {"id", "name", "email", "password", "api_url"}
+REQUIRED_ORGANIZATION_COLUMNS = {
+    "id",
+    "name",
+    "email",
+    "password",
+    "api_url",
+    "sync_endpoint",
+    "rule",
+}
 ORGANIZATIONS_FILE = Path("config/organization.csv")
 
 
@@ -27,6 +35,14 @@ def load_organizations(path: Path) -> list[Organization]:
                 )
             if not any(row.values()):
                 continue
+            sync_endpoint = row["sync_endpoint"].strip()
+            rule = row["rule"].strip().lower()
+            if not sync_endpoint:
+                raise ValueError(f"sync_endpoint organisasi kosong pada baris {line_number}")
+            if rule not in {"new", "legacy"}:
+                raise ValueError(
+                    f"rule organisasi pada baris {line_number} harus 'new' atau 'legacy'"
+                )
             result.append(
                 Organization(
                     id=row["id"].strip(),
@@ -34,6 +50,8 @@ def load_organizations(path: Path) -> list[Organization]:
                     email=row["email"].strip(),
                     password=row["password"].strip(),
                     api_url=row["api_url"].strip(),
+                    sync_endpoint=sync_endpoint,
+                    rule=rule,
                 )
             )
     return result

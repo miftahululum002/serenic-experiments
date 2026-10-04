@@ -12,7 +12,7 @@ cp config/organization.example.csv config/organization.csv
 cp .env.example .env
 ```
 
-Isi `config/organization.csv` dengan kredensial organisasi. File CSV encounter yang digunakan mengikuti contoh [`data/example.csv`](data/example.csv), dengan kolom `encounter_id`.
+Isi `config/organization.csv` dengan kredensial organisasi. Kolom organisasi terdiri dari `id`, `name`, `email`, `password`, `api_url`, `sync_endpoint`, dan `rule`. File CSV encounter yang digunakan mengikuti contoh [`data/example.csv`](data/example.csv), dengan kolom `encounter_id`.
 Nilai default batch dan delay dibaca dari `.env`:
 
 ```env
@@ -32,7 +32,7 @@ python3 app.py --orgid="32ab03d5-3c0c-4fbd-96ed-63ca054203fd"
 
 `app.py` menerima `--orgid` dan `--file`, mencari organisasi pada `config/organization.csv`, login menggunakan `email` dan `password`, lalu memproses semua baris `encounter_id` dari CSV yang diberikan.
 
-Host request diambil dari kolom `api_url` pada organisasi terpilih. Contohnya, jika `api_url` adalah `https://api.serenic.ai`, endpoint yang dipanggil adalah `https://api.serenic.ai/app/v1/api/auth/login`, endpoint refresh, dan endpoint sinkronisasi.
+Host request diambil dari kolom `api_url`, sedangkan endpoint sinkronisasi diambil dari `sync_endpoint` pada organisasi terpilih. Endpoint login dan refresh tetap menggunakan endpoint default aplikasi.
 
 Contoh:
 
@@ -60,6 +60,18 @@ Payload disimpan sebelum request ke `payload/{orgid}/{YYYYMMDD}/`, sedangkan res
 Jika `encounter_id` mengandung `/`, karakter tersebut dihapus pada nama file
 agar tetap disimpan sebagai satu file. Nilai `encounterId` di payload tetap
 menggunakan nilai aslinya.
+
+Untuk organisasi dengan `rule` `new`, payload sinkronisasi adalah:
+
+```json
+{"organizationId": "<org_id>", "encounterId": "<encounter_id>"}
+```
+
+Untuk organisasi dengan `rule` `legacy`, payload sinkronisasi adalah:
+
+```json
+{"episodeId": "<encounter_id>"}
+```
 
 Contoh:
 
