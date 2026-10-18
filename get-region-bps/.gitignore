@@ -12,3 +12,5 @@ response/*
 !response/.gitkeep
 payload/*
 !payload/.gitkeep
+village_detail/*
+!village_detail/.gitkeep
