@@ -1,0 +1,14 @@
+__pycache__
+.env
+.venv/
+data/*
+!data/.gitkeep
+!data/district_kosong.example.csv
+logs/*
+!logs/.gitkeep
+output/*
+!output/.gitkeep
+response/*
+!response/.gitkeep
+payload/*
+!payload/.gitkeep
