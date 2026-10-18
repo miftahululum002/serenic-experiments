@@ -1,0 +1,20 @@
+[
+    {
+        "norec": "480644",
+        "noregistrasi": "480644",
+        "norm": "1196556",
+        "sep_data": {
+            "nosep": "1123R0020926V001716",
+            "kelasBPJS": 3
+        },
+        "tglregistrasi": "2026-09-02T08:48:10Z",
+        "admissionType": "ranap",
+        "dpjp_id": "162",
+        "location_id": "loc_002",
+        "patientInfo": {
+            "dateOfBirth": "1973-10-16",
+            "gender": "laki-laki",
+            "name": ""
+        }
+    }
+]

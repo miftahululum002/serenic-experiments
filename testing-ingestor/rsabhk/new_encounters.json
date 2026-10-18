@@ -1,0 +1,44 @@
+[
+    {
+        "norec": "321834c0-8ef2-11f1-8eda-a16c12d4",
+        "noregistrasi": "0826000429",
+        "norm": "01617336",
+        "sep_data": {
+            "nosep": "0904R0040826V000207",
+            "kelasBPJS": 2,
+            "sep_diagnosis_code": "",
+            "sep_diagnosis_text": ""
+        },
+        "tglregistrasi": "2026-08-03T11:16:57Z",
+        "admissionType": "rajal",
+        "dpjp_id": "146",
+        "location_id": "30",
+        "patientInfo": {
+            "dateOfBirth": "2024-09-18",
+            "birthWeight": "0",
+            "gender": "laki-laki",
+            "name": "Muhammad Fathan Al Fatih"
+        }
+    },
+    {
+        "norec": "7c0866e0-8f03-11f1-a93c-8fdaf724",
+        "noregistrasi": "0826000561",
+        "norm": "01013467",
+        "sep_data": {
+            "nosep": "0904R0040826V000420",
+            "kelasBPJS": 2,
+            "sep_diagnosis_code": "",
+            "sep_diagnosis_text": ""
+        },
+        "tglregistrasi": "2026-08-03T13:20:39Z",
+        "admissionType": "ranap",
+        "dpjp_id": "234",
+        "location_id": "77",
+        "patientInfo": {
+            "dateOfBirth": "2025-07-29",
+            "birthWeight": "0",
+            "gender": "laki-laki",
+            "name": "Rafif Fathir Muttaqin"
+        }
+    }
+]

@@ -1,0 +1,1579 @@
+[
+    {
+        "norec": "7c0866e0-8f03-11f1-a93c-8fdaf724",
+        "noregistrasi": "0826000561",
+        "created_at": "2026-08-03T18:30:20Z",
+        "updated_at": "2026-08-03T18:30:20Z",
+        "data_source_processing_mode": {
+            "billing": "full_overwrite"
+        },
+        "sources": {
+            "triase_igd": [],
+            "cppt": [
+                {
+                    "soap": [
+                        {
+                            "id": "333d48a0-8ef2-11f1-b26d-af9fd823",
+                            "category": "soap",
+                            "subjective": "Demam naik turun 40 C, perut kiri bengkak",
+                            "objective": "Keadaan umum : Sadar, tidak sesak tidak sianosis dan tidak ada nyeri.\nTanda-tanda Vital : Baik. Kepala : Mata tidak pucat,  tidak cekung dan tidak kuning.\nFaring: tidak hiperemis. Jantung/Paru : dalam batas normal.\nPerut: lemas,  Hepar/lien tidak teraba.  Tidak ada nyeri tekan dan turgor cukup.\nEkstremitas : akral hangat",
+                            "assessment": "Pionefrosis kiri Post Nefrostomi \nSusp PJB asianotik dd ASD\nAnemia ec susp. ADB",
+                            "plan": "Rawat inap\nUSG ginjal buli hari ini dari IGD\nNefrostomi kiri cito besok Selasa pagi\nKonsul anestesi di ruangam\nParacetamol 3x84 mg IV\nCeftriaxon 840 mg preop\nCek lab di IGD\nKonsul anestesi di ruangan",
+                            "performer_id": "1074",
+                            "effective_datetime": "2026-08-03T11:17:11Z"
+                        }
+                    ],
+                    "observasi": [],
+                    "diagnosis": [],
+                    "prosedur": [],
+                    "obat": []
+                }
+            ],
+            "asesmen_awal": [
+                {
+                    "keluhan": [],
+                    "riwayat_penyakit_dahulu": [],
+                    "riwayat_penyakit_sekarang": [],
+                    "riwayat_penyakit_keluarga": [],
+                    "riwayat_penggunaan_obat": [],
+                    "pemeriksaan_fisik": [],
+                    "hasil_lab": [],
+                    "laporan_radiologi": [],
+                    "laporan_lab": [],
+                    "assessment_text": []
+                }
+            ],
+            "resume_medis": [
+                {
+                    "keluhan": [
+                        {
+                            "id": "d6bfba40-8f42-11f1-aa1a-41f32c44",
+                            "category": "resume",
+                            "text": "Nefrostomi kiri terlepas, demam, dan perut kiri bengkak",
+                            "performer_id": "1074",
+                            "effective_datetime": "2026-08-03T20:54:23Z"
+                        }
+                    ],
+                    "riwayat_penyakit_dahulu": [],
+                    "riwayat_penyakit_sekarang": [],
+                    "riwayat_penyakit_keluarga": [],
+                    "riwayat_penggunaan_obat": [],
+                    "pemeriksaan_fisik": [],
+                    "hasil_lab": [
+                        {
+                            "id": "L26080007045731CT",
+                            "category": "laboratory",
+                            "concept": {
+                                "text": "Waktu Pembekuan"
+                            },
+                            "value_type": "string",
+                            "value": "5.00",
+                            "effective_datetime": "2026-08-03T20:18:20Z"
+                        },
+                        {
+                            "id": "L26080007045731BT",
+                            "category": "laboratory",
+                            "concept": {
+                                "text": "Waktu Perdarahan"
+                            },
+                            "value_type": "string",
+                            "value": "3.00",
+                            "effective_datetime": "2026-08-03T20:18:20Z"
+                        },
+                        {
+                            "id": "L2608000683320600EGFRD",
+                            "category": "laboratory",
+                            "concept": {
+                                "text": "eGFR (MDRD)"
+                            },
+                            "value_type": "string",
+                            "value": "195.4",
+                            "effective_datetime": "2026-08-03T16:55:04Z"
+                        },
+                        {
+                            "id": "L2608000683320600CREA",
+                            "category": "laboratory",
+                            "concept": {
+                                "text": "Kreatinin Darah"
+                            },
+                            "value_type": "string",
+                            "value": "0.4",
+                            "effective_datetime": "2026-08-03T16:55:04Z"
+                        },
+                        {
+                            "id": "L2608000683320600UREA",
+                            "category": "laboratory",
+                            "concept": {
+                                "text": "Ureum Darah"
+                            },
+                            "value_type": "string",
+                            "value": "16",
+                            "effective_datetime": "2026-08-03T16:55:04Z"
+                        },
+                        {
+                            "id": "L2608000683320600MONO",
+                            "category": "laboratory",
+                            "concept": {
+                                "text": "Darah Rutin 2"
+                            },
+                            "value_type": "string",
+                            "value": "20.5",
+                            "effective_datetime": "2026-08-03T16:06:37Z"
+                        },
+                        {
+                            "id": "L2608000683320600EOS",
+                            "category": "laboratory",
+                            "concept": {
+                                "text": "Darah Rutin 2"
+                            },
+                            "value_type": "string",
+                            "value": "1.4",
+                            "effective_datetime": "2026-08-03T16:06:37Z"
+                        },
+                        {
+                            "id": "L2608000683320600PLT",
+                            "category": "laboratory",
+                            "concept": {
+                                "text": "Darah Rutin 2"
+                            },
+                            "value_type": "string",
+                            "value": "419",
+                            "effective_datetime": "2026-08-03T16:06:37Z"
+                        },
+                        {
+                            "id": "L2608000683320600LYMABS",
+                            "category": "laboratory",
+                            "concept": {
+                                "text": "Darah Rutin 2"
+                            },
+                            "value_type": "string",
+                            "value": "4.49",
+                            "effective_datetime": "2026-08-03T16:06:37Z"
+                        },
+                        {
+                            "id": "L2608000683320600LYM",
+                            "category": "laboratory",
+                            "concept": {
+                                "text": "Darah Rutin 2"
+                            },
+                            "value_type": "string",
+                            "value": "35.0",
+                            "effective_datetime": "2026-08-03T16:06:37Z"
+                        },
+                        {
+                            "id": "L2608000683320600NEUABS",
+                            "category": "laboratory",
+                            "concept": {
+                                "text": "Darah Rutin 2"
+                            },
+                            "value_type": "string",
+                            "value": "5.52",
+                            "effective_datetime": "2026-08-03T16:06:37Z"
+                        },
+                        {
+                            "id": "L2608000683320600NEU",
+                            "category": "laboratory",
+                            "concept": {
+                                "text": "Darah Rutin 2"
+                            },
+                            "value_type": "string",
+                            "value": "43.0",
+                            "effective_datetime": "2026-08-03T16:06:37Z"
+                        },
+                        {
+                            "id": "L2608000683320600BAND",
+                            "category": "laboratory",
+                            "concept": {
+                                "text": "Darah Rutin 2"
+                            },
+                            "value_type": "string",
+                            "value": "0.0",
+                            "effective_datetime": "2026-08-03T16:06:37Z"
+                        },
+                        {
+                            "id": "L2608000683320600BAS",
+                            "category": "laboratory",
+                            "concept": {
+                                "text": "Darah Rutin 2"
+                            },
+                            "value_type": "string",
+                            "value": "0.1",
+                            "effective_datetime": "2026-08-03T16:06:37Z"
+                        },
+                        {
+                            "id": "L2608000683320600WBC",
+                            "category": "laboratory",
+                            "concept": {
+                                "text": "Darah Rutin 2"
+                            },
+                            "value_type": "string",
+                            "value": "12.83",
+                            "effective_datetime": "2026-08-03T16:06:37Z"
+                        },
+                        {
+                            "id": "L2608000683320600HCT",
+                            "category": "laboratory",
+                            "concept": {
+                                "text": "Darah Rutin 2"
+                            },
+                            "value_type": "string",
+                            "value": "26.7",
+                            "effective_datetime": "2026-08-03T16:06:37Z"
+                        },
+                        {
+                            "id": "L2608000683320600HB",
+                            "category": "laboratory",
+                            "concept": {
+                                "text": "Darah Rutin 2"
+                            },
+                            "value_type": "string",
+                            "value": "8.5",
+                            "effective_datetime": "2026-08-03T16:06:37Z"
+                        }
+                    ],
+                    "laporan_radiologi": [
+                        {
+                            "id": "125122",
+                            "category": "RAD",
+                            "concept": {
+                                "text": "USG Traktus Urinarius"
+                            },
+                            "result": "Yth. T.S. dr. Andre Yudha, Sp.U(K). \nTerima kasih atas kepercayaan yang diberikan.\n\nTelah dilakukan pemeriksaan USG TRAKTUS URINARIUS dengan hasil sebagai berikut: \n\n- GINJAL & URETER KANAN: \n  - Posisi dan bentuk normal. \n  - Ukuran longitudinal ginjal 6.1 cm dengan diameter AP pyelum. \n  - Echoparenkim homogen normal. Tidak tampak lesi fokal patologis. \n  - Differensiasi korteks-medulla jelas.\n  - Sistem pelviokalises dan ureter tidak melebar. \n\n- GINJAL & URETER KIRI: \n  - Posisi normal, bentuk membesar dengan ukuran longitudinal sekitar 12.6 cm. \n  - Dilatasi pelviokalises terutama ke arah pole superior dengan diameter AP \n    pyelum 7.0 cm. Terlihat cairan heterogen intrapelvis renalis dan kalises dengan\n    fluid-fluid level. \n  - Parenkim sebagian ginjal terlihat menipis dengan obliterasi korteks-medulla.\n    masih terlihat parenkim di pole inferior ginjal.  \n  - Tidak tampak lesi fokal patologis maupun kalsifikasi.   \n  - Tidak tampak dilatasi ureter dari proximal hingga distal. \n\n- BULI: \n  - Volume onsite 3.5 ml. Tidak optimal untuk dinilai. ",
+                            "conclusion": "* Hidronefrosis grade IV kiri dengan penipisan sebagian besar parenkim ginjal \n   dengan gambaran pionefrosis moderat dan tanda nefropati. \n* Tidak tampak hidroureter kiri. \n* Tidak tampak kelainan pada ginjal kanan dan buli yang tervisualisasi saat ini. \n\n",
+                            "performer_id": "320263",
+                            "effective_datetime": "2026-08-03T22:28:47Z"
+                        }
+                    ],
+                    "laporan_lab": [],
+                    "diagnosis": [
+                        {
+                            "id": "d6bfba40-8f42-11f1-aa1a-41f32c44",
+                            "diagnosis_text": "pionefrosis kiri",
+                            "is_primary": true
+                        },
+                        {
+                            "id": "d6bfba40-8f42-11f1-aa1a-41f32c44",
+                            "diagnosis_text": "PJB asianotik dd ASD",
+                            "is_primary": false
+                        }
+                    ],
+                    "prosedur": [
+                        {
+                            "id": "d6bfba40-8f42-11f1-aa1a-41f32c44",
+                            "procedure_text": "nefrostomi kiri"
+                        }
+                    ],
+                    "obat": [],
+                    "resume_text": [
+                        {
+                            "id": "d6bfba40-8f42-11f1-aa1a-41f32c44",
+                            "category": "resume",
+                            "text": "Nefrostomi kiri terlepas, demam, dan perut kiri bengkak",
+                            "performer_id": "1074",
+                            "effective_datetime": "2026-08-03T20:54:23Z"
+                        }
+                    ]
+                }
+            ],
+            "penunjang_lab": [
+                {
+                    "pemesanan": [
+                        {
+                            "id": "4ca10340-8f1c-11f1-bfc8-a9248037",
+                            "status": "completed",
+                            "category": "laboratory-test",
+                            "concept": {
+                                "text": "CLOTTING TIME"
+                            },
+                            "authored_datetime": "2026-08-03T16:18:33Z"
+                        },
+                        {
+                            "id": "4c939ee0-8f1c-11f1-b838-4ddba62d",
+                            "status": "completed",
+                            "category": "laboratory-test",
+                            "concept": {
+                                "text": "BLEEDING TIME"
+                            },
+                            "authored_datetime": "2026-08-03T16:18:33Z"
+                        },
+                        {
+                            "id": "3f023460-8f12-11f1-a6d1-ebf3ba0a",
+                            "status": "completed",
+                            "category": "laboratory-test",
+                            "concept": {
+                                "text": "KREATININ DARAH"
+                            },
+                            "authored_datetime": "2026-08-03T15:06:35Z"
+                        },
+                        {
+                            "id": "3f016db0-8f12-11f1-b9e3-af1c27d9",
+                            "status": "completed",
+                            "category": "laboratory-test",
+                            "concept": {
+                                "text": "UREUM DARAH/BUN DARAH"
+                            },
+                            "authored_datetime": "2026-08-03T15:06:35Z"
+                        },
+                        {
+                            "id": "3efd4bf0-8f12-11f1-85f9-1791c5e0",
+                            "status": "completed",
+                            "category": "laboratory-test",
+                            "concept": {
+                                "text": "GLUKOSA SEWAKTU"
+                            },
+                            "authored_datetime": "2026-08-03T15:06:35Z"
+                        },
+                        {
+                            "id": "3ef2d720-8f12-11f1-8316-97652f32",
+                            "status": "completed",
+                            "category": "laboratory-test",
+                            "concept": {
+                                "text": "HEMATOLOGI LENGKAP + ANC"
+                            },
+                            "authored_datetime": "2026-08-03T15:06:35Z"
+                        }
+                    ],
+                    "hasil_lab": [
+                        {
+                            "id": "L26080007045731CT",
+                            "category": "laboratory",
+                            "concept": {
+                                "text": "Waktu Pembekuan"
+                            },
+                            "value_type": "string",
+                            "value": "5.00",
+                            "effective_datetime": "2026-08-03T20:18:20Z",
+                            "lab_test_name": "Waktu Pembekuan",
+                            "lab_test_category": "HEMOSTASIS",
+                            "billing_subgroup_name": null,
+                            "billing_subgroup_code": null
+                        },
+                        {
+                            "id": "L26080007045731BT",
+                            "category": "laboratory",
+                            "concept": {
+                                "text": "Waktu Perdarahan"
+                            },
+                            "value_type": "string",
+                            "value": "3.00",
+                            "effective_datetime": "2026-08-03T20:18:20Z",
+                            "lab_test_name": "Waktu Perdarahan",
+                            "lab_test_category": "HEMOSTASIS",
+                            "billing_subgroup_name": null,
+                            "billing_subgroup_code": null
+                        },
+                        {
+                            "id": "L2608000683320600EGFRD",
+                            "category": "laboratory",
+                            "concept": {
+                                "text": "eGFR (MDRD)"
+                            },
+                            "value_type": "string",
+                            "value": "195.4",
+                            "effective_datetime": "2026-08-03T16:55:04Z",
+                            "lab_test_name": "eGFR (MDRD)",
+                            "lab_test_category": "KIMIA KLINIK",
+                            "billing_subgroup_name": null,
+                            "billing_subgroup_code": null
+                        },
+                        {
+                            "id": "L2608000683320600CREA",
+                            "category": "laboratory",
+                            "concept": {
+                                "text": "Kreatinin Darah"
+                            },
+                            "value_type": "string",
+                            "value": "0.4",
+                            "effective_datetime": "2026-08-03T16:55:04Z",
+                            "lab_test_name": "Kreatinin Darah",
+                            "lab_test_category": "KIMIA KLINIK",
+                            "billing_subgroup_name": null,
+                            "billing_subgroup_code": null
+                        },
+                        {
+                            "id": "L2608000683320600UREA",
+                            "category": "laboratory",
+                            "concept": {
+                                "text": "Ureum Darah"
+                            },
+                            "value_type": "string",
+                            "value": "16",
+                            "effective_datetime": "2026-08-03T16:55:04Z",
+                            "lab_test_name": "Ureum Darah",
+                            "lab_test_category": "KIMIA KLINIK",
+                            "billing_subgroup_name": null,
+                            "billing_subgroup_code": null
+                        },
+                        {
+                            "id": "L2608000683320600MONO",
+                            "category": "laboratory",
+                            "concept": {
+                                "text": "Monosit"
+                            },
+                            "value_type": "string",
+                            "value": "20.5",
+                            "effective_datetime": "2026-08-03T16:06:37Z",
+                            "lab_test_name": "Monosit",
+                            "lab_test_category": "HEMATOLOGI",
+                            "billing_subgroup_name": "Hitung Jenis",
+                            "billing_subgroup_code": "DIFF"
+                        },
+                        {
+                            "id": "L2608000683320600EOS",
+                            "category": "laboratory",
+                            "concept": {
+                                "text": "Eosinofil"
+                            },
+                            "value_type": "string",
+                            "value": "1.4",
+                            "effective_datetime": "2026-08-03T16:06:37Z",
+                            "lab_test_name": "Eosinofil",
+                            "lab_test_category": "HEMATOLOGI",
+                            "billing_subgroup_name": "Hitung Jenis",
+                            "billing_subgroup_code": "DIFF"
+                        },
+                        {
+                            "id": "L2608000683320600PLT",
+                            "category": "laboratory",
+                            "concept": {
+                                "text": "Jumlah Trombosit"
+                            },
+                            "value_type": "string",
+                            "value": "419",
+                            "effective_datetime": "2026-08-03T16:06:37Z",
+                            "lab_test_name": "Jumlah Trombosit",
+                            "lab_test_category": "HEMATOLOGI",
+                            "billing_subgroup_name": "Darah Rutin 2",
+                            "billing_subgroup_code": "CBC2"
+                        },
+                        {
+                            "id": "L2608000683320600LYMABS",
+                            "category": "laboratory",
+                            "concept": {
+                                "text": "Limfosit Absolut"
+                            },
+                            "value_type": "string",
+                            "value": "4.49",
+                            "effective_datetime": "2026-08-03T16:06:37Z",
+                            "lab_test_name": "Limfosit Absolut",
+                            "lab_test_category": "HEMATOLOGI",
+                            "billing_subgroup_name": "Hitung Jenis",
+                            "billing_subgroup_code": "DIFF"
+                        },
+                        {
+                            "id": "L2608000683320600LYM",
+                            "category": "laboratory",
+                            "concept": {
+                                "text": "Limfosit"
+                            },
+                            "value_type": "string",
+                            "value": "35.0",
+                            "effective_datetime": "2026-08-03T16:06:37Z",
+                            "lab_test_name": "Limfosit",
+                            "lab_test_category": "HEMATOLOGI",
+                            "billing_subgroup_name": "Hitung Jenis",
+                            "billing_subgroup_code": "DIFF"
+                        },
+                        {
+                            "id": "L2608000683320600NEUABS",
+                            "category": "laboratory",
+                            "concept": {
+                                "text": "Neutrofil Segmen Absolut"
+                            },
+                            "value_type": "string",
+                            "value": "5.52",
+                            "effective_datetime": "2026-08-03T16:06:37Z",
+                            "lab_test_name": "Neutrofil Segmen Absolut",
+                            "lab_test_category": "HEMATOLOGI",
+                            "billing_subgroup_name": "Hitung Jenis",
+                            "billing_subgroup_code": "DIFF"
+                        },
+                        {
+                            "id": "L2608000683320600NEU",
+                            "category": "laboratory",
+                            "concept": {
+                                "text": "Neutrofil Segmen"
+                            },
+                            "value_type": "string",
+                            "value": "43.0",
+                            "effective_datetime": "2026-08-03T16:06:37Z",
+                            "lab_test_name": "Neutrofil Segmen",
+                            "lab_test_category": "HEMATOLOGI",
+                            "billing_subgroup_name": "Hitung Jenis",
+                            "billing_subgroup_code": "DIFF"
+                        },
+                        {
+                            "id": "L2608000683320600BAND",
+                            "category": "laboratory",
+                            "concept": {
+                                "text": "Neutrofil Batang"
+                            },
+                            "value_type": "string",
+                            "value": "0.0",
+                            "effective_datetime": "2026-08-03T16:06:37Z",
+                            "lab_test_name": "Neutrofil Batang",
+                            "lab_test_category": "HEMATOLOGI",
+                            "billing_subgroup_name": "Hitung Jenis",
+                            "billing_subgroup_code": "DIFF"
+                        },
+                        {
+                            "id": "L2608000683320600BAS",
+                            "category": "laboratory",
+                            "concept": {
+                                "text": "Basofil"
+                            },
+                            "value_type": "string",
+                            "value": "0.1",
+                            "effective_datetime": "2026-08-03T16:06:37Z",
+                            "lab_test_name": "Basofil",
+                            "lab_test_category": "HEMATOLOGI",
+                            "billing_subgroup_name": "Hitung Jenis",
+                            "billing_subgroup_code": "DIFF"
+                        },
+                        {
+                            "id": "L2608000683320600WBC",
+                            "category": "laboratory",
+                            "concept": {
+                                "text": "Jumlah Leukosit"
+                            },
+                            "value_type": "string",
+                            "value": "12.83",
+                            "effective_datetime": "2026-08-03T16:06:37Z",
+                            "lab_test_name": "Jumlah Leukosit",
+                            "lab_test_category": "HEMATOLOGI",
+                            "billing_subgroup_name": "Darah Rutin 2",
+                            "billing_subgroup_code": "CBC2"
+                        },
+                        {
+                            "id": "L2608000683320600HCT",
+                            "category": "laboratory",
+                            "concept": {
+                                "text": "Hematokrit"
+                            },
+                            "value_type": "string",
+                            "value": "26.7",
+                            "effective_datetime": "2026-08-03T16:06:37Z",
+                            "lab_test_name": "Hematokrit",
+                            "lab_test_category": "HEMATOLOGI",
+                            "billing_subgroup_name": "Darah Rutin 2",
+                            "billing_subgroup_code": "CBC2"
+                        },
+                        {
+                            "id": "L2608000683320600HB",
+                            "category": "laboratory",
+                            "concept": {
+                                "text": "Hemoglobin"
+                            },
+                            "value_type": "string",
+                            "value": "8.5",
+                            "effective_datetime": "2026-08-03T16:06:37Z",
+                            "lab_test_name": "Hemoglobin",
+                            "lab_test_category": "HEMATOLOGI",
+                            "billing_subgroup_name": "Darah Rutin 2",
+                            "billing_subgroup_code": "CBC2"
+                        }
+                    ],
+                    "laporan_lab": []
+                }
+            ],
+            "penunjang_radiologi": [
+                {
+                    "pemesanan": [
+                        {
+                            "id": "95a954b0-8f12-11f1-93ac-691e99b8",
+                            "status": "active",
+                            "category": "imaging",
+                            "concept": {
+                                "text": "USG Traktus Urinarius"
+                            },
+                            "authored_datetime": "2026-08-03T15:09:00Z"
+                        },
+                        {
+                            "id": "90b047b0-8f12-11f1-a055-8f343a1b",
+                            "status": "active",
+                            "category": "imaging",
+                            "concept": {
+                                "text": "USG Traktus Urinarius"
+                            },
+                            "authored_datetime": "2026-08-03T15:08:52Z"
+                        }
+                    ],
+                    "laporan_radiologi": [
+                        {
+                            "id": "125122",
+                            "category": "RAD",
+                            "concept": {
+                                "text": "USG Traktus Urinarius"
+                            },
+                            "result": "Yth. T.S. dr. Andre Yudha, Sp.U(K). \nTerima kasih atas kepercayaan yang diberikan.\n\nTelah dilakukan pemeriksaan USG TRAKTUS URINARIUS dengan hasil sebagai berikut: \n\n- GINJAL & URETER KANAN: \n  - Posisi dan bentuk normal. \n  - Ukuran longitudinal ginjal 6.1 cm dengan diameter AP pyelum. \n  - Echoparenkim homogen normal. Tidak tampak lesi fokal patologis. \n  - Differensiasi korteks-medulla jelas.\n  - Sistem pelviokalises dan ureter tidak melebar. \n\n- GINJAL & URETER KIRI: \n  - Posisi normal, bentuk membesar dengan ukuran longitudinal sekitar 12.6 cm. \n  - Dilatasi pelviokalises terutama ke arah pole superior dengan diameter AP \n    pyelum 7.0 cm. Terlihat cairan heterogen intrapelvis renalis dan kalises dengan\n    fluid-fluid level. \n  - Parenkim sebagian ginjal terlihat menipis dengan obliterasi korteks-medulla.\n    masih terlihat parenkim di pole inferior ginjal.  \n  - Tidak tampak lesi fokal patologis maupun kalsifikasi.   \n  - Tidak tampak dilatasi ureter dari proximal hingga distal. \n\n- BULI: \n  - Volume onsite 3.5 ml. Tidak optimal untuk dinilai. ",
+                            "conclusion": "* Hidronefrosis grade IV kiri dengan penipisan sebagian besar parenkim ginjal \n   dengan gambaran pionefrosis moderat dan tanda nefropati. \n* Tidak tampak hidroureter kiri. \n* Tidak tampak kelainan pada ginjal kanan dan buli yang tervisualisasi saat ini. \n\n",
+                            "performer_id": "320263",
+                            "effective_datetime": "2026-08-03T22:28:47Z"
+                        }
+                    ]
+                }
+            ],
+            "laporan_operasi": [
+                {
+                    "pemesanan": [],
+                    "diagnosis_pra_bedah": [],
+                    "diagnosis_pasca_bedah": [],
+                    "prosedur_operasi": [],
+                    "laporan_operasi": []
+                }
+            ],
+            "billing": [
+                {
+                    "id": "c5124dc0-8f4e-11f1-b115-87fe27f5",
+                    "product_name": "DARAH PRC LEUKODEPLETED",
+                    "total_net_price": 852000,
+                    "billable_period_start": "2026-08-03T22:19:49Z"
+                },
+                {
+                    "id": "9b37b860-8f2c-11f1-96ca-83086270",
+                    "product_name": "CLOTTING TIME",
+                    "total_net_price": 30000,
+                    "billable_period_start": "2026-08-03T18:15:17Z"
+                },
+                {
+                    "id": "9b1d3cf0-8f2c-11f1-b1ed-2d456922",
+                    "product_name": "BLEEDING TIME",
+                    "total_net_price": 30000,
+                    "billable_period_start": "2026-08-03T18:15:16Z"
+                },
+                {
+                    "id": "81d4f1a0-8f5e-11f1-88e1-319ee3d8",
+                    "product_name": "LEUKOMED I.V FILM 5,8 CM X 8 CM (6 CMX8 CM)",
+                    "total_net_price": 5000,
+                    "billable_period_start": "2026-08-04T00:05:51Z"
+                },
+                {
+                    "id": "81cc26c0-8f5e-11f1-88ef-13ffd7bc",
+                    "product_name": "ONEMED LATEX MEDICAL EXAMINATION GLOVES M POWDER FREE",
+                    "total_net_price": 11300,
+                    "billable_period_start": "2026-08-04T00:05:51Z"
+                },
+                {
+                    "id": "81bf1bc0-8f5e-11f1-8bcf-93394e56",
+                    "product_name": "SODIUM CHLORIDE 0,9% INFUS (SATORIA ANEKA INDUSTRI, 25 ML)",
+                    "total_net_price": 7862,
+                    "billable_period_start": "2026-08-04T00:05:51Z"
+                },
+                {
+                    "id": "81b36ab0-8f5e-11f1-9222-4b83262a",
+                    "product_name": "SODIUM CHLORIDE 0,875 G/500 ML / DEXTROSE ANHYDRATE 13,5 G/500 ML / POTASSIUM CHLORIDE 0,75 G/500 ML / SODIUM LACTATE 1,12 G/500 ML INFUS (KA-EN 3B)",
+                    "total_net_price": 15923,
+                    "billable_period_start": "2026-08-04T00:05:51Z"
+                },
+                {
+                    "id": "81a71e50-8f5e-11f1-ae2d-2b015124",
+                    "product_name": "KIMSMED INFUSION SET Y-SITE PEDIATRIC",
+                    "total_net_price": 7999,
+                    "billable_period_start": "2026-08-04T00:05:51Z"
+                },
+                {
+                    "id": "8199cc60-8f5e-11f1-839f-c9944bbc",
+                    "product_name": "ONEMED EXTENSION TUBE 100 CM, LUER LOCK",
+                    "total_net_price": 6875,
+                    "billable_period_start": "2026-08-04T00:05:51Z"
+                },
+                {
+                    "id": "81874560-8f5e-11f1-9f83-81c48117",
+                    "product_name": "SURFLO 24 G X 3/4",
+                    "total_net_price": 16250,
+                    "billable_period_start": "2026-08-04T00:05:51Z"
+                },
+                {
+                    "id": "8161c430-8f5e-11f1-a70a-31b86375",
+                    "product_name": "SPUIT 3 CC NIPRO",
+                    "total_net_price": 2322,
+                    "billable_period_start": "2026-08-04T00:05:51Z"
+                },
+                {
+                    "id": "081d44c0-8f36-11f1-b943-3f6c71e9",
+                    "product_name": "ONEMED LATEX MEDICAL EXAMINATION GLOVES M POWDER FREE",
+                    "total_net_price": 11300,
+                    "billable_period_start": "2026-08-03T19:21:14Z"
+                },
+                {
+                    "id": "07f838a0-8f36-11f1-8820-49d48fd3",
+                    "product_name": "SODIUM CHLORIDE 0,9% INFUS (SATORIA ANEKA INDUSTRI, 25 ML)",
+                    "total_net_price": 3931,
+                    "billable_period_start": "2026-08-03T19:21:14Z"
+                },
+                {
+                    "id": "07d49d40-8f36-11f1-bb1a-91e718f8",
+                    "product_name": "Dextrose Monohydrate 20,625 g / 500 mL / Sodium Chloride 1,125 g / 500 mL Infus (KA-EN 1B, SOFTBAG, 500 mL)",
+                    "total_net_price": 15305,
+                    "billable_period_start": "2026-08-03T19:21:14Z"
+                },
+                {
+                    "id": "07c8b6b0-8f36-11f1-af1c-d764e31c",
+                    "product_name": "LEUKOMED I.V FILM 5,8 CM X 8 CM (6 CMX8 CM)",
+                    "total_net_price": 5000,
+                    "billable_period_start": "2026-08-03T19:21:14Z"
+                },
+                {
+                    "id": "07bc6260-8f36-11f1-af08-9f697fa8",
+                    "product_name": "ALCOHOL SWABB CHG 2% (ONEMED)",
+                    "total_net_price": 680,
+                    "billable_period_start": "2026-08-03T19:21:14Z"
+                },
+                {
+                    "id": "07b02e30-8f36-11f1-9982-d1be4a8e",
+                    "product_name": "INFUSION SET PUMP TERUMO",
+                    "total_net_price": 28750,
+                    "billable_period_start": "2026-08-03T19:21:14Z"
+                },
+                {
+                    "id": "07a027d0-8f36-11f1-a815-6fb4116f",
+                    "product_name": "SPUIT 1 CC TB NIPRO",
+                    "total_net_price": 1290,
+                    "billable_period_start": "2026-08-03T19:21:14Z"
+                },
+                {
+                    "id": "078e9530-8f36-11f1-b26a-b7185f32",
+                    "product_name": "ONEMED EXTENSION TUBE 100 CM, LUER LOCK",
+                    "total_net_price": 6875,
+                    "billable_period_start": "2026-08-03T19:21:14Z"
+                },
+                {
+                    "id": "076e0350-8f36-11f1-97fc-4b446b8d",
+                    "product_name": "SURFLO 24 G X 3/4",
+                    "total_net_price": 16250,
+                    "billable_period_start": "2026-08-03T19:21:14Z"
+                },
+                {
+                    "id": "989add80-8f35-11f1-8674-8f1a9609",
+                    "product_name": "Kamar Regular",
+                    "total_net_price": 500000,
+                    "billable_period_start": "2026-08-04T12:00:00Z"
+                },
+                {
+                    "id": "987d59a0-8f35-11f1-a8fb-e5fe2fc1",
+                    "product_name": "Administrasi",
+                    "total_net_price": 250000,
+                    "billable_period_start": "2026-08-03T13:20:39Z"
+                },
+                {
+                    "id": "e46ec060-8f34-11f1-baa1-a149faac",
+                    "product_name": "NEPHROSTOMY PUNCTURE SET NO.7",
+                    "total_net_price": 3393936,
+                    "billable_period_start": "2026-08-03T19:14:16Z"
+                },
+                {
+                    "id": "68a6d6d0-8f34-11f1-a96b-6b581ec1",
+                    "product_name": "CEFTRIAXONE SODIUM 1 G SERBUK INJEKSI (PHAPROS)",
+                    "total_net_price": 4631,
+                    "billable_period_start": "2026-08-03T19:09:38Z"
+                },
+                {
+                    "id": "941ce390-8f13-11f1-9bee-cd2d0350",
+                    "product_name": "KREATININ DARAH",
+                    "total_net_price": 47000,
+                    "billable_period_start": "2026-08-03T15:16:07Z"
+                },
+                {
+                    "id": "940eb890-8f13-11f1-b7dc-c97d37a8",
+                    "product_name": "UREUM DARAH/BUN DARAH",
+                    "total_net_price": 47000,
+                    "billable_period_start": "2026-08-03T15:16:07Z"
+                },
+                {
+                    "id": "9400b730-8f13-11f1-89ad-9f668ed1",
+                    "product_name": "GLUKOSA SEWAKTU",
+                    "total_net_price": 33000,
+                    "billable_period_start": "2026-08-03T15:16:07Z"
+                },
+                {
+                    "id": "93e2d070-8f13-11f1-8c88-074a5fbd",
+                    "product_name": "HEMATOLOGI LENGKAP + ANC",
+                    "total_net_price": 85000,
+                    "billable_period_start": "2026-08-03T15:16:07Z"
+                },
+                {
+                    "id": "8e960220-8f12-11f1-a474-51624d93",
+                    "product_name": "USG Traktus Urinarius",
+                    "total_net_price": 615000,
+                    "billable_period_start": "2026-08-03T15:08:46Z"
+                },
+                {
+                    "id": "609909f0-8f12-11f1-9972-d71b3805",
+                    "product_name": "Pasang Infus dengan penyulit pasien pediatrik",
+                    "total_net_price": 300000,
+                    "billable_period_start": "2026-08-03T15:07:30Z"
+                },
+                {
+                    "id": "608827e0-8f12-11f1-96dd-55a9e776",
+                    "product_name": "Infus pump",
+                    "total_net_price": 150000,
+                    "billable_period_start": "2026-08-03T15:07:11Z"
+                },
+                {
+                    "id": "9779d5a0-8f0e-11f1-a768-7d473099",
+                    "product_name": "Konsultasi",
+                    "total_net_price": 150000,
+                    "billable_period_start": "2026-08-03T13:30:00Z"
+                }
+            ],
+            "obat": [
+                {
+                    "obat": [
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "1002148625",
+                            "medication_name": "ONEMED LATEX MEDICAL EXAMINATION GLOVES M POWDER FREE",
+                            "medication_form": "Pieces",
+                            "strength_numerator_value": null,
+                            "strength_numerator_unit_code": "tidak ada",
+                            "strength_denominator_value": 1,
+                            "strength_denominator_unit_code": "Pieces",
+                            "text": "ONEMED LATEX MEDICAL EXAMINATION GLOVES M POWDER FREE",
+                            "dosage_text": "1"
+                        },
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "1002140886",
+                            "medication_name": "SODIUM CHLORIDE 0,9% INFUS (SATORIA ANEKA INDUSTRI, 25 ML)",
+                            "medication_form": "Botol",
+                            "strength_numerator_value": 9,
+                            "strength_numerator_unit_code": "tidak ada",
+                            "strength_denominator_value": 1,
+                            "strength_denominator_unit_code": "Botol",
+                            "text": "SODIUM CHLORIDE 0,9% INFUS (SATORIA ANEKA INDUSTRI, 25 ML)",
+                            "dosage_text": "pergantian igd ranap"
+                        },
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "19213",
+                            "medication_name": "SURFLO 24 G X 3/4",
+                            "medication_form": "Pieces",
+                            "strength_numerator_value": null,
+                            "strength_numerator_unit_code": "tidak ada",
+                            "strength_denominator_value": 1,
+                            "strength_denominator_unit_code": "Pieces",
+                            "text": "SURFLO 24 G X 3/4",
+                            "dosage_text": "1"
+                        },
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "1002145834",
+                            "medication_name": "CEFTRIAXONE SODIUM 1 G SERBUK INJEKSI (PHAPROS)",
+                            "medication_form": "Vial",
+                            "strength_numerator_value": null,
+                            "strength_numerator_unit_code": "tidak ada",
+                            "strength_denominator_value": 1,
+                            "strength_denominator_unit_code": "Vial",
+                            "text": "CEFTRIAXONE SODIUM 1 G SERBUK INJEKSI (PHAPROS)",
+                            "dosage_text": "840 mg preop"
+                        },
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "19194",
+                            "medication_name": "SPUIT 3 CC NIPRO",
+                            "medication_form": "Pieces",
+                            "strength_numerator_value": null,
+                            "strength_numerator_unit_code": "tidak ada",
+                            "strength_denominator_value": 1,
+                            "strength_denominator_unit_code": "Pieces",
+                            "text": "SPUIT 3 CC NIPRO",
+                            "dosage_text": "1"
+                        },
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "1002117876",
+                            "medication_name": "ALCOHOL SWABB CHG 2% (ONEMED)",
+                            "medication_form": "Pieces",
+                            "strength_numerator_value": null,
+                            "strength_numerator_unit_code": "tidak ada",
+                            "strength_denominator_value": 1,
+                            "strength_denominator_unit_code": "Pieces",
+                            "text": "ALCOHOL SWABB CHG 2% (ONEMED)",
+                            "dosage_text": "pergantian igd ranap"
+                        },
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "1002140506",
+                            "medication_name": "SODIUM CHLORIDE 0,875 G/500 ML / DEXTROSE ANHYDRATE 13,5 G/500 ML / POTASSIUM CHLORIDE 0,75 G/500 ML / SODIUM LACTATE 1,12 G/500 ML INFUS (KA-EN 3B)",
+                            "medication_form": "softbag",
+                            "strength_numerator_value": 87550013,
+                            "strength_numerator_unit_code": "tidak ada",
+                            "strength_denominator_value": 1,
+                            "strength_denominator_unit_code": "softbag",
+                            "text": "SODIUM CHLORIDE 0,875 G/500 ML / DEXTROSE ANHYDRATE 13,5 G/500 ML / POTASSIUM CHLORIDE 0,75 G/500 ML / SODIUM LACTATE 1,12 G/500 ML INFUS (KA-EN 3B)",
+                            "dosage_text": "1"
+                        },
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "1002127953",
+                            "medication_name": "KIMSMED INFUSION SET Y-SITE PEDIATRIC",
+                            "medication_form": "Pieces",
+                            "strength_numerator_value": null,
+                            "strength_numerator_unit_code": "tidak ada",
+                            "strength_denominator_value": 1,
+                            "strength_denominator_unit_code": "Pieces",
+                            "text": "KIMSMED INFUSION SET Y-SITE PEDIATRIC",
+                            "dosage_text": "1"
+                        },
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "1002119168",
+                            "medication_name": "ONEMED EXTENSION TUBE 100 CM, LUER LOCK",
+                            "medication_form": "Pieces",
+                            "strength_numerator_value": null,
+                            "strength_numerator_unit_code": "tidak ada",
+                            "strength_denominator_value": 1,
+                            "strength_denominator_unit_code": "Pieces",
+                            "text": "ONEMED EXTENSION TUBE 100 CM, LUER LOCK",
+                            "dosage_text": "pergantian igd ranap"
+                        },
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "1002115530",
+                            "medication_name": "LEUKOMED I.V FILM 5,8 CM X 8 CM (6 CMX8 CM)",
+                            "medication_form": "Lembar",
+                            "strength_numerator_value": null,
+                            "strength_numerator_unit_code": "tidak ada",
+                            "strength_denominator_value": 1,
+                            "strength_denominator_unit_code": "Lembar",
+                            "text": "LEUKOMED I.V FILM 5,8 CM X 8 CM (6 CMX8 CM)",
+                            "dosage_text": "1"
+                        },
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "19116",
+                            "medication_name": "INFUSION SET PUMP TERUMO",
+                            "medication_form": "Pieces",
+                            "strength_numerator_value": null,
+                            "strength_numerator_unit_code": "tidak ada",
+                            "strength_denominator_value": 1,
+                            "strength_denominator_unit_code": "Pieces",
+                            "text": "INFUSION SET PUMP TERUMO",
+                            "dosage_text": "pergantian igd ranap"
+                        },
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "1002148625",
+                            "medication_name": "ONEMED LATEX MEDICAL EXAMINATION GLOVES M POWDER FREE",
+                            "medication_form": "Pieces",
+                            "strength_numerator_value": null,
+                            "strength_numerator_unit_code": "tidak ada",
+                            "strength_denominator_value": 1,
+                            "strength_denominator_unit_code": "Pieces",
+                            "text": "ONEMED LATEX MEDICAL EXAMINATION GLOVES M POWDER FREE",
+                            "dosage_text": "pergantian igd ranap"
+                        },
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "1002140886",
+                            "medication_name": "SODIUM CHLORIDE 0,9% INFUS (SATORIA ANEKA INDUSTRI, 25 ML)",
+                            "medication_form": "Botol",
+                            "strength_numerator_value": 9,
+                            "strength_numerator_unit_code": "tidak ada",
+                            "strength_denominator_value": 1,
+                            "strength_denominator_unit_code": "Botol",
+                            "text": "SODIUM CHLORIDE 0,9% INFUS (SATORIA ANEKA INDUSTRI, 25 ML)",
+                            "dosage_text": "1"
+                        },
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "19213",
+                            "medication_name": "SURFLO 24 G X 3/4",
+                            "medication_form": "Pieces",
+                            "strength_numerator_value": null,
+                            "strength_numerator_unit_code": "tidak ada",
+                            "strength_denominator_value": 1,
+                            "strength_denominator_unit_code": "Pieces",
+                            "text": "SURFLO 24 G X 3/4",
+                            "dosage_text": "pergantian igd ranap"
+                        },
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "1002115762",
+                            "medication_name": "SPUIT 1 CC TB NIPRO",
+                            "medication_form": "Pieces",
+                            "strength_numerator_value": null,
+                            "strength_numerator_unit_code": "tidak ada",
+                            "strength_denominator_value": 1,
+                            "strength_denominator_unit_code": "Pieces",
+                            "text": "SPUIT 1 CC TB NIPRO",
+                            "dosage_text": "pergantian igd ranap"
+                        },
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "1002115734",
+                            "medication_name": "NEPHROSTOMY PUNCTURE SET NO.7",
+                            "medication_form": "Pieces",
+                            "strength_numerator_value": null,
+                            "strength_numerator_unit_code": "tidak ada",
+                            "strength_denominator_value": 1,
+                            "strength_denominator_unit_code": "Pieces",
+                            "text": "NEPHROSTOMY PUNCTURE SET NO.7",
+                            "dosage_text": ""
+                        },
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "1002140503",
+                            "medication_name": "Dextrose Monohydrate 20,625 g / 500 mL / Sodium Chloride 1,125 g / 500 mL Infus (KA-EN 1B, SOFTBAG, 500 mL)",
+                            "medication_form": "softbag",
+                            "strength_numerator_value": 6255001,
+                            "strength_numerator_unit_code": "tidak ada",
+                            "strength_denominator_value": 1,
+                            "strength_denominator_unit_code": "softbag",
+                            "text": "Dextrose Monohydrate 20,625 g / 500 mL / Sodium Chloride 1,125 g / 500 mL Infus (KA-EN 1B, SOFTBAG, 500 mL)",
+                            "dosage_text": "pergantian igd ranap"
+                        },
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "1002119168",
+                            "medication_name": "ONEMED EXTENSION TUBE 100 CM, LUER LOCK",
+                            "medication_form": "Pieces",
+                            "strength_numerator_value": null,
+                            "strength_numerator_unit_code": "tidak ada",
+                            "strength_denominator_value": 1,
+                            "strength_denominator_unit_code": "Pieces",
+                            "text": "ONEMED EXTENSION TUBE 100 CM, LUER LOCK",
+                            "dosage_text": "1"
+                        },
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "1002115530",
+                            "medication_name": "LEUKOMED I.V FILM 5,8 CM X 8 CM (6 CMX8 CM)",
+                            "medication_form": "Lembar",
+                            "strength_numerator_value": null,
+                            "strength_numerator_unit_code": "tidak ada",
+                            "strength_denominator_value": 1,
+                            "strength_denominator_unit_code": "Lembar",
+                            "text": "LEUKOMED I.V FILM 5,8 CM X 8 CM (6 CMX8 CM)",
+                            "dosage_text": "pergantian igd ranap"
+                        }
+                    ],
+                    "resep_obat": [
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "O/2608/01905",
+                            "medication_id": "19213",
+                            "status": "active",
+                            "dosage_frequency": 1,
+                            "dosage_period": 1,
+                            "dosage_period_unit": "hari",
+                            "dosage_route": "SC",
+                            "dosage_quantity": 1,
+                            "dosage_text": "1",
+                            "quantity": 2,
+                            "quantity_unit": "Pieces",
+                            "requester_id": null,
+                            "authored_datetime": "2026-08-04T00:12:28Z"
+                        },
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "O/2608/01794",
+                            "medication_id": "1002117876",
+                            "status": "active",
+                            "dosage_frequency": 1,
+                            "dosage_period": 1,
+                            "dosage_period_unit": "hari",
+                            "dosage_route": "IV",
+                            "dosage_quantity": 1,
+                            "dosage_text": "pergantian igd ranap",
+                            "quantity": 5,
+                            "quantity_unit": "Pieces",
+                            "requester_id": "234",
+                            "authored_datetime": "2026-08-03T18:58:52Z"
+                        },
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "O/2608/01794",
+                            "medication_id": "1002119168",
+                            "status": "active",
+                            "dosage_frequency": 1,
+                            "dosage_period": 1,
+                            "dosage_period_unit": "hari",
+                            "dosage_route": "IV",
+                            "dosage_quantity": 1,
+                            "dosage_text": "pergantian igd ranap",
+                            "quantity": 1,
+                            "quantity_unit": "Pieces",
+                            "requester_id": "234",
+                            "authored_datetime": "2026-08-03T18:58:52Z"
+                        },
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "O/2608/01905",
+                            "medication_id": "1002148625",
+                            "status": "active",
+                            "dosage_frequency": 1,
+                            "dosage_period": 1,
+                            "dosage_period_unit": "hari",
+                            "dosage_route": "SC",
+                            "dosage_quantity": 1,
+                            "dosage_text": "1",
+                            "quantity": 20,
+                            "quantity_unit": "Pieces",
+                            "requester_id": null,
+                            "authored_datetime": "2026-08-04T00:12:28Z"
+                        },
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "O/2608/01794",
+                            "medication_id": "19116",
+                            "status": "active",
+                            "dosage_frequency": 1,
+                            "dosage_period": 1,
+                            "dosage_period_unit": "hari",
+                            "dosage_route": "IV",
+                            "dosage_quantity": 1,
+                            "dosage_text": "pergantian igd ranap",
+                            "quantity": 1,
+                            "quantity_unit": "Pieces",
+                            "requester_id": "234",
+                            "authored_datetime": "2026-08-03T18:58:52Z"
+                        },
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "O/2608/01905",
+                            "medication_id": "1002140886",
+                            "status": "active",
+                            "dosage_frequency": 1,
+                            "dosage_period": 1,
+                            "dosage_period_unit": "hari",
+                            "dosage_route": "SC",
+                            "dosage_quantity": 1,
+                            "dosage_text": "1",
+                            "quantity": 2,
+                            "quantity_unit": "Botol",
+                            "requester_id": null,
+                            "authored_datetime": "2026-08-04T00:12:28Z"
+                        },
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "O/2608/01785",
+                            "medication_id": "1002145834",
+                            "status": "active",
+                            "dosage_frequency": 1,
+                            "dosage_period": 1,
+                            "dosage_period_unit": "hari",
+                            "dosage_route": "PO",
+                            "dosage_quantity": 1,
+                            "dosage_text": "840 mg preop",
+                            "quantity": 1,
+                            "quantity_unit": "Vial",
+                            "requester_id": "1074",
+                            "authored_datetime": "2026-08-03T18:50:25Z"
+                        },
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "O/2608/01794",
+                            "medication_id": "1002148625",
+                            "status": "active",
+                            "dosage_frequency": 1,
+                            "dosage_period": 1,
+                            "dosage_period_unit": "hari",
+                            "dosage_route": "PO",
+                            "dosage_quantity": 1,
+                            "dosage_text": "pergantian igd ranap",
+                            "quantity": 20,
+                            "quantity_unit": "Pieces",
+                            "requester_id": "234",
+                            "authored_datetime": "2026-08-03T18:58:52Z"
+                        },
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "O/2608/01905",
+                            "medication_id": "1002140506",
+                            "status": "active",
+                            "dosage_frequency": 1,
+                            "dosage_period": 1,
+                            "dosage_period_unit": "hari",
+                            "dosage_route": "SC",
+                            "dosage_quantity": 1,
+                            "dosage_text": "1",
+                            "quantity": 1,
+                            "quantity_unit": "softbag",
+                            "requester_id": null,
+                            "authored_datetime": "2026-08-04T00:12:28Z"
+                        },
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "O/2608/01905",
+                            "medication_id": "1002115530",
+                            "status": "active",
+                            "dosage_frequency": 1,
+                            "dosage_period": 1,
+                            "dosage_period_unit": "hari",
+                            "dosage_route": "SC",
+                            "dosage_quantity": 1,
+                            "dosage_text": "1",
+                            "quantity": 1,
+                            "quantity_unit": "Lembar",
+                            "requester_id": null,
+                            "authored_datetime": "2026-08-04T00:12:28Z"
+                        },
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "O/2608/01794",
+                            "medication_id": "1002140886",
+                            "status": "active",
+                            "dosage_frequency": 1,
+                            "dosage_period": 1,
+                            "dosage_period_unit": "hari",
+                            "dosage_route": "IV",
+                            "dosage_quantity": 1,
+                            "dosage_text": "pergantian igd ranap",
+                            "quantity": 1,
+                            "quantity_unit": "Botol",
+                            "requester_id": "234",
+                            "authored_datetime": "2026-08-03T18:58:52Z"
+                        },
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "O/2608/01794",
+                            "medication_id": "19213",
+                            "status": "active",
+                            "dosage_frequency": 1,
+                            "dosage_period": 1,
+                            "dosage_period_unit": "hari",
+                            "dosage_route": "IV",
+                            "dosage_quantity": 1,
+                            "dosage_text": "pergantian igd ranap",
+                            "quantity": 2,
+                            "quantity_unit": "Pieces",
+                            "requester_id": "234",
+                            "authored_datetime": "2026-08-03T18:58:52Z"
+                        },
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "O/2608/01794",
+                            "medication_id": "1002140503",
+                            "status": "active",
+                            "dosage_frequency": 1,
+                            "dosage_period": 1,
+                            "dosage_period_unit": "hari",
+                            "dosage_route": "IV",
+                            "dosage_quantity": 1,
+                            "dosage_text": "pergantian igd ranap",
+                            "quantity": 1,
+                            "quantity_unit": "softbag",
+                            "requester_id": "234",
+                            "authored_datetime": "2026-08-03T18:58:52Z"
+                        },
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "O/2608/01905",
+                            "medication_id": "19194",
+                            "status": "active",
+                            "dosage_frequency": 1,
+                            "dosage_period": 1,
+                            "dosage_period_unit": "hari",
+                            "dosage_route": "SC",
+                            "dosage_quantity": 1,
+                            "dosage_text": "1",
+                            "quantity": 2,
+                            "quantity_unit": "Pieces",
+                            "requester_id": null,
+                            "authored_datetime": "2026-08-04T00:12:28Z"
+                        },
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "O/2608/01794",
+                            "medication_id": "1002115530",
+                            "status": "active",
+                            "dosage_frequency": 1,
+                            "dosage_period": 1,
+                            "dosage_period_unit": "hari",
+                            "dosage_route": "PO",
+                            "dosage_quantity": 1,
+                            "dosage_text": "pergantian igd ranap",
+                            "quantity": 1,
+                            "quantity_unit": "Lembar",
+                            "requester_id": "234",
+                            "authored_datetime": "2026-08-03T18:58:52Z"
+                        },
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "O/2608/01794",
+                            "medication_id": "1002115762",
+                            "status": "active",
+                            "dosage_frequency": 1,
+                            "dosage_period": 1,
+                            "dosage_period_unit": "hari",
+                            "dosage_route": "IV",
+                            "dosage_quantity": 1,
+                            "dosage_text": "pergantian igd ranap",
+                            "quantity": 1,
+                            "quantity_unit": "Pieces",
+                            "requester_id": "234",
+                            "authored_datetime": "2026-08-03T18:58:52Z"
+                        },
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "O/2608/01905",
+                            "medication_id": "1002119168",
+                            "status": "active",
+                            "dosage_frequency": 1,
+                            "dosage_period": 1,
+                            "dosage_period_unit": "hari",
+                            "dosage_route": "SC",
+                            "dosage_quantity": 1,
+                            "dosage_text": "1",
+                            "quantity": 1,
+                            "quantity_unit": "Pieces",
+                            "requester_id": null,
+                            "authored_datetime": "2026-08-04T00:12:28Z"
+                        },
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "O/2608/01788",
+                            "medication_id": "1002115734",
+                            "status": "active",
+                            "dosage_frequency": 1,
+                            "dosage_period": 1,
+                            "dosage_period_unit": "hari",
+                            "dosage_route": "IV",
+                            "dosage_quantity": 1,
+                            "dosage_text": "",
+                            "quantity": 1,
+                            "quantity_unit": "Pieces",
+                            "requester_id": null,
+                            "authored_datetime": "2026-08-03T19:14:35Z"
+                        },
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "O/2608/01905",
+                            "medication_id": "1002127953",
+                            "status": "active",
+                            "dosage_frequency": 1,
+                            "dosage_period": 1,
+                            "dosage_period_unit": "hari",
+                            "dosage_route": "SC",
+                            "dosage_quantity": 1,
+                            "dosage_text": "1",
+                            "quantity": 1,
+                            "quantity_unit": "Pieces",
+                            "requester_id": null,
+                            "authored_datetime": "2026-08-04T00:12:28Z"
+                        }
+                    ],
+                    "pengeluaran_obat": [
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "68a6d6d0-8f34-11f1-a96b-6b581ec1",
+                            "medication_request_id": "O/2608/01785",
+                            "medication_id": "1002145834",
+                            "status": "completed",
+                            "quantity": 1,
+                            "quantity_unit": "Vial",
+                            "prepared_datetime": "2026-08-03T19:11:08Z",
+                            "handed_over_datetime": "2026-08-03T19:46:38Z"
+                        },
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "81a71e50-8f5e-11f1-ae2d-2b015124",
+                            "medication_request_id": "O/2608/01905",
+                            "medication_id": "1002127953",
+                            "status": "in-progress",
+                            "quantity": 1,
+                            "quantity_unit": "Pieces",
+                            "prepared_datetime": "2026-08-04T00:12:28Z",
+                            "handed_over_datetime": "2026-08-04T00:12:28Z"
+                        },
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "8161c430-8f5e-11f1-a70a-31b86375",
+                            "medication_request_id": "O/2608/01905",
+                            "medication_id": "19194",
+                            "status": "in-progress",
+                            "quantity": 2,
+                            "quantity_unit": "Pieces",
+                            "prepared_datetime": "2026-08-04T00:12:28Z",
+                            "handed_over_datetime": "2026-08-04T00:12:28Z"
+                        },
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "81b36ab0-8f5e-11f1-9222-4b83262a",
+                            "medication_request_id": "O/2608/01905",
+                            "medication_id": "1002140506",
+                            "status": "in-progress",
+                            "quantity": 1,
+                            "quantity_unit": "softbag",
+                            "prepared_datetime": "2026-08-04T00:12:28Z",
+                            "handed_over_datetime": "2026-08-04T00:12:28Z"
+                        },
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "81cc26c0-8f5e-11f1-88ef-13ffd7bc",
+                            "medication_request_id": "O/2608/01905",
+                            "medication_id": "1002148625",
+                            "status": "in-progress",
+                            "quantity": 20,
+                            "quantity_unit": "Pieces",
+                            "prepared_datetime": "2026-08-04T00:12:28Z",
+                            "handed_over_datetime": "2026-08-04T00:12:28Z"
+                        },
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "e46ec060-8f34-11f1-baa1-a149faac",
+                            "medication_request_id": "O/2608/01788",
+                            "medication_id": "1002115734",
+                            "status": "completed",
+                            "quantity": 1,
+                            "quantity_unit": "Pieces",
+                            "prepared_datetime": "2026-08-03T19:14:35Z",
+                            "handed_over_datetime": "2026-08-03T19:37:41Z"
+                        },
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "07a027d0-8f36-11f1-a815-6fb4116f",
+                            "medication_request_id": "O/2608/01794",
+                            "medication_id": "1002115762",
+                            "status": "in-progress",
+                            "quantity": 1,
+                            "quantity_unit": "Pieces",
+                            "prepared_datetime": "2026-08-03T19:22:44Z",
+                            "handed_over_datetime": "2026-08-03T19:22:44Z"
+                        },
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "8199cc60-8f5e-11f1-839f-c9944bbc",
+                            "medication_request_id": "O/2608/01905",
+                            "medication_id": "1002119168",
+                            "status": "in-progress",
+                            "quantity": 1,
+                            "quantity_unit": "Pieces",
+                            "prepared_datetime": "2026-08-04T00:12:28Z",
+                            "handed_over_datetime": "2026-08-04T00:12:28Z"
+                        },
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "07d49d40-8f36-11f1-bb1a-91e718f8",
+                            "medication_request_id": "O/2608/01794",
+                            "medication_id": "1002140503",
+                            "status": "in-progress",
+                            "quantity": 1,
+                            "quantity_unit": "softbag",
+                            "prepared_datetime": "2026-08-03T19:22:44Z",
+                            "handed_over_datetime": "2026-08-03T19:22:44Z"
+                        },
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "07b02e30-8f36-11f1-9982-d1be4a8e",
+                            "medication_request_id": "O/2608/01794",
+                            "medication_id": "19116",
+                            "status": "in-progress",
+                            "quantity": 1,
+                            "quantity_unit": "Pieces",
+                            "prepared_datetime": "2026-08-03T19:22:44Z",
+                            "handed_over_datetime": "2026-08-03T19:22:44Z"
+                        },
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "07c8b6b0-8f36-11f1-af1c-d764e31c",
+                            "medication_request_id": "O/2608/01794",
+                            "medication_id": "1002115530",
+                            "status": "in-progress",
+                            "quantity": 1,
+                            "quantity_unit": "Lembar",
+                            "prepared_datetime": "2026-08-03T19:22:44Z",
+                            "handed_over_datetime": "2026-08-03T19:22:44Z"
+                        },
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "07f838a0-8f36-11f1-8820-49d48fd3",
+                            "medication_request_id": "O/2608/01794",
+                            "medication_id": "1002140886",
+                            "status": "in-progress",
+                            "quantity": 1,
+                            "quantity_unit": "Botol",
+                            "prepared_datetime": "2026-08-03T19:22:44Z",
+                            "handed_over_datetime": "2026-08-03T19:22:44Z"
+                        },
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "81bf1bc0-8f5e-11f1-8bcf-93394e56",
+                            "medication_request_id": "O/2608/01905",
+                            "medication_id": "1002140886",
+                            "status": "in-progress",
+                            "quantity": 2,
+                            "quantity_unit": "Botol",
+                            "prepared_datetime": "2026-08-04T00:12:28Z",
+                            "handed_over_datetime": "2026-08-04T00:12:28Z"
+                        },
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "81d4f1a0-8f5e-11f1-88e1-319ee3d8",
+                            "medication_request_id": "O/2608/01905",
+                            "medication_id": "1002115530",
+                            "status": "in-progress",
+                            "quantity": 1,
+                            "quantity_unit": "Lembar",
+                            "prepared_datetime": "2026-08-04T00:12:28Z",
+                            "handed_over_datetime": "2026-08-04T00:12:28Z"
+                        },
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "07bc6260-8f36-11f1-af08-9f697fa8",
+                            "medication_request_id": "O/2608/01794",
+                            "medication_id": "1002117876",
+                            "status": "in-progress",
+                            "quantity": 5,
+                            "quantity_unit": "Pieces",
+                            "prepared_datetime": "2026-08-03T19:22:44Z",
+                            "handed_over_datetime": "2026-08-03T19:22:44Z"
+                        },
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "076e0350-8f36-11f1-97fc-4b446b8d",
+                            "medication_request_id": "O/2608/01794",
+                            "medication_id": "19213",
+                            "status": "in-progress",
+                            "quantity": 2,
+                            "quantity_unit": "Pieces",
+                            "prepared_datetime": "2026-08-03T19:22:44Z",
+                            "handed_over_datetime": "2026-08-03T19:22:44Z"
+                        },
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "078e9530-8f36-11f1-b26a-b7185f32",
+                            "medication_request_id": "O/2608/01794",
+                            "medication_id": "1002119168",
+                            "status": "in-progress",
+                            "quantity": 1,
+                            "quantity_unit": "Pieces",
+                            "prepared_datetime": "2026-08-03T19:22:44Z",
+                            "handed_over_datetime": "2026-08-03T19:22:44Z"
+                        },
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "81874560-8f5e-11f1-9f83-81c48117",
+                            "medication_request_id": "O/2608/01905",
+                            "medication_id": "19213",
+                            "status": "in-progress",
+                            "quantity": 2,
+                            "quantity_unit": "Pieces",
+                            "prepared_datetime": "2026-08-04T00:12:28Z",
+                            "handed_over_datetime": "2026-08-04T00:12:28Z"
+                        },
+                        {
+                            "noregistrasi": "0826000561",
+                            "id": "081d44c0-8f36-11f1-b943-3f6c71e9",
+                            "medication_request_id": "O/2608/01794",
+                            "medication_id": "1002148625",
+                            "status": "in-progress",
+                            "quantity": 20,
+                            "quantity_unit": "Pieces",
+                            "prepared_datetime": "2026-08-03T19:22:44Z",
+                            "handed_over_datetime": "2026-08-03T19:22:44Z"
+                        }
+                    ]
+                }
+            ],
+            "prosedur_medis_lain": [
+                {
+                    "pemesanan": [],
+                    "hasil_prosedur": [],
+                    "laporan_prosedur": []
+                }
+            ]
+        }
+    }
+]

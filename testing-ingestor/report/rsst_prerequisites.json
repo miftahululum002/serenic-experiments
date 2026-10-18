@@ -5,12 +5,42 @@
             "id": "loc_002",
             "organizational_team_id": "02",
             "name": "Rawat Inap"
+        },
+        {
+            "id": "30",
+            "organizational_team_id": "02",
+            "name": "Lokasi Rawat Inap"
+        },
+        {
+            "id": "77",
+            "organizational_team_id": "02",
+            "name": "Lokasi 77 Rawat Inap"
         }
     ],
     "praktisi": [
         {
             "id": "223",
             "name": "dr. Danis Woro Kuncoro Adi, Sp.An",
+            "profession": "Dokter"
+        },
+        {
+            "id": "320263",
+            "name": "dr. Dckkkkro Adi, Sp.An",
+            "profession": "Dokter"
+        },
+        {
+            "id": "1074",
+            "name": "dr. 1074, Sp.An",
+            "profession": "Dokter"
+        },
+        {
+            "id": "234",
+            "name": "dr. 234, Sp.An",
+            "profession": "Dokter"
+        },
+        {
+            "id": "146",
+            "name": "dr. 1246, Sp.An",
             "profession": "Dokter"
         },
         {

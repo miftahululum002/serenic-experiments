@@ -1,8 +1,8 @@
 # Parsing Analysis Report
 
-- **Log File**: `/home/miftahululum002_serenic_ai/serenic-experiments/testing-ingestor/output/testing-index/large/container.log`
-- **Payload File**: `/home/miftahululum002_serenic_ai/serenic-experiments/testing-ingestor/output/testing-index/large/update_encounters_001.json`
-- **Generated**: 2026-07-31 01:36:50
+- **Log File**: `/Users/miftahululum002/projects/serenic/experiments/testing-ingestor/output/testing-index/large/container.log`
+- **Payload File**: `/Users/miftahululum002/projects/serenic/experiments/testing-ingestor/output/testing-index/large/update_encounters_001.json`
+- **Generated**: 2026-07-31 08:46:43
 - **Total Records**: 10
 
 ## Details
@@ -38,5 +38,10 @@
 | Incomplete | 0 |
 | Total duration | 69.4s (1.16 min) |
 | Average | 6.9s (0.12 min) |
+| Std dev | 7.7s (0.13 min) |
+| Median (p50) | 3.9s (0.06 min) |
+| p90 | 11.1s (0.18 min) |
+| p95 | 27.8s (0.46 min) |
+| p99 | 27.8s (0.46 min) |
 | Min | 1.2s (0.02 min) |
 | Max | 27.8s (0.46 min) |

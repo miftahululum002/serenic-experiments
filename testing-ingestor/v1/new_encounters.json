@@ -1,0 +1,142 @@
+[
+    {
+        "dpjp": "dr. Mohammad Sadhyo Prabhasworo Sp.PD",
+        "norm": "2065710",
+        "norec": "b86bffe7-71c3-4081-ac30-28ac68ed61c4",
+        "nosep": "BPJS MASA 45 HARI",
+        "patientInfo": {
+            "name": " HARIANTO HALIM IR",
+            "kelas": "KELAS II",
+            "gender": "laki-laki",
+            "dateOfBirth": "1952-09-28"
+        },
+        "noregistrasi": "2608050001",
+        "admissionType": "ranap"
+    },
+    {
+        "dpjp": "dr. Dina Aprilya, Sp.O.T, Subsp.T.L.B.M. (K)",
+        "norm": "2148651",
+        "norec": "cf044742-b572-43b7-b113-bc104dda4a42",
+        "nosep": "SEP SUDAH DIBUAT / SURAT KEPOLISIAN DALAM PROSES",
+        "patientInfo": {
+            "name": "DEVI ERMAWATI",
+            "kelas": "KELAS I",
+            "gender": "perempuan",
+            "dateOfBirth": "1995-01-10"
+        },
+        "noregistrasi": "2608050003",
+        "admissionType": "ranap"
+    },
+    {
+        "dpjp": "dr. Mohammad Sadhyo Prabhasworo Sp.PD",
+        "norm": "2148626",
+        "norec": "0176ba02-33d3-4fa3-a6aa-53e83a1065cb",
+        "nosep": "0902R0010826V004307",
+        "patientInfo": {
+            "name": "SLAMET",
+            "kelas": "KELAS III",
+            "gender": "laki-laki",
+            "dateOfBirth": "1943-12-25"
+        },
+        "noregistrasi": "2608050004",
+        "admissionType": "ranap"
+    },
+    {
+        "dpjp": "dr. Melsa Aprima, SpPD",
+        "norm": "2090128",
+        "norec": "8f554532-3211-4e66-b9f1-e9f8cb955f53",
+        "nosep": "0902R0010826V004308",
+        "patientInfo": {
+            "name": "MISROHA",
+            "kelas": "KELAS III",
+            "gender": "perempuan",
+            "dateOfBirth": "1983-03-03"
+        },
+        "noregistrasi": "2608050005",
+        "admissionType": "ranap"
+    },
+    {
+        "dpjp": "dr Derin Anugrah Pratama Sp.PD",
+        "norm": "1075257",
+        "norec": "3697fc01-a5c8-48b4-bc44-4619ca860e4a",
+        "nosep": "0902R0010826V004100",
+        "patientInfo": {
+            "name": "ERNA LESTARI",
+            "kelas": "KELAS I",
+            "gender": "perempuan",
+            "dateOfBirth": "1969-08-15"
+        },
+        "noregistrasi": "2608050006",
+        "admissionType": "ranap"
+    },
+    {
+        "dpjp": "dr. Mohammad Sadhyo Prabhasworo Sp.PD",
+        "norm": "1890839",
+        "norec": "0524acd6-5e0d-45b3-8885-2c16bcafbf1b",
+        "nosep": "0902R0010826V004309",
+        "patientInfo": {
+            "name": "NOERFICA MAYASARI",
+            "kelas": "KELAS I",
+            "gender": "perempuan",
+            "dateOfBirth": "1983-08-08"
+        },
+        "noregistrasi": "2608050007",
+        "admissionType": "ranap"
+    },
+    {
+        "dpjp": "dr. Mursid Fadli, Sp.B(K)V",
+        "norm": "2146143",
+        "norec": "6a36f3fe-1837-4a99-9f45-361c34f13fc8",
+        "nosep": "0902R0010826V004310",
+        "patientInfo": {
+            "name": "DANIEL KUSNADI TOBING",
+            "kelas": "KELAS III",
+            "gender": "laki-laki",
+            "dateOfBirth": "1970-05-31"
+        },
+        "noregistrasi": "2608050008",
+        "admissionType": "ranap"
+    },
+    {
+        "dpjp": "dr. Mohammad Sadhyo Prabhasworo Sp.PD",
+        "norm": "2148635",
+        "norec": "948542dd-8ae1-4fc7-a7de-d6cd0d3c8588",
+        "nosep": "0902R0010826V004311",
+        "patientInfo": {
+            "name": "SUPARMAN PRASETYA",
+            "kelas": "KELAS III",
+            "gender": "laki-laki",
+            "dateOfBirth": "1977-05-14"
+        },
+        "noregistrasi": "2608050009",
+        "admissionType": "ranap"
+    },
+    {
+        "dpjp": "dr. Mohammad Sadhyo Prabhasworo Sp.PD",
+        "norm": "920702",
+        "norec": "8779a3ed-5380-4513-8fec-8b828dcae95a",
+        "nosep": "0902R0010826V004316",
+        "patientInfo": {
+            "name": "RIFAH ANGGRAINI",
+            "kelas": "KELAS III",
+            "gender": "perempuan",
+            "dateOfBirth": "1982-06-12"
+        },
+        "noregistrasi": "2608050011",
+        "admissionType": "ranap"
+    },
+    {
+        "dpjp": "dr. Mohammad Sadhyo Prabhasworo Sp.PD",
+        "norm": "792281",
+        "norec": "45816301-8174-4764-9e52-c2bd340ecfae",
+        "nosep": "",
+        "patientInfo": {
+            "name": "FIRDAUS NASRUDIN",
+            "kelas": "KELAS III",
+            "gender": "laki-laki",
+            "dateOfBirth": "1999-07-01"
+        },
+        "noregistrasi": "2608050600",
+        "admissionType": "ranap"
+    }
+]
