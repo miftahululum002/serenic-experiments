@@ -14,3 +14,5 @@ payload/*
 !payload/.gitkeep
 village_detail/*
 !village_detail/.gitkeep
+village_payload/*
+!village_payload/.gitkeep
