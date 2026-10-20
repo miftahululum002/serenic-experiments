@@ -44,7 +44,7 @@ def build_filename(level: str, parent: str, periode_merge: str) -> str:
 
 
 def get_timestamp():
-    return datetime.now().strftime("%Y%m%d-%H%M%S")
+    return datetime.now().strftime("%Y%m%d_%H%M%S")
 
 
 def fetch(url: str) -> tuple[int, bytes]:
@@ -318,7 +318,9 @@ def fetch_region_detail(kode: str, save_dir: Path) -> dict | None:
         log(f"  Gagal koneksi: {e.reason}")
         return None
 
-    path = save_dir / datetime.now().strftime("%Y%m%d") / f"{kode}.json"
+    path = (
+        save_dir / datetime.now().strftime("%Y%m%d") / f"{get_timestamp()}_{kode}.json"
+    )
     try:
         data = json.loads(body)
     except json.JSONDecodeError:

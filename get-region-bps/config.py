@@ -12,3 +12,4 @@ ENV_FILE = BASE_DIR / ".env"
 load_dotenv(ENV_FILE)
 
 DISTRICT_ID = os.environ.get("DISTRICT_ID") or None
+DEFAULT_PERIODE_BPS = "2025_2.2025"
