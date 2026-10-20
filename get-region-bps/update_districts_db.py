@@ -38,10 +38,9 @@ from utils.utility import (
     OUTPUT_DIR,
     fetch_region_children,
     fetch_region_detail,
-    get_timestamp,
     log,
     to_float,
-    write_json,
+    write_json_with_basepath,
 )
 
 DISTRICT_DETAIL_DIR = OUTPUT_DIR / "district"
@@ -144,7 +143,7 @@ def main() -> int:
     parser.add_argument(
         "--file",
         type=Path,
-        required=True,
+        default="data/district.csv",
         help="File CSV dengan kolom id,code_dagri (opsional: name,regency_id)",
     )
     parser.add_argument(
@@ -187,11 +186,7 @@ def main() -> int:
     def flush(items: list[dict]) -> None:
         nonlocal batch_index, updated
         batch_index += 1
-        timestamp = get_timestamp()
-        filename_extracted = (
-            DISTRICT_PAYLOAD_DIR / f"district_payload_{batch_index}_{timestamp}.json"
-        )
-        path = write_json(filename_extracted, items)
+        path = write_json_with_basepath(DISTRICT_PAYLOAD_DIR, "district_payload", items)
         log(f"  batch {batch_index}: {len(items)} data tersimpan di {path}")
         if args.dry_run:
             return

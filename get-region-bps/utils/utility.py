@@ -44,7 +44,7 @@ def build_filename(level: str, parent: str, periode_merge: str) -> str:
 
 
 def get_timestamp():
-    return datetime.now().strftime("%Y%m%d_%H%M%S")
+    return datetime.now().strftime("%Y%m%d-%H%M%S")
 
 
 def fetch(url: str) -> tuple[int, bytes]:
@@ -188,6 +188,12 @@ def build_payload(village: dict, district_id: str | None) -> dict:
         "latitude": None,
         "longitude": None,
     }
+
+
+def write_json_with_basepath(base_path: Path, filename, data: object) -> Path:
+    timestamp_file = get_timestamp()
+    final_path = base_path / f"{filename}_{timestamp_file}.json"
+    return write_json(final_path, data)
 
 
 def write_json(path: Path, data: object) -> Path:
