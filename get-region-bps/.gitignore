@@ -14,6 +14,8 @@ output/province/*
 !output/province/.gitkeep
 output/regency/*
 !output/regency/.gitkeep
+output/district/*
+!output/district/.gitkeep
 output/village/*
 !output/village/.gitkeep
 response/*
@@ -25,5 +27,7 @@ extracted/province/*
 !extracted/province/.gitkeep
 extracted/regency/*
 !extracted/regency/.gitkeep
+extracted/district/*
+!extracted/district/.gitkeep
 extracted/village/*
 !extracted/village/.gitkeep

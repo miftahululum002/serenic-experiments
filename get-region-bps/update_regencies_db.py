@@ -37,6 +37,7 @@ import config  # noqa: F401  memuat .env saat di-import
 from utils.query import REGENCY_TABLE, connect, update_region_coordinates
 from utils.utility import (
     BASE_DIR,
+    OUTPUT_DIR,
     fetch_region_children,
     fetch_region_detail,
     log,
@@ -44,8 +45,8 @@ from utils.utility import (
     write_json,
 )
 
-REGENCY_DETAIL_DIR = BASE_DIR / "regency_detail"
-REGENCY_PAYLOAD_DIR = BASE_DIR / "regency_payload"
+REGENCY_DETAIL_DIR = OUTPUT_DIR / "regency"
+REGENCY_PAYLOAD_DIR = BASE_DIR / "regency"
 
 
 def read_regencies(path: Path) -> list[dict]:
@@ -71,15 +72,21 @@ def normalize_name(name: str) -> str:
     return name
 
 
-def find_code_by_name(parent_id: str, name: str, children_cache: dict[str, dict[str, str]]) -> str | None:
+def find_code_by_name(
+    parent_id: str, name: str, children_cache: dict[str, dict[str, str]]
+) -> str | None:
     """Cari kode wilayah dari daftar anak parent_id berdasarkan nama; daftar di-cache per parent."""
     if parent_id not in children_cache:
         children = fetch_region_children(parent_id)
-        children_cache[parent_id] = {normalize_name(c["nama"]): c["kode"] for c in children if c.get("nama")}
+        children_cache[parent_id] = {
+            normalize_name(c["nama"]): c["kode"] for c in children if c.get("nama")
+        }
     return children_cache[parent_id].get(normalize_name(name))
 
 
-def fetch_coordinates(regency: dict, children_cache: dict[str, dict[str, str]]) -> dict | None:
+def fetch_coordinates(
+    regency: dict, children_cache: dict[str, dict[str, str]]
+) -> dict | None:
     """Fetch lat/lng satu kabupaten/kota. Return item payload, atau None kalau gagal."""
     code_dagri = regency["code_dagri"]
     name = regency.get("name", "")
@@ -95,7 +102,11 @@ def fetch_coordinates(regency: dict, children_cache: dict[str, dict[str, str]]) 
     latitude = to_float(detail.get("lat")) if detail else None
     longitude = to_float(detail.get("lng")) if detail else None
     if latitude is None or longitude is None:
-        log(f"[FAIL] {kode} {name}: lat/lng tidak ditemukan" if name else f"[FAIL] {kode}: lat/lng tidak ditemukan")
+        log(
+            f"[FAIL] {kode} {name}: lat/lng tidak ditemukan"
+            if name
+            else f"[FAIL] {kode}: lat/lng tidak ditemukan"
+        )
         return None
     return {
         "id": regency["id"],
@@ -112,13 +123,19 @@ def update_batch(index: int, items: list[dict]) -> tuple[int, bool]:
     try:
         conn = connect()
         try:
-            updated, failed = update_region_coordinates(conn, REGENCY_TABLE, rows, len(rows))
+            updated, failed = update_region_coordinates(
+                conn, REGENCY_TABLE, rows, len(rows)
+            )
         finally:
             conn.close()
-    except psycopg2.Error as e:  # koneksi putus dll.; JSON batch tetap tersimpan untuk diulang
+    except (
+        psycopg2.Error
+    ) as e:  # koneksi putus dll.; JSON batch tetap tersimpan untuk diulang
         log(f"  batch {index}: update DB GAGAL ({e})")
         return 0, True
-    log(f"  batch {index}: {updated}/{len(rows)} kabupaten/kota terupdate di {REGENCY_TABLE}")
+    log(
+        f"  batch {index}: {updated}/{len(rows)} kabupaten/kota terupdate di {REGENCY_TABLE}"
+    )
     return updated, bool(failed)
 
 
@@ -158,7 +175,9 @@ def main() -> int:
     if not args.dry_run:
         # Cek env & koneksi di awal supaya tidak baru gagal setelah batch pertama.
         connect().close()
-    log(f"{len(regencies)} kabupaten/kota akan di-fetch, update DB setiap {args.batch_size} data")
+    log(
+        f"{len(regencies)} kabupaten/kota akan di-fetch, update DB setiap {args.batch_size} data"
+    )
 
     children_cache: dict[str, dict[str, str]] = {}
     batch: list[dict] = []
@@ -170,7 +189,9 @@ def main() -> int:
     def flush(items: list[dict]) -> None:
         nonlocal batch_index, updated
         batch_index += 1
-        path = write_json(REGENCY_PAYLOAD_DIR / f"regency_payload_{batch_index}.json", items)
+        path = write_json(
+            REGENCY_PAYLOAD_DIR / f"regency_payload_{batch_index}.json", items
+        )
         log(f"  batch {batch_index}: {len(items)} data tersimpan di {path}")
         if args.dry_run:
             return
@@ -187,7 +208,9 @@ def main() -> int:
         kode = normalize_code(code_dagri)
         note = f" (code_dagri CSV {code_dagri})" if kode != code_dagri else ""
         label = f"{kode} {name}" if name else kode
-        log(f"== [{i + 1}/{len(regencies)}] id={regency['id']} code_dagri={label}{note}")
+        log(
+            f"== [{i + 1}/{len(regencies)}] id={regency['id']} code_dagri={label}{note}"
+        )
         item = fetch_coordinates(regency, children_cache)
         if not item:
             failed.append(code_dagri)
@@ -201,7 +224,9 @@ def main() -> int:
 
     print()
     found = len(regencies) - len(failed)
-    log(f"Selesai: {found} ditemukan, {len(failed)} gagal dari {len(regencies)} baris, {batch_index} batch")
+    log(
+        f"Selesai: {found} ditemukan, {len(failed)} gagal dari {len(regencies)} baris, {batch_index} batch"
+    )
     if args.dry_run:
         log("Dry run, database tidak diubah")
     else:
@@ -209,7 +234,9 @@ def main() -> int:
     if failed:
         log(f"Gagal fetch ({len(failed)}): {', '.join(failed)}")
     if failed_batches:
-        log(f"Batch gagal update DB: {failed_batches}; ulangi dengan CSV berisi data di file JSON batch tersebut")
+        log(
+            f"Batch gagal update DB: {failed_batches}; ulangi dengan CSV berisi data di file JSON batch tersebut"
+        )
     return 1 if failed or failed_batches else 0
 
 

@@ -114,9 +114,9 @@ def update_items(
         conn.close()
 
 
-
 PROVINCE_TABLE = "ref_provinces"
 REGENCY_TABLE = "ref_regencies"
+DISTRICT_TABLE = "ref_districts"
 
 
 def update_region_coordinates(
@@ -129,7 +129,8 @@ def update_region_coordinates(
     sql = f"""
         UPDATE {table} AS r
         SET latitude = d.latitude,
-            longitude = d.longitude
+            longitude = d.longitude,
+            is_fix = true
         FROM (VALUES %s) AS d (id, latitude, longitude)
         WHERE r.id = d.id
     """
@@ -150,5 +151,7 @@ def update_region_coordinates(
             log(f"Batch {index + 1}/{total_batches} GAGAL: {e}".strip())
             continue
         updated += affected
-        log(f"Batch {index + 1}/{total_batches}: {affected}/{len(batch)} baris terupdate")
+        log(
+            f"Batch {index + 1}/{total_batches}: {affected}/{len(batch)} baris terupdate"
+        )
     return updated, failed

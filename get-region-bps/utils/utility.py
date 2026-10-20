@@ -11,9 +11,15 @@ from urllib.parse import urlencode
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 OUTPUT_DIR = BASE_DIR / "output"
-PAYLOAD_DIR = BASE_DIR / "payload"
+PAYLOAD_DIR = BASE_DIR / "extracted"
 RESPONSE_DIR = BASE_DIR / "response"
-REQUIRED_ENV = ("ACCOUNT_USERNAME", "ACCOUNT_PASSWORD", "API_BASE_URL", "API_AUTH", "API_VILLAGE")
+REQUIRED_ENV = (
+    "ACCOUNT_USERNAME",
+    "ACCOUNT_PASSWORD",
+    "API_BASE_URL",
+    "API_AUTH",
+    "API_VILLAGE",
+)
 BPS_URL = "https://sig.bps.go.id/rest-bridging/getwilayah"
 WILAYAH_URL = "https://wilayah.cahyadsn.com/api/"
 DETAIL_DIR = BASE_DIR / "village_detail"
@@ -25,14 +31,20 @@ def log(message: str = "") -> None:
 
 
 def build_url(level: str, parent: str, periode_merge: str) -> str:
-    query = urlencode({"level": level, "parent": parent, "periode_merge": periode_merge})
+    query = urlencode(
+        {"level": level, "parent": parent, "periode_merge": periode_merge}
+    )
     return f"{BPS_URL}?{query}"
 
 
 def build_filename(level: str, parent: str, periode_merge: str) -> str:
     name = f"{level}_{parent}_{periode_merge}"
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    timestamp = get_timestamp()  # datetime.now().strftime("%Y%m%d_%H%M%S")
     return f"{name}_{timestamp}.json".replace("/", "-")
+
+
+def get_timestamp():
+    return datetime.now().strftime("%Y%m%d_%H%M%S")
 
 
 def fetch(url: str) -> tuple[int, bytes]:
@@ -83,7 +95,9 @@ def fetch_villages(parent: str, level: str, periode_merge: str) -> list[dict]:
     return villages
 
 
-def request_json(method: str, url: str, payload: dict | None = None, token: str | None = None) -> tuple[int, object, dict]:
+def request_json(
+    method: str, url: str, payload: dict | None = None, token: str | None = None
+) -> tuple[int, object, dict]:
     """Kirim request JSON. Mengembalikan (status, body, headers)."""
     headers = {"Content-Type": "application/json", "Accept": "application/json"}
     if token:
@@ -115,7 +129,12 @@ def retry_after_seconds(headers: dict) -> float | None:
 
 
 def request_with_retry(
-    method: str, url: str, payload: dict | None, token: str, max_retries: int = 5, retry_delay: float = 10
+    method: str,
+    url: str,
+    payload: dict | None,
+    token: str,
+    max_retries: int = 5,
+    retry_delay: float = 10,
 ) -> tuple[int | None, object]:
     """Kirim request dan coba ulang saat kena rate limit (429).
 
@@ -183,7 +202,11 @@ def write_json(path: Path, data: object) -> Path:
 
 
 def post_villages(
-    payloads: list[dict], max_requests: int = 0, delay: float = 0, max_retries: int = 5, retry_delay: float = 10
+    payloads: list[dict],
+    max_requests: int = 0,
+    delay: float = 0,
+    max_retries: int = 5,
+    retry_delay: float = 10,
 ) -> int:
     """Login lalu POST setiap payload satu per satu.
 
@@ -210,7 +233,12 @@ def post_villages(
     for i, payload in enumerate(payloads):
         if i > 0 and payloads[i - 1]["district_id"] != payload["district_id"]:
             sent_in_district = 0
-        if max_requests and delay and sent_in_district and sent_in_district % max_requests == 0:
+        if (
+            max_requests
+            and delay
+            and sent_in_district
+            and sent_in_district % max_requests == 0
+        ):
             log(
                 f"    sudah {sent_in_district} request di district {payload['district_id']}, "
                 f"jeda {delay:g} detik sebelum mengirim {payload['code']} {payload['name']} ({i + 1}/{len(payloads)})..."
@@ -218,9 +246,14 @@ def post_villages(
             time.sleep(delay)
         sent_in_district += 1
         now = datetime.now()
-        filename = Path(now.strftime("%Y%m%d")) / f"{payload['code']}_{now.strftime('%H%M%S')}.json"
+        filename = (
+            Path(now.strftime("%Y%m%d"))
+            / f"{payload['code']}_{now.strftime('%H%M%S')}.json"
+        )
         write_json(PAYLOAD_DIR / filename, payload)
-        status, body = request_with_retry("POST", village_url, payload, token, max_retries, retry_delay)
+        status, body = request_with_retry(
+            "POST", village_url, payload, token, max_retries, retry_delay
+        )
         write_json(RESPONSE_DIR / filename, body)
         label = f"{payload['code']} {payload['name']} -> {status}"
         if status is not None and status < 400:
@@ -266,7 +299,9 @@ def fetch_region_detail(kode: str, save_dir: Path) -> dict | None:
     """
     url = build_detail_url(kode)
     log(f"GET {url}")
-    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0", "Accept": "application/json"})
+    req = urllib.request.Request(
+        url, headers={"User-Agent": "Mozilla/5.0", "Accept": "application/json"}
+    )
     try:
         with urllib.request.urlopen(req, timeout=30) as resp:
             body = resp.read()
@@ -292,7 +327,9 @@ def fetch_region_detail(kode: str, save_dir: Path) -> dict | None:
         return None
 
     village = items[0]
-    log(f"  {village.get('nama')} | kodepos {village.get('kodepos')} | lat {village.get('lat')}, lng {village.get('lng')}")
+    log(
+        f"  {village.get('nama')} | kodepos {village.get('kodepos')} | lat {village.get('lat')}, lng {village.get('lng')}"
+    )
     log(f"  tersimpan di {path}")
     return village
 
@@ -302,7 +339,9 @@ def fetch_region_children(kode: str) -> list[dict]:
     level = kode.count(".") + 2
     url = f"{WILAYAH_URL}?{urlencode({'kode': kode, 'level': level})}"
     log(f"GET {url}")
-    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0", "Accept": "application/json"})
+    req = urllib.request.Request(
+        url, headers={"User-Agent": "Mozilla/5.0", "Accept": "application/json"}
+    )
     try:
         with urllib.request.urlopen(req, timeout=30) as resp:
             data = json.loads(resp.read())
@@ -322,9 +361,17 @@ def build_update_payload(detail: dict) -> dict:
     }
 
 
-def get_village(village_url: str, token: str, village_id: str, max_retries: int = 5, retry_delay: float = 10) -> dict | None:
+def get_village(
+    village_url: str,
+    token: str,
+    village_id: str,
+    max_retries: int = 5,
+    retry_delay: float = 10,
+) -> dict | None:
     """GET API_VILLAGE/{village_id}. Mengembalikan data village atau None."""
-    status, body = request_with_retry("GET", f"{village_url}/{village_id}", None, token, max_retries, retry_delay)
+    status, body = request_with_retry(
+        "GET", f"{village_url}/{village_id}", None, token, max_retries, retry_delay
+    )
     data = body.get("data") if isinstance(body, dict) else None
     if status is None or status >= 400 or not isinstance(data, dict):
         log(f"[FAIL] GET village {village_id} -> {status}")
@@ -359,7 +406,9 @@ def update_villages(
     updated = failed = 0
     for i, village_id in enumerate(village_ids):
         if i and delay:
-            log(f"    jeda {delay:g} detik sebelum village {village_id} ({i + 1}/{len(village_ids)})...")
+            log(
+                f"    jeda {delay:g} detik sebelum village {village_id} ({i + 1}/{len(village_ids)})..."
+            )
             time.sleep(delay)
         print()
         log(f"== [{i + 1}/{len(village_ids)}] village_id={village_id}")
@@ -378,7 +427,9 @@ def update_villages(
             time.sleep(detail_delay)
         detail = fetch_village_detail(code_dagri)
         if not detail:
-            log(f"[FAIL] {village_id} {village.get('name')}: detail {code_dagri} tidak ditemukan")
+            log(
+                f"[FAIL] {village_id} {village.get('name')}: detail {code_dagri} tidak ditemukan"
+            )
             failed += 1
             continue
 
@@ -390,18 +441,32 @@ def update_villages(
             continue
 
         now = datetime.now()
-        filename = Path(now.strftime("%Y%m%d")) / f"update_{village_id}_{now.strftime('%H%M%S')}.json"
+        filename = (
+            Path(now.strftime("%Y%m%d"))
+            / f"update_{village_id}_{now.strftime('%H%M%S')}.json"
+        )
         write_json(PAYLOAD_DIR / filename, payload)
-        status, body = request_with_retry("PATCH", f"{village_url}/{village_id}", payload, token, max_retries, retry_delay)
+        status, body = request_with_retry(
+            "PATCH",
+            f"{village_url}/{village_id}",
+            payload,
+            token,
+            max_retries,
+            retry_delay,
+        )
         write_json(RESPONSE_DIR / filename, body)
         if status is not None and status < 400:
             updated += 1
-            log(f"[OK] PATCH {label} -> {status} (kodepos {payload['postal_code']}, lat {payload['latitude']}, lng {payload['longitude']})")
+            log(
+                f"[OK] PATCH {label} -> {status} (kodepos {payload['postal_code']}, lat {payload['latitude']}, lng {payload['longitude']})"
+            )
         else:
             failed += 1
             log(f"[FAIL] PATCH {label} -> {status}")
             log(f"    {body}")
 
     print()
-    log(f"Selesai update: {updated} berhasil{' (dry-run)' if dry_run else ''}, {failed} gagal")
+    log(
+        f"Selesai update: {updated} berhasil{' (dry-run)' if dry_run else ''}, {failed} gagal"
+    )
     return failed
