@@ -256,6 +256,14 @@ def fetch_village_detail(kode: str) -> dict | None:
 
     Mengembalikan data desa ({kode, nama, kodepos, lat, lng, ...}) atau None.
     """
+    return fetch_region_detail(kode, DETAIL_DIR)
+
+
+def fetch_region_detail(kode: str, save_dir: Path) -> dict | None:
+    """GET detail wilayah (provinsi s.d. desa) dari wilayah.cahyadsn.com dan simpan response ke save_dir/YYYYMMDD/{kode}.json.
+
+    Mengembalikan data wilayah ({kode, nama, kodepos, lat, lng, ...}) atau None.
+    """
     url = build_detail_url(kode)
     log(f"GET {url}")
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0", "Accept": "application/json"})
@@ -269,7 +277,7 @@ def fetch_village_detail(kode: str) -> dict | None:
         log(f"  Gagal koneksi: {e.reason}")
         return None
 
-    path = DETAIL_DIR / datetime.now().strftime("%Y%m%d") / f"{kode}.json"
+    path = save_dir / datetime.now().strftime("%Y%m%d") / f"{kode}.json"
     try:
         data = json.loads(body)
     except json.JSONDecodeError:
@@ -287,6 +295,22 @@ def fetch_village_detail(kode: str) -> dict | None:
     log(f"  {village.get('nama')} | kodepos {village.get('kodepos')} | lat {village.get('lat')}, lng {village.get('lng')}")
     log(f"  tersimpan di {path}")
     return village
+
+
+def fetch_region_children(kode: str) -> list[dict]:
+    """GET daftar wilayah satu tingkat di bawah kode (contoh 93 -> kabupaten/kota Papua Selatan): [{kode, nama}, ...]."""
+    level = kode.count(".") + 2
+    url = f"{WILAYAH_URL}?{urlencode({'kode': kode, 'level': level})}"
+    log(f"GET {url}")
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0", "Accept": "application/json"})
+    try:
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            data = json.loads(resp.read())
+    except (HTTPError, URLError, json.JSONDecodeError) as e:
+        log(f"  Gagal ambil daftar wilayah {kode}: {e}")
+        return []
+    items = data.get("data") if isinstance(data, dict) else None
+    return items if isinstance(items, list) else []
 
 
 def build_update_payload(detail: dict) -> dict:

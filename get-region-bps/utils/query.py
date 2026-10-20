@@ -112,3 +112,43 @@ def update_items(
         return update_batches(conn, rows, batch_size, delay)
     finally:
         conn.close()
+
+
+
+PROVINCE_TABLE = "ref_provinces"
+REGENCY_TABLE = "ref_regencies"
+
+
+def update_region_coordinates(
+    conn, table: str, rows: list[tuple], batch_size: int = 100
+) -> tuple[int, list[int]]:
+    """Bulk update latitude, longitude dari tuple (id, latitude, longitude), commit per batch.
+
+    Batch yang gagal di-rollback dan dilewati. Return (terupdate, nomor batch gagal).
+    """
+    sql = f"""
+        UPDATE {table} AS r
+        SET latitude = d.latitude,
+            longitude = d.longitude
+        FROM (VALUES %s) AS d (id, latitude, longitude)
+        WHERE r.id = d.id
+    """
+    template = "(%s::varchar, %s::numeric, %s::numeric)"
+    total_batches = (len(rows) + batch_size - 1) // batch_size
+    updated = 0
+    failed = []
+    for index in range(total_batches):
+        batch = rows[index * batch_size : (index + 1) * batch_size]
+        try:
+            with conn.cursor() as cur:
+                execute_values(cur, sql, batch, template=template, page_size=len(batch))
+                affected = cur.rowcount
+            conn.commit()
+        except psycopg2.Error as e:
+            conn.rollback()
+            failed.append(index + 1)
+            log(f"Batch {index + 1}/{total_batches} GAGAL: {e}".strip())
+            continue
+        updated += affected
+        log(f"Batch {index + 1}/{total_batches}: {affected}/{len(batch)} baris terupdate")
+    return updated, failed
