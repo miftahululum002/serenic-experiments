@@ -128,6 +128,43 @@ def retry_after_seconds(headers: dict) -> float | None:
         return None
 
 
+RETRY_STATUS = (429, 500, 502, 503, 504)
+
+
+def fetch_json_with_retry(
+    url: str, max_retries: int = 5, retry_delay: float = 10
+) -> tuple[int, object]:
+    """GET JSON dan coba ulang saat kena rate limit / gangguan sementara.
+
+    Dicoba ulang kalau status 429 atau 5xx, koneksi gagal/timeout, atau response bukan JSON
+    (halaman blokir). Waktu tunggu mengikuti header Retry-After kalau ada; kalau tidak,
+    backoff retry_delay x 2^n (10, 20, 40, ... detik). Raise RuntimeError kalau tetap gagal.
+    """
+    for attempt in range(max_retries + 1):
+        wait = retry_delay * 2**attempt
+        try:
+            status, body = fetch(url)
+            try:
+                return status, json.loads(body)
+            except json.JSONDecodeError:
+                reason = f"response bukan JSON (status {status})"
+        except HTTPError as e:
+            if e.code not in RETRY_STATUS:
+                raise RuntimeError(f"HTTP {e.code}: {e.reason}") from e
+            reason = f"HTTP {e.code}"
+            wait = retry_after_seconds(dict(e.headers or {})) or wait
+        except (URLError, TimeoutError, ConnectionError) as e:
+            reason = f"gagal koneksi: {getattr(e, 'reason', e)}"
+        if attempt == max_retries:
+            raise RuntimeError(f"{reason}, sudah dicoba {max_retries + 1} kali")
+        log(
+            f"    {reason}, tunggu {wait:g} detik lalu coba lagi "
+            f"(percobaan {attempt + 2}/{max_retries + 1})..."
+        )
+        time.sleep(wait)
+    raise AssertionError("unreachable")
+
+
 def request_with_retry(
     method: str,
     url: str,

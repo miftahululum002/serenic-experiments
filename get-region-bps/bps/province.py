@@ -8,8 +8,9 @@ Provinsi BPS dipasangkan dengan baris ref_provinces (yang belum dihapus) berdasa
 karena id lama belum tentu sama dengan kode BPS (contoh: di DB id 92 = Papua Tengah, padahal
 di BPS 92 = Papua Barat Daya). Untuk setiap pasangan:
     id = code = kode_bps, code_dagri = kode_dagri
-dan kalau id berubah, id lama disimpan di old_id (kalau old_id masih kosong). Perubahan id
+serta is_fix = true, dan kalau id berubah, id lama disimpan di old_id (kalau old_id masih kosong). Perubahan id
 ikut ter-cascade ke tabel yang punya foreign key ke ref_provinces (ON UPDATE CASCADE).
+Provinsi yang id, code, dan code_dagri-nya sudah sesuai hanya di-set is_fix = true.
 Provinsi BPS yang tidak ada di DB di-insert. Baris DB yang tidak ada di BPS dibiarkan.
 Sebelum commit dicek setiap provinsi BPS ada di DB (aktif) dengan id, code, dan code_dagri
 yang sesuai; kalau ada yang belum, transaksi dibatalkan.
@@ -17,6 +18,10 @@ yang sesuai; kalau ada yang belum, transaksi dibatalkan.
 id/code yang saling bertukar (92 -> 96, 96 -> 92) ditangani dengan memindahkan baris yang
 berubah ke id sementara "tmp_{id}" dulu, lalu ke id final. Semua dijalankan dalam satu
 transaksi: kalau ada yang gagal, semuanya di-rollback.
+
+Request ke BPS yang kena rate limit (429), error 5xx, gagal koneksi, atau response-nya bukan
+JSON dicoba ulang maksimal --max-retries kali, dengan jeda mengikuti header Retry-After atau
+--retry-delay x 2^n (10, 20, 40, ... detik).
 
 Rencana perubahan disimpan ke extracted/province/{timestamp}_sync_province.json.
 
@@ -29,11 +34,9 @@ Contoh:
 """
 
 import argparse
-import json
 import re
 import sys
 from pathlib import Path
-from urllib.error import HTTPError, URLError
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
@@ -46,7 +49,7 @@ from utils.utility import (  # noqa: E402
     OUTPUT_DIR,
     PAYLOAD_DIR,
     build_url,
-    fetch,
+    fetch_json_with_retry,
     get_timestamp,
     log,
     write_json,
@@ -57,18 +60,16 @@ BPS_PROVINCE_DIR = OUTPUT_DIR / "bps" / "province"
 SYNC_PAYLOAD_DIR = PAYLOAD_DIR / "bps" / "province"
 
 
-def fetch_bps_provinces(periode: str) -> list[dict]:
+def fetch_bps_provinces(
+    periode: str, max_retries: int = 5, retry_delay: float = 10
+) -> list[dict]:
     """GET daftar provinsi BPS: [{kode_bps, nama_bps, kode_dagri, nama_dagri}, ...]."""
     url = build_url("provinsi", "0", periode)
     log(f"GET {url}")
     try:
-        status, body = fetch(url)
-    except (HTTPError, URLError) as e:
+        status, data = fetch_json_with_retry(url, max_retries, retry_delay)
+    except RuntimeError as e:
         raise SystemExit(f"Gagal ambil data BPS: {e}")
-    try:
-        data = json.loads(body)
-    except json.JSONDecodeError:
-        raise SystemExit(f"Response BPS bukan JSON (status {status})")
     path = write_json(
         BPS_PROVINCE_DIR / f"{get_timestamp()}_provinsi_{periode}.json", data
     )
@@ -88,7 +89,7 @@ def fetch_db_provinces(conn) -> list[dict]:
     """Semua baris ref_provinces, termasuk yang sudah dihapus (untuk cek bentrok id/code)."""
     with conn.cursor() as cur:
         cur.execute(
-            f"SELECT id, name, code, code_dagri, deleted_at IS NOT NULL "
+            f"SELECT id, name, code, code_dagri, deleted_at IS NOT NULL, is_fix IS TRUE "
             f"FROM {PROVINCE_TABLE} ORDER BY id"
         )
         return [
@@ -98,6 +99,7 @@ def fetch_db_provinces(conn) -> list[dict]:
                 "code": r[2],
                 "code_dagri": r[3],
                 "deleted": r[4],
+                "is_fix": r[5],
             }
             for r in cur.fetchall()
         ]
@@ -110,7 +112,7 @@ def build_plan(bps: list[dict], db_rows: list[dict]) -> dict:
         if not row["deleted"]:
             by_name.setdefault(normalize_name(row["name"]), row)
 
-    updates, inserts, unchanged = [], [], []
+    updates, inserts, unchanged, fixes = [], [], [], []
     matched_ids: set[str] = set()
     for item in bps:
         kode, kode_dagri = item["kode_bps"], item.get("kode_dagri") or None
@@ -128,6 +130,8 @@ def build_plan(bps: list[dict], db_rows: list[dict]) -> dict:
         matched_ids.add(row["id"])
         if (row["id"], row["code"], row["code_dagri"]) == (kode, kode, kode_dagri):
             unchanged.append(row["id"])
+            if not row["is_fix"]:
+                fixes.append(row["id"])
             continue
         updates.append(
             {
@@ -156,6 +160,7 @@ def build_plan(bps: list[dict], db_rows: list[dict]) -> dict:
         "updates": updates,
         "inserts": inserts,
         "unchanged": unchanged,
+        "fixes": fixes,
         "conflicts": conflicts,
         "leftovers": leftovers,
     }
@@ -226,11 +231,17 @@ def apply_plan(conn, plan: dict, bps: list[dict]) -> None:
         if plan["inserts"]:
             execute_values(
                 cur,
-                f"INSERT INTO {PROVINCE_TABLE} (id, code, code_dagri, name, is_true) VALUES %s",
+                f"INSERT INTO {PROVINCE_TABLE} (id, code, code_dagri, name, is_fix) VALUES %s",
                 [
                     (i["id"], i["code"], i["code_dagri"], i["name"], True)
                     for i in plan["inserts"]
                 ],
+            )
+        if plan["fixes"]:
+            cur.execute(
+                f"UPDATE {PROVINCE_TABLE} SET is_fix = true, updated_at = now() "
+                "WHERE id = ANY(%s)",
+                (plan["fixes"],),
             )
         missing = missing_provinces(cur, bps)
         if missing:
@@ -253,9 +264,21 @@ def main() -> int:
         action="store_true",
         help="Tampilkan dan simpan rencana perubahan saja, tanpa mengubah DB",
     )
+    parser.add_argument(
+        "--max-retries",
+        type=int,
+        default=5,
+        help="Maksimal coba ulang request BPS saat kena rate limit/gangguan (default: 5)",
+    )
+    parser.add_argument(
+        "--retry-delay",
+        type=float,
+        default=10,
+        help="Jeda awal coba ulang dalam detik, berlipat 2 tiap percobaan (default: 10)",
+    )
     args = parser.parse_args()
 
-    bps = fetch_bps_provinces(args.periode)
+    bps = fetch_bps_provinces(args.periode, args.max_retries, args.retry_delay)
     conn = connect()
     try:
         db_rows = fetch_db_provinces(conn)
@@ -276,7 +299,7 @@ def main() -> int:
             log(f"[SKIP] {row['id']} {row['name']}: tidak ada di BPS, dibiarkan")
         log(
             f"{len(plan['updates'])} update, {len(plan['inserts'])} insert, "
-            f"{len(plan['unchanged'])} sudah sesuai; "
+            f"{len(plan['unchanged'])} sudah sesuai ({len(plan['fixes'])} di-set is_fix); "
             f"rencana tersimpan di {path}"
         )
 
@@ -291,7 +314,7 @@ def main() -> int:
         if args.dry_run:
             log("Dry run, database tidak diubah")
             return 0
-        if not plan["updates"] and not plan["inserts"]:
+        if not plan["updates"] and not plan["inserts"] and not plan["fixes"]:
             log("Tidak ada perubahan")
             return 0
 
