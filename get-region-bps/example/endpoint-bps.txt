@@ -1,0 +1,4 @@
+https://sig.bps.go.id/rest-bridging/getwilayah?level=provinsi&parent=0&periode_merge=2025_2.2025
+https://sig.bps.go.id/rest-bridging/getwilayah?level=kabupaten&parent=11&periode_merge=2025_2.2025
+https://sig.bps.go.id/rest-bridging/getwilayah?level=kecamatan&parent=1101&periode_merge=2025_2.2025
+https://sig.bps.go.id/rest-bridging/getwilayah?level=desa&parent=1101010&periode_merge=2025_2.2025

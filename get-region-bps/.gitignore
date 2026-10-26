@@ -6,28 +6,11 @@ data/*
 !data/district_kosong.example.csv
 logs/*
 !logs/.gitkeep
-# output/*
+output/*
 !output/.gitkeep
-output/bps/*
-!output/bps/.gitkeep
-output/province/*
-!output/province/.gitkeep
-output/regency/*
-!output/regency/.gitkeep
-output/district/*
-!output/district/.gitkeep
-output/village/*
-!output/village/.gitkeep
 response/*
 !response/.gitkeep
 payload/*
 !payload/.gitkeep
-# extracted/*
-extracted/province/*
-!extracted/province/.gitkeep
-extracted/regency/*
-!extracted/regency/.gitkeep
-extracted/district/*
-!extracted/district/.gitkeep
-extracted/village/*
-!extracted/village/.gitkeep
+extracted/*
+extracted/.gitkeep
