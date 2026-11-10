@@ -1,0 +1,8 @@
+[nav] http://36.64.110.114:8083/Live2/Module/RADT/EmrIp/EmrIpDetail.aspx?rt=IPR&regno=REG/IP/261013-0044&fregno=REG/EM/261013-0043&parid=MD-00268&unit=D22&room=2203&patid=P20261013-0029
+[url after first nav] http://36.64.110.114:8083/Live2/Login/Login.aspx?RetunUrl=/Live2/Module/RADT/EmrIp/EmrIpDetail.aspx?rt=IPR&regno=REG/IP/261013-0044&fregno=REG/EM/261013-0043&parid=MD-00268&unit=D22&room=2203&patid=P20261013-0029
+[login] filling credentials
+[url after login] http://36.64.110.114:8083/Live2/Default.aspx
+[nav] re-navigating to detail URL after login
+[url after re-nav] http://36.64.110.114:8083/Live2/Module/RADT/EmrIp/EmrIpDetail.aspx?rt=IPR&regno=REG/IP/261013-0044&fregno=REG/EM/261013-0043&parid=MD-00268&unit=D22&room=2203&patid=P20261013-0029
+[title] AVIAT - Electronic Medical Record (EMR)
+[saved] output_detail.html

@@ -138,7 +138,7 @@ output/20261026/221047/
 | `range-data-loss` | ❌/⚠️ | (variants) data berkurang dibanding `tanpa_rentang`; ❌ untuk resource sekali per encounter | belum |
 | `range-error` | ❌ | (variants) rentang error, tanpa rentang OK | belum |
 | `service-request-order` | ⚠️ | `laporan_radiologi.service_request_id` di asesmen_awal/resume_medis | `dropRadiologiServiceRequestId` |
-| `category-uppercase` | ⚠️ | `category` huruf besar (`SOAP`, `RAD`) | hanya `SOAP` |
+| `category-uppercase` | ⚠️ | `category` huruf besar (`SOAP`); `RAD` dianggap benar | hanya `SOAP` |
 | `performer-format` | ⚠️ | performer tidak berpola `MD-xxxxx` | `mapDispensePerformerId` |
 | `diagnosis-code` | ⚠️/ℹ️ | `code` = `""` (⚠️) / semua `null` (ℹ️) | belum |
 | `prosedur-null` | ⚠️ | `prosedur.status` / `category` null | belum |

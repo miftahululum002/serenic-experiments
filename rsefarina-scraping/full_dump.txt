@@ -1,0 +1,1126 @@
+Patient Management
+Billing Charges
+EMR
+Inventory
+Finance
+Asset Management
+Dietary & Nutrition
+Human Resources
+Payroll Management
+Pathology Anatomy
+Blood Bank
+CSSD
+Laundry
+Control Panel
+Report
+			Electronic Medical Record (EMR)
+EMR
+Welcome,  [ADM]  Serenic AI [serenic] {103.224.67.210}        [ Logout  |  Change Password    ] 
+	Ny MERI SIAHAAN	 
+Photo
+	
+MRN	:	
+00079983		
+
+Reg. No	:	REG/IP/261013-0044
+Reg. Date	:	13-Oct-2026
+Gender	:	Female
+DOB	:	20-Feb-1962
+		(64y 8m 17d)
+Guarantor	:	BPJS - RI
+BPJS SEP No	:	0036R0161026V002811
+Chrg. Class	:	Kelas I
+Cov. Class	:	Kelas I
+Unit	:	KENANGA
+LOS	:	5 Day(s)
+Clinical Pathway :KOLELITIASIS / Cholelithiasis (ACCEPT)
+ Physician Team
+1.	dr. Ade Baswin Sp.PD FINASIM
+2.	dr. Muhammad Subkhan Sp.JP
+ Refer From Unit
+Service Unit	:	
+IGD
+	   View Assessment
+Refer From	:	
+REG/EM/261013-0043
+
+Physician	:	
+dr. Martin Sihombing
+ Patient Billing
+Plafond	 : 	7,377,200.00
+Billing	 : 	8,930,522.00
+Outstanding	 : 	0.00
+Selisih	 : 	-1,553,322.00
+ Allergies
+ Diagnosis
+Initial Diagnosis (Casemix)
+Work Diagnosis
+01 - Main Diagnose
+17/10/2026 07:00	CHOLELITIASIS + FATTY LIVER + KISTA GINJAL KIRI + CYSTITIS + KISTA ADNEKSA + CAD
+16/10/2026 10:53	CHOLELITIASIS + FATTY LIVER + KISTA GINJAL KIRI + CYSTITIS + KISTA ADNEKSA + CAD
+15/10/2026 12:49	CHOLELITIASIS + FATTY LIVER + KISTA GINJAL KIRI + CYSTITIS + KISTA ADNEKSA + CAD
+14/10/2026 12:59	CHOLELITIASIS + FATTY LIVER + KISTA GINJAL KIRI + CYSTITIS + KISTA ADNEKSA + CAD
+13/10/2026 16:34	KOLIK ABDOMEN EC SUSP CHOLECYSTITIS DD NEFROLITIASIS + CAD
+Final Diagnosis
+01 - Main Diagnose
+K81.9 K81.9 - Cholecystitis, unspecified [K81.9]
+CHOLELITIASIS
+02 - Complication
+UNSTABLE ANGINA PECTORIS
+03 - Secondary Diagnose
+I20.0 I20.0 - Unstable angina [I20.0]
+ Vital Sign
+Vital Sign	Date	Time	 	 
+SpO2	17/10/2026	09:00	
+99 %
+	
+Weight	13/10/2026	16:30	
+80 kg
+	
+Height	13/10/2026	16:30	
+150 cm
+	
+Blood Pressure - Sistolic	17/10/2026	09:00	
+117 mmHg
+	
+Blood Pressure - Diastolic	17/10/2026	09:00	
+66 mmHg
+	
+Heart Rate	17/10/2026	09:00	
+56 x/mnt
+	
+Respiratory Rate	17/10/2026	09:00	
+20 x/mnt
+	
+Temperature	17/10/2026	03:00	
+36.6 C
+	
+	
+	
+Back to ListSwitchBPJS PlanHealthcare LetterPRMRJAttachmentDischargeBillingFluid BalUDDImmunizationHAIs MonGraphClinical PathwayDICOMDeceasedPrint
+Integrated Notes
+Medication
+Surgical History
+Exam Order
+Health Record
+Care Plan
+AssessmentProgress NotesPPA NotesMedical Discharge SummaryNursing ResumeRefer / Consult to SpecialistMeasured GoalEducationCounseling[Filter Entry By
+]PrintRefresh
+ 	Time	Physician	Create By	PPA	Registration No	Service Unit	Assessment	Notes Type	 
+ 									 
+	17/10/2026 04:53	dr. Ade Baswin Sp.PD FINASIM	dr. Ade Baswin Sp.PD FINASIM	DTR	REG/IP/261013-0044	KENANGA	 	MDS	 
+ 	
+
+
+
+
+	
+Medical Discharge Summary
+
+	17/10/2026 10:00	 	Wilda Octavina Simbolon, A.Md.Keb	NRS	REG/IP/261013-0044	KENANGA	 	SOAP	 
+ 	
+
+
+	
+S:	pasien mengatakan sudah membaik
+O:	pasien tampak membaik
+A:	Nyeri Akut sudah teratasi
+P:	Stop
+
+	17/10/2026 09:00	 	Wilda Octavina Simbolon, A.Md.Keb	NRS	REG/IP/261013-0044	KENANGA	 	Notes	 
+ 	
+
+
+	
+02.00 Roundbed keruangan pasien
+04.00 Memantau keadaan umum pasien
+05.00 mendampingi dr. Ade Baswin Sp.PD FINASIM visit
+05.00 mendampingi dr. Muhammad Subkhan Sp.JP visit
+07.30 mempersiapkan berkas plg
+07.50 mengarahkan keluarga ke kasir
+08.20 meng aff infus pasien
+09.00 mengantar pasien ke loby pasien berobat jalan
+Respond:	TD-N-S-P-SPO2  | 
+
+	17/10/2026 05:00	dr. Muhammad Subkhan Sp.JP	dr. Muhammad Subkhan Sp.JP	DTR	REG/IP/261013-0044	KENANGA	 	SOAP	 
+ 	
+
+
+
+
+	
+S:	KU membaik
+O:	TD 124/83 mmHg
+Cor: S1> S2, murmur (-), gallop (-)
+A:	Unstable Angina Pectoris
+P:	PBJ
+CPG 1X75 mg
+Aspilet 1x80 mg
+SC Enoxrin 60 mg/12jam
+Spironolakton 1x20 mg
+Atorvastatin 1x20 mg
+NKR 2X2,5 mg
+Furosemid 1x40 mg
+I:	
+
+[ Presc No: RSI/261017-0038 ]
+R/ CLOPIDOGREL TAB 75 MG 5.00 TABLET (1 x sehari @ 1 TABLET )
+R/ ASPILET TAB 5.00 TABLET (1 x sehari @ 1 TABLET )
+R/ SPIRONOLACTONE 25 MG TAB 5.00 TABLET (1 x sehari @ 1 TABLET )
+R/ ATORVASTATIN 20 MG TABLET 5.00 TABLET (1 x sehari @ 1 TABLET )
+R/ NITROKAF RETARD KAPS 10.00 CAPSULE (2 x sehari @ 1 KAPSUL )
+R/ FUROSEMID TABLET 40 MG 5.00 TABLET (1 x sehari @ 1 TABLET )
+
+
+
+	17/10/2026 05:00	dr. Ade Baswin Sp.PD FINASIM	dr. Ade Baswin Sp.PD FINASIM	DTR	REG/IP/261013-0044	KENANGA	 	SOAP	 
+ 	
+
+
+
+
+	
+S:	KU MEMBAIK
+O:	TD 120/80 mmHg
+A:	ICD 10:
+01 - Main Diagnose: CHOLELITIASIS + FATTY LIVER + KISTA GINJAL KIRI + CYSTITIS + KISTA ADNEKSA + CAD
+
+P:	PBJ
+CEFIXIME 2X200 MG
+LANSOPRAZOL 1X30 MG
+UDCA 2X250 MG
+PCT 3X500 MG
+SCOPMA 3X1
+CURCUMA 1X1
+OBAT JANTUNG LANJUTKAN
+I:	[ Presc No: RSI/261017-0039 ]
+R/ CEFIXIME 200 MG KAPS 10.00 CAPSULE (2 x sehari @ 1 KAPSUL )
+R/ LANSOPRAZOLE 30 MG KAPS 5.00 CAPSULE (1 x sehari @ 1 KAPSUL )
+R/ URSODEOXYCHOLIC ACID 10.00 CAPSULE (2 x sehari @ 1 KAPSUL )
+R/ PARACETAMOL TABLET 500 MG 15.00 TABLET (3 x sehari @ 1 TABLET )
+R/ SCOPMA TAB 15.00 TABLET (3 x sehari @ 1 TABLET )
+R/ CURCUMA 200 MG TAB 5.00 TABLET (1 x sehari @ 1 TABLET )
+
+
+
+	17/10/2026 03:00	 	Wilda Octavina Simbolon, A.Md.Keb	NRS	REG/IP/261013-0044	KENANGA	 	Notes	 
+ 	
+
+
+	
+NEWS
+Respond:	Pernafasan 20x/mnt, Saturasi oksigen 99 %, Penggunaan alat bantu 02 tidak terpasang o2, Suhu 36.6C, Denyut Jantung 80x/mnt, Tekanan darah Sistolik 129mmHg, Tingkat Kesadaran alert/awake (sadar)  | 
+
+	17/10/2026 02:16	dr. Ade Baswin Sp.PD FINASIM	Wilda Octavina Simbolon, A.Md.Keb	NRS	REG/IP/261013-0044	KENANGA	 	SOAP	 
+ 	
+
+
+	
+S:	pasien mengatakan nyeri perut menurun
+O:	pasien tampak meringis kesakitan skala nyeri 3
+A:	Nyeri Akut teratasi sebagian
+P:	Manajemen Nyeri
+1.Observasi
+nyeri.
+2.Terapeutik
+Berikan teknik nonfarmakologis untuk mengurangi rasa nyeri(misal.
+3.Edukasi
+Jelaskan penyebab, periode, dan pemicu nyeri.
+4.Kolaborasi
+Kolaborasi pemberian analgetik, jika perlu.
+Submit By:	wilda
+Receive By:	putri
+
+	16/10/2026 23:00	 	Wilda Octavina Simbolon, A.Md.Keb	NRS	REG/IP/261013-0044	KENANGA	 	Notes	 
+ 	
+
+
+	
+20.00 handover dinas sore dengan dinas malam
+20.30 keliling keruangan pasien
+23.00 roundbed keruangan pasien
+
+	16/10/2026 20:00	 	Imel Agustika, S.Kep., Ns	NRS	REG/IP/261013-0044	KENANGA	 	Notes	 
+ 	
+
+
+	
+14.00 handover dinas pagi dengan dinas sore
+14.30 keliling keruangan pasien
+16.00 roundbed keruangan pasien
+17.00 mengukur tanda tanda vital pasien
+19.00 roundbed keruangan pasien
+20.00 handover dinas sore dengan dinas malam
+Respond:	TD-N-S-P-SPO2  | 
+
+	16/10/2026 15:00	dr. Ade Baswin Sp.PD FINASIM	Imel Agustika, S.Kep., Ns	NRS	REG/IP/261013-0044	KENANGA	 	SOAP	 
+ 	
+
+
+	
+S:	pasien mengatakan nyeri perut
+O:	pasien tampak meringis kesakitan skala nyeri 3
+A:	Nyeri Akut
+P:	Manajemen Nyeri
+1.Observasi
+nyeri.
+2.Terapeutik
+Berikan teknik nonfarmakologis untuk mengurangi rasa nyeri(misal.
+3.Edukasi
+Jelaskan penyebab, periode, dan pemicu nyeri.
+4.Kolaborasi
+Kolaborasi pemberian analgetik, jika perlu.
+Submit By:	imel
+Receive By:	wilda
+
+	16/10/2026 15:00	 	Imel Agustika, S.Kep., Ns	NRS	REG/IP/261013-0044	KENANGA	 	Notes	 
+ 	
+
+
+	
+NEWS
+Respond:	Pernafasan 20x/mnt, Saturasi oksigen 98 %, Penggunaan alat bantu 02 tidak terpasang o2, Suhu 36.6C, Denyut Jantung 80x/mnt, Tekanan darah Sistolik 118mmHg, Tingkat Kesadaran alert/awake (sadar)  | 
+
+	16/10/2026 14:00	 	Putri M. Marpaung, A.Md. Kep	NRS	REG/IP/261013-0044	KENANGA	 	Notes	 
+ 	
+
+
+	
+08.00 handover dinas malam dengan dinas pagi
+08.30 keliling keruangan pasien
+08.31 mendampingi dr. Muhammad Subkhan Sp.JP visit
+10.00 roundbed keruangan pasien
+10.53 mendampingi dr. Ade Baswin Sp.PD FINASIM visit
+12.00 mengukur tanda tanda vital pasien
+13.00 roundbed keruangan pasien
+14.00 handover dinas pagi dengan dinas sore
+
+Respond:	TD-N-S-P-SPO2  | 
+
+	16/10/2026 10:53	dr. Ade Baswin Sp.PD FINASIM	dr. Ade Baswin Sp.PD FINASIM	DTR	REG/IP/261013-0044	KENANGA	 	SOAP	 
+ 	
+
+
+
+
+	
+S:	NYERI PERUT BERKURANG
+O:	TD 124/83 mmHg
+A:	ICD 10:
+01 - Main Diagnose: CHOLELITIASIS + FATTY LIVER + KISTA GINJAL KIRI + CYSTITIS + KISTA ADNEKSA + CAD
+
+P:	TERAPI LANJUT
+
+BESOK PBJ
+
+I:	[ Presc No: RSI/261016-0510 ]
+R/ OTSU - RL / KK 3.00 PLABOTT (Aturan Pakai Diketahui @ 1 PLABOTT )
+R/ NITROKAF RETARD KAPS 2.00 CAPSULE (2 x sehari @ 1 KAPSUL )
+R/ ACETYLSISTEIN 200 MG TAB 3.00 CAPSULE (3 x sehari @ 1 KAPSUL )
+R/ ASPILET TAB 1.00 TABLET (1 x sehari @ 1 TABLET )
+R/ URSODEOXYCHOLIC ACID 2.00 CAPSULE (2 x sehari @ 1 KAPSUL )
+R/ CLOPIDOGREL TAB 75 MG 1.00 TABLET (1 x sehari @ 1 TABLET )
+R/ SPIRONOLACTONE 25 MG TAB 1.00 TABLET (1 x sehari @ 1 TABLET )
+R/ ATORVASTATIN 20 MG TABLET 1.00 TABLET (1 x sehari @ 1 TABLET )
+R/ CEFTRIAXONE 1 GR INJ 2.00 VIAL (Per 12 jam @ 1 VIAL 18.06)
+R/ SPUIT 5 CC X 22 G 2.00 PIECES (Aturan Pakai Diketahui @ 1 PIECES )
+R/ AQUA PRO INJ 20 ML 1.00 VIAL (Aturan Pakai Diketahui @ 1 VIAL )
+R/ PARACETAMOL TABLET 500 MG 3.00 TABLET (3 x sehari @ 1 TABLET )
+R/ CURCUMA 200 MG TAB 1.00 TABLET (1 x sehari @ 1 TABLET )
+R/ RANITIDIN 25 MG/2 ML INJ 2.00 AMPUL (Per 12 jam @ 1 AMPUL 12.24)
+R/ ONDANSETRON 8 MG/4 ML INJ 3.00 AMPUL (Per 8 jam @ 1 AMPUL 12.20.04)
+R/ KETOROLAC 30 MG/ML INJ 3.00 AMPUL (Per 8 jam @ 1 AMPUL 12.20.04)
+R/ SCOPMA TAB 3.00 TABLET (3 x sehari @ 1 TABLET )
+R/ SPUIT 3 CC X 23 G 8.00 PIECES (Aturan Pakai Diketahui @ 1 PIECES )
+R/ FUROSEMID TABLET 40 MG 1.00 TABLET (1 x sehari @ 1 TABLET )
+
+
+
+	16/10/2026 10:00	dr. Ade Baswin Sp.PD FINASIM	Putri M. Marpaung, A.Md. Kep	NRS	REG/IP/261013-0044	KENANGA	 	SOAP	 
+ 	
+
+
+	
+S:	pasien mengatakan nyeri perut
+O:	pasien tampak meringis kesakitan skala nyeri 3
+A:	Nyeri Akut
+P:	Manajemen Nyeri
+1.Observasi
+nyeri.
+2.Terapeutik
+Berikan teknik nonfarmakologis untuk mengurangi rasa nyeri(misal.
+3.Edukasi
+Jelaskan penyebab, periode, dan pemicu nyeri.
+4.Kolaborasi
+Kolaborasi pemberian analgetik, jika perlu.
+Submit By:	putri
+Receive By:	imel
+
+	16/10/2026 08:31	dr. Muhammad Subkhan Sp.JP	dr. Muhammad Subkhan Sp.JP	DTR	REG/IP/261013-0044	KENANGA	 	SOAP	 
+ 	
+
+
+
+
+	
+S:	Keluhan membaik
+Nyeri dada dan ulu hati membaik
+O:	Cor: S1> S2, murmur (-), gallop (-)
+A:	UAP
+P:	CPG 1X75
+Aspilet 1x80 mg
+SC Enoxrin 60 mg/12jam
+Spironolakton 1x20 mg
+Atorvastatin 1x20 mg
+NKR 2X2,5mg
+Furosemid 1x40 mg
+
+Dari jantung lepas rawat, Obat lanjut
+
+	16/10/2026 08:00	 	Rose Oktaviani Sianipar, S.Kep,Ns	NRS	REG/IP/261013-0044	KENANGA	 	Notes	 
+ 	
+
+
+	
+02.00 Roundbed keruangan pasien
+04.00 Memantau keadaan umum pasien
+05.00 Mengganti laken dan menawarkan air hangat untuk lap pasien
+06.00 Mengukur TTV
+07.00 Roundbed keruangan pasien
+08.00 Handover dengan perawat dinas pagi
+Respond:	TD-N-S-P-SPO2  | 
+
+	16/10/2026 03:00	 	Rose Oktaviani Sianipar, S.Kep,Ns	NRS	REG/IP/261013-0044	KENANGA	 	Notes	 
+ 	
+
+
+	
+NEWS
+Respond:	Pernafasan 20x/mnt, Saturasi oksigen 98 %, Penggunaan alat bantu 02 tidak terpasang o2, Suhu 36.5C, Denyut Jantung 80x/mnt, Tekanan darah Sistolik 120mmHg, Tingkat Kesadaran alert/awake (sadar)  | 
+
+	15/10/2026 23:00	 	Rose Oktaviani Sianipar, S.Kep,Ns	NRS	REG/IP/261013-0044	KENANGA	 	Notes	 
+ 	
+
+
+	
+20.00 handover dinas sore dengan dinas malam
+20.30 keliling keruangan pasien
+23.00 roundbed keruangan pasien
+
+	15/10/2026 22:00	 	Rose Oktaviani Sianipar, S.Kep,Ns	NRS	REG/IP/261013-0044	KENANGA	 	SOAP	 
+ 	
+
+
+	
+S:	pasien mengatakan nyeri perut
+
+O:	pasien tampak meringis kesakitan skala nyeri 3
+
+A:	Nyeri Akut
+
+P:	Manajemen Nyeri
+1.Observasi
+nyeri.
+2.Terapeutik
+Berikan teknik nonfarmakologis untuk mengurangi rasa nyeri(misal.
+3.Edukasi
+Jelaskan penyebab, periode, dan pemicu nyeri.
+4.Kolaborasi
+Kolaborasi pemberian analgetik, jika perlu.
+Submit By:	rose
+Receive By:	putri
+
+	15/10/2026 20:00	 	Wilda Octavina Simbolon, A.Md.Keb	NRS	REG/IP/261013-0044	KENANGA	 	Notes	 
+ 	
+
+
+	
+14.00 handover dinas pagi dengan dinas sore
+14.30 keliling keruangan pasien
+16.00 roundbed keruangan pasien
+17.00 mengukur tanda tanda vital pasien
+19.00 roundbed keruangan pasien
+20.00 handover dinas sore dengan dinas malam
+
+Respond:	TD-N-S-P-SPO2  | 
+
+	15/10/2026 15:00	dr. Ade Baswin Sp.PD FINASIM	Wilda Octavina Simbolon, A.Md.Keb	NRS	REG/IP/261013-0044	KENANGA	 	SOAP	 
+ 	
+
+
+	
+S:	pasien mengatakan nyeri perut
+O:	pasien tampak meringis kesakitan skala nyeri 3
+A:	Nyeri Akut
+P:	Manajemen Nyeri
+1.Observasi
+nyeri.
+2.Terapeutik
+Berikan teknik nonfarmakologis untuk mengurangi rasa nyeri(misal.
+3.Edukasi
+Jelaskan penyebab, periode, dan pemicu nyeri.
+4.Kolaborasi
+Kolaborasi pemberian analgetik, jika perlu.
+Submit By:	wilda
+Receive By:	rose
+
+	15/10/2026 15:00	 	Wilda Octavina Simbolon, A.Md.Keb	NRS	REG/IP/261013-0044	KENANGA	 	Notes	 
+ 	
+
+
+	
+NEWS
+Respond:	Pernafasan 20x/mnt, Saturasi oksigen 99 %, Penggunaan alat bantu 02 tidak terpasang o2, Suhu 36.5C, Denyut Jantung 80x/mnt, Tekanan darah Sistolik 127mmHg, Tingkat Kesadaran alert/awake (sadar)  | 
+
+	15/10/2026 14:00	 	Imel Agustika, S.Kep., Ns	NRS	REG/IP/261013-0044	KENANGA	 	Notes	 
+ 	
+
+
+	
+08.00 handover dinas malam dengan dinas pagi
+08.30 keliling keruangan pasien
+08.38 mendampingi dr. Muhammad Subkhan Sp.JP visit
+10.00 roundbed keruangan pasien
+12.00 mengukur tanda tanda vital pasien
+12.49 mendampingi dr. Ade Baswin Sp.PD FINASIM visit
+13.00 roundbed keruangan pasien
+14.00 handover dinas pagi dengan dinas sore
+Respond:	TD-N-S-P-SPO2  | 
+
+	15/10/2026 12:49	dr. Ade Baswin Sp.PD FINASIM	dr. Ade Baswin Sp.PD FINASIM	DTR	REG/IP/261013-0044	KENANGA	 	SOAP	 
+ 	
+
+
+
+
+	
+S:	NYERI PERUT BERKURANG
+O:	TD 102/67 mmHg
+A:	ICD 10:
+01 - Main Diagnose: CHOLELITIASIS + FATTY LIVER + KISTA GINJAL KIRI + CYSTITIS + KISTA ADNEKSA + CAD
+
+P:	TERAPI LANJUT
+
+I:	[ Presc No: RSI/261015-0377 ]
+R/ OTSU - RL / KK 3.00 PLABOTT (Aturan Pakai Diketahui @ 1 PLABOTT )
+R/ NITROKAF RETARD KAPS 2.00 CAPSULE (2 x sehari @ 1 KAPSUL )
+R/ ACETYLSISTEIN 200 MG TAB 3.00 CAPSULE (3 x sehari @ 1 KAPSUL )
+R/ ASPILET TAB 1.00 TABLET (1 x sehari @ 1 TABLET )
+R/ URSODEOXYCHOLIC ACID 2.00 CAPSULE (2 x sehari @ 1 KAPSUL )
+R/ CLOPIDOGREL TAB 75 MG 1.00 TABLET (1 x sehari @ 1 TABLET )
+R/ ENOXRIN 6000 IU 2.00 PREFILLED SYRINGE (Per 12 jam @ 1 PREFILLED SYRINGE )
+R/ SPIRONOLACTONE 25 MG TAB 1.00 TABLET (1 x sehari @ 1 TABLET )
+R/ ATORVASTATIN 20 MG TABLET 1.00 TABLET (1 x sehari @ 1 TABLET )
+R/ CEFTRIAXONE 1 GR INJ 2.00 VIAL (Per 12 jam @ 1 VIAL 18.06)
+R/ SPUIT 5 CC X 22 G 2.00 PIECES (Aturan Pakai Diketahui @ 1 PIECES )
+R/ AQUA PRO INJ 20 ML 1.00 VIAL (Aturan Pakai Diketahui @ 1 VIAL )
+R/ PARACETAMOL TABLET 500 MG 3.00 TABLET (3 x sehari @ 1 TABLET )
+R/ CURCUMA 200 MG TAB 1.00 TABLET (1 x sehari @ 1 TABLET )
+R/ RANITIDIN 25 MG/2 ML INJ 2.00 AMPUL (Per 12 jam @ 1 AMPUL 12.24)
+R/ ONDANSETRON 8 MG/4 ML INJ 3.00 AMPUL (Per 8 jam @ 1 AMPUL 12.20.04)
+R/ KETOROLAC 30 MG/ML INJ 3.00 AMPUL (Per 8 jam @ 1 AMPUL 12.20.04)
+R/ SCOPMA TAB 3.00 TABLET (3 x sehari @ 1 TABLET )
+R/ SPUIT 3 CC X 23 G 8.00 PIECES (Aturan Pakai Diketahui @ 1 PIECES )
+R/ FUROSEMID TABLET 40 MG 1.00 TABLET (1 x sehari @ 1 TABLET )
+
+
+
+	15/10/2026 10:00	dr. Ade Baswin Sp.PD FINASIM	Imel Agustika, S.Kep., Ns	NRS	REG/IP/261013-0044	KENANGA	 	SOAP	 
+ 	
+
+
+	
+S:	pasien mengatakan nyeri perut
+O:	pasien tampak meringis kesakitan skala nyeri 3
+A:	Nyeri Akut
+P:	Manajemen Nyeri
+1.Observasi
+nyeri.
+2.Terapeutik
+Berikan teknik nonfarmakologis untuk mengurangi rasa nyeri(misal.
+3.Edukasi
+Jelaskan penyebab, periode, dan pemicu nyeri.
+4.Kolaborasi
+Kolaborasi pemberian analgetik, jika perlu.
+Submit By:	imel
+Receive By:	wilda
+
+	15/10/2026 08:38	dr. Muhammad Subkhan Sp.JP	dr. Muhammad Subkhan Sp.JP	DTR	REG/IP/261013-0044	KENANGA	 	SOAP	 
+ 	
+
+
+
+
+	
+S:	NYeri dada membaik
+Batuk sesekali
+O:	Cor: S1> S2, murmur (-), gallop (-)
+A:	UAP
+P:	CPG 1X75
+Aspilet 1x80 mg
+SC Enoxrin 60 mg/12jam
+Spironolakton 1x20 mg
+Atorvastatin 1x20 mg
+NKR 2X2,5mg
++ Furosemid 1x40 mg
+I:	[ Presc No: RSI/261015-0137 ]
+R/ FUROSEMID TABLET 40 MG 1.00 TABLET (1 x sehari @ 1 TABLET )
+
+
+
+	15/10/2026 08:00	 	Rose Oktaviani Sianipar, S.Kep,Ns	NRS	REG/IP/261013-0044	KENANGA	 	Notes	 
+ 	
+
+
+	
+02.00 Roundbed keruangan pasien
+04.00 Memantau keadaan umum pasien
+05.00 Mengganti laken dan menawarkan air hangat untuk lap pasien
+06.00 Mengukur TTV
+07.00 Roundbed keruangan pasien
+08.00 Handover dengan perawat dinas pagi
+Respond:	TD-N-S-P-SPO2  | 
+
+	15/10/2026 03:00	 	Rose Oktaviani Sianipar, S.Kep,Ns	NRS	REG/IP/261013-0044	KENANGA	 	Notes	 
+ 	
+
+
+	
+NEWS
+Respond:	Pernafasan 20x/mnt, Saturasi oksigen 98 %, Penggunaan alat bantu 02 tidak terpasang o2, Suhu 36.5C, Denyut Jantung 80x/mnt, Tekanan darah Sistolik 120mmHg, Tingkat Kesadaran alert/awake (sadar)  | 
+
+	14/10/2026 23:00	 	Rose Oktaviani Sianipar, S.Kep,Ns	NRS	REG/IP/261013-0044	KENANGA	 	Notes	 
+ 	
+
+
+	
+20.00 handover dinas sore dengan dinas malam
+20.30 keliling keruangan pasien
+23.00 roundbed keruangan pasien
+
+	14/10/2026 22:00	 	Rose Oktaviani Sianipar, S.Kep,Ns	NRS	REG/IP/261013-0044	KENANGA	 	SOAP	 
+ 	
+
+
+	
+S:	pasien mengatakan nyeri perut
+
+O:	pasien tampak meringis kesakitan skala nyeri 3
+
+A:	Nyeri Akut
+
+P:	Manajemen Nyeri
+1.Observasi
+nyeri.
+2.Terapeutik
+Berikan teknik nonfarmakologis untuk mengurangi rasa nyeri(misal.
+3.Edukasi
+Jelaskan penyebab, periode, dan pemicu nyeri.
+4.Kolaborasi
+Kolaborasi pemberian analgetik, jika perlu.
+Submit By:	rose
+Receive By:	imel
+
+	14/10/2026 20:00	 	Wilda Octavina Simbolon, A.Md.Keb	NRS	REG/IP/261013-0044	KENANGA	 	Notes	 
+ 	
+
+
+	
+14.00 handover dinas pagi dengan dinas sore
+14.30 keliling keruangan pasien
+16.00 roundbed keruangan pasien
+17.00 mengukur tanda tanda vital pasien
+19.00 roundbed keruangan pasien
+20.00 handover dinas sore dengan dinas malam
+Respond:	TD-N-S-P-SPO2  | 
+
+	14/10/2026 15:43	 	Jesica Try Haryati Butar-Butar, S.Farm, Apt	FAR	REG/IP/261013-0044	KENANGA	 	SOAP	 
+ 	
+
+
+	
+S:	pasien mengatakan nyeri perut
+O:	pasien tampak meringis kesakitan
+A:	Tidak ada kontra-indikasi dan alergi obat
+Pemberian obat sudah sesuai indikasi
+Tidak ada efek samping obat yang terjadi
+
+P:	Lanjutkan terapi sesuai dengan rekomendasi dari dokter
+
+	14/10/2026 15:00	 	Wilda Octavina Simbolon, A.Md.Keb	NRS	REG/IP/261013-0044	KENANGA	 	Notes	 
+ 	
+
+
+	
+NEWS
+Respond:	Pernafasan 20x/mnt, Saturasi oksigen 99 %, Penggunaan alat bantu 02 tidak terpasang o2, Suhu 36.6C, Denyut Jantung 88x/mnt, Tekanan darah Sistolik 127mmHg, Tingkat Kesadaran alert/awake (sadar)  | 
+
+	14/10/2026 14:49	dr. Ade Baswin Sp.PD FINASIM	Wilda Octavina Simbolon, A.Md.Keb	NRS	REG/IP/261013-0044	KENANGA	 	SOAP	 
+ 	
+
+
+	
+S:	pasien mengatakan nyeri perut
+O:	pasien tampak meringis kesakitan skala nyeri 6
+A:	Nyeri Akut
+P:	Manajemen Nyeri
+1.Observasi
+nyeri.
+2.Terapeutik
+Berikan teknik nonfarmakologis untuk mengurangi rasa nyeri(misal.
+3.Edukasi
+Jelaskan penyebab, periode, dan pemicu nyeri.
+4.Kolaborasi
+Kolaborasi pemberian analgetik, jika perlu.
+Submit By:	wilda
+Receive By:	rose
+
+	14/10/2026 14:00	 	Imel Agustika, S.Kep., Ns	NRS	REG/IP/261013-0044	KENANGA	 	Notes	 
+ 	
+
+
+	
+08.00 handover dinas malam dengan dinas pagi
+08.30 keliling keruangan pasien
+08.36 mnedampingi dr. Muhammad Subkhan Sp.JP visit
+10.00 roundbed keruangan pasien
+12.00 mengukur tanda tanda vital pasien
+12.59 mendampingi dr. Ade Baswin Sp.PD FINASIM visit
+13.00 roundbed keruangan pasien
+14.00 handover dinas pagi dengan dinas sore
+Respond:	TD-N-S-P-SPO2  | 
+
+	14/10/2026 12:59	dr. Ade Baswin Sp.PD FINASIM	dr. Ade Baswin Sp.PD FINASIM	DTR	REG/IP/261013-0044	KENANGA	 	SOAP	 
+ 	
+
+
+
+
+	
+S:	NYERI PERUT KANAN
+O:	TD 111/69 mmHg
+A:	ICD 10:
+01 - Main Diagnose: CHOLELITIASIS + FATTY LIVER + KISTA GINJAL KIRI + CYSTITIS + KISTA ADNEKSA + CAD
+
+P:	TERAPI LANJUT
+TAMBAH UDCA 2X250 MG
+SCOPMA 3X1
+
+CEK LFT DAN UR CR
+
+I:	[ Presc No: RSI/261014-0402 ]
+R/ OTSU - RL / KK 3.00 PLABOTT (Aturan Pakai Diketahui @ 1 PLABOTT )
+R/ NITROKAF RETARD KAPS 2.00 CAPSULE (2 x sehari @ 1 KAPSUL )
+R/ ACETYLSISTEIN 200 MG TAB 3.00 CAPSULE (3 x sehari @ 1 KAPSUL )
+R/ ASPILET TAB 1.00 TABLET (1 x sehari @ 1 TABLET )
+R/ URSODEOXYCHOLIC ACID 2.00 CAPSULE (2 x sehari @ 1 KAPSUL )
+R/ CLOPIDOGREL TAB 75 MG 1.00 TABLET (1 x sehari @ 1 TABLET )
+R/ ENOXRIN 6000 IU 2.00 PREFILLED SYRINGE (Per 12 jam @ 1 PREFILLED SYRINGE )
+R/ SPIRONOLACTONE 25 MG TAB 1.00 TABLET (1 x sehari @ 1 TABLET )
+R/ ATORVASTATIN 20 MG TABLET 1.00 TABLET (1 x sehari @ 1 TABLET )
+R/ CEFTRIAXONE 1 GR INJ 2.00 VIAL (Per 12 jam @ 1 VIAL 18.06)
+R/ SPUIT 5 CC X 22 G 2.00 PIECES (Aturan Pakai Diketahui @ 1 PIECES )
+R/ AQUA PRO INJ 20 ML 1.00 VIAL (Aturan Pakai Diketahui @ 1 VIAL )
+R/ PARACETAMOL TABLET 500 MG 3.00 TABLET (3 x sehari @ 1 TABLET )
+R/ CURCUMA 200 MG TAB 1.00 TABLET (1 x sehari @ 1 TABLET )
+R/ RANITIDIN 25 MG/2 ML INJ 2.00 AMPUL (Per 12 jam @ 1 AMPUL 12.24)
+R/ ONDANSETRON 8 MG/4 ML INJ 3.00 AMPUL (Per 8 jam @ 1 AMPUL 12.20.04)
+R/ KETOROLAC 30 MG/ML INJ 3.00 AMPUL (Per 8 jam @ 1 AMPUL 12.20.04)
+R/ SCOPMA TAB 3.00 TABLET (3 x sehari @ 1 TABLET )
+R/ SPUIT 3 CC X 23 G 8.00 PIECES (Aturan Pakai Diketahui @ 1 PIECES )
+
+[ Presc No: RSI/261014-0265 ]
+R/ URSODEOXYCHOLIC ACID 2.00 CAPSULE (2 x sehari @ 1 KAPSUL )
+R/ SCOPMA TAB 2.00 TABLET (3 x sehari @ 1 TABLET )
+
+[ Presc No: RSI/261014-0123 ]
+R/ ASPILET TAB 1.00 TABLET (1 x sehari @ 1 TABLET )
+
+
+
+	14/10/2026 10:00	dr. Ade Baswin Sp.PD FINASIM	Imel Agustika, S.Kep., Ns	NRS	REG/IP/261013-0044	KENANGA	 	SOAP	 
+ 	
+
+
+	
+S:	pasien mengatakan nyeri perut
+O:	pasien tampak meringis kesakitan skala nyeri 6
+A:	Nyeri Akut
+P:	Manajemen Nyeri
+1.Observasi
+nyeri.
+2.Terapeutik
+Berikan teknik nonfarmakologis untuk mengurangi rasa nyeri(misal.
+3.Edukasi
+Jelaskan penyebab, periode, dan pemicu nyeri.
+4.Kolaborasi
+Kolaborasi pemberian analgetik, jika perlu.
+Submit By:	imel
+Receive By:	wilda
+
+	14/10/2026 08:36	dr. Muhammad Subkhan Sp.JP	dr. Muhammad Subkhan Sp.JP	DTR	REG/IP/261013-0044	KENANGA	 	SOAP	 
+ 	
+
+
+
+
+	
+S:	NYeri dada (+)
+Riw PJK 2 minggu lalu dengan keluhan serupa
+Sesak nafas (+)
+O:	Cor: S1> S2, murmur (-), gallop (-)
+A:	UAP
+P:	CPG 1X75
+Aspilet 1x80 mg
+SC Enoxrin 60 mg/12jam
+Spironolakton 1x20 mg
+Atorvastatin 1x20 mg
+NKR 2X2,5mg
+
+
+	14/10/2026 08:00	 	Putri M. Marpaung, A.Md. Kep	NRS	REG/IP/261013-0044	KENANGA	 	Notes	 
+ 	
+
+
+	
+02.00 Roundbed keruangan pasien
+04.00 Memantau keadaan umum pasien
+05.00 Mengganti laken dan menawarkan air hangat untuk lap pasien
+06.00 Mengukur TTV
+07.00 Roundbed keruangan pasien
+08.00 Handover dengan perawat dinas pagi
+
+Respond:	TD-N-S-P-SPO2  | 
+
+	14/10/2026 03:00	 	Putri M. Marpaung, A.Md. Kep	NRS	REG/IP/261013-0044	KENANGA	 	Notes	 
+ 	
+
+
+	
+NEWS
+Respond:	National Early Warning Score  | 
+
+	13/10/2026 23:00	 	Putri M. Marpaung, A.Md. Kep	NRS	REG/IP/261013-0044	KENANGA	 	Notes	 
+ 	
+
+
+	
+20.00 handover dinas sore dengan dinas malam
+20.30 keliling keruangan pasien
+23.00 roundbed keruangan pasien
+
+	13/10/2026 22:00	dr. Ade Baswin Sp.PD FINASIM	Putri M. Marpaung, A.Md. Kep	NRS	REG/IP/261013-0044	KENANGA	 	SOAP	 
+ 	
+
+
+	
+S:	pasien mengatakan nyeri perut
+O:	pasien tampak meringis kesakitan skala nyeri 8
+A:	Nyeri Akut
+P:	Manajemen Nyeri
+1.Observasi
+nyeri.
+2.Terapeutik
+Berikan teknik nonfarmakologis untuk mengurangi rasa nyeri(misal.
+3.Edukasi
+Jelaskan penyebab, periode, dan pemicu nyeri.
+4.Kolaborasi
+Kolaborasi pemberian analgetik, jika perlu.
+Submit By:	putri
+Receive By:	imel
+
+	13/10/2026 17:04	dr. Muhammad Subkhan Sp.JP	dr. Martin Sihombing	DTR	REG/IP/261013-0044	KENANGA	 	SOAP	 
+ 	
+
+
+
+
+	
+S:	pasien dengan keluhan nyeri dibagian perut kanan dan megalami mual +, muntah + 5kali hari ini. sblmnya px riwayat konsumsi obat jantung, tetapi obatnya tidak dibawa
+
+O:	GCS E4M6V5
+TD: 128/80 mmHg
+HR: 78x/i
+RR: 20x/i
+Temp: 36,6 °C
+A:	Kolik abdomen ec kolesistitis dd nefrolitiasis + UAP
+P:	Konsul dr. M. Subkhan, Sp.JP
+Adv dr. M Subkhan, SpJP
+- CPG 1X75 mg
+- SC ENOXRIN 60mg/12jam
+- Spironolakton 1x20 mg
+- Atorvastatin 1x20 mg
+- NKR 2X2,5 mg
+
+anjuran cek troponin
+
+	13/10/2026 17:00	 	Ranty Marina Silalahi, A.Md.Gz	NUT	REG/IP/261013-0044	KENANGA	 	ADIME	 
+ 	
+
+
+	
+A:	bb:80kg
+tb:150cm
+imt:36kg/m2
+status gizi: obesitas
+D:	Kelebihan berat badan / Overweight atau Obesitas) berkaitan dengan kebiasaan energi berlebih, ditandai dengan Indeks Massa Tubuh (IMT) atau lingkar perut di atas normal yang membebani kerja jantung.
+
+I:	pemberian terapi diet rendah lemak dalam bentuk ml
+
+M:	nyeri perut(+)
+mual muntah(+)
+lemas(+)
+E:	pemberian terapi diet diteruskan
+
+
+	13/10/2026 16:54	dr. Martin Sihombing	dr. Martin Sihombing	DTR	REG/IP/261013-0044	 	 	CON	 
+ 	
+
+
+	
+Consult to : dr. Muhammad Subkhan Sp.JP
+Type : Konsultasi / tindakan masalah medik saat ini
+Notes :
+ 	KOLIK ABDOMEN EC SUSP CHOLECYSTITIS DD NEFROLITIASIS + CAD
+Action / Examination / Treatment :
+ 	Keadaan Umum: Sakit Sedang
+Kesadaran: Composmentis GCS: E: 4 M: 6 V: 5
+Skala Nyeri: (8) Sangat mengganggu
+Pemeriksaan Fisik:
+
+Abdomen: Abnormal: NT RUQ
+
+
+Answer :
+ 	baik
+
+	13/10/2026 16:34	dr. Ade Baswin Sp.PD FINASIM	dr. Ade Baswin Sp.PD FINASIM	DTR	REG/IP/261013-0044	KENANGA	Internal Disease Inpatient Medical Assessment	SOAP	 
+ 	
+
+
+
+
+	
+S:	Keluhan utama:
+nyeri perut kanan atas, nyeri dada
+
+Riwayat penyakit skrg:
+Pasien datang ke IGD dengan keluhan nyeri perut kanan atas sejak 1 minggu yang lalu. Nyeri perut menembus ke punggung belakang dan bahu memberat setelah pasien makan berminyak. keluhan disertai keringat dingin. keluhan disertai dengan mual dan muntah muntah > 5 kali sejak 2 hari smrs. Nyeri dada dirasakan hilang timbul disertai sesak nafas. nyeri dirasakan saat beraktivitas. Muntah berisi makanan, tidak ada lendir darah. Pasien juga saat ini lemas, tidak bisa makan karena setiap makan pasien muntah. Keluhan disertai dengan demam hilang timbul, nyeri kepala dan sulit berjalan karena lemas. Pasien riwayat jantung, rutin konsumsi obat tetapi pasien tidak membawa obat rutinnya.
+
+O:	Keadaan Umum: Sakit Sedang
+Kesadaran: Composmentis GCS: E: 4 M: 6 V: 5
+Skala Nyeri: (8) Sangat mengganggu
+Pemeriksaan Fisik:
+
+Abdomen: Abnormal: NT RUQ
+
+
+A:	ICD 10:
+01 - Main Diagnose: KOLIK ABDOMEN EC SUSP CHOLECYSTITIS DD NEFROLITIASIS + CAD
+
+P:	
+IVFD ASERING 20 TPM
+IV.CEFTRIAXON 1G/12 JAM
+IV.RANITIDIN 1AMP/12 JAM
+IV.ONDANSETRON 1AMP/8 JAM
+PCT 3X500 MG
+SUCRALFAT SYR 3X10 CC
+CURCUMA 1X1
+NAC 3X1
+
+RO THORAX PA
+USG ABDOMEN UPPER LOWER BESOK
+KONSUL SpJP --> CAD
+
+
+
+[ Presc No: RSI/261013-0629 ]
+R/ CLOPIDOGREL TAB 75 MG 1.00 TABLET (1 x sehari @ 1 TABLET )
+R/ ENOXRIN 6000 IU 2.00 PREFILLED SYRINGE (Per 12 jam @ 1 PREFILLED SYRINGE )
+R/ SPIRONOLACTONE 25 MG TAB 1.00 TABLET (1 x sehari @ 1 TABLET )
+R/ ATORVASTATIN 20 MG TABLET 1.00 TABLET (1 x sehari @ 1 TABLET )
+R/ NITROKAF RETARD KAPS 2.00 CAPSULE (2 x sehari @ 1 KAPSUL )
+
+[ Presc No: RSI/261013-0628 ]
+R/ CLOPIDOGREL TAB 75 MG 1.00 TABLET (1 x sehari @ 1 TABLET )
+R/ ENOXRIN 6000 IU 2.00 PREFILLED SYRINGE (Per 12 jam @ 1 PREFILLED SYRINGE )
+R/ SPIRONOLACTONE 25 MG TAB 1.00 TABLET (1 x sehari @ 1 TABLET )
+R/ ATORVASTATIN 20 MG TABLET 1.00 TABLET (1 x sehari @ 1 TABLET )
+R/ NITROKAF RETARD KAPS 2.00 CAPSULE (2 x sehari @ 1 KAPSUL )
+
+[ Presc No: RSI/261013-0991 ]
+R/ CEFTRIAXONE 1 GR INJ 2.00 VIAL (Per 12 jam @ 1 VIAL 18.06)
+R/ PARACETAMOL TABLET 500 MG 3.00 TABLET (Per 8 jam @ 1 TABLET 12.20.04)
+R/ CURCUMA 200 MG TAB 1.00 TABLET (1 x sehari @ 1 TABLET )
+R/ RANITIDIN HCL 50 MG/ 2 ML INJ 2.00 AMPUL (Per 12 jam @ 1 AMPUL )
+R/ ONDANSETRON INJ 4 MG/ 2 ML 3.00 AMPUL (Per 8 jam @ 1 AMPUL 1220 04)
+R/ KETOROLAC 30 MG/ML INJ 3.00 AMPUL (Per 8 jam @ 1 AMPUL 1220 04)
+R/ OTSU - RL / KK 3.00 PLABOTT (Aturan Pakai Diketahui @ 1 PLABOTT )
+R/ SPUIT 3 CC X 23 G 8.00 PIECES (Aturan Pakai Diketahui @ 1 PIECES )
+R/ SPUIT 5 CC X 22 G 2.00 PIECES (Aturan Pakai Diketahui @ 1 PIECES )
+R/ Aqua Pro Inj 25ML 1.00 VIAL (Aturan Pakai Diketahui @ 1 VIAL )
+
+[ Presc No: RSI/261013-0585 ]
+R/ CEFTRIAXONE 1 GR INJ 2.00 VIAL (Per 12 jam @ 1 VIAL 18.06)
+R/ PARACETAMOL TABLET 500 MG 2.00 TABLET (Per 8 jam @ 1 TABLET 12.20.04)
+R/ SUCRALFATE SUSP 100 ML 1.00 BOTOL (Per 8 jam @ 1 BOTOL 12.20.04)
+R/ CURCUMA 200 MG TAB 1.00 TABLET (1 x sehari @ 1 TABLET )
+R/ RANITIDIN HCL 50 MG/ 2 ML INJ 1.00 AMPUL (Per 12 jam @ 1 AMPUL )
+R/ ONDANSETRON INJ 4 MG/ 2 ML 2.00 AMPUL (Per 8 jam @ 1 AMPUL 20 04)
+R/ KETOROLAC 30 MG/ML INJ 2.00 AMPUL (Per 8 jam @ 1 AMPUL 20 04)
+R/ OTSU - RL / KK 2.00 PLABOTT (Aturan Pakai Diketahui @ 1 PLABOTT )
+R/ SPUIT 3 CC X 23 G 3.00 PIECES (Aturan Pakai Diketahui @ 1 PIECES )
+R/ SPUIT 5 CC X 22 G 2.00 PIECES (Aturan Pakai Diketahui @ 1 PIECES )
+R/ Aqua Pro Inj 25ML 1.00 VIAL (Aturan Pakai Diketahui @ 1 VIAL )
+
+
+
+
+
+	13/10/2026 16:30	 	Rose Oktaviani Sianipar, S.Kep,Ns	NRS	REG/IP/261013-0044	KENANGA	 	Notes	 
+ 	
+
+
+	
+15.00 hand over dengan perawat IGD
+16.00 roundbed keruangan pasien
+16.34 mendampingi dr. Ade Baswin Sp.PD FINASIM visite
+17.00 mengukur tanda tanda vital pasien
+17.04 mendampingi dr. Muhammad Subkhan Sp.JP visite
+19.00 roundbed keruangan pasien
+20.00 handover dinas sore dengan dinas malam
+Respond:	TD-N-S-P-SPO2  | 
+
+	13/10/2026 15:00	 	Rose Oktaviani Sianipar, S.Kep,Ns	NRS	REG/IP/261013-0044	KENANGA	 	SOAP	 
+ 	
+
+
+	
+S:	pasien mengatakan nyeri perut
+O:	pasien tampak meringis kesakitan skala nyeri 8
+A:	Nyeri Akut
+P:	Manajemen Nyeri
+1.Observasi
+nyeri.
+2.Terapeutik
+Berikan teknik nonfarmakologis untuk mengurangi rasa nyeri(misal.
+3.Edukasi
+Jelaskan penyebab, periode, dan pemicu nyeri.
+4.Kolaborasi
+Kolaborasi pemberian analgetik, jika perlu.
+Submit By:	rose
+Receive By:	putri
+
+	13/10/2026 15:00	 	Rose Oktaviani Sianipar, S.Kep,Ns	NRS	REG/IP/261013-0044	KENANGA	 	Notes	 
+ 	
+
+
+	
+NEWS
+Respond:	Pernafasan 20x/mnt, Saturasi oksigen 98 %, Penggunaan alat bantu 02 tidak terpasang o2, Suhu 36.5C, Denyut Jantung 80x/mnt, Tekanan darah Sistolik 120mmHg, Tingkat Kesadaran alert/awake (sadar)  | 
+
+	13/10/2026 11:04	 	dr. Martin Sihombing	DTR	REG/EM/261013-0043	IGD	 	SOAP	 
+ 	
+
+
+
+
+	
+S:	nyeri perut kanan atas
+O:	TD : 130/90 mmHg
+HR : 85 x / menit
+RR : 26 x / menit
+S : 37.5 °C
+SpO2 : 98%
+A:	Colic abdomen ec susp cholelithiasis dd cholesisititis dengan vomitus + obs dyspneu ec?
+P:	terapi lanjut
+
+	13/10/2026 11:00	 	Lia Fransiska Z	NRS	REG/EM/261013-0043	IGD	 	SOAP	 
+ 	
+
+
+	
+S:	pasien mengatakan nyeri perut kanan atas, menembus ke belakang
+O:	pasien tampak lemas,
+meringis kesakitan,
+nrs: 8
+A:	Nyeri b.d spasme otot dan jaringan
+P:	Monitor tanda-tanda vital
+Berikan cairan intravena
+Berikan posisi semifowler
+Atasi nyeri, delegatif pemberian analgetik, relaksasi
+
+Submit By:	yosin
+Receive By:	rose
+
+	13/10/2026 10:04	dr. Martin Sihombing	dr. Martin Sihombing	DTR	REG/EM/261013-0043	IGD	Emergency Unit Assessment	SOAP	 
+ 	
+
+
+
+
+	
+S:	Keluhan utama:
+nyeri perut kanan atas, nyeri dada
+
+Riwayat penyakit skrg:
+Pasien datang ke IGD dengan keluhan nyeri perut kanan atas sejak 1 minggu yang lalu. Nyeri perut menembus ke punggung belakang dan bahu memberat setelah pasien makan berminyak. keluhan disertai keringat dingin. keluhan disertai dengan mual dan muntah muntah > 5 kali sejak 2 hari smrs. Nyeri dada dirasakan hilang timbul disertai sesak nafas. nyeri dirasakan saat beraktivitas. Muntah berisi makanan, tidak ada lendir darah. Pasien juga saat ini lemas, tidak bisa makan karena setiap makan pasien muntah. Keluhan disertai dengan demam hilang timbul, nyeri kepala dan sulit berjalan karena lemas. Pasien riwayat jantung, rutin konsumsi obat tetapi pasien tidak membawa obat rutinnya.
+
+Riwayat Job :
+-
+
+O:	PRIMARY SURVEY:
+
+Jalan Nafas:
+Bebas | Kesimpulan: Aman |
+Pernafasan:
+Pernapasan: [1] Perubahan pola pernafasan Tidak teratur lebih cepat dari biasanya, tersedak, nafas tertahan | Gerakan Dada: Simetris | Tipe Pernapasan: Takipneu | Kesimpulan: Mengancam Jiwa |
+Sirkulasi:
+Nadi: Lemah | Kulit / Mukosa: Berkeringat | Akral: Dingin | CRT: < 3 detik | Kesimpulan: Mengancam Jiwa |
+Disabilitas:
+Pupil: Isokor | Diameter: 3mm/3mm | Reflek cahaya: +/+ | Meningeal signs: - | Lateralisasi: Tidak ada |
+
+SECONDARY SURVEY:
+Keadaan Umum: Sakit Sedang
+Kesadaran: Composmentis GCS: E: 4 M: 6 V: 5
+Skala Nyeri: (8) Sangat mengganggu
+Kepala dan Leher:
+Konjungtiva: Pink | Sklera: Tidak Ikterik | Bibir / Lidah: Tidak Sianosis | Mukosa: Kering | Mata: Normal | Kondisi Kepala: Normal | Deviasi Trakea: Tidak Ada | JVP: Tidak | LNN: Tidak | Tiroid: Tidak | Kondisi Leher: normal |
+Thorax:
+Thorax: simetris | Jantung: BJ 1/2 reguler | Paru: vesikuler |
+Abdomen & Pelvis:
+Abdomen: soepel, nt +, murphy sign + | Punggung & Pinggang: normal | Ekstremitas: akral dingin | Genitalia: Normal |
+
+A:	Colic abdomen ec susp cholelithiasis dd cholesisititis dengan vomitus + obs dyspneu ec?
+P:	
+IVFD 20 tpm
+Inj Ranitidin 1amp/iv/12 jam
+Inj. Ondansentron 1amp/iv/12 jam
+Inj. Ketorolac 1 amp ekstra igd
+
+Konsul dr. Ade, Sp.PD
+RI
+Diet ML
+USG Abdomen
+
+[ Presc No: RSO/261013-0335 ]
+R/ INFUSION SET MAKRO 1.00 PIECES (Aturan Pakai Diketahui @ 1 PIECES )
+R/ OTSU - RL / KK 1.00 PLABOTT (Aturan Pakai Diketahui @ 1 PLABOTT )
+R/ IV CHATETER NO. 20 G 1.00 PIECES (Aturan Pakai Diketahui @ 1 PIECES )
+R/ KETOROLAC 30 MG/ML INJ 1.00 AMPUL (Per 12 jam @ 1 AMPUL )
+R/ RANITIDIN HCL 50 MG/ 2 ML INJ 1.00 AMPUL (Per 12 jam @ 1 AMPUL )
+R/ ONDANSETRON INJ 4 MG/ 2 ML 1.00 AMPUL (Per 12 jam @ 1 AMPUL )
+R/ SPUIT 3 CC X 23 G 3.00 PIECES (Aturan Pakai Diketahui @ 1 PIECES )
+R/ NASAL CANULLA ADULT 1.00 PIECES (Aturan Pakai Diketahui @ 1 PIECES )
+
+
+
+
+
+	13/10/2026 09:59	 	dr. Martin Sihombing	DTR	REG/EM/261013-0043	IGD	 	Notes	 
+ 	
+
+
+	
+TTV (TD-N-S-P-SPO2)
+Respond:	Tekanan Darah - Sistole 132 mmHg, Tekanan Darah - Diastole 80 mmHg, Nadi 104 x/mnt, Suhu 37.0 °C, Pernapasan 30 x/mnt, SpO2 93 %, Berat Badan 80kg, Tinggi Badan 150cm  | 

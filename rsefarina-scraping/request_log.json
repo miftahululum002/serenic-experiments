@@ -1,0 +1,1142 @@
+[
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Module/RADT/EmrIp/EmrIpDetail.aspx?rt=IPR&regno=REG/IP/261013-0044&fregno=REG/EM/261013-0043&parid=MD-00268&unit=D22&room=2203&patid=P20261013-0029",
+    "resourceType": "document",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Login/Login.aspx?RetunUrl=/Live2/Module/RADT/EmrIp/EmrIpDetail.aspx?rt=IPR&regno=REG/IP/261013-0044&fregno=REG/EM/261013-0043&parid=MD-00268&unit=D22&room=2203&patid=P20261013-0029",
+    "resourceType": "document",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/App_Themes/WebBlue/BigButton.css",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/App_Themes/WebBlue/Stylesheet.css",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=PzzZ_XQxNJHdGQ6OfuUGeopXHX7-8ri3s-Rk-NFsqYh-7m0vgwe1o7OdQ-LdMCknWCaHURCODUb088SFAYMIm4giOu3k4QDWA0fNiFECbWWBp_FcGBzUAnfe8FiKJ5jMLGuPcAECHszs_HKmfrUPhA2&t=639024425353033789",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=WThSlKbkEj1vWh-9__grtUlpQXPAn7cROKuZzQnenE5ZLtp5ZQ19OXOzNd6PZf2H71l5bN6NiHu4uKOLKmOAZo6EPB5XbLCjksCwzUQyzXCPf0Eq17S6U98MDkpup_aR9gP19_O7OLnJXVA9oZTUDNFYqyG_9v3LDNNQTSD-rMI1&t=639024425351219773",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=urCACUaUZeT6oPoIZXShbrBSYPBOU7OUMp7pe6cUHsKtNDJwX3Svsnv4zBWOoLPMpfL5eSNYM3KAuSLO6JK7TzHN8TWsOMV3c-JKbREZjA1Clwxp9mGr4c0ukx1ySe-60&t=639024425353033789",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=OIzuRciyMfgiRjjlh2ExWJ3p4G_Bo9mYVwV6k_lGW11VJG9XzZKvgvk_EEISzS0fRIH_LCNTa8DFPIVmWhHJmkjF3-eT4Vhc0Wg_HNBYtvhJyw66ChryeSfHiq7W8hmG-fiSGN064Le0G7THQq2E17nuf0clkU9JvUZCSXg13Sg1&t=639024425351219773",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=bZQu9IErOfGRZdP9C3BB5XEeUwyTAXlvOlv5NJpdud3CNaJTzNfNjol2fpDt1nUnWh9bJnDM2sy8xnNTfjPCb17h1njNZcpHmkXN7_19j9yiyg_dNXkzOZV1xRwIQsDA0&t=639024425353033789",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=drHqHB6EMtPSWk2GcEia0hsDhyI6DjqR9Snc59n9tcO0HHJVVuOmh9-MoSnWfawsvNIMhypysR8FdCJmy98NSqICVG0SoriyWo3QDHQ6GmO5-fk1f_-nLiOSqWRZi3rHFy1qJPeSP0AjNnKmmT-s2RJcqe6hT0_sYRLm_iSmDyE1&t=639024425351219773",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=JObenGPrApriO3OrROuzzrzEqLydVGPczXwVmeMYi2HzrCA5p3wg0gbxjdceWYjEjnkPaHAq2YHDzNupO_fhq7drMAgiKefxuIpGPgBwm_8c0-mQrRzBZc5KVPCLz-Mp0&t=639024425353033789",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=c3kIRWxdzZbR6lWFNSrl0SyhxNvUSmqDhpnq-yPoEdd2FbSUyrAzns4ni5nubDn-_OZdh3pnwhqZIvSz_Vq3bACuUVnjVr_tn167PY63N7_fXLLeqNMAxXrPzuA6Cm0EZZKgmgsKKmyy-rW-U-PmBaPecONORard5kLb_zW7veA1&t=639024425351219773",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBfJnmc0LgguYpZ_IpsQhBBljOdJpgbD8uowExiQcj8G2DTT0tN0tsu7CLUXuoIFrg2&t=637729872413207958",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/ScriptResource.axd?d=nv7asgRUU0tRmHNR2D6t1DLop5vjWxjv1bfV1K3CJasvd_Gj6ScKBtxToyJkTOzr7h_X9q78tqVHZSB3yd5weATP8KOSb6-SXaTA8tEpPRM-dxmmPq-Vq4HtBjsi3D2nwIdxAKuuRy09YAHRdJqpuQ2&t=5f5a0597",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Telerik.Web.UI.WebResource.axd?_TSM_HiddenField_=ctl00_fw_RadScriptManager_TSM&compress=1&_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c+Version%3d4.0.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3aen-US%3a14a9c2eb-bf69-4b0e-9aa0-eb85640f0e43%3aea597d4b%3ab25378d2%3bTelerik.Web.UI%2c+Version%3d2021.1.224.45%2c+Culture%3dneutral%2c+PublicKeyToken%3d121fae78165ba3d4%3aen-US%3a668347d1-93a2-4485-86a0-60eda4ba4fe2%3a4877f69a%3a16e4e7cd%3a33715776%3a86526ba7%3a874f8ea2%3ab7778d6c%3af7645509%3a24ee1bba%3a6d43f6d9",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/JavaScript/Common/Core.js",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/JavaScript/Common/jQuery.js",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/JavaScript/Common/jQueryPlugins.js",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/JavaScript/Common/Navigation/NavigationScripts.js",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/JavaScript/Common/Navigation/OverlayScript.js",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/JavaScript/Common/AnimationFramework/AnimationFramework.js",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/JavaScript/Menu/RadMenuScripts.js",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/JavaScript/Menu/MenuItem/RadMenuItem.js",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/JavaScript/Menu/MenuItem/MobileMenuItem.js",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/JavaScript/Menu/Views/ClassicView.js",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/JavaScript/Menu/Views/LiteView.js",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/JavaScript/Ajax/Ajax.js",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/JavaScript/FormDecorator/RadFormDecorator.js",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/JavaScript/Common/Popup/PopupScripts.js",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=JoBkLzP19aTuxbWOhHobYh5Cp8_Tkt3MOW2KsVMJvAQFgsmmrYWscff-4O_v-V7tlQESrvRrc685-ibvc1EJAQ2&t=637729872413207958",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Images/LogoSCI.jpg",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Images/BSre_bssn.jpg",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Images/keys.gif",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Images/Attention.png",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=plZSgFpQ3iLr7C5gZ7elzQ0-mTvFF7h9jBiOq2yLytxFISm-YUL0QcvAwCOptAoMOaSmFm-m1HrA-HqKMtJLhtOgBWvr_344ei8nsjgx6h3VdpNk9osopxOltM0qjI7neuOyIOTtiMnJCzjOxOLlywvoPHEjEnGA-XwNwY7HI9Y1&t=639024425351219773",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Images/reveal-password.png",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/favicon.ico",
+    "resourceType": "other",
+    "postData": null
+  },
+  {
+    "method": "POST",
+    "url": "http://36.64.110.114:8083/Live2/Login/Login.aspx?RetunUrl=%2fLive2%2fModule%2fRADT%2fEmrIp%2fEmrIpDetail.aspx%3frt%3dIPR&regno=REG%2fIP%2f261013-0044&fregno=REG%2fEM%2f261013-0043&parid=MD-00268&unit=D22&room=2203&patid=P20261013-0029",
+    "resourceType": "document",
+    "postData": "__LASTFOCUS=&ctl00_fw_RadScriptManager_TSM=%3B%3BSystem.Web.Extensions%2C+Version%3D4.0.0.0%2C+Culture%3Dneutral%2C+PublicKeyToken%3D31bf3856ad364e35%3Aen-US%3A14a9c2eb-bf69-4b0e-9aa0-eb85640f0e43%3Aea597d4b%3Ab25378d2%3BTelerik.Web.UI%2C+Version%3D2021.1.224.45%2C+Culture%3Dneutral%2C+PublicKeyToken%3D121fae78165ba3d4%3Aen-US%3A668347d1-93a2-4485-86a0-60eda4ba4fe2%3A4877f69a%3A16e4e7cd%3A33715776%3A86526ba7%3A874f8ea2%3Ab7778d6c%3Af7645509%3A24ee1bba%3A6d43f6d9&__EVENTTARGET=ctl00%24ContentPlaceHolder1%24btnLogin&__EVENTARGUMENT=&__VIEWSTATE=KXttfVkxrimUrmLSTb2Et%2BJYaN%2BDSRbwkfSkyT3sfyHMKZzke5%2BV1kKAxPRxKfJu32GgECk4NAdv%2Fmn%2BkHOHme%2BmRi63PnXRELQ4y09YG2L5eVp%2FffVuxobwIP0P3hgmS0NDI1c7FR6rmU6u%2BnGkWPaA01Agn2MvP6D7t8oc19%2FiRawHO1JS9UqRd%2BubsTYodj6tKx26z51E7Hp4QoFmkYGjBIMt96zHDEAcrecUIFptSku9EA7GYa%2FSQDzvIXNNmenQt0M7H7QtDCav2O9oTgen%2BefnzpASKHfl2ygcna9gFuHt0g1bLCSw7D9GgHSaCMszxJA1nPSUV4ljaCCx%2B2AEGr9NTWJNJgM6tGauF3iBd118IMdSUxgEcBSkIjf27RNMrzbQXgWrAw0pP6rMpfCvBzpzKKqpcFu9SSZv%2B%2B2cL7YGzOW7LJC%2FUUOqqtYwR7q4NcR9UN9exd1%2FlU0E3Vz6znQNrQjpJ3AK6rhAVE6M6QlLv7zo2PvpW5%2BTxkfMugp7XtmFXktuu53W%2BA96%2BK3Et88pJMSAIyjwYbNVVZEnESzhfhgNrifQJd%2FnvPpKt46%2FMvhMk5ItREyuhy5XXoFEhb%2Bd4Ks%2BIHUHHwpQdhWaMZpFQ09kVd4UyREza%2FIPvu97pgz2viFThk1VzQrye7kOWjFqNjpRIBT3KG%2BXlfDafgWvcmbftm%2F01YkFcyc5eLM1B9tz9iRljBVdlcg03zuXqY8d7yQmFeCSQbVgXDtlCmsQ4auZY66TIiCVCf5Wo6r2OG8jo0bFDWntk7IataA0IZ9HNQ3lmxT%2FlEayPHPkBbYcFqkEwDTFzelOBFjOjkqbdidIEgvoLbXhN4EvrmM1HLALyHifYuMIW07fnvyc2I8VLtLc8htnH0%2B6Trmio5xHYS3EzP18ByG%2BL3KyGjhZDjTUumqVV0%2BnUcWV1gPVrmWPCkJ%2FxWtKkdzOFpO%2F79eNCCMO3rdA7T%2F8G156pBRKsTDsW4iTWcHI%2FYRQJQIcT0Ix5OTZqayqkCs7sbByfu3mzmLZPftZjzkKIDwykN%2BIwybIcrjDYeKiuL4NQvkdNSZfyND6IuX4iSAthQKwvweYy9XQj7bFWUBtoeHawEPYuoVnO6y9XCUIeEHGk1tuvP87d2vjYz3SVLBjffTzezQ06ljYt0%2BN6H2EhIycNuJ0pgdkqSFj8q8QwlFpXeZM1MdKtx0bY9XKAij7PCi67XYoBgSNf48WG7NKf%2FAsXYmfgTulsqnn9OOjnc%2FKKBtZw3xTl4QH2MYIDx3TsHGQfX6WsC0C7yBhRMU8q%2Bpt0P50MAVxNsSZU84ZuFNk8VcI1QepWkXzTg%2ForJZWFIsiTGBHN7TEndEZYG4W%2BfHgtudSZv3SX402w9vbhELGCYGoF04fJm89cbZ1CrADpmOL7KJ419W4nG4QaX14r4pTJxEr6YAKC%2BzSsTEbsxa1df6QMh4LjTP6wOaadsm3miIip2J3KvLtq69BFIgEDL%2B2dTQ2AGdXILfrooKTQqjLJmU7Wo4TrdN6cwo6QdOcAgn7vnueEBsCVnGiqMtX4RIf9DuZRgZjNfWMxfymjYyhKW62E7oT%2Fvtze8BZ1HPH8w6d0Z6C8CIs0eBCzNq2h3mo7TYnygI2DVHLxkq%2FC%2FdYvCjyrD7yh2b24H6VA9hBo4YZ09PFw44PIqauBnYKYyzPJ1b40J6Ms3HHQ%2Fx9nCGt%2BrfgmTUEnOV1UHubBqKBqIQjCq6PKUuv5h3U2Vul6hsQJYJ7t14izMwNSNb6yVLZULXBavP%2F8agMYypj%2FArlsJiZIGZAjt%2Fqez2GmmBK%2Fkp6BJ1lYHPZWnIqoUFHYx94Imgj4kh8yYDPIDovRTZQaPvCtN%2FrxLMA9aXooQeYgMECKNE0cHTJLF8lIUCqCjRCDPFYB9W1kxN3krBIW9OlK%2FQBW77v2R5RQlHE6ZjQC8hHdi5mVtfn9ySBdeaBgGwUzLM92fSgXpNGr8mDigMIP%2B6QcJK595CBB9bYVaW2h4ioPINMZv6HIA1lUYAU9Gi0klEsiixdgCHrN6KJlDastNPc%2F41YLovwFui1Me7pvlGnOIMgQt%2BVNwUaaVvZM5hNY1DqPGY41yQj07CqlMePyH2K4t14RrgXUuNKN5y06203yT12fqMvrA%2BazMdPA8Otir%2BLMMvgXFW6NBCRl7YP9F%2FpG%2BbJNzmYrK36EzzAX0u72cmjYGIuwav4yHzNa0B0Eq1cVNaBFJ8Ab1IFEj0j0BmrXNH37FvNgG7Rc%2FlEOdNlfw%2FXDRYg38kdLrb9OFZumyo%2FsJIyYz4QoYSTtTMhLzKTAER633aC4868gQo0IwYJZaR1833Ob7qWImuXCOyfBSgmi8NyjPUyMMVIcm5ao7Pjje7ABmmxgrjWjyXUdRY8s1SCKL6A2yQDwRJ0RGwyMe29hMLHG6Mee6QSzIpTIn7jT6KQLTtXcZsYOazlYnrd6pEInTAvyJBr%2BOvyxliVNvc3XwwiIfIkIHru1joFEKFZCIRWeVbLBfB0oWEAqd1sQ4%2BA8vVp4SoDjGpARVJ08NP00zwwYckoBUMh0P%2FTPYM%2FiPsuuM8R%2Bf4suBvtZ5iXQ293kGrADH3a5F3IPvUnLV9GcrUwDc3pb6UPafHuJ5VARWgNfs6yZHZVF736684LbTd5LuNc62pK9vjwPimQWpYHKvU26JZe1fJ9mI59jJmk0FZ3c8Fmeaef6LbzPBWeOLxk22fQk9xlEBlUB516uxaV45FWVqTuA%2BYaJFWZXp9O9zxyEPR9%2Fe0VkS%2BeC3FY4A3XEUA0n9sf7yKioLQ%2FhwtzpWTd9bLtZ3gacvV6jkDmp51gfsGEiB60IXlXHu%2Fa8GFBgH23y5Ua2c0MNVdxd%2BlgmNma7kkNOwGxCEptKGg0T6QKsc4O3yUO2KRHluiM6TatZsVYWvA3AFQgZimzd4fNZ1ex9C%2B7bDiAUPCOdMk9diWRdzTsoq5jE%2F%2FoUGf3xHWRAvee2p8ibiqmHk09txleNOtjR7tkWKQgc1lyhXc8559fABhhuve4BATxThoX8%2BEI%2Ba%2BAFtqoyH5yPLrnH4tGhPxuZGaHpY%2BODrEq8hX5wFrn3nMabQdcPtTiqhbKmE6BsMwKBcWcm2UDyHApnqgxFd24FJs6LnXs7iBuCdxtueCPhqzhabK81EEuQvKNuzH2F7su0K%2BzSmZ2m4P2brCYe%2FwWabzurRXJrHuStZaDO1sxehfeVCozNFXlcKdu7mkX9%2FYP73CS5Dp4IDrDx3OYB%2FbpuABQyvdVUen1IzspJ6%2F94MEj4%2FqO2O6wegFMKouLGFfx1zhUjyi1RiPCHvsaz8Q%2Bl0YciRXNcHelhe9NxA2JAm95NzfkCx5YaHTGzz%2BcROsx5BO9z%2FFEAVt9UkJc87aEI5XO3HAQlsoAy7R7ugeWWH2tY%2BjPjbfLJjZIw%2BWwo6XEJ3pKCQx8xTddXZYmp1JfRHzmf3dk8juo%2B3L9aAmUYbFvjG7lEtUy0ytHxWHFWxVw8Z9Gwkw2dfblknMrunX73GoDroVCfYo9lJxRvQYI8ZhEDvk1qKQ5P0%2F9oDfx2%2BY7pjFSlRUpeeg8ZOosstfr9lbcT8APtiGkNyNN%2FvML8BbW5KfYDyYt2dybLig%2BtJr7TuBmkvin9mu3lR7utImqyZvUqzAjacVoqzlAhZUKpR3P82XgTAWR76y0LI1yNMIzP4GSMItYH1zfGAt5W%2B%2B3qgjJ8qZOMbtWgZgQEQ6CBP6H%2FEfc28YybkLWTTNOff7jAeJAawXkoCCSt0TEwy6PUFTFuHfaULICcuP4M59mobxFntcoF%2BlbBSiWD3GXZ6rNg3vEiszSJUaLUFktj3%2B28MNHcdndz6LgcDmVmQQh3hKYQRWRdtdmeNy8hBgZpzrtmqLdhoZwtK1hlnpBWTZezoapmgpfD%2FfDKiehSEHjW%2FJai7TPM6Pqj2KsbzWT58SRTQDczRrXRgQFDEG6cTVP2nZ8dO6sjF6Snx%2FcuhSE0StlDRNlA%2Bo03aNaNu6PXRbH%2BZqCC2R9AuMFn5WLbS9ga3A%2BuVRz5E%2BhEvJw6ugmBvfnWADwXeTVyglPNOOcn1pP2IQaa%2FHTcuK%2B4LKZduWvaNpLkstVT1bzyHEjmnWXyf2E8Sq%2FpAVXbsn2qKLnxnURNBIZhIlf2sZ5a1Qb9r5radtZA%2Bmj9HAdQaLxXkf140a8u8bfJSQW48UzkXGI3BT7NHqsHQohav4qhsXYYL1AcOoFiM3ZZsqsnPvOJaBkT7Mo5So0wayJI%2FpOrDw2aNRAp6TiRKtytdHAgluECgr5DilPwztY4ZO4sJC4wMxAb1PHn0g6jP3Idk3fLcP6i7ArdEdpwwUcfrytjYjKkquhjRZfd4OAmLBFC0GpwWmfC6IiDzLoZvC3QKqDKDLaBlg2DC3h8E5bWoGvfc2sQUn5ApOaxxYbbuwZ%2FSBIvghJwMd09uIQnciPwLEX9PmmYQyfKf49htQa%2B5qLL3JSDTYppQEz8JZF15apxNW3jPMJq00aepmcl%2F18EIjws%2FlR9h7V0DE60zE5dxUJpePem7bPFBvAb11IjzL%2Bk9OI8gCI80tUIIZWjih0DEWFvQ9%2FN0ULlU1leKN9gM3xfyLSuqSivr1jNGTfXpiJ2ueeXVGsRkt%2BskA8idq3qkETnoNaQ7%2Fh%2BZmWIpTcd60gWQ5L0JwXHsILD%2BxhRGrat1XZlPeAda%2B%2Brw4T0mIZDeVWaIkiIdXnf9%2F80ltdO%2Bm172EdZhZDoixwDmziblr3MAr3DWLcqJGJXuiJCHT9jzccV9sn8rn8H65ZzuNVBoVle11UqN6NpYUO%2BpXiBInYpidJlTHTNyGnmBRog49GWhvRJyYf0lURjyhsLMps3UNpLhSmD1iC%2FbF0OhTa1lKOPKuTdaLEoMkcQWYzbMcgDbsJCg%3D%3D&__VIEWSTATEGENERATOR=E7A5DF90&__EVENTVALIDATION=KaOJw5DpQAiAuqraSjuoyEHlrDuyDYc7NQH%2F5CmVcygazXR68RtrF%2FlLNjdl2JGL%2FHHNouD6GtAkFe6rr2IaMHo%2BEQCipAt0gnaxF7JAmIF3Ry4DuO9KurfHcD3k2f5XS5UlWjvLqVRLh7fT4khmsNlG9dyTtumXHJUh7nQBUSJC3j0N7odse10JDmyFujXRxEkZvEmlt5NwcT6%2FfA%2Ba7A%3D%3D&ctl00_fw_RadFormDecorator_ClientState=&ctl00%24fw_hdnPageID=932712&ctl00_ContentPlaceHolder1_fw_RadFormDecorator_ClientState=&ctl00%24ContentPlaceHolder1%24txtUserID=serenic&ctl00_ContentPlaceHolder1_txtUserID_ClientState=%7B%22enabled%22%3Atrue%2C%22emptyMessage%22%3A%22%22%2C%22validationText%22%3A%22serenic%22%2C%22valueAsString%22%3A%22serenic%22%2C%22lastSetTextBoxValue%22%3A%22serenic%22%7D&ctl00%24ContentPlaceHolder1%24txtPassword=3krlinc1P3nan3&ctl00_ContentPlaceHolder1_txtPassword_ClientState=%7B%22enabled%22%3Atrue%2C%22emptyMessage%22%3A%22%22%2C%22validationText%22%3A%223krlinc1P3nan3%22%2C%22valueAsString%22%3A%223krlinc1P3nan3%22%2C%22lastSetTextBoxValue%22%3A%223krlinc1P3nan3%22%7D&ctl00_ContentPlaceHolder1_btnLogin_ClientState=%7B%22text%22%3A%22Login%22%2C%22value%22%3A%22%22%2C%22checked%22%3Afalse%2C%22target%22%3A%22%22%2C%22navigateUrl%22%3A%22%22%2C%22commandName%22%3A%22%22%2C%22commandArgument%22%3A%22%22%2C%22autoPostBack%22%3Atrue%2C%22selectedToggleStateIndex%22%3A0%2C%22validationGroup%22%3A%22entry%22%2C%22readOnly%22%3Afalse%2C%22primary%22%3Afalse%2C%22enabled%22%3Atrue%7D"
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Default.aspx",
+    "resourceType": "document",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/content/toastr.css",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Bootstrap/plugins/fontawesome-free/css/all.min.css",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/App_Themes/WebBlue/BigButton.css",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/App_Themes/WebBlue/Stylesheet.css",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=urCACUaUZeT6oPoIZXShbrBSYPBOU7OUMp7pe6cUHsKtNDJwX3Svsnv4zBWOoLPMpfL5eSNYM3KAuSLO6JK7TzHN8TWsOMV3c-JKbREZjA1Clwxp9mGr4c0ukx1ySe-60&t=639024425353033789",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=OIzuRciyMfgiRjjlh2ExWJ3p4G_Bo9mYVwV6k_lGW11VJG9XzZKvgvk_EEISzS0fRIH_LCNTa8DFPIVmWhHJmkjF3-eT4Vhc0Wg_HNBYtvhJyw66ChryeSfHiq7W8hmG-fiSGN064Le0G7THQq2E17nuf0clkU9JvUZCSXg13Sg1&t=639024425351219773",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=PzzZ_XQxNJHdGQ6OfuUGeopXHX7-8ri3s-Rk-NFsqYh-7m0vgwe1o7OdQ-LdMCknWCaHURCODUb088SFAYMIm4giOu3k4QDWA0fNiFECbWWBp_FcGBzUAnfe8FiKJ5jMLGuPcAECHszs_HKmfrUPhA2&t=639024425353033789",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=WThSlKbkEj1vWh-9__grtUlpQXPAn7cROKuZzQnenE5ZLtp5ZQ19OXOzNd6PZf2H71l5bN6NiHu4uKOLKmOAZo6EPB5XbLCjksCwzUQyzXCPf0Eq17S6U98MDkpup_aR9gP19_O7OLnJXVA9oZTUDNFYqyG_9v3LDNNQTSD-rMI1&t=639024425351219773",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=VdPoLqp1pEU6N0-IfFplZOeCUlPjwHeid5Y1LFM-foMNStVUv2x7OmpUUpWhHMSK6xFCyWi420msnpxwcP66IdRsOubw0S89x9IJCc8MSaTDYxWSwrQQRlphLKWevktDt0QeCWG_F4N3BA9K9sw7MQ2&t=639024425353033789",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=KXEMm0z2IM_9hqZpf3J3lQJ0CC0vKftxexnvHO-5ZRFsf-hmjeS5K_1mws4-gKC3V6CJUjv7GCzmtvYg6xegUAXGrjEolHVBVn7znpYqBcq6j49hrKHBdgEaeUuPwkurpjmwZDMwMFavLgtXge8XIA2&t=639024425353033789",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=fiw-xIWFJXhRkZmA-DOChIHxEjW6BOt6Gm459XUsH-Mue8dahG5GgR0HocSzS3VffyqDmEXx7Ujert8Ory8yoL4Hl5vlbSeCqgMIOnw2dJMvQeQWH1bTnMcK6Yef8mJFOEXGqouN9UgYybvnIClG1K0sIib4GNhLUQqBoR0ctOM1&t=639024425351219773",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=vsKpXOsoEwDUfVug9KOqSuW3AU_9o1jRWxXA00fHbaG6owBA1M1sW36H1TnqWNYA55OYsfyIVMS-7v0Nc7wHapt5gi3mGZ80-A7jaMLFiPluMevE6HyrFFYORwPxEn2I0&t=639024425353033789",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=aXUlJEtmtVdekdAGxPXzaVj_dPeIqq47-8ws-lqgX64faMgGojdvtY_prb6FcH6exwueeTvCrm2ntm9RfmfUwawNHSSun-TBOFQLK47I1V4LGgZOkYsFIl20n8YLjRnb3onNMtizyIUxja5LmQSDojpAveinUF0pZjDQTa-digs1&t=639024425351219773",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=QKX1AO1vX8ebWKfbb4eOTPXMbVuLOs-BSKPsPsJyXQynfb0npnJQ5v-7lr2VaW4ZIsYt2JoM0lyLlvAS6LXHYEt8dWlvqIzbT4IVOvgBj3YJ1871H8zkrI65tUtgqti-0&t=639024425353033789",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=VTwVlk6LPBUQNnEgvORazK8OuW0Cm4dcc2VUAK91hozEHXyHsxCLrL-FMqo15WEcZsgx4DN3kLi4j1PPW2B0gpapH9PVybWyesfvg9uZXzYZnLvcW5PtfeSdQ4ahPuJrIvT6ytYSz-5-_9O2wrVZhItSh44o6EQTDCiOoewPXCA1&t=639024425351219773",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=b8adWYak0tImLef4A3fc9Z_biL-hdLLVBCpWDLGlIoOHjBlr_02PgkzUCTmrSFz8zl9KQULZnnDS7zmntJs4IyjJX07XgzPEY3k8oXLRcmBBrQHVeJHYHOxCatyYWr6HSF1vd-9kDZP5qjU7G7G8sw2&t=639024425353033789",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=nqK7jrVWw_9KIaRLycom71fbB3dA2WqIt6JtmaWH5aPo5tffCgWs7hIhrc-oTkRbQQi-THeaZATKIwteTtfYnqzbZAcXx6EpCsOCf-9YhJqpngd6sQRWbmtGkPEehZrUMr4HMxDplbY9tD50tlBjmenC29iRaBxSwoHddgidnNE1&t=639024425351219773",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBfJnmc0LgguYpZ_IpsQhBBljOdJpgbD8uowExiQcj8G2DTT0tN0tsu7CLUXuoIFrg2&t=637729872413207958",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Telerik.Web.UI.WebResource.axd?_TSM_HiddenField_=ctl00_fw_RadScriptManager_TSM&compress=1&_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c+Version%3d4.0.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3aen-US%3a14a9c2eb-bf69-4b0e-9aa0-eb85640f0e43%3aea597d4b%3ab25378d2%3bTelerik.Web.UI%2c+Version%3d2021.1.224.45%2c+Culture%3dneutral%2c+PublicKeyToken%3d121fae78165ba3d4%3aen-US%3a668347d1-93a2-4485-86a0-60eda4ba4fe2%3a16e4e7cd%3af7645509%3a24ee1bba%3ac128760b%3a874f8ea2%3a19620875%3ac172ae1e%3af46195d3%3a9cdfc6e7%3a33715776%3ae330518b%3a2003d0b8%3a88144a7a%3a1e771326%3ac8618e41%3ae4f8f289%3a1a73651d%3a333f8d94%3a4877f69a%3ab2e06756%3a92fe8ea0%3afa31b949%3a490a9d4e%3aaa288e2d%3a258f1c72",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/JavaScript/Common/Core.js",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/JavaScript/Common/jQuery.js",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/JavaScript/Common/jQueryPlugins.js",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/JavaScript/Common/Navigation/NavigationScripts.js",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/JavaScript/Common/Navigation/OverlayScript.js",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/JavaScript/Common/AnimationFramework/AnimationFramework.js",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/JavaScript/Menu/RadMenuScripts.js",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/JavaScript/Menu/MenuItem/RadMenuItem.js",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/JavaScript/Menu/MenuItem/MobileMenuItem.js",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/JavaScript/Menu/Views/ClassicView.js",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/JavaScript/Menu/Views/LiteView.js",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/JavaScript/Ajax/Ajax.js",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/JavaScript/FormDecorator/RadFormDecorator.js",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/JavaScript/Common/Popup/PopupScripts.js",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Scripts/jquery-1.6.3.min.js",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Scripts/toastr.min.js",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/JavaScript/jquery.gotop.js",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=CZVn9yIcBNb4BMXatiSt3puJI1Jpaq2xSHnRoFKYHK-9gV1xG5eo_UzacwuSCVcYK2UA2Sbre1PJvb1WimUW4wOI8f9FeyrYYXeKvTooSa3AtWKf3N3Nu95m6iS4UKShXj9p2rI7Z8QdFjiBaDmpqBzS8LVLZaB7LHwXOefGhmA1&t=639024425353033789",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Images/Toolbar/search16.png",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Images/LogoRS.jpg",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Images/Toolbar/home_purple16_h.png",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Images/LogoRS_MainMenu.jpg",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Images/TopBottomChat.png",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=OdXTzLYf-y4Cku55XTSOsTiyKXkBvFeoUSnvPkSIr0MrfN82qQh7vHeG-5qGky_nT-r5SqGPMH0YFOl51eVBxba6IKvpdsA5waKPHqf2hZuZaOdSYzFtQfzsPjkoKWGIWA3JZ4_c09Uv654y9kBWTx_TFmbCtCZiveK6WOMCc641&t=639024425351219773",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "POST",
+    "url": "http://36.64.110.114:8083/Live2/Home/GetToastData",
+    "resourceType": "xhr",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Module/RADT/EmrIp/EmrIpDetail.aspx?rt=IPR&regno=REG/IP/261013-0044&fregno=REG/EM/261013-0043&parid=MD-00268&unit=D22&room=2203&patid=P20261013-0029",
+    "resourceType": "document",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/content/toastr.css",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Bootstrap/plugins/fontawesome-free/css/all.min.css",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/App_Themes/WebBlue/BigButton.css",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/App_Themes/WebBlue/Stylesheet.css",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=urCACUaUZeT6oPoIZXShbrBSYPBOU7OUMp7pe6cUHsKtNDJwX3Svsnv4zBWOoLPMpfL5eSNYM3KAuSLO6JK7TzHN8TWsOMV3c-JKbREZjA1Clwxp9mGr4c0ukx1ySe-60&t=639024425353033789",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=OIzuRciyMfgiRjjlh2ExWJ3p4G_Bo9mYVwV6k_lGW11VJG9XzZKvgvk_EEISzS0fRIH_LCNTa8DFPIVmWhHJmkjF3-eT4Vhc0Wg_HNBYtvhJyw66ChryeSfHiq7W8hmG-fiSGN064Le0G7THQq2E17nuf0clkU9JvUZCSXg13Sg1&t=639024425351219773",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=PzzZ_XQxNJHdGQ6OfuUGeopXHX7-8ri3s-Rk-NFsqYh-7m0vgwe1o7OdQ-LdMCknWCaHURCODUb088SFAYMIm4giOu3k4QDWA0fNiFECbWWBp_FcGBzUAnfe8FiKJ5jMLGuPcAECHszs_HKmfrUPhA2&t=639024425353033789",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=WThSlKbkEj1vWh-9__grtUlpQXPAn7cROKuZzQnenE5ZLtp5ZQ19OXOzNd6PZf2H71l5bN6NiHu4uKOLKmOAZo6EPB5XbLCjksCwzUQyzXCPf0Eq17S6U98MDkpup_aR9gP19_O7OLnJXVA9oZTUDNFYqyG_9v3LDNNQTSD-rMI1&t=639024425351219773",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=VdPoLqp1pEU6N0-IfFplZOeCUlPjwHeid5Y1LFM-foMNStVUv2x7OmpUUpWhHMSK6xFCyWi420msnpxwcP66IdRsOubw0S89x9IJCc8MSaTDYxWSwrQQRlphLKWevktDt0QeCWG_F4N3BA9K9sw7MQ2&t=639024425353033789",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=KXEMm0z2IM_9hqZpf3J3lQJ0CC0vKftxexnvHO-5ZRFsf-hmjeS5K_1mws4-gKC3V6CJUjv7GCzmtvYg6xegUAXGrjEolHVBVn7znpYqBcq6j49hrKHBdgEaeUuPwkurpjmwZDMwMFavLgtXge8XIA2&t=639024425353033789",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=fiw-xIWFJXhRkZmA-DOChIHxEjW6BOt6Gm459XUsH-Mue8dahG5GgR0HocSzS3VffyqDmEXx7Ujert8Ory8yoL4Hl5vlbSeCqgMIOnw2dJMvQeQWH1bTnMcK6Yef8mJFOEXGqouN9UgYybvnIClG1K0sIib4GNhLUQqBoR0ctOM1&t=639024425351219773",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=vsKpXOsoEwDUfVug9KOqSuW3AU_9o1jRWxXA00fHbaG6owBA1M1sW36H1TnqWNYA55OYsfyIVMS-7v0Nc7wHapt5gi3mGZ80-A7jaMLFiPluMevE6HyrFFYORwPxEn2I0&t=639024425353033789",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=aXUlJEtmtVdekdAGxPXzaVj_dPeIqq47-8ws-lqgX64faMgGojdvtY_prb6FcH6exwueeTvCrm2ntm9RfmfUwawNHSSun-TBOFQLK47I1V4LGgZOkYsFIl20n8YLjRnb3onNMtizyIUxja5LmQSDojpAveinUF0pZjDQTa-digs1&t=639024425351219773",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=QKX1AO1vX8ebWKfbb4eOTPXMbVuLOs-BSKPsPsJyXQynfb0npnJQ5v-7lr2VaW4ZIsYt2JoM0lyLlvAS6LXHYEt8dWlvqIzbT4IVOvgBj3YJ1871H8zkrI65tUtgqti-0&t=639024425353033789",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=VTwVlk6LPBUQNnEgvORazK8OuW0Cm4dcc2VUAK91hozEHXyHsxCLrL-FMqo15WEcZsgx4DN3kLi4j1PPW2B0gpapH9PVybWyesfvg9uZXzYZnLvcW5PtfeSdQ4ahPuJrIvT6ytYSz-5-_9O2wrVZhItSh44o6EQTDCiOoewPXCA1&t=639024425351219773",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=b8adWYak0tImLef4A3fc9Z_biL-hdLLVBCpWDLGlIoOHjBlr_02PgkzUCTmrSFz8zl9KQULZnnDS7zmntJs4IyjJX07XgzPEY3k8oXLRcmBBrQHVeJHYHOxCatyYWr6HSF1vd-9kDZP5qjU7G7G8sw2&t=639024425353033789",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=nqK7jrVWw_9KIaRLycom71fbB3dA2WqIt6JtmaWH5aPo5tffCgWs7hIhrc-oTkRbQQi-THeaZATKIwteTtfYnqzbZAcXx6EpCsOCf-9YhJqpngd6sQRWbmtGkPEehZrUMr4HMxDplbY9tD50tlBjmenC29iRaBxSwoHddgidnNE1&t=639024425351219773",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=Eolpxceq3se1NJ978PlkorJNCe9NqkJDjZBiZMXXBCDusY3G1r8_VhRfS-s2_mOALQab99QbnUNTxt3ADgD14m3BN42TWLESTNIzn7AEsQfZErcAgEk4Qvs6u_R0xBNfq8wpCSEg39-gudyOsmYs5A2&t=639024425353033789",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=S5LngWVF1Bbd2jcSAFe9FOGoAwQmXV3WjW88zOiw5fhvRt0dRqUMIInKkh-nXmUdyXHeGkI74TerraCT_zlAtKQJunkLy3C19F5zmvPm3d08cteIggTtr9cxd6mPHSPy_NODlvfrXujfgE-TJ1XIczBmgc6tro-S8yTr1LRj2Fo1&t=639024425351219773",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=Nhf6TpUj19KZ9rhEj2xtdfv1FXvjYYca9ox0ftN-dpoxKioHy_i1ZEaaI635j2KhTqhjJ53tzuVIJS0JaXBQKSbUFyP8Yh-q4B_4im1ulm8NnnMk5IKF-jmaRP_9U8U10&t=639024425353033789",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=f3r-5Q0ZPKoTNCRK5CAr8g_56rygdgUZd-lGC3O-7-rzSmfc-fO8IXIrvNRw_cWebBV31Ym7J5NjxEpX4VGMbyIXqCE8SgQmeU7GbPAxeAzlOvKBxmnhWbmzljNBTZHGoibx5peiY4GxG89DrUFn2QPxwWSahhnFn-A9CQLrd5A1&t=639024425351219773",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=_h3tqqHoL_scwqSdjPRDXzmsRPxPFRac_VVqW8Ua48yP5boELcdO_P6OHRAnV010tZ97sJldOMuX3BX8f_mq3rojEecNFnn_FWmXrwZhrn9KvUB-UBbuQwVIOwEZmAl4v6JdFuEF7A1qfETGR4tBDw2&t=639024425353033789",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=_2QXgWwKxg27ZLgIlT2jOrfY25lfpbP_kv7sm5n2PqYdyfddGT9scurr-CzEXyRmUER6BUPNEo7NoHHZrUDwuDJZ_IuoOhvltNsyxpRKT6KqYHZ2QFaJkjvov4EhivT4zqPcyZMIlr_bjj7e5nKD_rdDHlvlQPLaDtw0vW13xIg1&t=639024425351219773",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=HkmiNSkKJcp9zYO7iQ4LQY_SYI9Iiox-okXXGCWwdis_uwJR9IZe6fLIPvXbjqLrU7hyAa5Jr2FcidzBn-26dVjx0AtyNhW5a7XI9z5mWqTnsDGuaKGzuCMxbRnOG7hzqO0JFh30s8JSVMcQJ_5RYw2&t=639024425353033789",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=4JQSVMbxiRhsl7FLgHFll66UkcSeQDlZ7O-tHEBv_GEAimsWai08UiiiJjaD3v7uEbbs5-fcSgLatyUS5VqNXKL2kbgH1bHfAF-h5QJi_1yumW5FV3EDYT3bhcPYcMuKY00OiCOU2CVWZVkbKDzJx_LvATxjs0d1mFi7xe0uAUEe5iCadbP-EWKv18gu2PX20&t=639024425351219773",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=lsHxUYuoKn-ifTgGVgyNZZX1hxHb2jsTY4usYTpz4JV20zW9CHhQQZwC8SRDgtQcRzwGI1unhp2yPSn_6ngC30r0t8ygMSUwnkE_etdlX_stydFTqv8r9s_HAf5c30B6S1mljZahhAhIrX33KmjlHA2&t=639024425353033789",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=bZQu9IErOfGRZdP9C3BB5XEeUwyTAXlvOlv5NJpdud3CNaJTzNfNjol2fpDt1nUnWh9bJnDM2sy8xnNTfjPCb17h1njNZcpHmkXN7_19j9yiyg_dNXkzOZV1xRwIQsDA0&t=639024425353033789",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=drHqHB6EMtPSWk2GcEia0hsDhyI6DjqR9Snc59n9tcO0HHJVVuOmh9-MoSnWfawsvNIMhypysR8FdCJmy98NSqICVG0SoriyWo3QDHQ6GmO5-fk1f_-nLiOSqWRZi3rHFy1qJPeSP0AjNnKmmT-s2RJcqe6hT0_sYRLm_iSmDyE1&t=639024425351219773",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=AvBWCtbpLXYjyyNienFv2C0XWAEZsDyE9J-8MSiq_2za974otYusK026xsZIPRIHquwi4kTK7VrZSUl9h1h8Am2fZmCZSSBnP5pRCWPO1v-RLkd0u8eS6_G2Fa6ehuc3fPwjPgPkWccr1yUp4gpisA2&t=639024425353033789",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=2JMKEKXi4P7uYZEVh60DjUpIl6h9Is03f8H0kmii9ZXLOTwJW4uAjMVDaKX1yLQU7WzQ8F82ZQZsRJ3lBAELvwUwKhTPgD7leytd1EOvF9eEWZHX1lfba5agnFHuCp46TDfWS1kE1YJbmWpvwtGC4Ii2lrfsQ53lUd24bwqcn-g1&t=639024425351219773",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=qpDogBCh8B2zFH7Wt5kgoA0NkHHZZxxr291kz_uvf1cVf0VDPP3hUAXrsDtjvzq-ukg5gxJvHIrdPJEklHnDriu2sosCJ_yVE7gbHifpV-_l_nAl-2AsIX4-uyMsLKSYqI8yyN2eRmpzfMWsqeeZsw2&t=639024425353033789",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=M2_c33lLrveuCgmTXOfUT_n5WCTq8PQeSUExyTmtQ12skoymlM-KyJDnxVXr8dJmCL-MT8Mk4H_NsLtNaIWKC75fjJo8g_OC2FzA1LYPv0QacgxHaklY-40c7TbifUTxDVP0o4hFWnHMFrSIt3XhzrFurJe3fBJEwqZ3VuGISkY1&t=639024425351219773",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=UJFQieoB9P8rlTkCHBgImlc6OBTlg5YXKf_UoEVmNr9SRUrreWZMucvlhsdMhnvppizAHANINsoCNcUgVz-40Y057GnMOgNLBT9uynIkNpEpNnA5uUCyA8IQDqjpUKkl0ZV7scnf4fVc2aGEX8ThFA2&t=639024425353033789",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=8Dxh9jMFvtmc-vEs6nDI0qf9B4B_p3nLFWZkvogbPkOXcto0rLs0dWCyuYNGn4uFHBAaStyBV8gxR9-3tGeiE0NYWAi__svjtxYmjGD_5dJEGFVc-vpX_iwxO2MzeVcJsA9FZXvYjZ7eQ8rG1Sy1Uq8LpqAls0-1mBdwOyW4P5w1&t=639024425351219773",
+    "resourceType": "stylesheet",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBfJnmc0LgguYpZ_IpsQhBBljOdJpgbD8uowExiQcj8G2DTT0tN0tsu7CLUXuoIFrg2&t=637729872413207958",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/JavaScript/jQuery.js",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/JavaScript/ddaccordion.js",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Telerik.Web.UI.WebResource.axd?_TSM_HiddenField_=ctl00_fw_RadScriptManager_TSM&compress=1&_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c+Version%3d4.0.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3aen-US%3a14a9c2eb-bf69-4b0e-9aa0-eb85640f0e43%3aea597d4b%3ab25378d2%3bTelerik.Web.UI%2c+Version%3d2021.1.224.45%2c+Culture%3dneutral%2c+PublicKeyToken%3d121fae78165ba3d4%3aen-US%3a668347d1-93a2-4485-86a0-60eda4ba4fe2%3a16e4e7cd%3af7645509%3a24ee1bba%3ac128760b%3a874f8ea2%3a19620875%3ac172ae1e%3af46195d3%3a9cdfc6e7%3a33715776%3ae330518b%3a2003d0b8%3a88144a7a%3a1e771326%3ac8618e41%3ae4f8f289%3a1a73651d%3a333f8d94%3a4877f69a%3ab2e06756%3a92fe8ea0%3afa31b949%3a490a9d4e%3aaa288e2d%3a258f1c72%3abd8f85e4%3a11a04f7e%3a58366029%3aa7e79140%3a9151b61d%3a8e6f0d33%3a1f3a7489%3a6a6d718d%3a7c926187%3a8674cba1%3ab7778d6c%3ac08e9f8a%3a59462f1%3aa51ee93e%3a6d43f6d9%3bSystem.Web.Extensions%2c+Version%3d4.0.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3aen-US%3a14a9c2eb-bf69-4b0e-9aa0-eb85640f0e43%3a76254418%3bTelerik.Web.UI%2c+Version%3d2021.1.224.45%2c+Culture%3dneutral%2c+PublicKeyToken%3d121fae78165ba3d4%3aen-US%3a668347d1-93a2-4485-86a0-60eda4ba4fe2%3addbfcb67%3aed16cbdc",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/JavaScript/Common/Core.js",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/JavaScript/Common/jQuery.js",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/JavaScript/Common/jQueryPlugins.js",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/JavaScript/Common/Navigation/NavigationScripts.js",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/JavaScript/Common/Navigation/OverlayScript.js",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/JavaScript/Common/AnimationFramework/AnimationFramework.js",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/JavaScript/Menu/RadMenuScripts.js",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/JavaScript/Menu/MenuItem/RadMenuItem.js",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/JavaScript/Menu/MenuItem/MobileMenuItem.js",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/JavaScript/Menu/Views/ClassicView.js",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/JavaScript/Menu/Views/LiteView.js",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/JavaScript/Ajax/Ajax.js",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/JavaScript/FormDecorator/RadFormDecorator.js",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/JavaScript/Common/Popup/PopupScripts.js",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Scripts/jquery-1.6.3.min.js",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Scripts/toastr.min.js",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/JavaScript/jquery.gotop.js",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=CZVn9yIcBNb4BMXatiSt3puJI1Jpaq2xSHnRoFKYHK-9gV1xG5eo_UzacwuSCVcYK2UA2Sbre1PJvb1WimUW4wOI8f9FeyrYYXeKvTooSa3AtWKf3N3Nu95m6iS4UKShXj9p2rI7Z8QdFjiBaDmpqBzS8LVLZaB7LHwXOefGhmA1&t=639024425353033789",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Images/TopBottomChat.png",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Images/Toolbar/search16.png",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Images/LogoRS.jpg",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Images/Toolbar/home_purple16_h.png",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=OdXTzLYf-y4Cku55XTSOsTiyKXkBvFeoUSnvPkSIr0MrfN82qQh7vHeG-5qGky_nT-r5SqGPMH0YFOl51eVBxba6IKvpdsA5waKPHqf2hZuZaOdSYzFtQfzsPjkoKWGIWA3JZ4_c09Uv654y9kBWTx_TFmbCtCZiveK6WOMCc641&t=639024425351219773",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=plZSgFpQ3iLr7C5gZ7elzQ0-mTvFF7h9jBiOq2yLytxFISm-YUL0QcvAwCOptAoMOaSmFm-m1HrA-HqKMtJLhtOgBWvr_344ei8nsjgx6h3VdpNk9osopxOltM0qjI7neuOyIOTtiMnJCzjOxOLlywvoPHEjEnGA-XwNwY7HI9Y1&t=639024425351219773",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/JavaScript/OpenWindowMax.js",
+    "resourceType": "script",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Images/label_new_blue48.png",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Images/Toolbar/edit16.png",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Images/Asset/Patient/WomanVector.png",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Images/Toolbar/views16.png",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "POST",
+    "url": "http://36.64.110.114:8083/Live2/Module/RADT/Cpoe/EmrWebService.asmx/UpdateStateEmrList",
+    "resourceType": "xhr",
+    "postData": "{\"statType\":\"plafondt\",\"regNo\":\"REG/IP/261013-0044\",\"fromRegNo\":\"\",\"regType\":\"\",\"patID\":\"\",\"dob\":\"\",\"parID\":\"\"}"
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Images/Toolbar/details16.png",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Images/Toolbar/ordering16.png",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Images/BPJS.png",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Images/Toolbar/mail16.png",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Images/Toolbar/post16.png",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Images/Toolbar/drugs16.png",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Images/Toolbar/barchart.bmp",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Images/black-ribbon.png",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Images/Toolbar/print16.png",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=m8N1eJMbBzLd4Cxguda1bJzaPUsg85bY2bm375ICimktFYoSY8Je0Y9xEHzR9apHta_Ui-ACyEHB0wUea9--DXz0QZnqCxcIVP-5TGUJRhJeSh-BQep_lxljsdJaxvkJepxxGUUlJfWS4OBXdc3eobIbEyGSmDhGjU-UyzLFlWugtTHPSnvpIkICvjbwX-h80&t=639024425351219773",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=SENncCErgxiUeFQZCVE1K1eUcSpkAKdZnYxdMaigSGF70yeqIOTUlSglXu-8arNZdyEAAJJh6ZkbZzZemKeRLCOM_8fw_cmNMWaQ5DVD_2x-UJyRXMe9J9QQ33ODP95Hnzwx4dWeYf5wRFlJigYvHRlf_HMU4oakouVnwGGTdmk1&t=639024425351219773",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=QWen6lJHT91vtY0iL2F8JimcohNbSY4GWLVY5IBLzwWkT_51Iy1AcDKtapf_f_YoPFnu6bvgyitWCI3xwShDprTkFm6GPU9rlUU4boermknyTqsO-YV8RmVKlxiXVM0ytm5-yDCCCD0ZytMvbDEzkIzprAMNQjfBsXGEGqcDPLY1&t=639024425351219773",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Images/Toolbar/new16_d.png",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Images/Toolbar/new16.png",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Images/Toolbar/refresh16.png",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=IKYv4k_MTLpxskuFVxpAQEN1QB1_7zFFbIaiXQ9mk5OL5z3MI3Nx0ENcRhlRQLmypajk4Swus6fiCiMyQwwTaHRJIfpnDp0LlBWX4fp1GR8qFBAIwxV5UobPQD1s7TkbKArqdnCxga9SLn-fw20m8coEEHeL2iwUB3--PMcWp2I1&t=639024425351219773",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Images/Toolbar/edit16_d.png",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Images/Toolbar/row_delete16_d.png",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Images/Toolbar/Scheduler16.png",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Images/Toolbar/imp_exp_pdf16.png",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Images/ApprovedStampRed.png",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Images/",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Images/Toolbar/Interventions32.png",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Images/Toolbar/dokter16.png",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Images/Toolbar/ImmediateAction32.png",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Images/",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Images/dicom.png",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Images/pacspreview.jpg",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Images/Toolbar/post16_d.png",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Images/Toolbar/new16_h.png",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Images/Toolbar/edit16_h.png",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Images/Toolbar/print16_h.png",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Images/Toolbar/Outcomes32.png",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Images/Toolbar/Evaluation32.png",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Images/Toolbar/stop_tag_16.png",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/Images/cpDownArrow.png",
+    "resourceType": "image",
+    "postData": null
+  },
+  {
+    "method": "POST",
+    "url": "http://36.64.110.114:8083/Live2/Module/RADT/Cpoe/EmrWebService.asmx/VitalSignLastValueAndCount",
+    "resourceType": "xhr",
+    "postData": "{\"startRowIndex\":0,\"maximumRows\":2147483647,\"sortExpression\":[],\"filterExpression\":[{\"_fieldName\":\"RegistrationNo\",\"_fieldValue\":\"REG/IP/261013-0044\",\"_filterFunction\":1,\"_columnUniqueName\":null,\"_dataTypeName\":null,\"FieldName\":\"RegistrationNo\",\"FieldValue\":\"REG/IP/261013-0044\",\"FilterFunction\":1},{\"_fieldName\":\"UrlRoot\",\"_fieldValue\":\"/Live2\",\"_filterFunction\":1,\"_columnUniqueName\":null,\"_dataTypeName\":null,\"FieldName\":\"UrlRoot\",\"FieldValue\":\"/Live2\",\"FilterFunction\":1},{\"_fieldName\":\"VitalSignDateTime\",\"_fieldValue\":\"\",\"_filterFunction\":1,\"_columnUniqueName\":null,\"_dataTypeName\":null,\"FieldName\":\"VitalSignDateTime\",\"FieldValue\":\"\",\"FilterFunction\":1}]}"
+  },
+  {
+    "method": "GET",
+    "url": "http://36.64.110.114:8083/Live2/WebResource.axd?d=SF7hfoMEmnc2NBRXzvFI40xroWeIKx7vrpFy4C7C0ZtU-kR9ncbtbhcz957l1M1TjHjcsZNgHRygsa70UULeoCTJJDPdRyKDb-TBUmOsHSrWU9rj004bpcVgjBVV0IZTG_mU_RtsF_5CYr3IOBjWHCs6NwgnjRI6OeB6CO_Ir2s1&t=639024425351219773",
+    "resourceType": "image",
+    "postData": null
+  }
+]

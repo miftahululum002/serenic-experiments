@@ -1,0 +1,1439 @@
+{
+  "cppt": [
+    {
+      "soap": [
+        {
+          "id": "soap_RIM/2026/10/13/0928",
+          "category": "soap",
+          "subjective": "Keluhan utama:\r\nnyeri perut kanan atas\r\n\r\nRiwayat penyakit skrg:\r\n Pasien datang ke IGD dengan keluhan nyeri perut kanan atas. Nyeri perut menembus ke belakang.keluhan disertai dengan mual dan muntah muntah > 5 kali sejak 2 hari smrs. Muntah berisi makanan, tidak ada lendir darah. Pasien juga saat ini lemas, tidak bisa makan karena setiap makan pasien muntah. Keluhan disertai dengan demam hilang timbul, nyeri kepala dan sulit berjalan karena lemas. Pasien riwayat jatung, rutin konsumsi obat tetapi pasien tidak membawa obat rutinya.\r\n",
+          "objective": "Keadaan Umum: Sakit Sedang\r\nKesadaran: Composmentis GCS: E: 4 M: 6 V: 5\r\nSkala Nyeri: (8) Sangat mengganggu\r\nPemeriksaan Fisik:\r\n\r\nAbdomen: Abnormal: NT RUQ\r\n\r\n",
+          "assessment": "ICD 10:\r\n  01 - Main Diagnose:  KOLIK ABDOMEN EC SUSP CHOLECYSTITIS DD NEFROLITIASIS + CAD\r\n",
+          "plan": "\r\nIVFD ASERING 20 TPM \r\nIV.CEFTRIAXON 1G/12 JAM\r\nIV.RANITIDIN 1AMP/12 JAM\r\nIV.ONDANSETRON 1AMP/8 JAM\r\nPCT 3X500 MG\r\nSUCRALFAT SYR 3X10 CC\r\nCURCUMA 1X1\r\nNAC 3X1\r\n\r\nRO THORAX PA\r\nUSG ABDOMEN UPPER LOWER BESOK\r\nKONSUL SpJP --> CAD",
+          "performer_id": "MD-00268",
+          "effective_datetime": "2026-10-13T09:34:34Z"
+        },
+        {
+          "id": "soap_RIM/2026/10/13/0955",
+          "category": "soap",
+          "subjective": "pasien dengan keluhan nyeri dibagian perut kanan dan megalami mual +, muntah + 5kali hari ini. sblmnya px riwayat konsumsi obat jantung, tetapi obatnya tidak dibawa \r\n",
+          "objective": "GCS E4M6V5\r\nTD: 128/80 mmHg\r\nHR: 78x/i\r\nRR: 20x/i\r\nTemp: 36,6 °C",
+          "assessment": "Kolik abdomen ec kolesistitis dd nefrolitiasis + UAP",
+          "plan": "Konsul dr. M. Subkhan, Sp.JP\r\nAdv dr. M Subkhan, SpJP\r\n- CPG 1X75 mg\r\n- SC ENOXRIN 60mg/12jam\r\n- Spironolakton 1x20 mg\r\n- Atorvastatin 1x20 mg\r\n- NKR 2X2,5 mg\r\n\r\nanjuran cek troponin",
+          "performer_id": "MD-00315",
+          "effective_datetime": "2026-10-13T10:04:00Z"
+        },
+        {
+          "id": "soap_RIM/2026/10/14/0162",
+          "category": "soap",
+          "subjective": "NYeri dada membaik\r\nRiw PJK 2 minggu lalu dengan keluhan serupa\r\nSesak nafas (_) ",
+          "objective": "Cor: S1> S2, murmur (-), gallop (-)",
+          "assessment": "UAP",
+          "plan": "CPG 1X75\r\nAspilet 1x80 mg\r\nSC Enoxrin 60 mg/12jam\r\nSpironolakton 1x20 mg\r\nAtorvastatin 1x20 mg \r\nNKR 2X2,5mg\r\n",
+          "performer_id": "MD-00315",
+          "effective_datetime": "2026-10-14T01:36:00Z"
+        },
+        {
+          "id": "soap_RIM/2026/10/14/0637",
+          "category": "soap",
+          "subjective": "NYERI PERUT KANAN",
+          "objective": "TD 111/69 mmHg",
+          "assessment": "ICD 10:\r\n  01 - Main Diagnose:  CHOLELITIASIS + FATTY LIVER + KISTA GINJAL KIRI + CYSTITIS + KISTA ADNEKSA + CAD\r\n",
+          "plan": "TERAPI LANJUT\r\nTAMBAH UDCA 2X250 MG\r\nSCOPMA 3X1\r\n\r\nCEK LFT DAN UR CR\r\n",
+          "performer_id": "MD-00268",
+          "effective_datetime": "2026-10-14T05:59:00Z"
+        },
+        {
+          "id": "soap_RIM/2026/10/15/0223",
+          "category": "soap",
+          "subjective": "NYeri dada membaik\r\nBatuk sesekali ",
+          "objective": "Cor: S1> S2, murmur (-), gallop (-)",
+          "assessment": "UAP",
+          "plan": "CPG 1X75\r\nAspilet 1x80 mg\r\nSC Enoxrin 60 mg/12jam\r\nSpironolakton 1x20 mg\r\nAtorvastatin 1x20 mg\r\nNKR 2X2,5mg\r\n+ Furosemid 1x40 mg ",
+          "performer_id": "MD-00315",
+          "effective_datetime": "2026-10-15T01:38:00Z"
+        },
+        {
+          "id": "soap_RIM/2026/10/15/0624",
+          "category": "soap",
+          "subjective": "NYERI PERUT BERKURANG",
+          "objective": "TD 102/67 mmHg",
+          "assessment": "ICD 10:\r\n  01 - Main Diagnose:  CHOLELITIASIS + FATTY LIVER + KISTA GINJAL KIRI + CYSTITIS + KISTA ADNEKSA + CAD\r\n",
+          "plan": "TERAPI LANJUT\r\n",
+          "performer_id": "MD-00268",
+          "effective_datetime": "2026-10-15T05:49:00Z"
+        },
+        {
+          "id": "soap_RIM/2026/10/16/0200",
+          "category": "soap",
+          "subjective": "Keluhan membaik\r\nNyeri dada dan ulu hati membaik",
+          "objective": "Cor: S1> S2, murmur (-), gallop (-)",
+          "assessment": "UAP",
+          "plan": "CPG 1X75\r\nAspilet 1x80 mg\r\nSC Enoxrin 60 mg/12jam\r\nSpironolakton 1x20 mg\r\nAtorvastatin 1x20 mg\r\nNKR 2X2,5mg\r\nFurosemid 1x40 mg\r\n\r\nDari jantung lepas rawat, Obat lanjut ",
+          "performer_id": "MD-00315",
+          "effective_datetime": "2026-10-16T01:31:00Z"
+        },
+        {
+          "id": "soap_RIM/2026/10/16/0438",
+          "category": "soap",
+          "subjective": "NYERI PERUT BERKURANG",
+          "objective": "TD 124/83 mmHg",
+          "assessment": "ICD 10:\r\n  01 - Main Diagnose:  CHOLELITIASIS + FATTY LIVER + KISTA GINJAL KIRI + CYSTITIS + KISTA ADNEKSA + CAD\r\n",
+          "plan": "TERAPI LANJUT\r\n\r\nBESOK PBJ\r\n",
+          "performer_id": "MD-00268",
+          "effective_datetime": "2026-10-16T03:53:00Z"
+        },
+        {
+          "id": "soap_RIM/2026/10/16/0440",
+          "category": "soap",
+          "subjective": "KU MEMBAIK",
+          "objective": "TD 120/80 mmHg",
+          "assessment": "ICD 10:\r\n  01 - Main Diagnose:  CHOLELITIASIS + FATTY LIVER + KISTA GINJAL KIRI + CYSTITIS + KISTA ADNEKSA + CAD\r\n",
+          "plan": "PBJ\r\nCEFIXIME 2X200 MG\r\nLANSOPRAZOL 1X30 MG\r\nUDCA 2X250 MG\r\nPCT 3X500 MG\r\nSCOPMA 3X1\r\nCURCUMA 1X1\r\nOBAT JANTUNG LANJUTKAN",
+          "performer_id": "MD-00268",
+          "effective_datetime": "2026-10-16T22:00:00Z"
+        },
+        {
+          "id": "soap_RIM/2026/10/17/0054",
+          "category": "soap",
+          "subjective": "KU membaik ",
+          "objective": "TD 124/83 mmHg\r\nCor: S1> S2, murmur (-), gallop (-)",
+          "assessment": "Unstable Angina Pectoris ",
+          "plan": "PBJ \r\nCPG 1X75 mg\r\nAspilet 1x80 mg\r\nSC Enoxrin 60 mg/12jam\r\nSpironolakton 1x20 mg\r\nAtorvastatin 1x20 mg\r\nNKR 2X2,5 mg\r\nFurosemid 1x40 mg",
+          "performer_id": "MD-00315",
+          "effective_datetime": "2026-10-16T22:00:00Z"
+        }
+      ],
+      "observasi": [
+        {
+          "id": "obs_PHR/20261014-0006_FSL002",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Height"
+          },
+          "value_type": "string",
+          "value": "80.0000kg",
+          "effective_datetime": "2026-10-12T17:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261014-0006_FSL003",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Weight"
+          },
+          "value_type": "string",
+          "value": "150.0000cm",
+          "effective_datetime": "2026-10-12T17:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261013-3703_A.KDV.1TDS",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Blood Pressure - Sistolic"
+          },
+          "value_type": "string",
+          "value": "120.0000 mmHg",
+          "effective_datetime": "2026-10-13T13:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261013-3703_A.KDV.2TDD",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Blood Pressure - Diastolic"
+          },
+          "value_type": "string",
+          "value": "80.0000 mmHg",
+          "effective_datetime": "2026-10-13T13:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261013-3703_A.KDV.SPO",
+          "category": "vital-signs",
+          "concept": {
+            "text": "SpO2"
+          },
+          "value_type": "string",
+          "value": "98.0000 %",
+          "effective_datetime": "2026-10-13T13:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261013-3703_B4.15",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Respiratory Rate"
+          },
+          "value_type": "string",
+          "value": "20.0000 x/mnt",
+          "effective_datetime": "2026-10-13T13:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261013-3703_B4.18",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Heart Rate"
+          },
+          "value_type": "string",
+          "value": "78.0000 x/mnt",
+          "effective_datetime": "2026-10-13T13:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261013-3719_WS.BPS",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Blood Pressure - Sistolic"
+          },
+          "value_type": "string",
+          "value": "120.0000mmHg",
+          "effective_datetime": "2026-10-13T08:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261013-3719_WS.HR",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Heart Rate"
+          },
+          "value_type": "string",
+          "value": "80.0000x/mnt",
+          "effective_datetime": "2026-10-13T08:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261013-3719_WS.RESP",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Respiratory Rate"
+          },
+          "value_type": "string",
+          "value": "20.0000x/mnt",
+          "effective_datetime": "2026-10-13T08:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261013-3719_WS.TEMP",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Temperature"
+          },
+          "value_type": "string",
+          "value": "36.5000C",
+          "effective_datetime": "2026-10-13T08:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261014-0011_ASGIZ09",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Height"
+          },
+          "value_type": "string",
+          "value": "0.0000kg",
+          "effective_datetime": "2026-10-12T17:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261014-0011_ASGIZ16",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Height"
+          },
+          "value_type": "string",
+          "value": "80.0000kg",
+          "effective_datetime": "2026-10-12T17:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261014-0011_ASGIZ17",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Weight"
+          },
+          "value_type": "string",
+          "value": "150.0000cm",
+          "effective_datetime": "2026-10-12T17:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261013-5286_A.KDV.1TDS",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Blood Pressure - Sistolic"
+          },
+          "value_type": "string",
+          "value": "111.0000 mmHg",
+          "effective_datetime": "2026-10-14T01:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261013-5286_A.KDV.2TDD",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Blood Pressure - Diastolic"
+          },
+          "value_type": "string",
+          "value": "69.0000 mmHg",
+          "effective_datetime": "2026-10-14T01:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261013-5286_A.KDV.SPO",
+          "category": "vital-signs",
+          "concept": {
+            "text": "SpO2"
+          },
+          "value_type": "string",
+          "value": "98.0000 %",
+          "effective_datetime": "2026-10-14T01:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261013-5286_B4.15",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Respiratory Rate"
+          },
+          "value_type": "string",
+          "value": "20.0000 x/mnt",
+          "effective_datetime": "2026-10-14T01:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261013-5286_B4.18",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Heart Rate"
+          },
+          "value_type": "string",
+          "value": "57.0000 x/mnt",
+          "effective_datetime": "2026-10-14T01:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261013-5289_WS.BPS",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Blood Pressure - Sistolic"
+          },
+          "value_type": "string",
+          "value": "111.0000mmHg",
+          "effective_datetime": "2026-10-13T20:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261013-5289_WS.HR",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Heart Rate"
+          },
+          "value_type": "string",
+          "value": "57.0000x/mnt",
+          "effective_datetime": "2026-10-13T20:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261013-5289_WS.RESP",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Respiratory Rate"
+          },
+          "value_type": "string",
+          "value": "20.0000x/mnt",
+          "effective_datetime": "2026-10-13T20:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261013-5289_WS.TEMP",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Temperature"
+          },
+          "value_type": "string",
+          "value": "36.2000C",
+          "effective_datetime": "2026-10-13T20:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261014-0938_A.KDV.1TDS",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Blood Pressure - Sistolic"
+          },
+          "value_type": "string",
+          "value": "104.0000 mmHg",
+          "effective_datetime": "2026-10-14T07:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261014-0938_A.KDV.2TDD",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Blood Pressure - Diastolic"
+          },
+          "value_type": "string",
+          "value": "66.0000 mmHg",
+          "effective_datetime": "2026-10-14T07:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261014-0938_A.KDV.SPO",
+          "category": "vital-signs",
+          "concept": {
+            "text": "SpO2"
+          },
+          "value_type": "string",
+          "value": "98.0000 %",
+          "effective_datetime": "2026-10-14T07:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261014-0938_B4.15",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Respiratory Rate"
+          },
+          "value_type": "string",
+          "value": "20.0000 x/mnt",
+          "effective_datetime": "2026-10-14T07:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261014-0938_B4.18",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Heart Rate"
+          },
+          "value_type": "string",
+          "value": "89.0000 x/mnt",
+          "effective_datetime": "2026-10-14T07:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261014-3412_A.KDV.1TDS",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Blood Pressure - Sistolic"
+          },
+          "value_type": "string",
+          "value": "112.0000 mmHg",
+          "effective_datetime": "2026-10-14T13:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261014-3412_A.KDV.2TDD",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Blood Pressure - Diastolic"
+          },
+          "value_type": "string",
+          "value": "65.0000 mmHg",
+          "effective_datetime": "2026-10-14T13:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261014-3412_A.KDV.SPO",
+          "category": "vital-signs",
+          "concept": {
+            "text": "SpO2"
+          },
+          "value_type": "string",
+          "value": "99.0000 %",
+          "effective_datetime": "2026-10-14T13:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261014-3412_B4.15",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Respiratory Rate"
+          },
+          "value_type": "string",
+          "value": "20.0000 x/mnt",
+          "effective_datetime": "2026-10-14T13:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261014-3412_B4.18",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Heart Rate"
+          },
+          "value_type": "string",
+          "value": "57.0000 x/mnt",
+          "effective_datetime": "2026-10-14T13:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261014-3418_WS.BPS",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Blood Pressure - Sistolic"
+          },
+          "value_type": "string",
+          "value": "127.0000mmHg",
+          "effective_datetime": "2026-10-14T08:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261014-3418_WS.HR",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Heart Rate"
+          },
+          "value_type": "string",
+          "value": "88.0000x/mnt",
+          "effective_datetime": "2026-10-14T08:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261014-3418_WS.RESP",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Respiratory Rate"
+          },
+          "value_type": "string",
+          "value": "20.0000x/mnt",
+          "effective_datetime": "2026-10-14T08:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261014-3418_WS.TEMP",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Temperature"
+          },
+          "value_type": "string",
+          "value": "36.6000C",
+          "effective_datetime": "2026-10-14T08:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261014-5343_A.KDV.1TDS",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Blood Pressure - Sistolic"
+          },
+          "value_type": "string",
+          "value": "122.0000 mmHg",
+          "effective_datetime": "2026-10-15T01:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261014-5343_A.KDV.2TDD",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Blood Pressure - Diastolic"
+          },
+          "value_type": "string",
+          "value": "77.0000 mmHg",
+          "effective_datetime": "2026-10-15T01:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261014-5343_A.KDV.SPO",
+          "category": "vital-signs",
+          "concept": {
+            "text": "SpO2"
+          },
+          "value_type": "string",
+          "value": "98.0000 %",
+          "effective_datetime": "2026-10-15T01:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261014-5343_B4.15",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Respiratory Rate"
+          },
+          "value_type": "string",
+          "value": "20.0000 x/mnt",
+          "effective_datetime": "2026-10-15T01:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261014-5343_B4.18",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Heart Rate"
+          },
+          "value_type": "string",
+          "value": "57.0000 x/mnt",
+          "effective_datetime": "2026-10-15T01:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261014-5345_WS.BPS",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Blood Pressure - Sistolic"
+          },
+          "value_type": "string",
+          "value": "120.0000mmHg",
+          "effective_datetime": "2026-10-14T20:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261014-5345_WS.HR",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Heart Rate"
+          },
+          "value_type": "string",
+          "value": "80.0000x/mnt",
+          "effective_datetime": "2026-10-14T20:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261014-5345_WS.RESP",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Respiratory Rate"
+          },
+          "value_type": "string",
+          "value": "20.0000x/mnt",
+          "effective_datetime": "2026-10-14T20:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261014-5345_WS.TEMP",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Temperature"
+          },
+          "value_type": "string",
+          "value": "36.5000C",
+          "effective_datetime": "2026-10-14T20:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261014-5848_FPAKD028",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Heart Rate"
+          },
+          "value_type": "string",
+          "value": "104.0000x/mnt",
+          "effective_datetime": "2026-10-13T17:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261015-0997_A.KDV.1TDS",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Blood Pressure - Sistolic"
+          },
+          "value_type": "string",
+          "value": "102.0000 mmHg",
+          "effective_datetime": "2026-10-15T07:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261015-0997_A.KDV.2TDD",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Blood Pressure - Diastolic"
+          },
+          "value_type": "string",
+          "value": "67.0000 mmHg",
+          "effective_datetime": "2026-10-15T07:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261015-0997_A.KDV.SPO",
+          "category": "vital-signs",
+          "concept": {
+            "text": "SpO2"
+          },
+          "value_type": "string",
+          "value": "98.0000 %",
+          "effective_datetime": "2026-10-15T07:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261015-0997_B4.15",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Respiratory Rate"
+          },
+          "value_type": "string",
+          "value": "20.0000 x/mnt",
+          "effective_datetime": "2026-10-15T07:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261015-0997_B4.18",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Heart Rate"
+          },
+          "value_type": "string",
+          "value": "60.0000 x/mnt",
+          "effective_datetime": "2026-10-15T07:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261015-2977_A.KDV.1TDS",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Blood Pressure - Sistolic"
+          },
+          "value_type": "string",
+          "value": "131.0000 mmHg",
+          "effective_datetime": "2026-10-15T13:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261015-2977_A.KDV.2TDD",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Blood Pressure - Diastolic"
+          },
+          "value_type": "string",
+          "value": "82.0000 mmHg",
+          "effective_datetime": "2026-10-15T13:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261015-2977_A.KDV.SPO",
+          "category": "vital-signs",
+          "concept": {
+            "text": "SpO2"
+          },
+          "value_type": "string",
+          "value": "99.0000 %",
+          "effective_datetime": "2026-10-15T13:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261015-2977_B4.15",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Respiratory Rate"
+          },
+          "value_type": "string",
+          "value": "20.0000 x/mnt",
+          "effective_datetime": "2026-10-15T13:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261015-2977_B4.18",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Heart Rate"
+          },
+          "value_type": "string",
+          "value": "79.0000 x/mnt",
+          "effective_datetime": "2026-10-15T13:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261015-2995_WS.BPS",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Blood Pressure - Sistolic"
+          },
+          "value_type": "string",
+          "value": "127.0000mmHg",
+          "effective_datetime": "2026-10-15T08:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261015-2995_WS.HR",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Heart Rate"
+          },
+          "value_type": "string",
+          "value": "80.0000x/mnt",
+          "effective_datetime": "2026-10-15T08:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261015-2995_WS.RESP",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Respiratory Rate"
+          },
+          "value_type": "string",
+          "value": "20.0000x/mnt",
+          "effective_datetime": "2026-10-15T08:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261015-2995_WS.TEMP",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Temperature"
+          },
+          "value_type": "string",
+          "value": "36.5000C",
+          "effective_datetime": "2026-10-15T08:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261015-4349_A.KDV.1TDS",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Blood Pressure - Sistolic"
+          },
+          "value_type": "string",
+          "value": "124.0000 mmHg",
+          "effective_datetime": "2026-10-16T01:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261015-4349_A.KDV.2TDD",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Blood Pressure - Diastolic"
+          },
+          "value_type": "string",
+          "value": "83.0000 mmHg",
+          "effective_datetime": "2026-10-16T01:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261015-4349_A.KDV.SPO",
+          "category": "vital-signs",
+          "concept": {
+            "text": "SpO2"
+          },
+          "value_type": "string",
+          "value": "98.0000 %",
+          "effective_datetime": "2026-10-16T01:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261015-4349_B4.15",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Respiratory Rate"
+          },
+          "value_type": "string",
+          "value": "20.0000 x/mnt",
+          "effective_datetime": "2026-10-16T01:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261015-4349_B4.18",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Heart Rate"
+          },
+          "value_type": "string",
+          "value": "69.0000 x/mnt",
+          "effective_datetime": "2026-10-16T01:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261015-4355_WS.BPS",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Blood Pressure - Sistolic"
+          },
+          "value_type": "string",
+          "value": "120.0000mmHg",
+          "effective_datetime": "2026-10-15T20:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261015-4355_WS.HR",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Heart Rate"
+          },
+          "value_type": "string",
+          "value": "80.0000x/mnt",
+          "effective_datetime": "2026-10-15T20:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261015-4355_WS.RESP",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Respiratory Rate"
+          },
+          "value_type": "string",
+          "value": "20.0000x/mnt",
+          "effective_datetime": "2026-10-15T20:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261015-4355_WS.TEMP",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Temperature"
+          },
+          "value_type": "string",
+          "value": "36.5000C",
+          "effective_datetime": "2026-10-15T20:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261016-1253_A.KDV.1TDS",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Blood Pressure - Sistolic"
+          },
+          "value_type": "string",
+          "value": "119.0000 mmHg",
+          "effective_datetime": "2026-10-16T07:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261016-1253_A.KDV.2TDD",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Blood Pressure - Diastolic"
+          },
+          "value_type": "string",
+          "value": "74.0000 mmHg",
+          "effective_datetime": "2026-10-16T07:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261016-1253_A.KDV.SPO",
+          "category": "vital-signs",
+          "concept": {
+            "text": "SpO2"
+          },
+          "value_type": "string",
+          "value": "99.0000 %",
+          "effective_datetime": "2026-10-16T07:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261016-1253_B4.15",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Respiratory Rate"
+          },
+          "value_type": "string",
+          "value": "20.0000 x/mnt",
+          "effective_datetime": "2026-10-16T07:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261016-1253_B4.18",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Heart Rate"
+          },
+          "value_type": "string",
+          "value": "61.0000 x/mnt",
+          "effective_datetime": "2026-10-16T07:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261016-2565_A.KDV.1TDS",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Blood Pressure - Sistolic"
+          },
+          "value_type": "string",
+          "value": "130.0000 mmHg",
+          "effective_datetime": "2026-10-16T13:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261016-2565_A.KDV.2TDD",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Blood Pressure - Diastolic"
+          },
+          "value_type": "string",
+          "value": "80.0000 mmHg",
+          "effective_datetime": "2026-10-16T13:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261016-2565_A.KDV.SPO",
+          "category": "vital-signs",
+          "concept": {
+            "text": "SpO2"
+          },
+          "value_type": "string",
+          "value": "98.0000 %",
+          "effective_datetime": "2026-10-16T13:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261016-2565_B4.15",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Respiratory Rate"
+          },
+          "value_type": "string",
+          "value": "20.0000 x/mnt",
+          "effective_datetime": "2026-10-16T13:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261016-2565_B4.18",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Heart Rate"
+          },
+          "value_type": "string",
+          "value": "98.0000 x/mnt",
+          "effective_datetime": "2026-10-16T13:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261016-2568_WS.BPS",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Blood Pressure - Sistolic"
+          },
+          "value_type": "string",
+          "value": "118.0000mmHg",
+          "effective_datetime": "2026-10-16T08:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261016-2568_WS.HR",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Heart Rate"
+          },
+          "value_type": "string",
+          "value": "80.0000x/mnt",
+          "effective_datetime": "2026-10-16T08:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261016-2568_WS.RESP",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Respiratory Rate"
+          },
+          "value_type": "string",
+          "value": "20.0000x/mnt",
+          "effective_datetime": "2026-10-16T08:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261016-2568_WS.TEMP",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Temperature"
+          },
+          "value_type": "string",
+          "value": "36.6000C",
+          "effective_datetime": "2026-10-16T08:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261017-0338_A.KDV.1TDS",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Blood Pressure - Sistolic"
+          },
+          "value_type": "string",
+          "value": "117.0000 mmHg",
+          "effective_datetime": "2026-10-17T02:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261017-0338_A.KDV.2TDD",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Blood Pressure - Diastolic"
+          },
+          "value_type": "string",
+          "value": "66.0000 mmHg",
+          "effective_datetime": "2026-10-17T02:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261017-0338_A.KDV.SPO",
+          "category": "vital-signs",
+          "concept": {
+            "text": "SpO2"
+          },
+          "value_type": "string",
+          "value": "99.0000 %",
+          "effective_datetime": "2026-10-17T02:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261017-0338_B4.15",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Respiratory Rate"
+          },
+          "value_type": "string",
+          "value": "20.0000 x/mnt",
+          "effective_datetime": "2026-10-17T02:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261017-0338_B4.18",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Heart Rate"
+          },
+          "value_type": "string",
+          "value": "56.0000 x/mnt",
+          "effective_datetime": "2026-10-17T02:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261017-0341_WS.BPS",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Blood Pressure - Sistolic"
+          },
+          "value_type": "string",
+          "value": "129.0000mmHg",
+          "effective_datetime": "2026-10-16T20:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261017-0341_WS.HR",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Heart Rate"
+          },
+          "value_type": "string",
+          "value": "80.0000x/mnt",
+          "effective_datetime": "2026-10-16T20:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261017-0341_WS.RESP",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Respiratory Rate"
+          },
+          "value_type": "string",
+          "value": "20.0000x/mnt",
+          "effective_datetime": "2026-10-16T20:00:00Z"
+        },
+        {
+          "id": "obs_PHR/20261017-0341_WS.TEMP",
+          "category": "vital-signs",
+          "concept": {
+            "text": "Temperature"
+          },
+          "value_type": "string",
+          "value": "36.6000C",
+          "effective_datetime": "2026-10-16T20:00:00Z"
+        }
+      ],
+      "diagnosis": [
+        {
+          "id": "diag_RIM/2026/10/13/0928_001",
+          "code": null,
+          "diagnosis_text": "KOLIK ABDOMEN EC SUSP CHOLECYSTITIS DD NEFROLITIASIS + CAD",
+          "is_primary": true,
+          "severity": null,
+          "clinical_status": null
+        },
+        {
+          "id": "diag_RIM/2026/10/14/0637_001",
+          "code": null,
+          "diagnosis_text": "CHOLELITIASIS + FATTY LIVER + KISTA GINJAL KIRI + CYSTITIS + KISTA ADNEKSA + CAD",
+          "is_primary": true,
+          "severity": null,
+          "clinical_status": null
+        },
+        {
+          "id": "diag_RIM/2026/10/15/0624_001",
+          "code": null,
+          "diagnosis_text": "CHOLELITIASIS + FATTY LIVER + KISTA GINJAL KIRI + CYSTITIS + KISTA ADNEKSA + CAD",
+          "is_primary": true,
+          "severity": null,
+          "clinical_status": null
+        },
+        {
+          "id": "diag_RIM/2026/10/16/0438_001",
+          "code": null,
+          "diagnosis_text": "CHOLELITIASIS + FATTY LIVER + KISTA GINJAL KIRI + CYSTITIS + KISTA ADNEKSA + CAD",
+          "is_primary": true,
+          "severity": null,
+          "clinical_status": null
+        },
+        {
+          "id": "diag_RIM/2026/10/16/0440_001",
+          "code": null,
+          "diagnosis_text": "CHOLELITIASIS + FATTY LIVER + KISTA GINJAL KIRI + CYSTITIS + KISTA ADNEKSA + CAD",
+          "is_primary": true,
+          "severity": null,
+          "clinical_status": null
+        }
+      ],
+      "prosedur": [
+        {
+          "id": "proc_REG/IP/261013-0044_001",
+          "status": null,
+          "category": null,
+          "code": "90.59",
+          "procedure_text": "Microscopic examination of blood, other microscopic examination",
+          "body_site": null,
+          "performer_id": "",
+          "performed_datetime": "2026-10-13T08:07:00Z",
+          "finished_datetime": "2026-10-13T08:07:00Z"
+        },
+        {
+          "id": "proc_REG/IP/261013-0044_002",
+          "status": null,
+          "category": null,
+          "code": "88.76",
+          "procedure_text": "Diagnostic ultrasound of abdomen and retroperitoneum",
+          "body_site": null,
+          "performer_id": "",
+          "performed_datetime": "2026-10-13T08:07:00Z",
+          "finished_datetime": "2026-10-13T08:07:00Z"
+        },
+        {
+          "id": "proc_REG/IP/261013-0044_003",
+          "status": null,
+          "category": null,
+          "code": "89.52",
+          "procedure_text": "Electrocardiogram NOS (with 12 or more leads)",
+          "body_site": null,
+          "performer_id": "",
+          "performed_datetime": "2026-10-13T08:07:00Z",
+          "finished_datetime": "2026-10-13T08:07:00Z"
+        }
+      ],
+      "obat": [
+        {
+          "id": "med_FM.01.0245",
+          "medication_name": "CEFIXIME 200 MG KAPS",
+          "medication_form": "KAPSUL",
+          "strength_numerator_value": 200,
+          "strength_numerator_unit_code": "MG",
+          "dosage_quantity": 1,
+          "dosage_unit": "KAPSUL",
+          "dosage_text": "2 x sehari "
+        },
+        {
+          "id": "med_FM.01.0109",
+          "medication_name": "LANSOPRAZOLE 30 MG KAPS",
+          "medication_form": "KAPSUL",
+          "strength_numerator_value": 30,
+          "strength_numerator_unit_code": "MG",
+          "dosage_quantity": 1,
+          "dosage_unit": "KAPSUL",
+          "dosage_text": "1 x sehari "
+        },
+        {
+          "id": "med_FM.01.0137",
+          "medication_name": "URSODEOXYCHOLIC ACID",
+          "medication_form": "KAPSUL",
+          "strength_numerator_value": 250,
+          "strength_numerator_unit_code": "MG",
+          "dosage_quantity": 1,
+          "dosage_unit": "KAPSUL",
+          "dosage_text": "2 x sehari "
+        },
+        {
+          "id": "med_FM.01.0258",
+          "medication_name": "PARACETAMOL TABLET 500 MG",
+          "medication_form": "TABLET",
+          "strength_numerator_value": 500,
+          "strength_numerator_unit_code": "MG",
+          "dosage_quantity": 1,
+          "dosage_unit": "TABLET",
+          "dosage_text": "3 x sehari "
+        },
+        {
+          "id": "med_FM.01.0395",
+          "medication_name": "SCOPMA TAB",
+          "medication_form": "TABLET",
+          "strength_numerator_value": 100,
+          "strength_numerator_unit_code": "BOX",
+          "dosage_quantity": 1,
+          "dosage_unit": "TABLET",
+          "dosage_text": "3 x sehari "
+        },
+        {
+          "id": "med_FM.09.0009",
+          "medication_name": "CURCUMA 200 MG TAB",
+          "medication_form": "TABLET",
+          "strength_numerator_value": 200,
+          "strength_numerator_unit_code": "MG",
+          "dosage_quantity": 1,
+          "dosage_unit": "TABLET",
+          "dosage_text": "1 x sehari "
+        },
+        {
+          "id": "med_FM.01.0096",
+          "medication_name": "CLOPIDOGREL TAB 75 MG",
+          "medication_form": "TABLET",
+          "strength_numerator_value": 75,
+          "strength_numerator_unit_code": "MG",
+          "dosage_quantity": 1,
+          "dosage_unit": "TABLET",
+          "dosage_text": "1 x sehari "
+        },
+        {
+          "id": "med_FM.01.0235",
+          "medication_name": "ASPILET TAB",
+          "medication_form": "TABLET",
+          "strength_numerator_value": 80,
+          "strength_numerator_unit_code": "MG",
+          "dosage_quantity": 1,
+          "dosage_unit": "TABLET",
+          "dosage_text": "1 x sehari "
+        },
+        {
+          "id": "med_FM.01.0220",
+          "medication_name": "SPIRONOLACTONE 25 MG TAB",
+          "medication_form": "TABLET",
+          "strength_numerator_value": 25,
+          "strength_numerator_unit_code": "MG",
+          "dosage_quantity": 1,
+          "dosage_unit": "TABLET",
+          "dosage_text": "1 x sehari "
+        },
+        {
+          "id": "med_FM.01.0279",
+          "medication_name": "ATORVASTATIN 20 MG TABLET",
+          "medication_form": "TABLET",
+          "strength_numerator_value": 20,
+          "strength_numerator_unit_code": "MG",
+          "dosage_quantity": 1,
+          "dosage_unit": "TABLET",
+          "dosage_text": "1 x sehari "
+        },
+        {
+          "id": "med_FM.01.0156",
+          "medication_name": "NITROKAF RETARD KAPS",
+          "medication_form": "KAPSUL",
+          "strength_numerator_value": 2.5,
+          "strength_numerator_unit_code": "MG",
+          "dosage_quantity": 1,
+          "dosage_unit": "KAPSUL",
+          "dosage_text": "2 x sehari "
+        },
+        {
+          "id": "med_FM.01.0322",
+          "medication_name": "FUROSEMID TABLET 40 MG",
+          "medication_form": "TABLET",
+          "strength_numerator_value": 40,
+          "strength_numerator_unit_code": "MG",
+          "dosage_quantity": 1,
+          "dosage_unit": "TABLET",
+          "dosage_text": "1 x sehari "
+        },
+        {
+          "id": "med_FM.07.0018",
+          "medication_name": "OTSU - RL / KK",
+          "medication_form": "PLABOTT",
+          "strength_numerator_value": 0,
+          "strength_numerator_unit_code": "",
+          "dosage_quantity": 1,
+          "dosage_unit": "PLABOTT",
+          "dosage_text": "Aturan Pakai Diketahui "
+        },
+        {
+          "id": "med_FM.01.0318",
+          "medication_name": "ACETYLSISTEIN 200 MG TAB",
+          "medication_form": "KAPSUL",
+          "strength_numerator_value": 200,
+          "strength_numerator_unit_code": "MG",
+          "dosage_quantity": 1,
+          "dosage_unit": "KAPSUL",
+          "dosage_text": "3 x sehari "
+        },
+        {
+          "id": "med_FM.03.0060",
+          "medication_name": "CEFTRIAXONE 1 GR INJ",
+          "medication_form": "VIAL",
+          "strength_numerator_value": 1,
+          "strength_numerator_unit_code": "GR",
+          "dosage_quantity": 1,
+          "dosage_unit": "VIAL",
+          "dosage_text": "Per 12 jam "
+        },
+        {
+          "id": "med_FM.04.0331",
+          "medication_name": "SPUIT 5 CC X 22 G",
+          "medication_form": "PIECES",
+          "strength_numerator_value": 0,
+          "strength_numerator_unit_code": "",
+          "dosage_quantity": 1,
+          "dosage_unit": "PIECES",
+          "dosage_text": "Aturan Pakai Diketahui "
+        },
+        {
+          "id": "med_FM.03.0129",
+          "medication_name": "AQUA PRO INJ 20 ML",
+          "medication_form": "VIAL",
+          "strength_numerator_value": 0,
+          "strength_numerator_unit_code": "",
+          "dosage_quantity": 1,
+          "dosage_unit": "VIAL",
+          "dosage_text": "Aturan Pakai Diketahui "
+        },
+        {
+          "id": "med_FM.07.0038",
+          "medication_name": "Aqua Pro Inj 25ML",
+          "medication_form": "VIAL",
+          "strength_numerator_value": 1,
+          "strength_numerator_unit_code": "",
+          "dosage_quantity": 1,
+          "dosage_unit": "VIAL",
+          "dosage_text": "Aturan Pakai Diketahui "
+        },
+        {
+          "id": "med_FM.03.0104",
+          "medication_name": "RANITIDIN 25 MG/2 ML INJ",
+          "medication_form": "AMPUL",
+          "strength_numerator_value": 25,
+          "strength_numerator_unit_code": "MG",
+          "dosage_quantity": 1,
+          "dosage_unit": "AMPUL",
+          "dosage_text": "Per 12 jam "
+        },
+        {
+          "id": "med_FM.03.0133",
+          "medication_name": "RANITIDIN HCL 50 MG/ 2 ML INJ",
+          "medication_form": "AMPUL",
+          "strength_numerator_value": 1,
+          "strength_numerator_unit_code": "",
+          "dosage_quantity": 1,
+          "dosage_unit": "AMPUL",
+          "dosage_text": "Per 12 jam "
+        },
+        {
+          "id": "med_FM.03.0070",
+          "medication_name": "ONDANSETRON 8 MG/4 ML INJ",
+          "medication_form": "AMPUL",
+          "strength_numerator_value": 8,
+          "strength_numerator_unit_code": "MG",
+          "dosage_quantity": 1,
+          "dosage_unit": "AMPUL",
+          "dosage_text": "Per 8 jam "
+        },
+        {
+          "id": "med_FM.03.0081",
+          "medication_name": "KETOROLAC 30 MG/ML INJ",
+          "medication_form": "AMPUL",
+          "strength_numerator_value": 30,
+          "strength_numerator_unit_code": "MG",
+          "dosage_quantity": 1,
+          "dosage_unit": "AMPUL",
+          "dosage_text": "Per 8 jam "
+        },
+        {
+          "id": "med_FM.04.0330",
+          "medication_name": "SPUIT 3 CC X 23 G",
+          "medication_form": "PIECES",
+          "strength_numerator_value": 0,
+          "strength_numerator_unit_code": "",
+          "dosage_quantity": 1,
+          "dosage_unit": "PIECES",
+          "dosage_text": "Aturan Pakai Diketahui "
+        },
+        {
+          "id": "med_FM.03.0194",
+          "medication_name": "ENOXRIN 6000 IU",
+          "medication_form": "PREFILLED SYRINGE",
+          "strength_numerator_value": 1,
+          "strength_numerator_unit_code": "",
+          "dosage_quantity": 1,
+          "dosage_unit": "PREFILLED SYRINGE",
+          "dosage_text": "Per 12 jam "
+        },
+        {
+          "id": "med_FM.01.0587",
+          "medication_name": "THIAMAZOLE 10 MG TABLET",
+          "medication_form": "TABLET",
+          "strength_numerator_value": 1,
+          "strength_numerator_unit_code": "",
+          "dosage_quantity": 2,
+          "dosage_unit": "TABLET",
+          "dosage_text": "2 x sehari "
+        },
+        {
+          "id": "med_FM.01.0277",
+          "medication_name": "PROPRANOLOL TABLET 10 MG ( HCL )",
+          "medication_form": "TABLET",
+          "strength_numerator_value": 10,
+          "strength_numerator_unit_code": "MG",
+          "dosage_quantity": 1,
+          "dosage_unit": "TABLET",
+          "dosage_text": "3 x sehari "
+        },
+        {
+          "id": "med_FM.01.0097",
+          "medication_name": "CPG TAB",
+          "medication_form": "TABLET",
+          "strength_numerator_value": 75,
+          "strength_numerator_unit_code": "MG",
+          "dosage_quantity": 1,
+          "dosage_unit": "TABLET",
+          "dosage_text": "1 x sehari "
+        },
+        {
+          "id": "med_FM.03.0069",
+          "medication_name": "ONDANSETRON INJ 4 MG/ 2 ML",
+          "medication_form": "AMPUL",
+          "strength_numerator_value": 4,
+          "strength_numerator_unit_code": "MG",
+          "dosage_quantity": 1,
+          "dosage_unit": "AMPUL",
+          "dosage_text": "Per 8 jam "
+        },
+        {
+          "id": "med_FM.01.0003",
+          "medication_name": "SUCRALFATE SUSP 100 ML",
+          "medication_form": "BOTOL",
+          "strength_numerator_value": 0,
+          "strength_numerator_unit_code": "",
+          "dosage_quantity": 1,
+          "dosage_unit": "BOTOL",
+          "dosage_text": "Per 8 jam "
+        },
+        {
+          "id": "med_FM.04.0291",
+          "medication_name": "INFUSION SET MAKRO",
+          "medication_form": "PIECES",
+          "strength_numerator_value": 0,
+          "strength_numerator_unit_code": "",
+          "dosage_quantity": 1,
+          "dosage_unit": "PIECES",
+          "dosage_text": "Aturan Pakai Diketahui "
+        },
+        {
+          "id": "med_FM.04.0296",
+          "medication_name": "IV CHATETER NO. 20 G",
+          "medication_form": "PIECES",
+          "strength_numerator_value": 0,
+          "strength_numerator_unit_code": "",
+          "dosage_quantity": 1,
+          "dosage_unit": "PIECES",
+          "dosage_text": "Aturan Pakai Diketahui "
+        },
+        {
+          "id": "med_FM.04.0111",
+          "medication_name": "NASAL CANULLA ADULT",
+          "medication_form": "",
+          "strength_numerator_value": 0,
+          "strength_numerator_unit_code": "",
+          "dosage_quantity": 1,
+          "dosage_unit": "",
+          "dosage_text": "Aturan Pakai Diketahui "
+        }
+      ]
+    }
+  ]
+}

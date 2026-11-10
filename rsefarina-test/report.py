@@ -37,6 +37,10 @@ SINGLE_PER_ENCOUNTER = (
 )
 
 
+# Nilai `category` huruf besar yang memang benar (bukan temuan).
+CATEGORY_UPPERCASE_ALLOWED = {"RAD"}
+
+
 # Aturan yang sudah ditangani mapper cron-api-scheduler (rsefarina/mapper).
 MAPPER_HANDLED = {
     "concept-array": "`mapPemeriksaanFisikConcept` (resume_medis)",
@@ -242,6 +246,7 @@ def rule_category_uppercase(reg, payloads, findings):
                 i["category"] for i in items
                 if isinstance(i.get("category"), str)
                 and i["category"] != i["category"].lower()
+                and i["category"] not in CATEGORY_UPPERCASE_ALLOWED
             })
             if cats:
                 findings.append(Finding(
