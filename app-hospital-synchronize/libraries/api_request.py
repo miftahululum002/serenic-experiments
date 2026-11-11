@@ -6,7 +6,7 @@ import json
 import logging
 from dataclasses import dataclass
 from datetime import datetime, timezone
-from typing import Any
+from typing import Any, Callable
 from urllib.parse import urlsplit
 
 import requests
@@ -35,6 +35,7 @@ class TokenSet:
     access_token: str
     refresh_token: str | None = None
     expires_at: float | None = None
+    cookies: list[dict[str, Any]] | None = None
 
     def is_expired(self, leeway_seconds: int = 30) -> bool:
         return self.expires_at is not None and datetime.now(timezone.utc).timestamp() >= self.expires_at - leeway_seconds
@@ -126,7 +127,9 @@ class SyncClient:
         refresh_payload_key: str = "refreshToken",
         refresh_payload: dict[str, Any] | None = None,
         login_extra: dict[str, Any] | None = None,
+        on_tokens_changed: Callable[[TokenSet], None] | None = None,
     ) -> None:
+        self.on_tokens_changed = on_tokens_changed
         self.organization = organization
         self.login_path = login_path
         self.sync_path = sync_path
@@ -168,8 +171,34 @@ class SyncClient:
             refresh_token = _get_path(body, self.refresh_token_path)
             if not isinstance(refresh_token, str) or not refresh_token:
                 refresh_token = None
-        self.current_tokens = TokenSet(access_token, refresh_token, extract_expiry(body, access_token))
-        return self.current_tokens
+        return self._set_tokens(
+            TokenSet(access_token, refresh_token, extract_expiry(body, access_token))
+        )
+
+    def _set_tokens(self, tokens: TokenSet) -> TokenSet:
+        # Server menyimpan refresh token di cookie, jadi cookie ikut disimpan.
+        tokens.cookies = [
+            {"name": c.name, "value": c.value, "domain": c.domain, "path": c.path, "secure": c.secure}
+            for c in self.session.cookies
+        ]
+        self.current_tokens = tokens
+        if self.on_tokens_changed:
+            self.on_tokens_changed(tokens)
+        return tokens
+
+    def restore_cookies(self, tokens: TokenSet) -> None:
+        for c in tokens.cookies or []:
+            self.session.cookies.set(
+                c["name"], c["value"], domain=c.get("domain", ""), path=c.get("path", "/"), secure=c.get("secure", False)
+            )
+
+    def refresh_or_login(self, tokens: TokenSet) -> TokenSet:
+        """Refresh the token; fall back to a fresh login if refresh fails."""
+        try:
+            return self.refresh(tokens)
+        except ApiError as exc:
+            logger.warning("Refresh gagal (%s); login ulang", exc)
+            return self.login()
 
     def refresh(self, tokens: TokenSet) -> TokenSet:
         if not tokens.refresh_token:
@@ -194,12 +223,13 @@ class SyncClient:
         refreshed_token = _get_path(body, self.refresh_token_path) if self.refresh_token_path else None
         if not isinstance(refreshed_token, str) or not refreshed_token:
             refreshed_token = tokens.refresh_token
-        self.current_tokens = TokenSet(access_token, refreshed_token, extract_expiry(body, access_token))
-        return self.current_tokens
+        return self._set_tokens(
+            TokenSet(access_token, refreshed_token, extract_expiry(body, access_token))
+        )
 
     def synchronize(self, tokens: TokenSet, payload: dict[str, Any]) -> Any:
         if tokens.is_expired():
-            tokens = self.refresh(tokens)
+            tokens = self.refresh_or_login(tokens)
         self.current_tokens = tokens
         url = _url(self.organization.api_url, self.sync_path)
         logger.info("Request sinkronisasi: %s", url)
@@ -211,8 +241,7 @@ class SyncClient:
             verify=self.verify_tls,
         )
         if response.status_code == 401:
-            tokens = self.refresh(tokens)
-            self.current_tokens = tokens
+            tokens = self.refresh_or_login(tokens)
             logger.info("Request sinkronisasi ulang: %s", url)
             response = self.session.post(
                 url,
@@ -222,10 +251,12 @@ class SyncClient:
                 verify=self.verify_tls,
             )
         if not response.ok:
+            logger.error("Sinkronisasi GAGAL: HTTP %s", response.status_code)
             raise ApiError(
                 f"Sinkronisasi organisasi {self.organization.name!r} gagal: "
                 f"{_response_details(response)}"
             )
+        logger.info("Sinkronisasi BERHASIL: HTTP %s", response.status_code)
         try:
             return response.json()
         except ValueError:

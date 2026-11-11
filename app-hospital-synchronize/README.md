@@ -18,7 +18,11 @@ Nilai default batch dan delay dibaca dari `.env`:
 ```env
 BATCH_SIZE=20
 BATCH_DELAY_SECONDS=5
+SAVE_PAYLOAD=false
+SAVE_RESPONSE=false
 ```
+
+`SAVE_PAYLOAD=true` menyimpan payload ke `payload/`, `SAVE_RESPONSE=true` menyimpan response ke `response/`. Default `false` (tidak disimpan).
 
 File `.env.example` hanya template; aplikasi membaca `.env`.
 

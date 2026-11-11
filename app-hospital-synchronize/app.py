@@ -11,11 +11,15 @@ from constant import (
     DEFAULT_REFRESH_PATH,
     BATCH_DELAY_SECONDS,
     BATCH_SIZE,
+    SAVE_PAYLOAD,
+    SAVE_RESPONSE,
 )
 from libraries.api_request import ApiError, SyncClient
 from utils.utility import (
     get_organization,
     load_encounter_ids,
+    load_tokens,
+    save_tokens,
     save_payload,
     save_response,
     get_uuid,
@@ -77,9 +81,20 @@ def main(argv: list[str] | None = None) -> int:
             token_path="data.accessToken",
             refresh_token_path="data.token",
             refresh_payload_key="refreshToken",
+            on_tokens_changed=lambda t: save_tokens(org.id, t),
         )
-        logging.info("Login: %s", org.name)
-        tokens = client.login()
+        tokens = load_tokens(org.id)
+        if tokens:
+            client.restore_cookies(tokens)
+        if tokens and tokens.is_expired():
+            logging.info("Session tersimpan kedaluwarsa, mencoba refresh: %s", org.name)
+            tokens = client.refresh_or_login(tokens)
+        elif tokens:
+            logging.info("Memakai session tersimpan: %s", org.name)
+            client.current_tokens = tokens
+        else:
+            logging.info("Login: %s", org.name)
+            tokens = client.login()
         logging.info("Total encounter yang diproses: %s", len(encounter_ids))
         for index, encounter_id in enumerate(encounter_ids, start=1):
             logging.info(
@@ -101,12 +116,14 @@ def main(argv: list[str] | None = None) -> int:
                 / date_folder
                 / f"{filename_encounter_id}_{timestamp}_{request_uuid}.json"
             )
-            payload_path = save_payload(filename, request_payload)
+            if SAVE_PAYLOAD:
+                payload_path = save_payload(filename, request_payload)
+                logging.info("Payload tersimpan: %s", payload_path)
             response = client.synchronize(tokens, request_payload)
             tokens = client.current_tokens or tokens
-            response_path = save_response(filename, response)
-            logging.info("Payload tersimpan: %s", payload_path)
-            logging.info("Response tersimpan: %s", response_path)
+            if SAVE_RESPONSE:
+                response_path = save_response(filename, response)
+                logging.info("Response tersimpan: %s", response_path)
             if index % args.batch == 0 and index < len(encounter_ids):
                 logging.info(
                     "Batch %s encounter selesai; menunggu %s detik",

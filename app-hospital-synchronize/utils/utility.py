@@ -2,12 +2,13 @@ from __future__ import annotations
 
 import csv
 import json
+import os
 from pathlib import Path
 import uuid
 from datetime import datetime
 
-from constant import PAYLOAD_DIR, RESPONSE_DIR
-from libraries.api_request import Organization
+from constant import PAYLOAD_DIR, RESPONSE_DIR, RUNTIME_DIR
+from libraries.api_request import Organization, TokenSet
 
 
 REQUIRED_ORGANIZATION_COLUMNS = {
@@ -82,6 +83,49 @@ def load_encounter_ids(path: Path) -> list[str]:
     if not encounter_ids:
         raise ValueError(f"Tidak ada encounterId pada {path}")
     return encounter_ids
+
+
+def session_path(organization_id: str) -> Path:
+    return RUNTIME_DIR / normalize_filename(organization_id) / "session.json"
+
+
+def load_tokens(organization_id: str) -> TokenSet | None:
+    """Load the cached token set for an organization, if any."""
+    path = session_path(organization_id)
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+        access_token = data["access_token"]
+    except (OSError, ValueError, KeyError, TypeError):
+        return None
+    if not isinstance(access_token, str) or not access_token:
+        return None
+    return TokenSet(
+        access_token=access_token,
+        refresh_token=data.get("refresh_token"),
+        expires_at=data.get("expires_at"),
+        cookies=data.get("cookies"),
+    )
+
+
+def save_tokens(organization_id: str, tokens: TokenSet) -> Path:
+    """Persist the token set (owner-only permissions) for reuse on next run."""
+    path = session_path(organization_id)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    tmp = path.with_suffix(".tmp")
+    fd = os.open(tmp, os.O_WRONLY | os.O_CREAT | os.O_TRUNC, 0o600)
+    with os.fdopen(fd, "w", encoding="utf-8") as handle:
+        json.dump(
+            {
+                "access_token": tokens.access_token,
+                "refresh_token": tokens.refresh_token,
+                "expires_at": tokens.expires_at,
+                "cookies": tokens.cookies,
+            },
+            handle,
+            indent=2,
+        )
+    os.replace(tmp, path)
+    return path
 
 
 def normalize_filename(value: str) -> str:

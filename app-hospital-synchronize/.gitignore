@@ -13,3 +13,5 @@ venv/
 data/*
 !data/.gitkeep 
 !data/example.csv 
+runtime/*
+!runtime/.gitkeep
